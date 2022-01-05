@@ -1,0 +1,95 @@
+#
+# Macro file recommended for the use with proton beams and built-in physic list.
+# This macro uses the physics list already contained in the Geant4 distribution
+#
+
+#########################
+# Set of the verboses
+#
+/control/verbose 0
+/tracking/verbose 0
+/run/verbose 0
+/event/verbose 0
+#########################
+
+
+##########################
+# Set of the physic models
+#
+/Physics/addPhysics HADRONTHERAPY_3
+
+#/random/setSeeds 7226 1934
+
+##########################
+# Initialisation procedure
+#
+/run/numberOfThreads 28
+/run/initialize
+
+
+#########################
+# Set the primary particle type,
+# energy and position along the X direction
+#
+#---------------------------gps-----------------
+
+/gps/pos/type Point
+/gps/pos/centre -0.5 0. 0. cm
+/gps/particle proton
+/gps/direction 1 0 0
+
+# the incident surface is in the y-z plane
+
+/gps/pos/rot1 0 1 0
+/gps/pos/rot2 0 0 1
+
+# the beam is travelling along the x-axis without any angular dispersion (angular despersion set to 0.0)
+#
+
+/gps/ang/rot1 0 0 1
+/gps/ang/rot2 0 1 0
+/gps/ang/type beam2d
+
+
+# the beam energy is in gaussian profile
+#
+/gps/ene/type Gauss
+/gps/ene/mono 60.0 MeV
+/gps/ene/sigma 0. MeV
+
+
+##########################
+# Set here the cut and the step max for the tracking.
+# Suggested values of cut and step:
+# Set cuts OUTSIDE the detector
+#
+/run/setCut 0.001 mm
+/run/setCutForAGivenParticle e- 1 mm
+#/run/SetCutForElectron 1 mm
+
+
+
+###############################
+###SETTING PER SIMULAZIONE PCBT
+###############################
+/changePhantom/size 4. 20. 20.  cm
+/changePhantom/position 2 0 0 cm
+
+
+###################################################
+# USE THE FOLLOWING FOR A VOXELLIZED DETECTOR
+###################################################
+#
+
+/changeDetector/size 0.01 200 200 mm
+/changeDetector/voxelSize 0.01 1 1 mm
+#/changeDetector/displacement 0.005 0 0 mm # WRONG
+/changeDetector/displacement 0.00000000000001 0 0 mm
+/changePhantom/update
+
+
+
+# RUN
+/analysis/secondary
+/run/printProgress 5000
+/run/beamOn 50000000
