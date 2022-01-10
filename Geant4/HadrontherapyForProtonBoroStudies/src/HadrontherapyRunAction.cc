@@ -57,7 +57,7 @@ HadrontherapyRunAction::HadrontherapyRunAction()
 /////////////////////////////////////////////////////////////////////////////
 HadrontherapyRunAction::~HadrontherapyRunAction()
 {
-    delete G4AnalysisManager::Instance();
+    //delete G4AnalysisManager::Instance();
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -89,6 +89,8 @@ void HadrontherapyRunAction::EndOfRunAction(const G4Run*)
 
     G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
     accumulableManager->Merge();
+    
+    analysisManager ->SetDefaultFileType("csv");
 
     // Tell the RBE class what we have accumulated...
     HadrontherapyRBE *rbe = HadrontherapyRBE::GetInstance();

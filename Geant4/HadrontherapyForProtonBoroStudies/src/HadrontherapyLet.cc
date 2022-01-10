@@ -36,6 +36,8 @@
 #include "G4RunManager.hh"
 #include "G4SystemOfUnits.hh"
 #include <cmath>
+#include "G4AnalysisManager.hh"
+
 
 HadrontherapyLet* HadrontherapyLet::instance = NULL;
 G4bool HadrontherapyLet::doCalculation = false;
