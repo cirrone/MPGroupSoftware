@@ -1,0 +1,18 @@
+     =========================================================
+ 		      Geant4 - dnadamage1 example
+     =========================================================
+
+                       Package History file
+                       --------------------
+
+10-11-2020 - tag dnadamage1-V10-06-00 - B. Morgan
+- Migration to G4RunManagerFactory.
+
+28-11-2019 - tag dnadamage1-V10-05-02 - I. Hrivnacova
+- Fixed .README.txt label
+
+26-11-2019 - tag dnadamage1-V10-05-01 - I. Hrivnacova
+- Adding missing .README.txt
+
+05-03-2019 - tag dnadamage1-V10-05-00 - H. Tran
+- first version of dnadamage1 example committed
