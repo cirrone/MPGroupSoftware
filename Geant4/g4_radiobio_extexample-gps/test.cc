@@ -147,9 +147,7 @@ int main(int argc ,char ** argv)
     
     else {
         
-
-        //UImanager -> ApplyCommand("/control/execute macro/runtest.mac");
-        UImanager -> ApplyCommand("/control/execute macro/MacroPablo.mac"); //ERASE ME
+        UImanager -> ApplyCommand("/control/execute macro/MacroPablo.mac"); 
         ui -> SessionStart();
         delete ui;
     }
