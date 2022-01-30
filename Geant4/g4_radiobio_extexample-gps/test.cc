@@ -148,22 +148,20 @@ int main(int argc ,char ** argv)
     else {
         
 
-        //UImanager -> ApplyCommand("/control/execute macro/vistest.mac");
-        UImanager -> ApplyCommand("/control/execute macro/vistest2.mac"); //ERASE ME
+        //UImanager -> ApplyCommand("/control/execute macro/runtest.mac");
+        UImanager -> ApplyCommand("/control/execute macro/MacroPablo.mac"); //ERASE ME
         ui -> SessionStart();
-        //delete ui;
+        delete ui;
     }
 
     // Save data in RadioBioManager
     RadioBioManager::GetInstance()->StoreAll();
  
     //Stop the benchmark here
-    theTimer->Stop();
+    theTimer -> Stop();
     
-    G4cout << "The simulation took: " << theTimer->GetRealElapsed() << " s to run (real time)"
-    << G4endl;
+    G4cout << "The simulation took: " << theTimer->GetRealElapsed() << " s to run (real time)" << G4endl;
     
-
     delete theTimer;
     delete runManager;
 
