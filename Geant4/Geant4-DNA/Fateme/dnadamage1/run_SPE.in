@@ -1,0 +1,21 @@
+/control/verbose 2
+/run/verbose 1
+#/tracking/verbose 1
+/run/numberOfThreads 6
+
+/run/initialize
+
+/gun/particle proton
+
+/gunExample/selectGunAction 1
+
+
+/scheduler/maxNullTimeSteps 50
+#/scheduler/verbose 2
+#/scheduler/whyDoYouStop
+
+
+/run/printProgress 20
+/run/beamOn 100
+
+

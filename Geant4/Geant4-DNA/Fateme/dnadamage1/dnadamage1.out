@@ -1,0 +1,517 @@
+Environment variable "G4FORCE_RUN_MANAGER_TYPE" enabled with value == Serial. Forcing G4RunManager type...
+
+        ############################################
+        !!! WARNING - FPE detection is activated !!!
+        ############################################
+
+**************************************************************
+ Geant4 version Name: geant4-10-07-patch-01    (5-February-2021)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+===== Register constructor ==== G4EmDNAPhysics
+===== Register constructor ==== G4EmDNAChemistry_option2
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Registered graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML1FILE (VRML1FILE)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+  OpenGLImmediateQt (OGLIQt, OGLI)
+  OpenGLStoredQt (OGLSQt, OGL, OGLS)
+  OpenGLImmediateXm (OGLIXm, OGLIQt_FALLBACK)
+  OpenGLStoredXm (OGLSXm, OGLSQt_FALLBACK)
+  OpenGLImmediateX (OGLIX, OGLIQt_FALLBACK, OGLIXm_FALLBACK)
+  OpenGLStoredX (OGLSX, OGLSQt_FALLBACK, OGLSXm_FALLBACK)
+  RayTracerX (RayTracerX)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered models:
+  None
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+Registered filters:
+  None
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+/run/numberOfThreads 2
+*** /run/numberOfThreads command is issued in sequential mode.
+Command is ignored.
+/run/initialize
+userDetector->Construct() start.
+logicWorld is registered to the default region.
+physicsList->Construct() start.
+--- G4CoupledTransportation is used 
+physicsList->CheckParticleList() start.
+physicsList->setCut() start.
+/gun/particle proton
+/gun/energy 5 keV
+/scheduler/maxNullTimeSteps 50
+#/scheduler/verbose 2
+#/scheduler/whyDoYouStop
+/run/beamOn 2
+
+### ===  Deexcitation model UAtomDeexcitation is activated for 1 region:
+          DefaultRegionForTheWorld  1  1  0
+### ===  Auger cascade flag: 1
+### ===  Ignore cuts flag:   1
+
+phot:  for gamma SubType=12 BuildTable=0
+      LambdaPrime table from 200 keV to 100 TeV in 61 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric : Emin=    0 eV  Emax=  100 TeV  SauterGavrila Fluo
+
+compt:  for gamma SubType=13 BuildTable=1
+      Lambda table from 100 eV  to 1 MeV, 7 bins/decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+    LivermoreCompton : Emin=    0 eV  Emax=  100 TeV Fluo
+
+conv:  for gamma SubType=14 BuildTable=1
+      Lambda table from 1.022 MeV to 100 TeV, 18 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermoreConversion : Emin=    0 eV  Emax=  100 TeV  ModifiedTsai
+
+Rayl:  for gamma SubType=11 BuildTable=1
+      Lambda table from 100 eV  to 100 keV, 7 bins/decade, spline: 0
+      LambdaPrime table from 100 keV to 100 TeV in 63 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh : Emin=    0 eV  Emax=  100 TeV  CullenGenerator
+
+e-_G4DNAElectronSolvation:  for e- SubType=58 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNAOneStepThermalizationModel_Meesungnoen2002 : Emin=    0 eV  Emax=  7.4 eV 
+
+e-_G4DNAElastic:  for e- SubType=51 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNAChampionElasticModel : Emin=    0 eV  Emax=    1 MeV
+
+e-_G4DNAExcitation:  for e- SubType=52 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNABornExcitationModel : Emin=    0 eV  Emax=    1 MeV
+
+e-_G4DNAIonisation:  for e- SubType=53 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNABornIonisationModel : Emin=    0 eV  Emax=    1 MeV  deltaBorn Fluo
+
+e-_G4DNAVibExcitation:  for e- SubType=54 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNASancheExcitationModel : Emin=    0 eV  Emax=  100 eV 
+
+e-_G4DNAAttachment:  for e- SubType=55 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNAMeltonAttachmentModel : Emin=    0 eV  Emax=   13 eV 
+
+msc:  for e+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+              StepLim=DistanceToBoundary Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llimit=1
+
+eIoni:  for e+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+annihil:  for e+, integral:1  SubType=5 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg : Emin=    0 eV  Emax=  100 TeV
+
+proton_G4DNAElastic:  for proton SubType=51 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  DNAIonElasticModel : Emin=    0 eV  Emax=    1 MeV
+
+proton_G4DNAExcitation:  for proton SubType=52 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNAMillerGreenExcitationModel : Emin=    0 eV  Emax=  500 keV
+DNABornExcitationModel : Emin=  500 keV Emax=  100 MeV
+
+proton_G4DNAIonisation:  for proton SubType=53 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNARuddIonisationModel : Emin=    0 eV  Emax=  500 keV  deltaRudd Fluo
+DNABornIonisationModel : Emin=  500 keV Emax=  100 MeV  deltaBorn Fluo
+
+proton_G4DNAChargeDecrease:  for proton SubType=56 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNADingfelderChargeDecreaseModel : Emin=    0 eV  Emax=  100 MeV
+
+GenericIon_G4DNAIonisation:  for GenericIon SubType=53 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNARuddIonisationExtendedModel : Emin=    0 eV  Emax=    1 TeV  deltaRudd Fluo
+
+alpha_G4DNAElastic:  for alpha SubType=51 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  DNAIonElasticModel : Emin=    0 eV  Emax=    1 MeV
+
+alpha_G4DNAExcitation:  for alpha SubType=52 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNAMillerGreenExcitationModel : Emin=    0 eV  Emax=  400 MeV
+
+alpha_G4DNAIonisation:  for alpha SubType=53 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNARuddIonisationModel : Emin=    0 eV  Emax=  400 MeV  deltaRudd Fluo
+
+alpha_G4DNAChargeDecrease:  for alpha SubType=56 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNADingfelderChargeDecreaseModel : Emin=    0 eV  Emax=  400 MeV
+
+alpha+_G4DNAElastic:  for alpha+ SubType=51 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  DNAIonElasticModel : Emin=    0 eV  Emax=    1 MeV
+
+alpha+_G4DNAExcitation:  for alpha+ SubType=52 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNAMillerGreenExcitationModel : Emin=    0 eV  Emax=  400 MeV
+
+alpha+_G4DNAIonisation:  for alpha+ SubType=53 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNARuddIonisationModel : Emin=    0 eV  Emax=  400 MeV  deltaRudd Fluo
+
+alpha+_G4DNAChargeDecrease:  for alpha+ SubType=56 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNADingfelderChargeDecreaseModel : Emin=    0 eV  Emax=  400 MeV
+
+alpha+_G4DNAChargeIncrease:  for alpha+ SubType=57 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNADingfelderChargeIncreaseModel : Emin=    0 eV  Emax=  400 MeV
+
+helium_G4DNAElastic:  for helium SubType=51 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  DNAIonElasticModel : Emin=    0 eV  Emax=    1 MeV
+
+helium_G4DNAExcitation:  for helium SubType=52 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNAMillerGreenExcitationModel : Emin=    0 eV  Emax=  400 MeV
+
+helium_G4DNAIonisation:  for helium SubType=53 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNARuddIonisationModel : Emin=    0 eV  Emax=  400 MeV  deltaRudd Fluo
+
+helium_G4DNAChargeIncrease:  for helium SubType=57 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNADingfelderChargeIncreaseModel : Emin=    0 eV  Emax=  400 MeV
+
+hydrogen_G4DNAElastic:  for hydrogen SubType=51 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  DNAIonElasticModel : Emin=    0 eV  Emax=    1 MeV
+
+hydrogen_G4DNAExcitation:  for hydrogen SubType=52 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNAMillerGreenExcitationModel : Emin=    0 eV  Emax=  500 keV
+
+hydrogen_G4DNAIonisation:  for hydrogen SubType=53 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNARuddIonisationModel : Emin=    0 eV  Emax=  100 MeV  deltaRudd Fluo
+
+hydrogen_G4DNAChargeIncrease:  for hydrogen SubType=57 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+DNADingfelderChargeIncreaseModel : Emin=    0 eV  Emax=  100 MeV
+
+Region <DefaultRegionForTheWorld> --  -- appears in <physWorld> world volume
+ This region is in the mass world.
+ Root logical volume(s) : logicWorld 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : G4_WATER 
+ Production cuts :   gamma 1 nm      e- 1 nm      e+ 1 nm  proton 1 nm 
+
+Region <DefaultRegionForParallelWorld> --  -- appears in <ChemistryWorld> world volume
+ This region is in the parallel world.
+ Root logical volume(s) : ChemistryWorld 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : G4_WATER 
+ Production cuts :   gamma 1 nm      e- 1 nm      e+ 1 nm  proton 1 nm 
+
+========= Table of registered couples ============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  1 nm     e-  1 nm     e+  1 nm  proton 1 nm 
+ Energy thresholds :  gamma  100 eV     e-  100 eV     e+  100 eV  proton 0.1 eV 
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+    DefaultRegionForParallelWorld
+
+==================================================================
+
+Start closing geometry.
+G4GeometryManager::ReportVoxelStats -- Voxel Statistics
+
+    Total memory consumed for geometry optimisation:   2913 kByte
+    Total CPU time elapsed for geometry optimisation: 6.3 seconds
+
+    Voxelisation: top CPU users:
+    Percent   Total CPU    System CPU       Memory  Volume
+    -------   ----------   ----------     --------  ----------
+      99.05         6.25         0.01         2914k VoxelStraight_logic
+
+    Voxelisation: top memory users:
+    Percent     Memory      Heads    Nodes   Pointers    Total CPU    Volume
+    -------   --------     ------   ------   --------   ----------    ----------
+     100.00       2913k     20884    21735      54614         6.25    VoxelStraight_logic
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+### Run 0 starts.
+
+----> Histogram file is opened in output.root
+Physics stage ends
+Number of chemical species involved in reactions = 13
+Reaction                                          Reaction Rate [dm3/(mol*s)]   Interaction Range for chosen reaction model [nm]
+------------------------------------------------------------------------------------------------------------------------------------
+H3O^1 + e_aq^-1 -> H^0                            2.11e+10                      0.200589
+------------------------------------------------------------------------------------------------------------------------------------
+H3O^1 + OH^-1 -> No product                       1.43e+11                      1.34973
+------------------------------------------------------------------------------------------------------------------------------------
+H3O^1 + Histone^0 -> Histone^0                    0                             2.4961
+------------------------------------------------------------------------------------------------------------------------------------
+OH^-1 + Histone^0 -> Histone^0                    0                             2.4958
+------------------------------------------------------------------------------------------------------------------------------------
+OH^0 + e_aq^-1 -> OH^-1                           2.95e+10                      0.506256
+------------------------------------------------------------------------------------------------------------------------------------
+OH^0 + OH^0 -> H2O2^0                             4.4e+09                       0.207651
+------------------------------------------------------------------------------------------------------------------------------------
+OH^0 + H^0 -> No product                          1.44e+10                      0.194167
+------------------------------------------------------------------------------------------------------------------------------------
+OH^0 + Deoxyribose^0 -> Damaged_Deoxyribose^0     1.8e+09                       0.0849481
+------------------------------------------------------------------------------------------------------------------------------------
+OH^0 + Adenine^0 -> Damaged_Adenine^0             6.1e+09                       0.28788
+------------------------------------------------------------------------------------------------------------------------------------
+OH^0 + Guanine^0 -> Damaged_Guanine^0             9.2e+09                       0.434179
+------------------------------------------------------------------------------------------------------------------------------------
+OH^0 + Thymine^0 -> Damaged_Thymine^0             6.4e+09                       0.302038
+------------------------------------------------------------------------------------------------------------------------------------
+OH^0 + Cytosine^0 -> Damaged_Cytosine^0           6.1e+09                       0.28788
+------------------------------------------------------------------------------------------------------------------------------------
+OH^0 + Histone^0 -> Histone^0                     0                             2.4958
+------------------------------------------------------------------------------------------------------------------------------------
+e_aq^-1 + e_aq^-1 -> OH^-1 + OH^-1 + H_2^0        5e+09                         0.134838
+------------------------------------------------------------------------------------------------------------------------------------
+e_aq^-1 + H^0 -> OH^-1 + H_2^0                    2.65e+10                      0.294265
+------------------------------------------------------------------------------------------------------------------------------------
+e_aq^-1 + H2O2^0 -> OH^-1 + OH^0                  1.41e+10                      0.295745
+------------------------------------------------------------------------------------------------------------------------------------
+e_aq^-1 + Deoxyribose^0 -> Damaged_Deoxyribose^0  1e+07                         0.000269677
+------------------------------------------------------------------------------------------------------------------------------------
+e_aq^-1 + Adenine^0 -> Damaged_Adenine^0          9e+09                         0.242709
+------------------------------------------------------------------------------------------------------------------------------------
+e_aq^-1 + Guanine^0 -> Damaged_Guanine^0          1.4e+10                       0.377547
+------------------------------------------------------------------------------------------------------------------------------------
+e_aq^-1 + Thymine^0 -> Damaged_Thymine^0          1.8e+10                       0.485418
+------------------------------------------------------------------------------------------------------------------------------------
+e_aq^-1 + Cytosine^0 -> Damaged_Cytosine^0        1.3e+10                       0.350579
+------------------------------------------------------------------------------------------------------------------------------------
+e_aq^-1 + Histone^0 -> Histone^0                  0                             2.63
+------------------------------------------------------------------------------------------------------------------------------------
+H^0 + H^0 -> H_2^0                                1.2e+10                       0.226528
+------------------------------------------------------------------------------------------------------------------------------------
+H^0 + Deoxyribose^0 -> Damaged_Deoxyribose^0      2.9e+07                       0.000547443
+------------------------------------------------------------------------------------------------------------------------------------
+H^0 + Adenine^0 -> Damaged_Adenine^0              1e+08                         0.00188774
+------------------------------------------------------------------------------------------------------------------------------------
+H^0 + Thymine^0 -> Damaged_Thymine^0              5.7e+08                       0.0107601
+------------------------------------------------------------------------------------------------------------------------------------
+H^0 + Cytosine^0 -> Damaged_Cytosine^0            9.2e+07                       0.00173672
+------------------------------------------------------------------------------------------------------------------------------------
+H^0 + Histone^0 -> Histone^0                      0                             2.45
+------------------------------------------------------------------------------------------------------------------------------------
+H_2^0 + Histone^0 -> Histone^0                    0                             2.4958
+------------------------------------------------------------------------------------------------------------------------------------
+H2O2^0 + Histone^0 -> Histone^0                   0                             2.7
+------------------------------------------------------------------------------------------------------------------------------------
+DNAMolecularStepByStepModel will be used
+*** G4Scheduler starts processing 
+At time :       1 ps Reaction : OH^0 (-14536) + OH^0 (-14629) -> H2O2^0 (-14639)
+At time :       1 ps Reaction : OH^0 (-14574) + OH^0 (-14617) -> H2O2^0 (-14640)
+At time :       1 ps Reaction : OH^0 (-14591) + Guanine^0 (-2627) -> Damaged_Guanine^0 (-14641)
+At time :       1 ps Reaction : OH^0 (-14587) + Cytosine^0 (-2932) -> Damaged_Cytosine^0 (-14642)
+At time :       1 ps Reaction : OH^0 (-14573) + OH^0 (-14528) -> H2O2^0 (-14643)
+At time :       1 ps Reaction : OH^0 (-14540) + e_aq^-1 (-89) -> OH^-1 (-14644)
+At time :       1 ps Reaction : OH^-1 (-14644) + H3O^1 (-14556) -> No product
+At time :    1.35 ps Reaction : OH^0 (-14565) + OH^0 (-14564) -> H2O2^0 (-14645)
+At time :    1.35 ps Reaction : Cytosine^0 (-2636) + OH^0 (-14533) -> Damaged_Cytosine^0 (-14646)
+At time :    2.05 ps Reaction : OH^0 (-14578) + OH^0 (-14623) -> H2O2^0 (-14647)
+At time :    2.05 ps Reaction : Guanine^0 (-2955) + e_aq^-1 (-14535) -> Damaged_Guanine^0 (-14648)
+At time :    4.15 ps Reaction : OH^0 (-14593) + OH^0 (-14627) -> H2O2^0 (-14649)
+At time :    4.85 ps Reaction : H^0 (-14600) + OH^0 (-14604) -> No product
+At time :     8.7 ps Reaction : OH^0 (-14538) + OH^0 (-14544) -> H2O2^0 (-14650)
+At time :  14.161 ps Reaction : OH^0 (-14589) + Adenine^0 (-2623) -> Damaged_Adenine^0 (-14651)
+At time :  17.161 ps Reaction : OH^0 (-14569) + OH^0 (-14613) -> H2O2^0 (-14652)
+At time :  20.161 ps Reaction : H^0 (-14559) + OH^0 (-14611) -> No product
+At time :  28.161 ps Reaction : H^0 (-14590) + Deoxyribose^0 (-2586) -> Damaged_Deoxyribose^0 (-14653)
+At time :  33.161 ps Reaction : H^0 (-14539) + OH^0 (-14543) -> No product
+At time :  39.161 ps Reaction : OH^0 (-14546) + Deoxyribose^0 (-7415) -> Damaged_Deoxyribose^0 (-14654)
+At time :  40.161 ps Reaction : H^0 (-14583) + OH^0 (-14524) -> No product
+At time :  41.161 ps Reaction : OH^0 (-14586) + OH^0 (-14585) -> H2O2^0 (-14655)
+At time :  48.161 ps Reaction : Histone^0 (-7255) + H^0 (-14624) -> Histone^0 (-14656)
+At time :  54.326 ps Reaction : H^0 (-14581) + H^0 (-14620) -> H_2^0 (-14657)
+At time :  56.326 ps Reaction : OH^0 (-14547) + e_aq^-1 (-112) -> OH^-1 (-14658)
+At time :  95.386 ps Reaction : OH^0 (-14633) + OH^0 (-14615) -> H2O2^0 (-14659)
+At time :   119.2 ps Reaction : H^0 (-14567) + H^0 (-14618) -> H_2^0 (-14660)
+At time :   140.2 ps Reaction : H^0 (-14594) + Thymine^0 (-2608) -> Damaged_Thymine^0 (-14661)
+At time :   215.2 ps Reaction : OH^0 (-14576) + Guanine^0 (-7429) -> Damaged_Guanine^0 (-14662)
+At time :  262.05 ps Reaction : OH^0 (-14557) + H^0 (-14610) -> No product
+At time :   357.1 ps Reaction : Histone^0 (-14656) + H^0 (-14577) -> Histone^0 (-14663)
+At time :   360.1 ps Reaction : H^0 (-14592) + OH^0 (-14530) -> No product
+At time :  455.83 ps Reaction : Deoxyribose^0 (-7724) + H^0 (-14616) -> Damaged_Deoxyribose^0 (-14664)
+At time :  497.92 ps Reaction : OH^0 (-14570) + Histone^0 (-14663) -> Histone^0 (-14665)
+At time :  533.04 ps Reaction : OH^0 (-14548) + Histone^0 (-2449) -> Histone^0 (-14666)
+At time :  555.98 ps Reaction : Deoxyribose^0 (-13634) + H^0 (-14614) -> Damaged_Deoxyribose^0 (-14667)
+At time :  564.98 ps Reaction : Thymine^0 (-2928) + e_aq^-1 (-14532) -> Damaged_Thymine^0 (-14668)
+At time :  619.01 ps Reaction : Histone^0 (-14665) + OH^0 (-14621) -> Histone^0 (-14669)
+At time :  752.23 ps Reaction : Adenine^0 (-2479) + H^0 (-14628) -> Damaged_Adenine^0 (-14670)
+At time :  1.0517 ns Reaction : H^0 (-14549) + Histone^0 (-14666) -> Histone^0 (-14671)
+At time :  1.0517 ns Reaction : H2O2^0 (-14649) + Histone^0 (-14671) -> Histone^0 (-14672)
+At time :  1.1317 ns Reaction : OH^0 (-14566) + e_aq^-1 (-14526) -> OH^-1 (-14673)
+At time :  1.1417 ns Reaction : OH^0 (-14608) + H^0 (-14630) -> No product
+At time :  1.1817 ns Reaction : H^0 (-14602) + Histone^0 (-1648) -> Histone^0 (-14674)
+At time :  1.2317 ns Reaction : H2O2^0 (-14639) + Histone^0 (-14672) -> Histone^0 (-14675)
+At time :  1.3817 ns Reaction : OH^0 (-14582) + OH^0 (-14572) -> H2O2^0 (-14676)
+At time :  1.4517 ns Reaction : H_2^0 (-14584) + Histone^0 (-14669) -> Histone^0 (-14677)
+At time :  1.4717 ns Reaction : Histone^0 (-8056) + H_2^0 (-14660) -> Histone^0 (-14678)
+At time :   1.612 ns Reaction : Deoxyribose^0 (-9009) + OH^0 (-14529) -> Damaged_Deoxyribose^0 (-14679)
+At time :   1.792 ns Reaction : H2O2^0 (-14659) + Histone^0 (-14677) -> Histone^0 (-14680)
+At time :   1.862 ns Reaction : OH^0 (-14552) + Histone^0 (-14675) -> Histone^0 (-14681)
+At time :  2.1251 ns Reaction : OH^0 (-14562) + Thymine^0 (-12224) -> Damaged_Thymine^0 (-14682)
+At time :  2.2851 ns Reaction : H^0 (-14579) + Deoxyribose^0 (-2400) -> Damaged_Deoxyribose^0 (-14683)
+At time :  2.3151 ns Reaction : OH^0 (-14609) + H^0 (-14612) -> No product
+At time :  2.3451 ns Reaction : OH^0 (-14638) + Guanine^0 (-7701) -> Damaged_Guanine^0 (-14684)
+At time :  2.3951 ns Reaction : Adenine^0 (-2655) + OH^0 (-14632) -> Damaged_Adenine^0 (-14685)
+*** G4Scheduler ends at time : 2.5 ns
+___________________________________
+Physics stage ends
+*** G4Scheduler starts processing 
+At time :       1 ps Reaction : OH^0 (-14566) + OH^0 (-14568) -> H2O2^0 (-14646)
+At time :       1 ps Reaction : OH^0 (-14548) + OH^0 (-14543) -> H2O2^0 (-14647)
+At time :    1.35 ps Reaction : OH^0 (-14570) + OH^0 (-14621) -> H2O2^0 (-14648)
+At time :    4.15 ps Reaction : OH^0 (-14545) + OH^0 (-14593) -> H2O2^0 (-14649)
+At time :    4.85 ps Reaction : OH^0 (-14595) + OH^0 (-14550) -> H2O2^0 (-14650)
+At time :    5.55 ps Reaction : OH^0 (-14625) + H^0 (-14626) -> No product
+At time :     7.3 ps Reaction : OH^0 (-14617) + H^0 (-14618) -> No product
+At time :     9.4 ps Reaction : OH^0 (-14556) + OH^0 (-14633) -> H2O2^0 (-14651)
+At time :  12.267 ps Reaction : OH^0 (-14607) + OH^0 (-14609) -> H2O2^0 (-14652)
+At time :  13.267 ps Reaction : OH^0 (-14644) + OH^0 (-14645) -> H2O2^0 (-14653)
+At time :  37.699 ps Reaction : OH^0 (-14603) + OH^0 (-14604) -> H2O2^0 (-14654)
+At time :  51.856 ps Reaction : OH^0 (-14641) + OH^0 (-14535) -> H2O2^0 (-14655)
+At time :  60.486 ps Reaction : OH^0 (-14529) + e_aq^-1 (-14531) -> OH^-1 (-14656)
+At time :  60.486 ps Reaction : H3O^1 (-14530) + OH^-1 (-14656) -> No product
+At time :  104.93 ps Reaction : OH^0 (-14536) + OH^0 (-14586) -> H2O2^0 (-14657)
+At time :  164.93 ps Reaction : H^0 (-14571) + OH^0 (-14574) -> No product
+At time :  170.93 ps Reaction : OH^0 (-14597) + OH^0 (-14552) -> H2O2^0 (-14658)
+At time :  188.98 ps Reaction : OH^0 (-14612) + H^0 (-14563) -> No product
+At time :  209.98 ps Reaction : H^0 (-14555) + OH^0 (-14636) -> No product
+At time :  290.98 ps Reaction : OH^0 (-14592) + OH^0 (-14591) -> H2O2^0 (-14659)
+At time :  314.98 ps Reaction : Histone^0 (-2448) + H3O^1 (-14637) -> Histone^0 (-14660)
+At time :  427.08 ps Reaction : H^0 (-14630) + H^0 (-14544) -> H_2^0 (-14661)
+At time :  433.08 ps Reaction : H^0 (-14642) + Deoxyribose^0 (-10595) -> Damaged_Deoxyribose^0 (-14662)
+At time :  504.54 ps Reaction : OH^0 (-14623) + e_aq^-1 (-97) -> OH^-1 (-14663)
+At time :  604.14 ps Reaction : OH^0 (-14532) + OH^0 (-14558) -> H2O2^0 (-14664)
+At time :   711.8 ps Reaction : OH^0 (-14619) + e_aq^-1 (-96) -> OH^-1 (-14665)
+At time :   723.8 ps Reaction : Adenine^0 (-948) + H^0 (-14561) -> Damaged_Adenine^0 (-14666)
+At time :  811.14 ps Reaction : H^0 (-14589) + Deoxyribose^0 (-8500) -> Damaged_Deoxyribose^0 (-14667)
+At time :  820.17 ps Reaction : H^0 (-14596) + Deoxyribose^0 (-7411) -> Damaged_Deoxyribose^0 (-14668)
+At time :  891.99 ps Reaction : OH^0 (-14579) + H^0 (-14585) -> No product
+At time :  906.99 ps Reaction : OH^0 (-14629) + OH^0 (-14549) -> H2O2^0 (-14669)
+At time :  1.3222 ns Reaction : Guanine^0 (-1288) + e_aq^-1 (-114) -> Damaged_Guanine^0 (-14670)
+At time :  1.3822 ns Reaction : H^0 (-14622) + Histone^0 (-12861) -> Histone^0 (-14671)
+At time :  1.3922 ns Reaction : OH^0 (-14606) + OH^0 (-14562) -> H2O2^0 (-14672)
+At time :  1.4422 ns Reaction : H^0 (-14587) + OH^0 (-14584) -> No product
+At time :  1.4823 ns Reaction : OH^0 (-14610) + Thymine^0 (-716) -> Damaged_Thymine^0 (-14673)
+At time :  1.5523 ns Reaction : H^0 (-14620) + Histone^0 (-11259) -> Histone^0 (-14674)
+At time :  1.7123 ns Reaction : H^0 (-14581) + H^0 (-14624) -> H_2^0 (-14675)
+At time :  1.7623 ns Reaction : OH^0 (-14541) + Guanine^0 (-13828) -> Damaged_Guanine^0 (-14676)
+At time :  1.7823 ns Reaction : OH^0 (-14523) + Guanine^0 (-10111) -> Damaged_Guanine^0 (-14677)
+At time :  1.8523 ns Reaction : e_aq^-1 (-14528) + Adenine^0 (-1781) -> Damaged_Adenine^0 (-14678)
+At time :  1.8923 ns Reaction : H^0 (-14533) + Histone^0 (-3249) -> Histone^0 (-14679)
+At time :  2.0423 ns Reaction : H^0 (-14565) + Deoxyribose^0 (-13401) -> Damaged_Deoxyribose^0 (-14680)
+At time :  2.0523 ns Reaction : Deoxyribose^0 (-1291) + H^0 (-14559) -> Damaged_Deoxyribose^0 (-14681)
+At time :  2.2223 ns Reaction : Histone^0 (-5652) + H_2^0 (-14547) -> Histone^0 (-14682)
+At time :  2.4423 ns Reaction : H^0 (-14573) + Histone^0 (-13662) -> Histone^0 (-14683)
+*** G4Scheduler ends at time : 2.5 ns
+___________________________________
+ Run terminated.
+Run Summary
+  Number of events processed : 2
+  User=144.970000s Real=156.442892s Sys=0.150000s
+
+----> Histograms are saved
+0 events have been kept for refreshing and/or reviewing.
+  "/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+Graphics systems deleted.
+Visualization Manager deleting...
+G4 kernel has come to Quit state.
+UserDetectorConstruction deleted.
+UserPhysicsList deleted.
+UserActionInitialization deleted.
+UserRunAction deleted.
+UserPrimaryGenerator deleted.
+RunManager is deleting RunManagerKernel.
+EventManager deleted.
+Units table cleared.
+TransportationManager deleted.
+Total navigation history collections cleaned: 29067
+================== Deleting memory pools ===================
+Pool ID '20G4NavigationLevelRep', size : 27.9 MB
+Pool ID '19G4ElectronOccupancy', size : 0.000961 MB
+Pool ID '15G4CountedObjectIvE', size : 0.67 MB
+Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+Pool ID '7G4Event', size : 0.000961 MB
+Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+Pool ID '17G4DynamicParticle', size : 2.34 MB
+Pool ID '7G4Track', size : 4.67 MB
+Pool ID '18G4TouchableHistory', size : 1.75 MB
+Pool ID '10G4Molecule', size : 1.4 MB
+Pool ID '8G4KDTree', size : 0.000961 MB
+Pool ID '8G4KDNodeI4G4ITE', size : 1 MB
+Pool ID '14G4KDTreeResult', size : 0.000961 MB
+Pool ID '8G4KDNodeI10G4MoleculeE', size : 0.000961 MB
+Number of memory pools allocated: 15 of which, static: 0
+Dynamic pools deleted: 15 / Total memory freed: 40 MB
+============================================================
+G4Allocator objects are deleted.
+UImanager deleted.
+StateManager deleted.
+RunManagerKernel is deleted. Good bye :)
