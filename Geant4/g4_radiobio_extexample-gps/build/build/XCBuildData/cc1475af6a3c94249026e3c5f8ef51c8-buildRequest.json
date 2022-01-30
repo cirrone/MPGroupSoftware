@@ -1,0 +1,67 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "72789673d79dae0c3bbc7d197b0151315ae3b2372b3972d72d64aba8b310a5db"
+    },
+    {
+      "guid" : "72789673d79dae0c3bbc7d197b0151318529bf683285037ab8c1a37972a024b2"
+    },
+    {
+      "guid" : "72789673d79dae0c3bbc7d197b015131f052bc37174b30d858d8993333713926"
+    },
+    {
+      "guid" : "72789673d79dae0c3bbc7d197b01513166895af665b9e5694726c877b5d3d0b2"
+    }
+  ],
+  "containerPath" : "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build/test.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx12.1",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/cirrone/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/cirrone/Library/Developer/Xcode/DerivedData/test-bbjbguwsrtqqgegscvikkxxszvsp/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/cirrone/Library/Developer/Xcode/DerivedData/test-bbjbguwsrtqqgegscvikkxxszvsp/Index/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

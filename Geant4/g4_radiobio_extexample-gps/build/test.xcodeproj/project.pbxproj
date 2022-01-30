@@ -1,0 +1,1043 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		66E777B723724880A48C2E76 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CD4740C9D50B4ED7889F1E09 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				C1D7972DA01CA142B9F734CF /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		7596A3FDD02645D99ACF5D6C /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 183EFF9425CF42B9999CB27E /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				6B5DADC057B74D65AB15C764 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		91C98AEE24C6480197D0DE54 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8C60F98D47154BE8B98EA373 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				9974F02CE0B1A51584CD554E /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				36D2631F23D04C928FF50C43 /* PBXTargetDependency */,
+				ADFD514BA88347A295EC23B9 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1522A5F15DCB410E845C19D3 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RunAction.cc */ = {isa = PBXBuildFile; fileRef = D489602FF208468BBA0AC150 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RunAction.cc */; };
+		1576ED4435BB46089766FF4D /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = C1A974A5761F4AD9BB926E7E /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/CMakeLists.txt */; };
+		1F976992D79C4CA38F3B4FAE /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/ActionInitialization.cc */ = {isa = PBXBuildFile; fileRef = FE5CB6142E4C4CA9B4D8F5FC /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/ActionInitialization.cc */; };
+		244D1839EE7C4FD4BE0B713B /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/Analysis.hh */ = {isa = PBXBuildFile; fileRef = 16492C3C9674482B90224E14 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/Analysis.hh */; };
+		265CD9C5A1B446BBA1EA5E89 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/LETAccumulable.hh */ = {isa = PBXBuildFile; fileRef = B6BCB145D3A1451798FDA4AB /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/LETAccumulable.hh */; };
+		2905E0C956454E06A7EAFD37 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DetectorConstruction.cc */ = {isa = PBXBuildFile; fileRef = D6F4E42A108441BF9AA20C16 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DetectorConstruction.cc */; };
+		2A06DE95C0714B8B86960896 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/PhysicsList.hh */ = {isa = PBXBuildFile; fileRef = 898852A4F47E47E2800CA2DA /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/PhysicsList.hh */; };
+		2C314D73B1D3448994A379DF /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VoxelizedSensitiveDetector.hh */ = {isa = PBXBuildFile; fileRef = 8EB69AB8DA574E6D9AF4CFF0 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VoxelizedSensitiveDetector.hh */; };
+		3C6097CB6F7C4B8394512A05 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DetectorMessenger.cc */ = {isa = PBXBuildFile; fileRef = 9A1035B6C4BA4B6CB30CAED4 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DetectorMessenger.cc */; };
+		3F245CE092AD4F6AA71A6076 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioManager.cc */ = {isa = PBXBuildFile; fileRef = D467AE3B35BF4A42AABA1B2A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioManager.cc */; };
+		477B9F4E4ADF47859E1C6CBC /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VoxelizedSensitiveDetectorMessenger.hh */ = {isa = PBXBuildFile; fileRef = 647229D790FB42C589D9A8EB /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VoxelizedSensitiveDetectorMessenger.hh */; };
+		4A0E09C5C10D4AE0B8912192 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LETAccumulable.cc */ = {isa = PBXBuildFile; fileRef = E5729AFF5B2B4CC9A0253555 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LETAccumulable.cc */; };
+		4E5A5609052547E491D9C862 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DoseAccumulable.hh */ = {isa = PBXBuildFile; fileRef = DB3C6CB265DC4308B395AFC8 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DoseAccumulable.hh */; };
+		4FC789D9962D404585261DDA /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LETMessenger.cc */ = {isa = PBXBuildFile; fileRef = 32C02C81C28349A3AE6FE7D3 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LETMessenger.cc */; };
+		52945FBF5A4643398CB07D77 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PhysicsList.cc */ = {isa = PBXBuildFile; fileRef = CB3502C6817545088F23E3C6 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PhysicsList.cc */; };
+		54F8DA6BEB0C4C1D862D5F14 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VRadiobiologicalQuantity.hh */ = {isa = PBXBuildFile; fileRef = 8468A345C36C49F4A89A538A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VRadiobiologicalQuantity.hh */; };
+		58A9CD20C2B74FB68DA372B8 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBE.cc */ = {isa = PBXBuildFile; fileRef = 4FA1115648724AFFAAB95B2F /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBE.cc */; };
+		595B055C54E64383A46DAB9D /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/LETMessenger.hh */ = {isa = PBXBuildFile; fileRef = 4EFA051B3F614FA8B2E56118 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/LETMessenger.hh */; };
+		5A6FCD91E0014E5C858C0177 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RadioBioManager.hh */ = {isa = PBXBuildFile; fileRef = 636DE0D1372F4071A4BA5AA6 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RadioBioManager.hh */; };
+		5AA42D9C80D341F591D14341 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/PrimaryGeneratorAction.hh */ = {isa = PBXBuildFile; fileRef = EAE4062D94C346C68D4B9ED1 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/PrimaryGeneratorAction.hh */; };
+		5B2F07AC7A16464CA6051F13 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PhysicsListMessenger.cc */ = {isa = PBXBuildFile; fileRef = 9171866B843049B294A7534C /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PhysicsListMessenger.cc */; };
+		5CA8A5A987AC4AC993614E5A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VRadiobiologicalAccumulable.hh */ = {isa = PBXBuildFile; fileRef = B5EBAE866AB540E1841C16D5 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VRadiobiologicalAccumulable.hh */; };
+		5E9FCF3A76D8468E8AE94F1D /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LET.cc */ = {isa = PBXBuildFile; fileRef = 97FE6BF31966441F8378510C /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LET.cc */; };
+		5EF62212190A4DFDB5B453B7 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DetectorConstruction.hh */ = {isa = PBXBuildFile; fileRef = 56D8597EE55E424C9E66034A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DetectorConstruction.hh */; };
+		6048563583F24EC394B2EEDD /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RadioBioHit.hh */ = {isa = PBXBuildFile; fileRef = CCF0620A85D5448DAF760B32 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RadioBioHit.hh */; };
+		65240367A8FD49458B6510F9 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RBEAccumulable.hh */ = {isa = PBXBuildFile; fileRef = 366FBC77B2E84E0BB8059EF9 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RBEAccumulable.hh */; };
+		67E1676BD860485AB90B8942 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioHit.cc */ = {isa = PBXBuildFile; fileRef = 02B2EE767DE7428BAB2CAB17 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioHit.cc */; };
+		6E707B57499240859DC035D9 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DetectorMessenger.hh */ = {isa = PBXBuildFile; fileRef = 61E08FF75DD64DFC957A6773 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DetectorMessenger.hh */; };
+		6E87DC5B544F42529FD1EE72 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBEMessenger.cc */ = {isa = PBXBuildFile; fileRef = B8BCD835F8BA4A3AA7A18A23 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBEMessenger.cc */; };
+		7A5FBEC74E3F4F43AC9E0542 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DoseMessenger.cc */ = {isa = PBXBuildFile; fileRef = E133AD54E235468187D52E36 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DoseMessenger.cc */; };
+		7CC5A89094134837942FF505 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/VoxelizedSensitiveDetector.cc */ = {isa = PBXBuildFile; fileRef = 2D24B4A9A814423FB728EBD9 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/VoxelizedSensitiveDetector.cc */; };
+		840FB4AFA3B44E769A844B7A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RadioBioSD.hh */ = {isa = PBXBuildFile; fileRef = 9F4E4A5361054172AB1E1D6C /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RadioBioSD.hh */; };
+		895E900CE1EF4CEFA23EE335 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/VoxelizedSensitiveDetectorMessenger.cc */ = {isa = PBXBuildFile; fileRef = CB70747A7594410BBF0A4625 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/VoxelizedSensitiveDetectorMessenger.cc */; };
+		912515B9ADFB436985AB0657 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/Dose.hh */ = {isa = PBXBuildFile; fileRef = 46B404D72BCA43FE9F888A29 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/Dose.hh */; };
+		934E75A5583B4739A64F2F37 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/Dose.cc */ = {isa = PBXBuildFile; fileRef = 1ECBD7C309C94F319B695B2A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/Dose.cc */; };
+		A63DD1936A6A420985741EBA /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RBE.hh */ = {isa = PBXBuildFile; fileRef = 4803FFCFEA144603914BC673 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RBE.hh */; };
+		ABFF6C269C394BBF9AB5AB11 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PrimaryGeneratorAction.cc */ = {isa = PBXBuildFile; fileRef = 31BB837A6F5D4AC3B9E2CA05 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PrimaryGeneratorAction.cc */; };
+		B5D4420F9A094B6380F3E04B /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DoseAccumulable.cc */ = {isa = PBXBuildFile; fileRef = FEA1C9AE56C3451492D40797 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DoseAccumulable.cc */; };
+		BF41E9B4528D4D53BAD48154 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/IonLet.hh */ = {isa = PBXBuildFile; fileRef = 2A76E5E8119D443084926043 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/IonLet.hh */; };
+		C04450213D0B49E08935C9F8 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBEAccumulable.cc */ = {isa = PBXBuildFile; fileRef = 023C0F5B7F7341D195DDB82C /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBEAccumulable.cc */; };
+		C9A16F4820A942F391F20157 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/IonLet.cc */ = {isa = PBXBuildFile; fileRef = 5F447571D37B432D995FDEF4 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/IonLet.cc */; };
+		CB021CE2EE8746E28C00BB4D /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/LET.hh */ = {isa = PBXBuildFile; fileRef = C67D15E05ECC4189A4E76C73 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/LET.hh */; };
+		CB23E02CB24A44F5937BC40A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DoseMessenger.hh */ = {isa = PBXBuildFile; fileRef = 12D4036B91F841A899D9A9F2 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DoseMessenger.hh */; };
+		DB8992E94C9A411A800CA536 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RBEMessenger.hh */ = {isa = PBXBuildFile; fileRef = EAD74ACC6E2446659E382B3A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RBEMessenger.hh */; };
+		E44D8BC84BA846DA86F4B42A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/test.cc */ = {isa = PBXBuildFile; fileRef = 2CF9A951AAF84BFA8022B1E6 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/test.cc */; };
+		E8F7C142C53B45B081A83EB1 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioSD.cc */ = {isa = PBXBuildFile; fileRef = 088B24503D6F47B69545FB12 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioSD.cc */; };
+		EB9E03DF36D14B2CB54B6976 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/PhysicsListMessenger.hh */ = {isa = PBXBuildFile; fileRef = 14F3C09D86AC42B3A406B56E /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/PhysicsListMessenger.hh */; };
+		F4FAAE593673464BBD52D5B9 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/ActionInitialization.hh */ = {isa = PBXBuildFile; fileRef = B27334ACEC9840F785ACDD63 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/ActionInitialization.hh */; };
+		F561377A595E4E3FAFC42352 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RunAction.hh */ = {isa = PBXBuildFile; fileRef = 4C8C13DC40D045F69D9D3784 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RunAction.hh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		1A796B9DF6F34DE99C29FEBC /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		1FC5945B4C3D44F180B66D73 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		A6DF6E76D3BA4B28AE7B7305 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		C665D032A92545BB8A796499 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		423B8AF976A84C7B980994D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EC74773F1DD4A55AFC78948 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66E777B723724880A48C2E76;
+			remoteInfo = ZERO_CHECK;
+		};
+		46081DD4213048309E337266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EC74773F1DD4A55AFC78948 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91C98AEE24C6480197D0DE54;
+			remoteInfo = ALL_BUILD;
+		};
+		8C23499CF2634A2DBACAE575 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EC74773F1DD4A55AFC78948 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF35C6D30273421E826376E8;
+			remoteInfo = test;
+		};
+		E2ED993B1BAF4BC9873BF468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EC74773F1DD4A55AFC78948 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66E777B723724880A48C2E76;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		023C0F5B7F7341D195DDB82C /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBEAccumulable.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RBEAccumulable.cc; path = src/RBEAccumulable.cc; sourceTree = SOURCE_ROOT; };
+		02B2EE767DE7428BAB2CAB17 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioHit.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RadioBioHit.cc; path = src/RadioBioHit.cc; sourceTree = SOURCE_ROOT; };
+		088B24503D6F47B69545FB12 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioSD.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RadioBioSD.cc; path = src/RadioBioSD.cc; sourceTree = SOURCE_ROOT; };
+		12D4036B91F841A899D9A9F2 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DoseMessenger.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = DoseMessenger.hh; path = include/DoseMessenger.hh; sourceTree = SOURCE_ROOT; };
+		14F3C09D86AC42B3A406B56E /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/PhysicsListMessenger.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = PhysicsListMessenger.hh; path = include/PhysicsListMessenger.hh; sourceTree = SOURCE_ROOT; };
+		16492C3C9674482B90224E14 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/Analysis.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Analysis.hh; path = include/Analysis.hh; sourceTree = SOURCE_ROOT; };
+		1ECBD7C309C94F319B695B2A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/Dose.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Dose.cc; path = src/Dose.cc; sourceTree = SOURCE_ROOT; };
+		2A76E5E8119D443084926043 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/IonLet.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = IonLet.hh; path = include/IonLet.hh; sourceTree = SOURCE_ROOT; };
+		2CF9A951AAF84BFA8022B1E6 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/test.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test.cc; path = test.cc; sourceTree = SOURCE_ROOT; };
+		2D24B4A9A814423FB728EBD9 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/VoxelizedSensitiveDetector.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = VoxelizedSensitiveDetector.cc; path = src/VoxelizedSensitiveDetector.cc; sourceTree = SOURCE_ROOT; };
+		31BB837A6F5D4AC3B9E2CA05 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PrimaryGeneratorAction.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PrimaryGeneratorAction.cc; path = src/PrimaryGeneratorAction.cc; sourceTree = SOURCE_ROOT; };
+		32C02C81C28349A3AE6FE7D3 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LETMessenger.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LETMessenger.cc; path = src/LETMessenger.cc; sourceTree = SOURCE_ROOT; };
+		366FBC77B2E84E0BB8059EF9 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RBEAccumulable.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = RBEAccumulable.hh; path = include/RBEAccumulable.hh; sourceTree = SOURCE_ROOT; };
+		46B404D72BCA43FE9F888A29 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/Dose.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Dose.hh; path = include/Dose.hh; sourceTree = SOURCE_ROOT; };
+		4803FFCFEA144603914BC673 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RBE.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = RBE.hh; path = include/RBE.hh; sourceTree = SOURCE_ROOT; };
+		4C8C13DC40D045F69D9D3784 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RunAction.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = RunAction.hh; path = include/RunAction.hh; sourceTree = SOURCE_ROOT; };
+		4EFA051B3F614FA8B2E56118 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/LETMessenger.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = LETMessenger.hh; path = include/LETMessenger.hh; sourceTree = SOURCE_ROOT; };
+		4FA1115648724AFFAAB95B2F /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBE.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RBE.cc; path = src/RBE.cc; sourceTree = SOURCE_ROOT; };
+		56D8597EE55E424C9E66034A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DetectorConstruction.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = DetectorConstruction.hh; path = include/DetectorConstruction.hh; sourceTree = SOURCE_ROOT; };
+		5F447571D37B432D995FDEF4 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/IonLet.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IonLet.cc; path = src/IonLet.cc; sourceTree = SOURCE_ROOT; };
+		61E08FF75DD64DFC957A6773 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DetectorMessenger.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = DetectorMessenger.hh; path = include/DetectorMessenger.hh; sourceTree = SOURCE_ROOT; };
+		636DE0D1372F4071A4BA5AA6 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RadioBioManager.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = RadioBioManager.hh; path = include/RadioBioManager.hh; sourceTree = SOURCE_ROOT; };
+		647229D790FB42C589D9A8EB /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VoxelizedSensitiveDetectorMessenger.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = VoxelizedSensitiveDetectorMessenger.hh; path = include/VoxelizedSensitiveDetectorMessenger.hh; sourceTree = SOURCE_ROOT; };
+		8468A345C36C49F4A89A538A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VRadiobiologicalQuantity.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = VRadiobiologicalQuantity.hh; path = include/VRadiobiologicalQuantity.hh; sourceTree = SOURCE_ROOT; };
+		898852A4F47E47E2800CA2DA /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/PhysicsList.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = PhysicsList.hh; path = include/PhysicsList.hh; sourceTree = SOURCE_ROOT; };
+		8EB69AB8DA574E6D9AF4CFF0 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VoxelizedSensitiveDetector.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = VoxelizedSensitiveDetector.hh; path = include/VoxelizedSensitiveDetector.hh; sourceTree = SOURCE_ROOT; };
+		9171866B843049B294A7534C /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PhysicsListMessenger.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PhysicsListMessenger.cc; path = src/PhysicsListMessenger.cc; sourceTree = SOURCE_ROOT; };
+		97FE6BF31966441F8378510C /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LET.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LET.cc; path = src/LET.cc; sourceTree = SOURCE_ROOT; };
+		9A1035B6C4BA4B6CB30CAED4 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DetectorMessenger.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetectorMessenger.cc; path = src/DetectorMessenger.cc; sourceTree = SOURCE_ROOT; };
+		9F4E4A5361054172AB1E1D6C /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RadioBioSD.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = RadioBioSD.hh; path = include/RadioBioSD.hh; sourceTree = SOURCE_ROOT; };
+		B27334ACEC9840F785ACDD63 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/ActionInitialization.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ActionInitialization.hh; path = include/ActionInitialization.hh; sourceTree = SOURCE_ROOT; };
+		B5EBAE866AB540E1841C16D5 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VRadiobiologicalAccumulable.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = VRadiobiologicalAccumulable.hh; path = include/VRadiobiologicalAccumulable.hh; sourceTree = SOURCE_ROOT; };
+		B6BCB145D3A1451798FDA4AB /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/LETAccumulable.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = LETAccumulable.hh; path = include/LETAccumulable.hh; sourceTree = SOURCE_ROOT; };
+		B8BCD835F8BA4A3AA7A18A23 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBEMessenger.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RBEMessenger.cc; path = src/RBEMessenger.cc; sourceTree = SOURCE_ROOT; };
+		C1A974A5761F4AD9BB926E7E /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C67D15E05ECC4189A4E76C73 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/LET.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = LET.hh; path = include/LET.hh; sourceTree = SOURCE_ROOT; };
+		C80CAABD270F437BAF9B9808 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CB3502C6817545088F23E3C6 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PhysicsList.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PhysicsList.cc; path = src/PhysicsList.cc; sourceTree = SOURCE_ROOT; };
+		CB70747A7594410BBF0A4625 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/VoxelizedSensitiveDetectorMessenger.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = VoxelizedSensitiveDetectorMessenger.cc; path = src/VoxelizedSensitiveDetectorMessenger.cc; sourceTree = SOURCE_ROOT; };
+		CCF0620A85D5448DAF760B32 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RadioBioHit.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = RadioBioHit.hh; path = include/RadioBioHit.hh; sourceTree = SOURCE_ROOT; };
+		D467AE3B35BF4A42AABA1B2A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioManager.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RadioBioManager.cc; path = src/RadioBioManager.cc; sourceTree = SOURCE_ROOT; };
+		D489602FF208468BBA0AC150 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RunAction.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RunAction.cc; path = src/RunAction.cc; sourceTree = SOURCE_ROOT; };
+		D6F4E42A108441BF9AA20C16 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DetectorConstruction.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetectorConstruction.cc; path = src/DetectorConstruction.cc; sourceTree = SOURCE_ROOT; };
+		DB3C6CB265DC4308B395AFC8 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DoseAccumulable.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = DoseAccumulable.hh; path = include/DoseAccumulable.hh; sourceTree = SOURCE_ROOT; };
+		DC276A81E7554F1CA0D30F9A /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		E133AD54E235468187D52E36 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DoseMessenger.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DoseMessenger.cc; path = src/DoseMessenger.cc; sourceTree = SOURCE_ROOT; };
+		E5729AFF5B2B4CC9A0253555 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LETAccumulable.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LETAccumulable.cc; path = src/LETAccumulable.cc; sourceTree = SOURCE_ROOT; };
+		EAD74ACC6E2446659E382B3A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RBEMessenger.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = RBEMessenger.hh; path = include/RBEMessenger.hh; sourceTree = SOURCE_ROOT; };
+		EAE4062D94C346C68D4B9ED1 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/PrimaryGeneratorAction.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = PrimaryGeneratorAction.hh; path = include/PrimaryGeneratorAction.hh; sourceTree = SOURCE_ROOT; };
+		FE5CB6142E4C4CA9B4D8F5FC /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/ActionInitialization.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ActionInitialization.cc; path = src/ActionInitialization.cc; sourceTree = SOURCE_ROOT; };
+		FEA1C9AE56C3451492D40797 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DoseAccumulable.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DoseAccumulable.cc; path = src/DoseAccumulable.cc; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		490EB68A577848B48A8E1DDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		422FF5FE05D0449EB95544A7 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE5CB6142E4C4CA9B4D8F5FC /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/ActionInitialization.cc */,
+				D6F4E42A108441BF9AA20C16 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DetectorConstruction.cc */,
+				9A1035B6C4BA4B6CB30CAED4 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DetectorMessenger.cc */,
+				1ECBD7C309C94F319B695B2A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/Dose.cc */,
+				FEA1C9AE56C3451492D40797 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DoseAccumulable.cc */,
+				E133AD54E235468187D52E36 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DoseMessenger.cc */,
+				5F447571D37B432D995FDEF4 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/IonLet.cc */,
+				97FE6BF31966441F8378510C /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LET.cc */,
+				E5729AFF5B2B4CC9A0253555 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LETAccumulable.cc */,
+				32C02C81C28349A3AE6FE7D3 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LETMessenger.cc */,
+				CB3502C6817545088F23E3C6 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PhysicsList.cc */,
+				9171866B843049B294A7534C /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PhysicsListMessenger.cc */,
+				31BB837A6F5D4AC3B9E2CA05 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PrimaryGeneratorAction.cc */,
+				4FA1115648724AFFAAB95B2F /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBE.cc */,
+				023C0F5B7F7341D195DDB82C /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBEAccumulable.cc */,
+				B8BCD835F8BA4A3AA7A18A23 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBEMessenger.cc */,
+				02B2EE767DE7428BAB2CAB17 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioHit.cc */,
+				D467AE3B35BF4A42AABA1B2A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioManager.cc */,
+				088B24503D6F47B69545FB12 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioSD.cc */,
+				D489602FF208468BBA0AC150 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RunAction.cc */,
+				2D24B4A9A814423FB728EBD9 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/VoxelizedSensitiveDetector.cc */,
+				CB70747A7594410BBF0A4625 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/VoxelizedSensitiveDetectorMessenger.cc */,
+				2CF9A951AAF84BFA8022B1E6 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/test.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		463052C399DE4FC0B4ADBDB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC276A81E7554F1CA0D30F9A /* test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48EE8725A3D1446F9400A2DA /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		54B3344D93B14B2D90F19497 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				422FF5FE05D0449EB95544A7 /* Source Files */,
+				90EA53C887584C8F803D4A75 /* Header Files */,
+				C1A974A5761F4AD9BB926E7E /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/CMakeLists.txt */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+		577FEC4D06AF4CEC8608988D /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				48EE8725A3D1446F9400A2DA /* CMake Rules */,
+				C80CAABD270F437BAF9B9808 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		90EA53C887584C8F803D4A75 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				B27334ACEC9840F785ACDD63 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/ActionInitialization.hh */,
+				16492C3C9674482B90224E14 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/Analysis.hh */,
+				56D8597EE55E424C9E66034A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DetectorConstruction.hh */,
+				61E08FF75DD64DFC957A6773 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DetectorMessenger.hh */,
+				46B404D72BCA43FE9F888A29 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/Dose.hh */,
+				DB3C6CB265DC4308B395AFC8 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DoseAccumulable.hh */,
+				12D4036B91F841A899D9A9F2 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/DoseMessenger.hh */,
+				2A76E5E8119D443084926043 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/IonLet.hh */,
+				C67D15E05ECC4189A4E76C73 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/LET.hh */,
+				B6BCB145D3A1451798FDA4AB /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/LETAccumulable.hh */,
+				4EFA051B3F614FA8B2E56118 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/LETMessenger.hh */,
+				898852A4F47E47E2800CA2DA /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/PhysicsList.hh */,
+				14F3C09D86AC42B3A406B56E /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/PhysicsListMessenger.hh */,
+				EAE4062D94C346C68D4B9ED1 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/PrimaryGeneratorAction.hh */,
+				4803FFCFEA144603914BC673 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RBE.hh */,
+				366FBC77B2E84E0BB8059EF9 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RBEAccumulable.hh */,
+				EAD74ACC6E2446659E382B3A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RBEMessenger.hh */,
+				CCF0620A85D5448DAF760B32 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RadioBioHit.hh */,
+				636DE0D1372F4071A4BA5AA6 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RadioBioManager.hh */,
+				9F4E4A5361054172AB1E1D6C /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RadioBioSD.hh */,
+				4C8C13DC40D045F69D9D3784 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/RunAction.hh */,
+				B5EBAE866AB540E1841C16D5 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VRadiobiologicalAccumulable.hh */,
+				8468A345C36C49F4A89A538A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VRadiobiologicalQuantity.hh */,
+				8EB69AB8DA574E6D9AF4CFF0 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VoxelizedSensitiveDetector.hh */,
+				647229D790FB42C589D9A8EB /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include/VoxelizedSensitiveDetectorMessenger.hh */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		9CED09A23F05442F9FC59DCD = {
+			isa = PBXGroup;
+			children = (
+				54B3344D93B14B2D90F19497 /* test */,
+				577FEC4D06AF4CEC8608988D /* ALL_BUILD */,
+				463052C399DE4FC0B4ADBDB5 /* Products */,
+				FE47FE1BDB0D4BAA983E7906 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE47FE1BDB0D4BAA983E7906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF35C6D30273421E826376E8 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61A34DB59CE34E21B005C689 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				F4D9EE945F9B4835B859683B /* Sources */,
+				490EB68A577848B48A8E1DDF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64941F52DE1D462F9CB4E05B /* PBXTargetDependency */,
+			);
+			name = test;
+			productName = test;
+			productReference = DC276A81E7554F1CA0D30F9A /* test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EC74773F1DD4A55AFC78948 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = 57823500A13240A19B0C1EBD /* Build configuration list for PBXProject "test" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				1A796B9DF6F34DE99C29FEBC /* Debug */,
+				C665D032A92545BB8A796499 /* Release */,
+				A6DF6E76D3BA4B28AE7B7305 /* MinSizeRel */,
+				1FC5945B4C3D44F180B66D73 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 9CED09A23F05442F9FC59DCD;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				91C98AEE24C6480197D0DE54 /* ALL_BUILD */,
+				66E777B723724880A48C2E76 /* ZERO_CHECK */,
+				7596A3FDD02645D99ACF5D6C /* install */,
+				EF35C6D30273421E826376E8 /* test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9974F02CE0B1A51584CD554E /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C1D7972DA01CA142B9F734CF /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build
+  make -f /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build
+  make -f /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build
+  make -f /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build
+  make -f /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4D9EE945F9B4835B859683B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F976992D79C4CA38F3B4FAE /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/ActionInitialization.cc */,
+				2905E0C956454E06A7EAFD37 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DetectorConstruction.cc */,
+				3C6097CB6F7C4B8394512A05 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DetectorMessenger.cc */,
+				934E75A5583B4739A64F2F37 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/Dose.cc */,
+				B5D4420F9A094B6380F3E04B /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DoseAccumulable.cc */,
+				7A5FBEC74E3F4F43AC9E0542 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/DoseMessenger.cc */,
+				C9A16F4820A942F391F20157 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/IonLet.cc */,
+				5E9FCF3A76D8468E8AE94F1D /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LET.cc */,
+				4A0E09C5C10D4AE0B8912192 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LETAccumulable.cc */,
+				4FC789D9962D404585261DDA /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/LETMessenger.cc */,
+				52945FBF5A4643398CB07D77 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PhysicsList.cc */,
+				5B2F07AC7A16464CA6051F13 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PhysicsListMessenger.cc */,
+				ABFF6C269C394BBF9AB5AB11 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/PrimaryGeneratorAction.cc */,
+				58A9CD20C2B74FB68DA372B8 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBE.cc */,
+				C04450213D0B49E08935C9F8 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBEAccumulable.cc */,
+				6E87DC5B544F42529FD1EE72 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RBEMessenger.cc */,
+				67E1676BD860485AB90B8942 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioHit.cc */,
+				3F245CE092AD4F6AA71A6076 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioManager.cc */,
+				E8F7C142C53B45B081A83EB1 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RadioBioSD.cc */,
+				1522A5F15DCB410E845C19D3 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/RunAction.cc */,
+				7CC5A89094134837942FF505 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/VoxelizedSensitiveDetector.cc */,
+				895E900CE1EF4CEFA23EE335 /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/src/VoxelizedSensitiveDetectorMessenger.cc */,
+				E44D8BC84BA846DA86F4B42A /* /Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/test.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36D2631F23D04C928FF50C43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF35C6D30273421E826376E8 /* test */;
+			targetProxy = 8C23499CF2634A2DBACAE575 /* PBXContainerItemProxy */;
+		};
+		64941F52DE1D462F9CB4E05B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66E777B723724880A48C2E76 /* ZERO_CHECK */;
+			targetProxy = E2ED993B1BAF4BC9873BF468 /* PBXContainerItemProxy */;
+		};
+		6B5DADC057B74D65AB15C764 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91C98AEE24C6480197D0DE54 /* ALL_BUILD */;
+			targetProxy = 46081DD4213048309E337266 /* PBXContainerItemProxy */;
+		};
+		ADFD514BA88347A295EC23B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66E777B723724880A48C2E76 /* ZERO_CHECK */;
+			targetProxy = 423B8AF976A84C7B980994D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D2FD5703EB94CF4B45F8136 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks,/Users/cirrone/Qt/5.14.1/clang_64/lib,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",G4UI_USE_TCSH,G4UI_USE_QT,G4VIS_USE_OPENGLQT,G4VIS_USE_OPENGLX,G4VIS_USE_OPENGL,G4LIB_BUILD_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_OPENGL_LIB,QT_WIDGETS_LIB,QT_PRINTSUPPORT_LIB,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include","/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/shared/include","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib /Users/cirrone/Qt/5.14.1/clang_64/lib","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "-W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -Qunused-arguments -DGL_SILENCE_DEPRECATION -pthread -ftls-model=initial-exec -std=c++17                -DNDEBUG -fPIC '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4Tree.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4FR.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4GMocren.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4visHepRep.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4RayTracer.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4VRML.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4OpenGL.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4gl2ps.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4vis_management.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4modeling.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4interfaces.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4persistency.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4error_propagation.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4readout.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4physicslists.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4tasking.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4parmodels.dylib","-framework OpenGL","-F /Users/cirrone/Qt/5.14.1/clang_64/lib","-framework QtOpenGL","-framework QtPrintSupport","-framework QtWidgets","-framework QtGui","-framework QtCore",/usr/X11R6/lib/libXmu.dylib,/usr/X11R6/lib/libXext.dylib,/usr/X11R6/lib/libXt.dylib,/usr/X11R6/lib/libICE.dylib,/usr/X11R6/lib/libSM.dylib,/usr/X11R6/lib/libX11.dylib,/usr/X11R6/lib/libGL.dylib,"/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4run.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4event.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4tracking.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4processes.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4analysis.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4tools.dylib",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libexpat.tbd,"/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4digits_hits.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4track.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4particles.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4geometry.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4materials.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4zlib.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4graphics_reps.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4intercoms.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4global.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4clhep.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/RelWithDebInfo/lib/libG4ptl.0.0.2.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/accumulables/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/csv/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/factory/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/hntools/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/root/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/xml/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/detector/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/digits/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/hits/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/scorer/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/error_propagation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/event/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/clhep/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/zlib/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/g4tools/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/biasing/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/divisions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/magneticfield/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/management/include","/Users/cirrone/Geant4/geant4-v11.0.0-build/source/geometry/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/navigation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/solids/Boolean/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/solids/CSG/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/solids/specific/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/volumes/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/HEPGeometry/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/HEPNumerics/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/HEPRandom/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/management/include","/Users/cirrone/Geant4/geant4-v11.0.0-build/source/global/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/graphics_reps/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/intercoms/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/interfaces/basic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/interfaces/common/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/materials/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/parameterisations/gflash/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/adjoint/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/bosons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/hadrons/barions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/hadrons/ions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/hadrons/mesons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/leptons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/shortlived/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/persistency/ascii/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/persistency/mctruth/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/builders/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/decay/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/electromagnetic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/factory/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/gamma_lepto_nuclear/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/hadron_elastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/hadron_inelastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/ions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/limiters/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/stopping/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/lists/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/util/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/biasing/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/biasing/generic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/biasing/importance/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/cuts/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/decay/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/adjoint/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/processes/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/models/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/molecules/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/molecules/types/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/highenergy/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/lowenergy/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/muons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/pii/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/polarisation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/standard/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/xrays/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/cross_sections/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/abla/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/abrasion/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/binary_cascade/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/cascade/cascade/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/coherent_elastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/ablation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/evaporation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/fermi_breakup/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/fission/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/gem_evaporation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/handler/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/multifragmentation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/photon_evaporation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/util/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/em_dissociation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/fission/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/im_r_matrix/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/inclxx/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/inclxx/incl_physics/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/inclxx/interface/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/gamma_nuclear/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/lend/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/lepto_nuclear/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/particle_hp/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/diffraction/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/hadronization/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/qgsm/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/pre_equilibrium/exciton_model/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/qmd/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/quasi_elastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/radioactive_decay/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/theo_high_energy/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/processes/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/stopping/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/util/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/optical/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/solidstate/phonon/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/solidstate/channeling/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/parameterisation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/scoring/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/transportation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/readout/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/run/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/tasking/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/track/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/tracking/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/FukuiRenderer/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/HepRep/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/RayTracer/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/Tree/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/VRML/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/externals/gl2ps/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/gMocren/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/modeling/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/OpenGL/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/ptl/include",/Users/cirrone/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/Users/cirrone/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers,"/Users/cirrone/Qt/5.14.1/clang_64/./mkspecs/macx-clang",/Users/cirrone/Qt/5.14.1/clang_64/lib/QtOpenGL.framework/Headers,/Users/cirrone/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers,/Users/cirrone/Qt/5.14.1/clang_64/lib/QtPrintSupport.framework/Headers,/usr/X11R6/include,"/Users/cirrone/Geant4/geant4-v11.0.0-build/source/externals/zlib","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/zlib/src","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1D2AE6ED739C4255A360044D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		29B60FBBF35741E9BB6AD800 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2F184AF8F17D4CF6BEF644D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		3A1B4E384AAB42AE89BFB35F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		41FAF98755AB4A5BA941A10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks,/Users/cirrone/Qt/5.14.1/clang_64/lib,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",G4UI_USE_TCSH,G4UI_USE_QT,G4VIS_USE_OPENGLQT,G4VIS_USE_OPENGLX,G4VIS_USE_OPENGL,G4LIB_BUILD_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_OPENGL_LIB,QT_WIDGETS_LIB,QT_PRINTSUPPORT_LIB,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include","/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/shared/include","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib /Users/cirrone/Qt/5.14.1/clang_64/lib","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "-W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -Qunused-arguments -DGL_SILENCE_DEPRECATION -pthread -ftls-model=initial-exec -std=c++17      -DNDEBUG -fno-trapping-math -ftree-vectorize -fno-math-errno     -DNDEBUG -fPIC '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4Tree.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4FR.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4GMocren.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4visHepRep.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4RayTracer.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4VRML.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4OpenGL.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4gl2ps.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4vis_management.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4modeling.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4interfaces.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4persistency.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4error_propagation.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4readout.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4physicslists.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4tasking.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4parmodels.dylib","-framework OpenGL","-F /Users/cirrone/Qt/5.14.1/clang_64/lib","-framework QtOpenGL","-framework QtPrintSupport","-framework QtWidgets","-framework QtGui","-framework QtCore",/usr/X11R6/lib/libXmu.dylib,/usr/X11R6/lib/libXext.dylib,/usr/X11R6/lib/libXt.dylib,/usr/X11R6/lib/libICE.dylib,/usr/X11R6/lib/libSM.dylib,/usr/X11R6/lib/libX11.dylib,/usr/X11R6/lib/libGL.dylib,"/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4run.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4event.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4tracking.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4processes.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4analysis.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4tools.dylib",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libexpat.tbd,"/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4digits_hits.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4track.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4particles.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4geometry.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4materials.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4zlib.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4graphics_reps.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4intercoms.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4global.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4clhep.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Release/lib/libG4ptl.0.0.2.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/accumulables/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/csv/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/factory/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/hntools/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/root/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/xml/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/detector/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/digits/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/hits/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/scorer/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/error_propagation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/event/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/clhep/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/zlib/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/g4tools/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/biasing/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/divisions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/magneticfield/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/management/include","/Users/cirrone/Geant4/geant4-v11.0.0-build/source/geometry/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/navigation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/solids/Boolean/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/solids/CSG/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/solids/specific/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/volumes/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/HEPGeometry/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/HEPNumerics/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/HEPRandom/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/management/include","/Users/cirrone/Geant4/geant4-v11.0.0-build/source/global/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/graphics_reps/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/intercoms/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/interfaces/basic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/interfaces/common/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/materials/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/parameterisations/gflash/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/adjoint/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/bosons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/hadrons/barions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/hadrons/ions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/hadrons/mesons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/leptons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/shortlived/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/persistency/ascii/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/persistency/mctruth/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/builders/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/decay/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/electromagnetic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/factory/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/gamma_lepto_nuclear/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/hadron_elastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/hadron_inelastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/ions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/limiters/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/stopping/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/lists/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/util/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/biasing/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/biasing/generic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/biasing/importance/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/cuts/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/decay/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/adjoint/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/processes/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/models/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/molecules/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/molecules/types/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/highenergy/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/lowenergy/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/muons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/pii/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/polarisation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/standard/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/xrays/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/cross_sections/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/abla/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/abrasion/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/binary_cascade/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/cascade/cascade/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/coherent_elastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/ablation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/evaporation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/fermi_breakup/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/fission/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/gem_evaporation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/handler/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/multifragmentation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/photon_evaporation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/util/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/em_dissociation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/fission/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/im_r_matrix/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/inclxx/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/inclxx/incl_physics/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/inclxx/interface/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/gamma_nuclear/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/lend/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/lepto_nuclear/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/particle_hp/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/diffraction/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/hadronization/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/qgsm/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/pre_equilibrium/exciton_model/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/qmd/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/quasi_elastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/radioactive_decay/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/theo_high_energy/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/processes/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/stopping/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/util/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/optical/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/solidstate/phonon/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/solidstate/channeling/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/parameterisation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/scoring/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/transportation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/readout/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/run/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/tasking/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/track/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/tracking/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/FukuiRenderer/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/HepRep/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/RayTracer/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/Tree/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/VRML/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/externals/gl2ps/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/gMocren/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/modeling/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/OpenGL/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/ptl/include",/Users/cirrone/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/Users/cirrone/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers,"/Users/cirrone/Qt/5.14.1/clang_64/./mkspecs/macx-clang",/Users/cirrone/Qt/5.14.1/clang_64/lib/QtOpenGL.framework/Headers,/Users/cirrone/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers,/Users/cirrone/Qt/5.14.1/clang_64/lib/QtPrintSupport.framework/Headers,/usr/X11R6/include,"/Users/cirrone/Geant4/geant4-v11.0.0-build/source/externals/zlib","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/zlib/src","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		57FEA9B16A1B4192941B7F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		5F2E77F9587E43248F679B8D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks,/Users/cirrone/Qt/5.14.1/clang_64/lib,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",G4UI_USE_TCSH,G4UI_USE_QT,G4VIS_USE_OPENGLQT,G4VIS_USE_OPENGLX,G4VIS_USE_OPENGL,G4LIB_BUILD_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_OPENGL_LIB,QT_WIDGETS_LIB,QT_PRINTSUPPORT_LIB,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include","/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/shared/include","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib /Users/cirrone/Qt/5.14.1/clang_64/lib","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "-W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -Qunused-arguments -DGL_SILENCE_DEPRECATION -pthread -ftls-model=initial-exec -std=c++17      -DNDEBUG     -DNDEBUG -fPIC '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4Tree.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4FR.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4GMocren.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4visHepRep.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4RayTracer.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4VRML.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4OpenGL.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4gl2ps.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4vis_management.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4modeling.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4interfaces.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4persistency.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4error_propagation.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4readout.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4physicslists.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4tasking.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4parmodels.dylib","-framework OpenGL","-F /Users/cirrone/Qt/5.14.1/clang_64/lib","-framework QtOpenGL","-framework QtPrintSupport","-framework QtWidgets","-framework QtGui","-framework QtCore",/usr/X11R6/lib/libXmu.dylib,/usr/X11R6/lib/libXext.dylib,/usr/X11R6/lib/libXt.dylib,/usr/X11R6/lib/libICE.dylib,/usr/X11R6/lib/libSM.dylib,/usr/X11R6/lib/libX11.dylib,/usr/X11R6/lib/libGL.dylib,"/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4run.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4event.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4tracking.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4processes.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4analysis.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4tools.dylib",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libexpat.tbd,"/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4digits_hits.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4track.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4particles.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4geometry.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4materials.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4zlib.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4graphics_reps.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4intercoms.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4global.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4clhep.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/MinSizeRel/lib/libG4ptl.0.0.2.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/accumulables/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/csv/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/factory/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/hntools/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/root/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/xml/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/detector/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/digits/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/hits/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/scorer/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/error_propagation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/event/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/clhep/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/zlib/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/g4tools/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/biasing/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/divisions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/magneticfield/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/management/include","/Users/cirrone/Geant4/geant4-v11.0.0-build/source/geometry/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/navigation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/solids/Boolean/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/solids/CSG/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/solids/specific/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/volumes/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/HEPGeometry/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/HEPNumerics/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/HEPRandom/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/management/include","/Users/cirrone/Geant4/geant4-v11.0.0-build/source/global/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/graphics_reps/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/intercoms/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/interfaces/basic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/interfaces/common/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/materials/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/parameterisations/gflash/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/adjoint/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/bosons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/hadrons/barions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/hadrons/ions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/hadrons/mesons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/leptons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/shortlived/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/persistency/ascii/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/persistency/mctruth/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/builders/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/decay/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/electromagnetic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/factory/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/gamma_lepto_nuclear/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/hadron_elastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/hadron_inelastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/ions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/limiters/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/stopping/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/lists/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/util/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/biasing/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/biasing/generic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/biasing/importance/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/cuts/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/decay/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/adjoint/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/processes/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/models/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/molecules/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/molecules/types/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/highenergy/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/lowenergy/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/muons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/pii/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/polarisation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/standard/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/xrays/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/cross_sections/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/abla/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/abrasion/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/binary_cascade/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/cascade/cascade/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/coherent_elastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/ablation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/evaporation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/fermi_breakup/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/fission/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/gem_evaporation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/handler/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/multifragmentation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/photon_evaporation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/util/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/em_dissociation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/fission/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/im_r_matrix/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/inclxx/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/inclxx/incl_physics/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/inclxx/interface/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/gamma_nuclear/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/lend/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/lepto_nuclear/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/particle_hp/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/diffraction/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/hadronization/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/qgsm/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/pre_equilibrium/exciton_model/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/qmd/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/quasi_elastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/radioactive_decay/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/theo_high_energy/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/processes/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/stopping/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/util/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/optical/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/solidstate/phonon/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/solidstate/channeling/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/parameterisation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/scoring/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/transportation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/readout/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/run/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/tasking/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/track/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/tracking/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/FukuiRenderer/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/HepRep/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/RayTracer/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/Tree/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/VRML/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/externals/gl2ps/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/gMocren/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/modeling/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/OpenGL/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/ptl/include",/Users/cirrone/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/Users/cirrone/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers,"/Users/cirrone/Qt/5.14.1/clang_64/./mkspecs/macx-clang",/Users/cirrone/Qt/5.14.1/clang_64/lib/QtOpenGL.framework/Headers,/Users/cirrone/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers,/Users/cirrone/Qt/5.14.1/clang_64/lib/QtPrintSupport.framework/Headers,/usr/X11R6/include,"/Users/cirrone/Geant4/geant4-v11.0.0-build/source/externals/zlib","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/zlib/src","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6593392358C145D8A97B2C95 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6C5CB5CC44044EE2A8495DF7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7CDA35A2B4EC4B96A7F09F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks,/Users/cirrone/Qt/5.14.1/clang_64/lib,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",G4UI_USE_TCSH,G4UI_USE_QT,G4VIS_USE_OPENGLQT,G4VIS_USE_OPENGLX,G4VIS_USE_OPENGL,G4LIB_BUILD_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_OPENGL_LIB,QT_WIDGETS_LIB,QT_PRINTSUPPORT_LIB,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/include","/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/shared/include","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib /Users/cirrone/Qt/5.14.1/clang_64/lib","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "-W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -Qunused-arguments -DGL_SILENCE_DEPRECATION -pthread -ftls-model=initial-exec -std=c++17        -fPIC '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4Tree.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4FR.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4GMocren.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4visHepRep.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4RayTracer.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4VRML.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4OpenGL.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4gl2ps.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4vis_management.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4modeling.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4interfaces.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4persistency.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4error_propagation.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4readout.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4physicslists.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4tasking.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4parmodels.dylib","-framework OpenGL","-F /Users/cirrone/Qt/5.14.1/clang_64/lib","-framework QtOpenGL","-framework QtPrintSupport","-framework QtWidgets","-framework QtGui","-framework QtCore",/usr/X11R6/lib/libXmu.dylib,/usr/X11R6/lib/libXext.dylib,/usr/X11R6/lib/libXt.dylib,/usr/X11R6/lib/libICE.dylib,/usr/X11R6/lib/libSM.dylib,/usr/X11R6/lib/libX11.dylib,/usr/X11R6/lib/libGL.dylib,"/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4run.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4event.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4tracking.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4processes.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4analysis.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4tools.dylib",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libexpat.tbd,"/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4digits_hits.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4track.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4particles.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4geometry.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4materials.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4zlib.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4graphics_reps.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4intercoms.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4global.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4clhep.dylib","/Users/cirrone/Geant4/geant4-v11.0.0-build/BuildProducts/Debug/lib/libG4ptl.0.0.2.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = test;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/accumulables/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/csv/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/factory/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/hntools/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/root/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/analysis/xml/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/detector/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/digits/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/hits/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/scorer/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/digits_hits/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/error_propagation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/event/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/clhep/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/zlib/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/g4tools/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/biasing/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/divisions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/magneticfield/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/management/include","/Users/cirrone/Geant4/geant4-v11.0.0-build/source/geometry/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/navigation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/solids/Boolean/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/solids/CSG/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/solids/specific/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/geometry/volumes/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/HEPGeometry/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/HEPNumerics/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/HEPRandom/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/global/management/include","/Users/cirrone/Geant4/geant4-v11.0.0-build/source/global/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/graphics_reps/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/intercoms/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/interfaces/basic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/interfaces/common/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/materials/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/parameterisations/gflash/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/adjoint/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/bosons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/hadrons/barions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/hadrons/ions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/hadrons/mesons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/leptons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/shortlived/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/particles/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/persistency/ascii/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/persistency/mctruth/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/builders/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/decay/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/electromagnetic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/factory/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/gamma_lepto_nuclear/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/hadron_elastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/hadron_inelastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/ions/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/limiters/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/constructors/stopping/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/lists/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/physics_lists/util/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/biasing/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/biasing/generic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/biasing/importance/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/cuts/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/decay/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/adjoint/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/processes/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/models/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/molecules/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/dna/molecules/types/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/highenergy/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/lowenergy/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/muons/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/pii/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/polarisation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/standard/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/electromagnetic/xrays/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/cross_sections/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/abla/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/abrasion/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/binary_cascade/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/cascade/cascade/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/coherent_elastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/ablation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/evaporation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/fermi_breakup/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/fission/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/gem_evaporation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/handler/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/multifragmentation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/photon_evaporation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/de_excitation/util/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/em_dissociation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/fission/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/im_r_matrix/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/inclxx/utils/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/inclxx/incl_physics/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/inclxx/interface/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/gamma_nuclear/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/lend/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/lepto_nuclear/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/particle_hp/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/diffraction/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/hadronization/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/parton_string/qgsm/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/pre_equilibrium/exciton_model/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/qmd/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/quasi_elastic/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/radioactive_decay/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/models/theo_high_energy/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/processes/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/stopping/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/hadronic/util/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/optical/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/solidstate/phonon/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/solidstate/channeling/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/parameterisation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/scoring/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/processes/transportation/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/readout/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/run/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/tasking/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/track/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/tracking/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/FukuiRenderer/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/HepRep/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/RayTracer/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/Tree/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/VRML/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/externals/gl2ps/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/gMocren/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/management/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/modeling/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/visualization/OpenGL/include","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/ptl/include",/Users/cirrone/Qt/5.14.1/clang_64/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/Users/cirrone/Qt/5.14.1/clang_64/lib/QtCore.framework/Headers,"/Users/cirrone/Qt/5.14.1/clang_64/./mkspecs/macx-clang",/Users/cirrone/Qt/5.14.1/clang_64/lib/QtOpenGL.framework/Headers,/Users/cirrone/Qt/5.14.1/clang_64/lib/QtWidgets.framework/Headers,/Users/cirrone/Qt/5.14.1/clang_64/lib/QtPrintSupport.framework/Headers,/usr/X11R6/include,"/Users/cirrone/Geant4/geant4-v11.0.0-build/source/externals/zlib","/Users/cirrone/Geant4/geant4-v11.0.0/source/externals/zlib/src","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		840EC7F73BB94081B0DE9A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build/build";
+			};
+			name = Debug;
+		};
+		AD55BD7961B44902A939B6E4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B0060CE1A10747AA8F93594C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C9CD7112814445E3881FA487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		D0F9B3CFB2AC413585789890 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		EA15096BF22C4318965C4B2C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build/build";
+			};
+			name = MinSizeRel;
+		};
+		F3DB465F33FA4EECA32D9652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build/build";
+			};
+			name = Release;
+		};
+		F444CE9A737245C886FF61E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		FD79C23535864A79B9795A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cirrone/Dropbox/script_e_software/MPGroupSoftware/Geant4/g4_radiobio_extexample-gps/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		183EFF9425CF42B9999CB27E /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0060CE1A10747AA8F93594C /* Debug */,
+				2F184AF8F17D4CF6BEF644D2 /* Release */,
+				6C5CB5CC44044EE2A8495DF7 /* MinSizeRel */,
+				29B60FBBF35741E9BB6AD800 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		57823500A13240A19B0C1EBD /* Build configuration list for PBXProject "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840EC7F73BB94081B0DE9A19 /* Debug */,
+				F3DB465F33FA4EECA32D9652 /* Release */,
+				EA15096BF22C4318965C4B2C /* MinSizeRel */,
+				3A1B4E384AAB42AE89BFB35F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		61A34DB59CE34E21B005C689 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CDA35A2B4EC4B96A7F09F9A /* Debug */,
+				41FAF98755AB4A5BA941A10C /* Release */,
+				5F2E77F9587E43248F679B8D /* MinSizeRel */,
+				0D2FD5703EB94CF4B45F8136 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8C60F98D47154BE8B98EA373 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD79C23535864A79B9795A1D /* Debug */,
+				57FEA9B16A1B4192941B7F91 /* Release */,
+				6593392358C145D8A97B2C95 /* MinSizeRel */,
+				D0F9B3CFB2AC413585789890 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD4740C9D50B4ED7889F1E09 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9CD7112814445E3881FA487 /* Debug */,
+				F444CE9A737245C886FF61E7 /* Release */,
+				AD55BD7961B44902A939B6E4 /* MinSizeRel */,
+				1D2AE6ED739C4255A360044D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EC74773F1DD4A55AFC78948 /* Project object */;
+}

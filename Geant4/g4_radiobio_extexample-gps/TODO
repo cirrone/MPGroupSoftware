@@ -1,0 +1,24 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Computazione:
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+-mettere il calcolo della dose (magari che si può o meno attivare)
+-attivo i secondari come LET o meno? In questo momento di default fa tutto, ma magari si potrebbe specializzare il "cosa studiare". Basta sistemare messenger e qualche hit
+-mettere bene la questione "Analysis.hh". Salvo i csv? Sì o no? Includo semplicemente il file giusto?
+-solitamente gli esempi hanno un output di semplice lettura (stile istogramma). Mettere LET protoni primari lungo l'asse come sempre presente? O che si attiva se si attiva il LET?
+-implementare l'utilizzo di uno spazio delle fasi come input della simulazione
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Estetica:
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+-la f davanti al nome per tutti gli elementi di una classe
+-l'architettura ha senso? Non è overkill?
+-togliere i cout di debug
+-commentare le cose e togliere i commenti inutili legati a vecchie versioni delle classi
+-la regola delle 80 colonne
+-la regola delle 7 righe (secondo me troppo stringente, eviterei...)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Check:
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+-confrontare con quanto esce da hadrontherapy
+
