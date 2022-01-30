@@ -77,7 +77,7 @@ private:
 
     std::vector<IonLet> IonLetStore;
 
-    std::ofstream ofs;
+    //std::ofstream ofs;
 
     // To be used for accumulation
     void SetNTotalLETT(const array_type NTotalLETT) {fNTotalLETT = NTotalLETT; }

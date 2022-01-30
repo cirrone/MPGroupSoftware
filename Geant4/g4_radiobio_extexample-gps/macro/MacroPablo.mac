@@ -1,4 +1,3 @@
-# G. Navarra
 
 
 #########################
@@ -22,7 +21,7 @@
 
 ##########################
 # Voxelization procedure
-/voxels/setVoxelSizes 0.1 40 40 mm
+/voxels/setVoxelSizes 1 40 40 mm
 
 
 ##########################
@@ -81,7 +80,6 @@
 
 #/rbe/doseScale 8
 # Dose scale should be: 2e7 / nEvents * voxelSizeInCm2
-
 
 
 #########################

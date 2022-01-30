@@ -122,7 +122,8 @@ void LET::Store()
     // If there is at least one ion
     if(IonLetStore.size())
     {
-        ofs.open(fPath, std::ios::out);
+        std::ofstream ofs(fPath);
+        //ofs.open(fPath, std::ios::out);
         if (ofs.is_open())
         {
             
