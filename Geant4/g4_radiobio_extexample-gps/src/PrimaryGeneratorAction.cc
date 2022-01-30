@@ -43,6 +43,8 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(DetectorConstruction* det)
  fParticleGun(0)
 {
   fParticleGun  = new G4GeneralParticleSource();
+    
+    
   G4ParticleDefinition* particle
            = G4ParticleTable::GetParticleTable()->FindParticle("proton");
   fParticleGun->SetParticleDefinition(particle);

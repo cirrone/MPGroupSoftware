@@ -14,7 +14,7 @@
 
 
 /Physics/addPhysics HADRONTHERAPY_1
-/run/numberOfThreads 5
+/run/numberOfThreads 1
 
 ##################################################################################################################
 # Geometry
@@ -124,7 +124,7 @@
 #/run/verbose 2
 
 #/run/beamOn 1000000
-/run/beamOn 10000
+/run/beamOn 100
 
 
  

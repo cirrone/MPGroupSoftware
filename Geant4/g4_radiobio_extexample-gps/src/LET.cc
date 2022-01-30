@@ -179,7 +179,7 @@ void LET::Store()
                         ofs << std::setw(width) << fTotalLETD[v]/(keV/um);
                         ofs << std::setw(width) << fTotalLETT[v]/(keV/um);
                         
-                        
+            
                         // Write ions LETs
                         for (size_t l=0; l < IonLetStore.size(); l++)
                         {
@@ -270,7 +270,6 @@ void LET::AddFromAccumulable(G4VAccumulable* GenAcc)
     }
     fCalculated = false;
 }
-
 
 
 
