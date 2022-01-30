@@ -23,6 +23,7 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 
+// main file
 
 #include "G4RunManager.hh"
 #include "G4UImanager.hh"
