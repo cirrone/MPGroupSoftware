@@ -73,6 +73,16 @@ void LET::Initialize()
 
 void LET::Compute()
 {
+    // Skip LET computation if calculation not enabled.
+    if(!fCalculationEnabled)
+    {
+      if(fVerboseLevel > 0)
+      {
+        G4cout << "LET::Compute() called but skipped as calculation not enabled"
+               << G4endl;
+      }
+      return;
+    }
     if (fVerboseLevel > 0)
     G4cout << "LET::Compute()" << G4endl;
 
@@ -94,8 +104,8 @@ void LET::Compute()
 
     // Sort ions by A and then by Z ...
     std::sort(IonLetStore.begin(), IonLetStore.end());
-    
-    
+
+
     // Compute LET Track and LET Dose for ions
     for (size_t ion=0; ion < IonLetStore.size(); ion++)
     {
@@ -109,6 +119,17 @@ void LET::Compute()
 // save LET
 void LET::Store()
 {
+    // Skip LET storing if calculation not enabled.
+    if(!fCalculationEnabled)
+    {
+      if(fVerboseLevel > 0)
+      {
+        G4cout << "LET::Store() called but skipped as calculation not enabled"
+               << G4endl;
+      }
+      return;
+    }
+
     if (fSaved == true)
         G4Exception("LET::StoreLET", "NtuplesAlreadySaved", FatalException,
                     "Saving LET for a second run without accumulation. Use \"/LET/accumulate true\"");
@@ -125,13 +146,13 @@ void LET::Store()
         //ofs.open(fPath, std::ios::out);
         if (ofs.is_open())
         {
-            
+
             // Write the voxels index and total LETs and the list of particles/ions
             ofs << std::setprecision(6) << std::left <<
             "i\tj\tk\t";
             ofs <<  std::setw(width) << "LDT";
             ofs <<  std::setw(width) << "LTT";
-            
+
             for (size_t l=0; l < IonLetStore.size(); l++) // Write ions name
             {
                 G4String a = (IonLetStore[l].isPrimary()) ? "_1_D":"_D";
@@ -140,17 +161,19 @@ void LET::Store()
                 ofs << std::setw(width) << IonLetStore[l].GetName()  + b ;
             }
             ofs << G4endl;
-            
+
             // Write data
             G4AnalysisManager*  LETFragmentTuple = G4AnalysisManager::Instance();
-            
+
             LETFragmentTuple->SetVerboseLevel(1);
             LETFragmentTuple->SetFirstHistoId(1);
             LETFragmentTuple->SetFirstNtupleId(1);
+
+            LETFragmentTuple->SetDefaultFileType("xml");
             LETFragmentTuple ->OpenFile("LET");
-            
+
             LETFragmentTuple ->CreateNtuple("coordinate", "LET");
-            
+
             LETFragmentTuple ->CreateNtupleIColumn("i");         //0
             LETFragmentTuple ->CreateNtupleIColumn("j");         //1
             LETFragmentTuple ->CreateNtupleIColumn("k");         //2
@@ -161,8 +184,8 @@ void LET::Store()
             LETFragmentTuple ->CreateNtupleDColumn("IonLetD");   //7
             LETFragmentTuple ->CreateNtupleDColumn("IonLetT");   //8
             LETFragmentTuple ->FinishNtuple();
-            
-            
+
+
             for(G4int i = 0; i < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongX(); i++)
                 for(G4int j = 0; j < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongY(); j++)
                     for(G4int k = 0; k < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongZ(); k++)
@@ -170,47 +193,47 @@ void LET::Store()
                         LETFragmentTuple->FillNtupleIColumn(1,0, i);
                         LETFragmentTuple->FillNtupleIColumn(1,1, j);
                         LETFragmentTuple->FillNtupleIColumn(1,2, k);
-                        
+
                         G4int v = VoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(i, j, k);
-                        
+
                         // Write total LETs and voxels index
                         ofs << G4endl;
                         ofs << i << '\t' << j << '\t' << k << '\t';
                         ofs << std::setw(width) << fTotalLETD[v]/(keV/um);
                         ofs << std::setw(width) << fTotalLETT[v]/(keV/um);
-                        
-            
+
+
                         // Write ions LETs
                         for (size_t l=0; l < IonLetStore.size(); l++)
                         {
                                 // Write ions LETs
                                 ofs << std::setw(width) << IonLetStore[l].GetLETD()[v]/(keV/um) ;
-                                ofs << std::setw(width) << IonLetStore[l].GetLETT()[v]/(keV/um);   
+                                ofs << std::setw(width) << IonLetStore[l].GetLETT()[v]/(keV/um);
                         }
-                        
+
                         LETFragmentTuple->FillNtupleDColumn(1,3, fTotalLETD[v]/(keV/um));
                         LETFragmentTuple->FillNtupleDColumn(1,4, fTotalLETT[v]/(keV/um));
-                        
-                        
+
+
                         for (size_t ll=0; ll < IonLetStore.size(); ll++)
                         {
-                            
-                            
+
+
                             LETFragmentTuple->FillNtupleIColumn(1,5, IonLetStore[ll].GetA());
                             LETFragmentTuple->FillNtupleIColumn(1,6, IonLetStore[ll].GetZ());
-                            
-                            
+
+
                             LETFragmentTuple->FillNtupleDColumn(1,7, IonLetStore[ll].GetLETD()[v]/(keV/um));
                             LETFragmentTuple->FillNtupleDColumn(1,8, IonLetStore[ll].GetLETT()[v]/(keV/um));
                             LETFragmentTuple->AddNtupleRow(1);
                         }
                     }
             ofs.close();
-            
+
             //LETFragmentTuple->Write();
             LETFragmentTuple->CloseFile();
         }
-        
+
     }
 
     fSaved = true;

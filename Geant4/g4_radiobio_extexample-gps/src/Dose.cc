@@ -72,6 +72,17 @@ void Dose::Initialize()
 
 void Dose::Compute()
 {
+    // Skip Dose computation if calculation not enabled.
+    if(!fCalculationEnabled)
+    {
+      if(fVerboseLevel > 0)
+      {
+        G4cout << "Dose::Compute() called but skipped as calculation not enabled"
+               << G4endl;
+      }
+      return;
+    }
+
     if(fCalculated)
         return;
 
@@ -99,6 +110,17 @@ void Dose::Compute()
 
 void Dose::Store()
 {
+    // Skip Dose store if calculation not enabled.
+    if(!fCalculationEnabled)
+    {
+      if(fVerboseLevel > 0)
+      {
+        G4cout << "Dose::Store() called but skipped as calculation not enabled"
+               << G4endl;
+      }
+      return;
+    }
+
     if(fSaved == true)
         G4Exception("Dose::Store", "DoseOverwrite", JustWarning,
                     "Overwriting Dose file. To accumulate along runs, use Use \"/Dose/accumulate true\"");

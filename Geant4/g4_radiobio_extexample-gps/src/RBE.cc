@@ -356,6 +356,17 @@ std::tuple<G4double, G4double> RBE::GetHitAlphaAndBeta(G4double E, G4int Z)
 // Zaider & Rossi alpha & Beta mean
 void RBE::ComputeAlphaAndBeta()
 {
+    // Skip RBE computation if calculation not enabled.
+    if(!fCalculationEnabled)
+    {
+      if(fVerboseLevel > 0)
+      {
+        G4cout << "RBE::ComputeAlphaAndBeta() called but skipped as calculation not enabled"
+               << G4endl;
+      }
+      return;
+    }
+
     for(auto f : fDenominator)
         if(f <= 0.0001)
             G4cout << "denominator in RBE too small: fDeonimator = " << f <<  G4endl;
@@ -365,14 +376,25 @@ void RBE::ComputeAlphaAndBeta()
         G4cout << "RBE: Computing alpha and beta..." << G4endl;
     }
     fAlpha = fAlphaNumerator / (fDenominator * gray);
-    
+
     fBeta = pow(fBetaNumerator / (fDenominator * gray), 2);
-    
+
     //g4pow -> powN(fBetaNumerator / fDenominator * gray, 2)
 }
 
 void RBE::ComputeRBE()
 {
+    // Skip RBE computation if calculation not enabled.
+    if(!fCalculationEnabled)
+    {
+      if(fVerboseLevel > 0)
+      {
+        G4cout << "RBE::ComputeRBE() called but skipped as calculation not enabled"
+               << G4endl;
+      }
+      return;
+    }
+
     if (fVerboseLevel > 0)
     {
         G4cout << "RBE: Computing survival and RBE..." << G4endl;
@@ -407,6 +429,17 @@ void RBE::ComputeRBE()
 
 void RBE::Compute()
 {
+    // Skip RBE computation if calculation not enabled.
+    if(!fCalculationEnabled)
+    {
+      if(fVerboseLevel > 0)
+      {
+        G4cout << "RBE::Compute() called but skipped as calculation not enabled"
+               << G4endl;
+      }
+      return;
+    }
+
     if(fCalculated == true)
         return;
 
@@ -531,6 +564,17 @@ void RBE::AddBetaNumerator(const RBE::array_type beta)
 
 void RBE::StoreAlphaAndBeta()
 {
+    // Skip RBE storing if calculation not enabled.
+    if(!fCalculationEnabled)
+    {
+      if(fVerboseLevel > 0)
+      {
+        G4cout << "RBE::StoreAlphaAndBeta() called but skipped as calculation not enabled"
+               << G4endl;
+      }
+      return;
+    }
+
     G4String AlphaBetaPath = fPath + "_AlphaAndBeta.out";
     if (fVerboseLevel > 1)
     {
@@ -569,6 +613,17 @@ void RBE::StoreAlphaAndBeta()
 
 void RBE::StoreRBE()
 {
+    // Skip RBE storing if calculation not enabled.
+    if(!fCalculationEnabled)
+    {
+      if(fVerboseLevel > 0)
+      {
+        G4cout << "RBE::StoreRBE() called but skipped as calculation not enabled"
+               << G4endl;
+      }
+      return;
+    }
+
     G4String RBEPath = fPath + "_RBE.out";
     if(fSaved == true)
         G4Exception("RBE::StoreRBE", "RBEOverwrite", JustWarning,
