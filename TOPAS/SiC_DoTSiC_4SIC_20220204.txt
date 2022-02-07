@@ -1,0 +1,427 @@
+#
+# 4 Silicon Carbide detectors (10 um-thick) on a Silicon Carbide substrate (90 um-thick). 
+# The detectors are mounted on a PCB and immersed in a water-equivalent resin. Energy is 
+# collected in each of the four detectors.
+#
+
+# =======================================   MATERIALS   =======================================
+#
+# Silicon Carbide
+#
+sv:Ma/SiliconCarbide/Components 	= 2 "Silicon" "Carbon"     # Detectors
+uv:Ma/SiliconCarbide/Fractions  	= 2 0.5 0.5
+d:Ma/SiliconCarbide/Density 		= 3.21 g/cm3
+s:Ma/SiliconCarbide/DefaultColor 	= "red"
+
+# Fiberglass
+#
+sv:Ma/Fiberglass/Components 		= 2 "Nickel" "Silicon"     # Printed Circuit Board
+uv:Ma/Fiberglass/Fractions  		= 2 0.80693 0.19306          
+d:Ma/Fiberglass/Density 		= 7.40 g/cm3		     
+s:Ma/Fiberglass/DefaultColor 		= "green"
+
+# Polylactid Acid
+#
+sv:Ma/PolylactidAcid/Components 	= 3 "Carbon" "Hydrogen" "Oxygen"    # Holder    
+uv:Ma/PolylactidAcid/Fractions  	= 3 0.4946 0.0554 0.4500         
+d:Ma/PolylactidAcid/Density 		= 1.24 g/cm3		    
+s:Ma/PolylactidAcid/DefaultColor 	= "black"
+
+
+
+# =======================================   VOLUMES   =======================================
+#
+# Definition of the World volume
+# ----------------------------------
+#
+d:Ge/World/HLX       = 80 cm
+d:Ge/World/HLY       = 80 cm
+d:Ge/World/HLZ       = 80 cm
+s:Ge/World/Material  = "Air"
+
+b:Ge/World/Invisible = "False"
+
+
+# =======================================   GEOMETRY   =======================================
+#
+###########################################################################
+# Nozzle
+# A 40 cm long brass tube collimator: inner hole diameter: 36 mm;
+# outer diameter 60 mm
+###########################################################################
+#
+s:Ge/Nozzle/Parent  = "World"
+s:Ge/Nozzle/Type    = "TsCylinder"
+s:Ge/Nozzle/Material= "Brass"
+d:Ge/Nozzle/RMin    = 18.0 mm      # Raggio interno del nozzle    
+d:Ge/Nozzle/RMax    = 30.0 mm      # Raggio esterno del nozzle
+d:Ge/Nozzle/HL      = 20.0 cm      # Semi-lunghezza del nozzle
+d:Ge/Nozzle/SPhi    = 0.0 deg
+d:Ge/Nozzle/DPhi    = 360.0 deg
+d:Ge/Nozzle/TransX  = 0.0 mm       # Posizione rispetto al centro del World volume (dir X)
+d:Ge/Nozzle/TransY  = 0.0 mm       # Posizione rispetto al centro del World volume (dir Y)
+d:Ge/Nozzle/TransZ  = -29.4 cm     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/Nozzle/RotX    = 0.0 deg
+d:Ge/Nozzle/RotY    = 0.0 deg
+d:Ge/Nozzle/RotZ    = 0.0 deg
+b:Ge/Nozzle/Include = "True"
+s:Ge/Nozzle/Color    = "Yellow"
+s:Ge/Nozzle/DrawingStyle = "Solid"
+s:Ge/Nozzle/Message = "Nozzle is constructed!"
+
+
+###########################################################################
+# Collimator
+# A 6 cm diameter brass collimator with opening in the center
+###########################################################################
+#
+s:Ge/Collimator/Parent  = "World"
+s:Ge/Collimator/Type    = "TsCylinder"
+s:Ge/Collimator/Material= "Brass"
+d:Ge/Collimator/RMin    = 2.0 mm      # Raggio dell'apertura del collimatore finale
+d:Ge/Collimator/RMax    = 4.0 cm      # Raggio esterno del collimatore finale
+d:Ge/Collimator/HL      = 3.5  mm     # Semi-spessore del collimatore finale
+d:Ge/Collimator/SPhi    = 0.0 deg
+d:Ge/Collimator/DPhi    = 360.0 deg
+d:Ge/Collimator/TransX  = 0.0 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/Collimator/TransY  = 0.0 mm      # Posizione rispetto al centro del World volume (dir Y)
+d:Ge/Collimator/TransZ  = -9.05 cm    # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/Collimator/RotX    = 0.0 deg
+d:Ge/Collimator/RotY    = 0.0 deg
+d:Ge/Collimator/RotZ    = 0.0 deg
+b:Ge/Collimator/Include = "True"
+s:Ge/Collimator/Color    = "Yellow"
+s:Ge/Collimator/DrawingStyle = "Solid"
+s:Ge/Collimator/Message = "Collimator is constructed!"
+
+
+#################################################################################
+# Water Phantom
+# A 20cm x 20cm x 20cm water phantom positioned to reconstruct the Bragg peak
+# The distance between the brass collimator and the Water Phantom is 8 cm
+#################################################################################
+#
+# s:Ge/WaterPhantom/Type     = "TsBox"
+# s:Ge/WaterPhantom/Parent   = "World"
+# s:Ge/WaterPhantom/Material = "G4_WATER"
+# d:Ge/WaterPhantom/HLX      = 10.0 cm    # Dimensione del Water Phantom lungo la direzione X
+# d:Ge/WaterPhantom/HLY      = 10.0 cm    # Dimensione del Water Phantom lungo la direzione Y
+# d:Ge/WaterPhantom/HLZ      = 10.0 cm    # Dimensione del Water Phantom lungo la direzione Z
+# d:Ge/WaterPhantom/TransX   = 0.0 cm     # Posizione rispetto al centro del World volume (dir X)
+# d:Ge/WaterPhantom/TransY   = 0.0 cm     # Posizione rispetto al centro del World volume (dir Y)
+# d:Ge/WaterPhantom/TransZ   = 10.0 cm    # Posizione rispetto al centro del World volume (dir Z)
+# d:Ge/WaterPhantom/RotX     = 0. deg
+# d:Ge/WaterPhantom/RotY     = 0. deg
+# d:Ge/WaterPhantom/RotZ     = 0. deg
+# s:Ge/WaterPhantom/Color    = "Blue"
+# s:Ge/WaterPhantom/DrawingStyle = "Wireframe" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+#################################################################################
+# SiC Detectors
+# Four 2.25mm x 2.25mm Sic detectors (10 um-thick) on a 90 um-thick substrate
+# The distance between the brass collimator and the detectors is 8 cm
+#################################################################################
+#
+#
+# The first detector (SiC, Thick: 10 um) - Top-left (beam view)
+# ---------------------------------------------------------------
+#
+s:Ge/Detector1/Type     = "TsBox"
+s:Ge/Detector1/Parent   = "World"
+# s:Ge/Detector1/Material = "G4_WATER"
+s:Ge/Detector1/Material = "SiliconCarbide"
+d:Ge/Detector1/HLX      = 1.125 mm     # Semi-larghezza dello strato attivo (SiC)
+d:Ge/Detector1/HLY      = 1.125 mm     # Semi-altezza dello strato attivo (SiC)
+d:Ge/Detector1/HLZ      = 5.0 um       # Semi-spessore dello strato attivo (SiC)
+d:Ge/Detector1/TransX   = 1.175 mm     # Posizione rispetto al centro del World volume (dir X)   
+d:Ge/Detector1/TransY   = 1.175 mm     # Posizione rispetto al centro del World volume (dir Y)
+d:Ge/Detector1/TransZ   = 0.0 um       # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/Detector1/RotX     = 0.0 deg
+d:Ge/Detector1/RotY     = 0.0 deg
+d:Ge/Detector1/RotZ     = 0.0 deg
+s:Ge/Detector1/Color    = "red"
+s:Ge/Detector1/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+# The second detector (SiC, Thick: 10 um) - Top-right (beam view)
+# -----------------------------------------------------------------
+#
+s:Ge/Detector2/Type     = "TsBox"
+s:Ge/Detector2/Parent   = "World"
+# s:Ge/Detector2/Material = "G4_WATER"
+s:Ge/Detector2/Material = "SiliconCarbide"
+d:Ge/Detector2/HLX      = 1.125 mm     # Semi-larghezza dello strato attivo (SiC)
+d:Ge/Detector2/HLY      = 1.125 mm     # Semi-altezza dello strato attivo (SiC)
+d:Ge/Detector2/HLZ      = 5.0 um       # Semi-spessore dello strato attivo (SiC)
+d:Ge/Detector2/TransX   = -1.175 mm    # Posizione rispetto al centro del World volume (dir X)   
+d:Ge/Detector2/TransY   = 1.175 mm     # Posizione rispetto al centro del World volume (dir Y)
+d:Ge/Detector2/TransZ   = 0.0 um       # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/Detector2/RotX     = 0.0 deg
+d:Ge/Detector2/RotY     = 0.0 deg
+d:Ge/Detector2/RotZ     = 0.0 deg
+s:Ge/Detector2/Color    = "red"
+s:Ge/Detector2/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+# The third detector (SiC, Thick: 10 um) - Bottom-left (beam view)
+# ------------------------------------------------------------------
+#
+s:Ge/Detector3/Type     = "TsBox"
+s:Ge/Detector3/Parent   = "World"
+# s:Ge/Detector3/Material = "G4_WATER"
+s:Ge/Detector3/Material = "SiliconCarbide"
+d:Ge/Detector3/HLX      = 1.125 mm     # Semi-larghezza dello strato attivo (SiC)
+d:Ge/Detector3/HLY      = 1.125 mm     # Semi-altezza dello strato attivo (SiC)
+d:Ge/Detector3/HLZ      = 5.0 um       # Semi-spessore dello strato attivo (SiC)
+d:Ge/Detector3/TransX   = 1.175 mm     # Posizione rispetto al centro del World volume (dir X)   
+d:Ge/Detector3/TransY   = -1.175 mm    # Posizione rispetto al centro del World volume (dir Y)
+d:Ge/Detector3/TransZ   = 0.0 um       # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/Detector3/RotX     = 0.0 deg
+d:Ge/Detector3/RotY     = 0.0 deg
+d:Ge/Detector3/RotZ     = 0.0 deg
+s:Ge/Detector3/Color    = "red"
+s:Ge/Detector3/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+# The fourth detector (SiC, Thick: 10 um) - Bottom-right (beam view)
+# --------------------------------------------------------------------
+#
+s:Ge/Detector4/Type     = "TsBox"
+s:Ge/Detector4/Parent   = "World"
+# s:Ge/Detector4/Material = "G4_WATER"
+s:Ge/Detector4/Material = "SiliconCarbide"
+d:Ge/Detector4/HLX      = 1.125 mm     # Semi-larghezza dello strato attivo (SiC)
+d:Ge/Detector4/HLY      = 1.125 mm     # Semi-altezza dello strato attivo (SiC)
+d:Ge/Detector4/HLZ      = 5.0 um       # Semi-spessore dello strato attivo (SiC)
+d:Ge/Detector4/TransX   = -1.175 mm    # Posizione rispetto al centro del World volume (dir X)   
+d:Ge/Detector4/TransY   = -1.175 mm    # Posizione rispetto al centro del World volume (dir Y)
+d:Ge/Detector4/TransZ   = 0.0 um       # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/Detector4/RotX     = 0.0 deg
+d:Ge/Detector4/RotY     = 0.0 deg
+d:Ge/Detector4/RotZ     = 0.0 deg
+s:Ge/Detector4/Color    = "red"
+s:Ge/Detector4/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+# The Substrate (SiC, Thick: 90 um)
+# -----------------------------------
+#
+s:Ge/Substrate/Type     = "TsBox"
+s:Ge/Substrate/Parent   = "World"
+s:Ge/Substrate/Material = "SiliconCarbide"
+d:Ge/Substrate/HLX      = 2.50 mm      # Semi-larghezza del substrato (SiC) 
+d:Ge/Substrate/HLY      = 2.50 mm      # Semi-altezza del substrato (SiC)
+d:Ge/Substrate/HLZ      = 45.0 um      # Semi-spessore del substrato (SiC)      
+d:Ge/Substrate/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/Substrate/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+d:Ge/Substrate/TransZ   = 50.0 um      # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/Substrate/RotX     = 0.0 deg 
+d:Ge/Substrate/RotY     = 0.0 deg
+d:Ge/Substrate/RotZ     = 0.0 deg
+s:Ge/Substrate/Color    = "white"
+s:Ge/Substrate/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+###########################################################################
+# Other elements
+###########################################################################
+#
+#
+# The Printed Circuit Board (PCB, Thick: 1 mm)
+# ----------------------------------------------
+#
+s:Ge/PrintedCircuitBoard/Type     = "TsCylinder"
+s:Ge/PrintedCircuitBoard/Parent   = "World"
+s:Ge/PrintedCircuitBoard/Material = "Fiberglass"
+d:Ge/PrintedCircuitBoard/RMin     = 0.00 mm      
+d:Ge/PrintedCircuitBoard/RMax     = 4.25 mm      # Raggio del PCB
+d:Ge/PrintedCircuitBoard/HL       = 500.0 um     # Semi-spessore del PCB 
+d:Ge/PrintedCircuitBoard/SPhi     = 0.00 deg      
+d:Ge/PrintedCircuitBoard/DPhi     = 360.0 deg      
+d:Ge/PrintedCircuitBoard/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/PrintedCircuitBoard/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+d:Ge/PrintedCircuitBoard/TransZ   = 595.0 um     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/PrintedCircuitBoard/RotX     = 0.0 deg 
+d:Ge/PrintedCircuitBoard/RotY     = 0.0 deg
+d:Ge/PrintedCircuitBoard/RotZ     = 0.0 deg
+b:Ge/PrintedCircuitBoard/Include  = "True"
+s:Ge/PrintedCircuitBoard/Color    = "green"
+s:Ge/PrintedCircuitBoard/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+# The water-equivalent resin layer above the SiC detectors (Thick: 2 mm)
+# ------------------------------------------------------------------------
+#
+s:Ge/ResinLayer1/Type     = "TsCylinder"
+s:Ge/ResinLayer1/Parent   = "World"
+s:Ge/ResinLayer1/Material = "Fiberglass"
+d:Ge/ResinLayer1/RMin     = 0.00 mm      
+d:Ge/ResinLayer1/RMax     = 4.25 mm      # Raggio dello strato di resina sovrastante i rivelatori
+d:Ge/ResinLayer1/HL       = 1.00 mm      # Semi-spessore dello strato di resina sovrastante i rivelatori 
+d:Ge/ResinLayer1/SPhi     = 0.00 deg      
+d:Ge/ResinLayer1/DPhi     = 360.0 deg      
+d:Ge/ResinLayer1/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/ResinLayer1/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+d:Ge/ResinLayer1/TransZ   = -1.005 mm    # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/ResinLayer1/RotX     = 0.0 deg 
+d:Ge/ResinLayer1/RotY     = 0.0 deg
+d:Ge/ResinLayer1/RotZ     = 0.0 deg
+b:Ge/ResinLayer1/Include  = "True"
+s:Ge/ResinLayer1/Color    = "maroon"
+s:Ge/ResinLayer1/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+# The water-equivalent resin layer under the SiC detectors (Thick: 2 cm)
+# ------------------------------------------------------------------------
+#
+s:Ge/ResinLayer2/Type     = "TsCylinder"
+s:Ge/ResinLayer2/Parent   = "World"
+s:Ge/ResinLayer2/Material = "Fiberglass"
+d:Ge/ResinLayer2/RMin     = 0.00 mm      
+d:Ge/ResinLayer2/RMax     = 4.25 mm      # Raggio dello strato di resina sottostante i rivelatori
+d:Ge/ResinLayer2/HL       = 1.00 cm      # Semi-spessore dello strato di resina sottostante i rivelatori 
+d:Ge/ResinLayer2/SPhi     = 0.00 deg      
+d:Ge/ResinLayer2/DPhi     = 360.0 deg      
+d:Ge/ResinLayer2/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/ResinLayer2/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+d:Ge/ResinLayer2/TransZ   = 1.110 cm     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/ResinLayer2/RotX     = 0.0 deg 
+d:Ge/ResinLayer2/RotY     = 0.0 deg
+d:Ge/ResinLayer2/RotZ     = 0.0 deg
+b:Ge/ResinLayer2/Include  = "True"
+s:Ge/ResinLayer2/Color    = "maroon"
+s:Ge/ResinLayer2/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+# The PLA detector holder realized with the 3D printer
+# ------------------------------------------------------
+#
+s:Ge/DetectorHolder/Type     = "TsCylinder"
+s:Ge/DetectorHolder/Parent   = "World"
+s:Ge/DetectorHolder/Material = "PolylactidAcid"
+d:Ge/DetectorHolder/RMin     = 4.25 mm       # Raggio interno dell'holder del rivelatore (PLA)
+d:Ge/DetectorHolder/RMax     = 4.75 mm       # Raggio esterno dell'holder del rivelatore (PLA)
+d:Ge/DetectorHolder/HL       = 1.155 cm      # Semi-lunghezza dell'holder del rivelatore (PLA)
+d:Ge/DetectorHolder/SPhi     = 0.00 deg      
+d:Ge/DetectorHolder/DPhi     = 360.0 deg      
+d:Ge/DetectorHolder/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/DetectorHolder/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+d:Ge/DetectorHolder/TransZ   = 0.955 cm     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/DetectorHolder/RotX     = 0.0 deg 
+d:Ge/DetectorHolder/RotY     = 0.0 deg
+d:Ge/DetectorHolder/RotZ     = 0.0 deg
+b:Ge/DetectorHolder/Include  = "True"
+s:Ge/DetectorHolder/Color    = "grey"
+s:Ge/DetectorHolder/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+
+# =======================================   SCORING  =======================================
+#
+# Calculation of the spectra of total energy deposit inside the SiC detector. The output
+# is saved in an .xml file that must be read with a dedicated python script, wrote by Pablo.
+#
+s:Sc/EnergyDepositedSpectra/Quantity                        = "EnergyDeposit"
+s:Sc/EnergyDepositedSpectra/Component                       = "Detector1"
+b:Sc/EnergyDepositedSpectra/OutputToConsole                 = "TRUE"
+s:Sc/EnergyDepositedSpectra/IfOutputFileAlreadyExists       = "Overwrite"
+i:Sc/EnergyDepositedSpectra/HistogramBins                   = 10000
+d:Sc/EnergyDepositedSpectra/HistogramMin                    = 0 keV
+d:Sc/EnergyDepositedSpectra/HistogramMax                    = 300 keV
+s:Sc/EnergyDepositedSpectra/OutputType                      = "Xml"
+# sv:Sc/EnergyDepositedSpectra/OnlyIncludeParticlesCharged  = 1 "Positive"
+s:Sc/XmlFileName		   		            = "EnergyDepositedSpectra_5_0"
+
+
+# Construction of the Bragg peak inside the water phantom. Z binning causes creation of a 
+# parallel world for scoring.
+#
+# s:Sc/depthDoseDistributionDegrader/Quantity                  = "EnergyDeposit"
+# s:Sc/depthDoseDistributionDegrader/Component                 = "WaterPhantom"
+# b:Sc/depthDoseDistributionDegrader/OutputToConsole           = "TRUE"
+# s:Sc/depthDoseDistributionDegrader/IfOutputFileAlreadyExists = "Overwrite"
+# i:Sc/depthDoseDistributionDegrader/ZBins                     =  320
+# s:Sc/depthDoseDistributionDegrader/OutputFile                = "DepthDose_WaterPhantom"
+
+
+# The following commands fill an histogram with the Fluence: the total track lenght divided
+# by the volume.
+#
+# s:Sc/FluenceSpectra/Quantity                    = "Fluence"
+# s:Sc/FluenceSpectra/Component                   = "Detector1"
+# b:Sc/FluenceSpectra/OutputToConsole             = "FALSE"
+# s:Sc/FluenceSpectra/IfOutputFileAlreadyExists   = "Overwrite"
+# i:Sc/FluenceSpectra/HistogramBins               = 10000 
+# d:Sc/FluenceSpectra/HistogramMin                = 0.03 /mm2
+# d:Sc/FluenceSpectra/HistogramMax                = 0.06 /mm2
+# s:Sc/FluenceSpectra/OutputType                  = "Xml"
+
+
+
+# =======================================   VISUALISATION  =======================================
+#
+s:Gr/ViewA/Type                               = "OpenGL"  # Commentare questa riga per bypassare la parte grafica
+i:Gr/ViewA/WindowSizeX                        = 900
+i:Gr/ViewA/WindowSizeY                        = 900
+# d:Gr/ViewA/Theta                            = 55 deg
+# d:Gr/ViewA/Phi                              = 20 deg
+# s:Gr/ViewA/Projection                       = "Perspective"
+# d:Gr/ViewA/PerspectiveAngle                 = 30 deg
+u:Gr/ViewA/Zoom                               = 1.3
+b:Gr/ViewA/HiddenLineRemovalForTrajectories   = "True"
+sv:Gr/ViewA/VisibleWorlds                     = 1 "All"
+# b:Gr/ViewA/IncludeAxes      		      = "True"
+# d:Gr/ViewA/AxesSize                         = 0.1 mm
+Ts/UseQt = "True"					  # Commentare questa riga per bypassare la parte grafica
+
+
+sv:Ph/Default/Modules = 6 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping"
+
+
+
+# =======================================  BEAM  =======================================
+
+s:So/Example/Type                      = "Beam"
+s:So/Example/Component                 = "BeamPosition"
+d:Ge/BeamPosition/TransZ	       = -70 cm
+d:Ge/BeamPosition/RotX		       = 0.0 deg
+s:So/Example/BeamParticle              = "proton"
+# s:So/Example/BeamParticle	       = "GenericIon(2,4,2)"  # alpha
+d:So/Example/BeamEnergy                = 58.81 MeV
+u:So/Example/BeamEnergySpread          = 0.4 
+s:So/Example/BeamPositionDistribution  = "Flat" 
+s:So/Example/BeamPositionCutoffShape   = "Ellipse" # Point, Ellipse, Rectangle or Isotropic
+d:So/Example/BeamPositionCutoffX       = 30.0 mm
+d:So/Example/BeamPositionCutoffY       = 30.0 mm
+# d:So/Example/BeamPositionSpreadX     = 0.65 um
+# d:So/Example/BeamPositionSpreadY     = 0.65 um
+s:So/Example/BeamAngularDistribution   = "Gaussian"
+# s:So/Example/BeamAngularDistribution = "None"
+d:So/Example/BeamAngularCutoffX        = 90.0 deg
+d:So/Example/BeamAngularCutoffY        = 90.0 deg
+d:So/Example/BeamAngularSpreadX        = 0.0005 rad
+d:So/Example/BeamAngularSpreadY        = 0.0005 rad
+
+
+
+# ==================================  OTHER SETTING  ===================================
+
+# Tracking verbosity
+#
+i:Ts/TrackingVerbosity = 0
+d:Ph/Default/CutForAllParticles = 0.01 mm 
+i:Ts/Seed = 3
+b:Ge/QuitIfOverlapDetected = "True"
+# b:Ts/PauseBeforeSequence = "True"
+
+# =====================   NUMBER OF EVENTS  =======================================
+#
+i:So/Example/NumberOfHistoriesInRun = 1000
+
+i:Ts/NumberOfThreads = 0    # If set to 0, TOPAS will use all the computer's threads
+
+# i:Ts/ShowHistoryCountAtInterval = 100
+
+b:Ts/PauseBeforeQuit = "True"
+
