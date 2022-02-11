@@ -286,8 +286,8 @@ s:Ge/ThirdLayerPCB/Type     = "TsCylinder"
 s:Ge/ThirdLayerPCB/Parent   = "World"
 s:Ge/ThirdLayerPCB/Material = "Fiberglass"
 d:Ge/ThirdLayerPCB/RMin     = 0.00 mm      
-d:Ge/ThirdLayerPCB/RMax     = 4.25 mm      # Raggio del secondo strato del PCB
-d:Ge/ThirdLayerPCB/HL       = 0.947 mm     # Semi-spessore del secondo strato PCB 
+d:Ge/ThirdLayerPCB/RMax     = 4.25 mm      # Raggio del terzo strato del PCB
+d:Ge/ThirdLayerPCB/HL       = 0.947 mm     # Semi-spessore del terzo strato PCB 
 d:Ge/ThirdLayerPCB/SPhi     = 0.00 deg      
 d:Ge/ThirdLayerPCB/DPhi     = 360.0 deg      
 d:Ge/ThirdLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
@@ -299,6 +299,28 @@ d:Ge/ThirdLayerPCB/RotZ     = 0.0 deg
 b:Ge/ThirdLayerPCB/Include  = "True"
 s:Ge/ThirdLayerPCB/Color    = "green"
 s:Ge/ThirdLayerPCB/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+# The fourth layer of the Printed Circuit Board (PCB, Thick: 43 um)
+# -------------------------------------------------------------------
+#
+s:Ge/FourthLayerPCB/Type     = "TsCylinder"
+s:Ge/FourthLayerPCB/Parent   = "World"
+s:Ge/FourthLayerPCB/Material = "Copper"
+d:Ge/FourthLayerPCB/RMin     = 0.00 mm      
+d:Ge/FourthLayerPCB/RMax     = 4.25 mm      # Raggio del quarto strato del PCB
+d:Ge/FourthLayerPCB/HL       = 0.0215 mm    # Semi-spessore del quarto strato del PCB 
+d:Ge/FourthLayerPCB/SPhi     = 0.00 deg      
+d:Ge/FourthLayerPCB/DPhi     = 360.0 deg      
+d:Ge/FourthLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/FourthLayerPCB/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+d:Ge/FourthLayerPCB/TransZ   = 3.00 mm      # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/FourthLayerPCB/RotX     = 0.0 deg 
+d:Ge/FourthLayerPCB/RotY     = 0.0 deg
+d:Ge/FourthLayerPCB/RotZ     = 0.0 deg
+b:Ge/FourthLayerPCB/Include  = "True"
+s:Ge/FourthLayerPCB/Color   = "brown"
+s:Ge/FourthLayerPCB/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
 
 
 
