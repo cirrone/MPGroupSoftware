@@ -6,21 +6,28 @@
 
 # =======================================   MATERIALS   =======================================
 #
-# Silicon Carbide
+# Silicon Carbide     # Detectors
 #
-sv:Ma/SiliconCarbide/Components 	= 2 "Silicon" "Carbon"     # Detectors
+sv:Ma/SiliconCarbide/Components 	= 2 "Silicon" "Carbon"
 uv:Ma/SiliconCarbide/Fractions  	= 2 0.5 0.5
 d:Ma/SiliconCarbide/Density 		= 3.21 g/cm3
 s:Ma/SiliconCarbide/DefaultColor 	= "red"
 
-# Fiberglass
+# Lead/Tin alloy     # First and last layer of the Printed Circuit Board
 #
-sv:Ma/Fiberglass/Components 		= 2 "Nickel" "Silicon"     # Printed Circuit Board
-uv:Ma/Fiberglass/Fractions  		= 2 0.80693 0.19306          
-d:Ma/Fiberglass/Density 		= 7.40 g/cm3		     
+sv:Ma/PbSnalloy/Components 		= 2 "Lead" "Tin"
+uv:Ma/PbSnalloy/Fractions  		= 2 0.64 0.36          
+d:Ma/PbSnalloy/Density 			= 7.265 g/cm3		     
+s:Ma/PbSnalloy/DefaultColor 		= "gray"
+
+# Fiberglass FR-4     # Middle layer of the Printed Circuit Board
+#
+sv:Ma/Fiberglass/Components 		= 8 "Oxygen" "Carbon" "Hydrogen" "Silicon" "Sodium" "Boron" "Phosphorus" "Chlorine"
+uv:Ma/Fiberglass/Fractions  		= 8 0.203 0.401 0.040 0.045 0.073 0.034 0.148 0.056          
+d:Ma/Fiberglass/Density 		= 1.90 g/cm3		     
 s:Ma/Fiberglass/DefaultColor 		= "green"
 
-# Polylactid Acid
+# Polylactid Acid     # Holder
 #
 sv:Ma/PolylactidAcid/Components 	= 3 "Carbon" "Hydrogen" "Oxygen"    # Holder    
 uv:Ma/PolylactidAcid/Fractions  	= 3 0.4946 0.0554 0.4500         
