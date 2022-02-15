@@ -57,24 +57,24 @@ b:Ge/World/Invisible = "False"
 # outer diameter 60 mm
 ###########################################################################
 #
-s:Ge/Nozzle/Parent  = "World"
-s:Ge/Nozzle/Type    = "TsCylinder"
-s:Ge/Nozzle/Material= "Brass"
-d:Ge/Nozzle/RMin    = 18.0 mm      # Raggio interno del nozzle    
-d:Ge/Nozzle/RMax    = 30.0 mm      # Raggio esterno del nozzle
-d:Ge/Nozzle/HL      = 20.0 cm      # Semi-lunghezza del nozzle
-d:Ge/Nozzle/SPhi    = 0.0 deg
-d:Ge/Nozzle/DPhi    = 360.0 deg
-d:Ge/Nozzle/TransX  = 0.0 mm       # Posizione rispetto al centro del World volume (dir X)
-d:Ge/Nozzle/TransY  = 0.0 mm       # Posizione rispetto al centro del World volume (dir Y)
-d:Ge/Nozzle/TransZ  = -29.4 cm     # Posizione rispetto al centro del World volume (dir Z)
-d:Ge/Nozzle/RotX    = 0.0 deg
-d:Ge/Nozzle/RotY    = 0.0 deg
-d:Ge/Nozzle/RotZ    = 0.0 deg
-b:Ge/Nozzle/Include = "True"
-s:Ge/Nozzle/Color    = "Yellow"
-s:Ge/Nozzle/DrawingStyle = "Solid"
-s:Ge/Nozzle/Message = "Nozzle is constructed!"
+# s:Ge/Nozzle/Parent  = "World"
+# s:Ge/Nozzle/Type    = "TsCylinder"
+# s:Ge/Nozzle/Material= "Brass"
+# d:Ge/Nozzle/RMin    = 18.0 mm      # Raggio interno del nozzle    
+# d:Ge/Nozzle/RMax    = 30.0 mm      # Raggio esterno del nozzle
+# d:Ge/Nozzle/HL      = 20.0 cm      # Semi-lunghezza del nozzle
+# d:Ge/Nozzle/SPhi    = 0.0 deg
+# d:Ge/Nozzle/DPhi    = 360.0 deg
+# d:Ge/Nozzle/TransX  = 0.0 mm       # Posizione rispetto al centro del World volume (dir X)
+# d:Ge/Nozzle/TransY  = 0.0 mm       # Posizione rispetto al centro del World volume (dir Y)
+# d:Ge/Nozzle/TransZ  = -29.4 cm     # Posizione rispetto al centro del World volume (dir Z)
+# d:Ge/Nozzle/RotX    = 0.0 deg
+# d:Ge/Nozzle/RotY    = 0.0 deg
+# d:Ge/Nozzle/RotZ    = 0.0 deg
+# b:Ge/Nozzle/Include = "True"
+# s:Ge/Nozzle/Color    = "Yellow"
+# s:Ge/Nozzle/DrawingStyle = "Solid"
+# s:Ge/Nozzle/Message = "Nozzle is constructed!"
 
 
 ###########################################################################
@@ -82,24 +82,24 @@ s:Ge/Nozzle/Message = "Nozzle is constructed!"
 # A 6 cm diameter brass collimator with opening in the center
 ###########################################################################
 #
-s:Ge/Collimator/Parent  = "World"
-s:Ge/Collimator/Type    = "TsCylinder"
-s:Ge/Collimator/Material= "Brass"
-d:Ge/Collimator/RMin    = 2.0 mm      # Raggio dell'apertura del collimatore finale
-d:Ge/Collimator/RMax    = 4.0 cm      # Raggio esterno del collimatore finale
-d:Ge/Collimator/HL      = 3.5  mm     # Semi-spessore del collimatore finale
-d:Ge/Collimator/SPhi    = 0.0 deg
-d:Ge/Collimator/DPhi    = 360.0 deg
-d:Ge/Collimator/TransX  = 0.0 mm      # Posizione rispetto al centro del World volume (dir X)
-d:Ge/Collimator/TransY  = 0.0 mm      # Posizione rispetto al centro del World volume (dir Y)
-d:Ge/Collimator/TransZ  = -9.05 cm    # Posizione rispetto al centro del World volume (dir Z)
-d:Ge/Collimator/RotX    = 0.0 deg
-d:Ge/Collimator/RotY    = 0.0 deg
-d:Ge/Collimator/RotZ    = 0.0 deg
-b:Ge/Collimator/Include = "True"
-s:Ge/Collimator/Color    = "Yellow"
-s:Ge/Collimator/DrawingStyle = "Solid"
-s:Ge/Collimator/Message = "Collimator is constructed!"
+# s:Ge/Collimator/Parent  = "World"
+# s:Ge/Collimator/Type    = "TsCylinder"
+# s:Ge/Collimator/Material= "Brass"
+# d:Ge/Collimator/RMin    = 2.0 mm      # Raggio dell'apertura del collimatore finale
+# d:Ge/Collimator/RMax    = 4.0 cm      # Raggio esterno del collimatore finale
+# d:Ge/Collimator/HL      = 3.5  mm     # Semi-spessore del collimatore finale
+# d:Ge/Collimator/SPhi    = 0.0 deg
+# d:Ge/Collimator/DPhi    = 360.0 deg
+# d:Ge/Collimator/TransX  = 0.0 mm      # Posizione rispetto al centro del World volume (dir X)
+# d:Ge/Collimator/TransY  = 0.0 mm      # Posizione rispetto al centro del World volume (dir Y)
+# d:Ge/Collimator/TransZ  = -9.05 cm    # Posizione rispetto al centro del World volume (dir Z)
+# d:Ge/Collimator/RotX    = 0.0 deg
+# d:Ge/Collimator/RotY    = 0.0 deg
+# d:Ge/Collimator/RotZ    = 0.0 deg
+# b:Ge/Collimator/Include = "True"
+# s:Ge/Collimator/Color    = "Yellow"
+# s:Ge/Collimator/DrawingStyle = "Solid"
+# s:Ge/Collimator/Message = "Collimator is constructed!"
 
 
 #################################################################################
