@@ -479,53 +479,50 @@ s:Ge/ResinLayer3/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullW
 
 # =======================================   SCORING  =======================================
 #
-# Calculation of the spectra of total energy deposit inside the four SiC detectors. The outputs
-# are saved in .xml files that must be read with a dedicated python script, wrote by Pablo.
-# -----------------------------------------------------------------------------------------------
+# Calculation of the spectra of total energy deposit inside the four SiC detectors. The output
+# is saved in a .xml file that must be read with a dedicated python script, written by Pablo.
+# ----------------------------------------------------------------------------------------------
 #
-s:Sc/EnergyDepositedSpectraDet1/Quantity                        = "EnergyDeposit"
-s:Sc/EnergyDepositedSpectraDet1/Component                       = "Detector1"       # Detector 1
-b:Sc/EnergyDepositedSpectraDet1/OutputToConsole                 = "TRUE"
-s:Sc/EnergyDepositedSpectraDet1/IfOutputFileAlreadyExists       = "Overwrite"
-i:Sc/EnergyDepositedSpectraDet1/HistogramBins                   = 10000
-d:Sc/EnergyDepositedSpectraDet1/HistogramMin                    = 0 keV
-d:Sc/EnergyDepositedSpectraDet1/HistogramMax                    = 300 keV
-s:Sc/EnergyDepositedSpectraDet1/OutputType                      = "Xml"
-# sv:Sc/EnergyDepositedSpectraDet1/OnlyIncludeParticlesCharged  = 1 "Positive"
-s:Sc/XmlFileName		   		            = "EnergyDepositedSpectra_DET1"
+s:Sc/EnergyDepositedSpectrumDet1/Quantity                        = "EnergyDeposit"
+s:Sc/EnergyDepositedSpectrumDet1/Component                       = "Detector1"       # Detector 1
+b:Sc/EnergyDepositedSpectrumDet1/OutputToConsole                 = "TRUE"
+s:Sc/EnergyDepositedSpectrumDet1/IfOutputFileAlreadyExists       = "Overwrite"
+i:Sc/EnergyDepositedSpectrumDet1/HistogramBins                   = 10000
+d:Sc/EnergyDepositedSpectrumDet1/HistogramMin                    = 0 keV
+d:Sc/EnergyDepositedSpectrumDet1/HistogramMax                    = 300 keV
+s:Sc/EnergyDepositedSpectrumDet1/OutputType                      = "Xml"
+# sv:Sc/EnergyDepositedSpectrumDet1/OnlyIncludeParticlesCharged  = 1 "Positive"
+s:Sc/XmlFileName               			  	         = "EnergyDepositedSpectra"
 
-# s:Sc/EnergyDepositedSpectraDet2/Quantity                        = "EnergyDeposit"
-# s:Sc/EnergyDepositedSpectraDet2/Component                       = "Detector2"       # Detector 2
-# b:Sc/EnergyDepositedSpectraDet2/OutputToConsole                 = "TRUE"
-# s:Sc/EnergyDepositedSpectraDet2/IfOutputFileAlreadyExists       = "Overwrite"
-# i:Sc/EnergyDepositedSpectraDet2/HistogramBins                   = 10000
-# d:Sc/EnergyDepositedSpectraDet2/HistogramMin                    = 0 keV
-# d:Sc/EnergyDepositedSpectraDet2/HistogramMax                    = 300 keV
-# s:Sc/EnergyDepositedSpectraDet2/OutputType                      = "Xml"
-# # sv:Sc/EnergyDepositedSpectraDet2/OnlyIncludeParticlesCharged  = 1 "Positive"
-# s:Sc/XmlFileName		   		            = "EnergyDepositedSpectra_DET2"
+s:Sc/EnergyDepositedSpectrumDet2/Quantity                        = "EnergyDeposit"
+s:Sc/EnergyDepositedSpectrumDet2/Component                       = "Detector2"       # Detector 2
+b:Sc/EnergyDepositedSpectrumDet2/OutputToConsole                 = "TRUE"
+s:Sc/EnergyDepositedSpectrumDet2/IfOutputFileAlreadyExists       = "Overwrite"
+i:Sc/EnergyDepositedSpectrumDet2/HistogramBins                   = 10000
+d:Sc/EnergyDepositedSpectrumDet2/HistogramMin                    = 0 keV
+d:Sc/EnergyDepositedSpectrumDet2/HistogramMax                    = 300 keV
+s:Sc/EnergyDepositedSpectrumDet2/OutputType                      = "Xml"
+# sv:Sc/EnergyDepositedSpectrumDet2/OnlyIncludeParticlesCharged  = 1 "Positive"                
 
-# s:Sc/EnergyDepositedSpectraDet3/Quantity                        = "EnergyDeposit"
-# s:Sc/EnergyDepositedSpectraDet3/Component                       = "Detector3"       # Detector 3
-# b:Sc/EnergyDepositedSpectraDet3/OutputToConsole                 = "TRUE"
-# s:Sc/EnergyDepositedSpectraDet3/IfOutputFileAlreadyExists       = "Overwrite"
-# i:Sc/EnergyDepositedSpectraDet3/HistogramBins                   = 10000
-# d:Sc/EnergyDepositedSpectraDet3/HistogramMin                    = 0 keV
-# d:Sc/EnergyDepositedSpectraDet3/HistogramMax                    = 300 keV
-# s:Sc/EnergyDepositedSpectraDet3/OutputType                      = "Xml"
-# # sv:Sc/EnergyDepositedSpectraDet3/OnlyIncludeParticlesCharged  = 1 "Positive"
-# s:Sc/XmlFileName		   		            = "EnergyDepositedSpectra_DET3"
+s:Sc/EnergyDepositedSpectrumDet3/Quantity                        = "EnergyDeposit"
+s:Sc/EnergyDepositedSpectrumDet3/Component                       = "Detector3"       # Detector 3
+b:Sc/EnergyDepositedSpectrumDet3/OutputToConsole                 = "TRUE"
+s:Sc/EnergyDepositedSpectrumDet3/IfOutputFileAlreadyExists       = "Overwrite"
+i:Sc/EnergyDepositedSpectrumDet3/HistogramBins                   = 10000
+d:Sc/EnergyDepositedSpectrumDet3/HistogramMin                    = 0 keV
+d:Sc/EnergyDepositedSpectrumDet3/HistogramMax                    = 300 keV
+s:Sc/EnergyDepositedSpectrumDet3/OutputType                      = "Xml"
+# sv:Sc/EnergyDepositedSpectrumDet3/OnlyIncludeParticlesCharged  = 1 "Positive"
 
-# s:Sc/EnergyDepositedSpectraDet4/Quantity                        = "EnergyDeposit"
-# s:Sc/EnergyDepositedSpectraDet4/Component                       = "Detector4"       # Detector 4
-# b:Sc/EnergyDepositedSpectraDet4/OutputToConsole                 = "TRUE"
-# s:Sc/EnergyDepositedSpectraDet4/IfOutputFileAlreadyExists       = "Overwrite"
-# i:Sc/EnergyDepositedSpectraDet4/HistogramBins                   = 10000
-# d:Sc/EnergyDepositedSpectraDet4/HistogramMin                    = 0 keV
-# d:Sc/EnergyDepositedSpectraDet4/HistogramMax                    = 300 keV
-# s:Sc/EnergyDepositedSpectraDet4/OutputType                      = "Xml"
-# # sv:Sc/EnergyDepositedSpectraDet4/OnlyIncludeParticlesCharged  = 1 "Positive"
-# s:Sc/XmlFileName		   		            = "EnergyDepositedSpectra_DET4"
+s:Sc/EnergyDepositedSpectrumDet4/Quantity                        = "EnergyDeposit"
+s:Sc/EnergyDepositedSpectrumDet4/Component                       = "Detector4"       # Detector 4
+b:Sc/EnergyDepositedSpectrumDet4/OutputToConsole                 = "TRUE"
+s:Sc/EnergyDepositedSpectrumDet4/IfOutputFileAlreadyExists       = "Overwrite"
+i:Sc/EnergyDepositedSpectrumDet4/HistogramBins                   = 10000
+d:Sc/EnergyDepositedSpectrumDet4/HistogramMin                    = 0 keV
+d:Sc/EnergyDepositedSpectrumDet4/HistogramMax                    = 300 keV
+s:Sc/EnergyDepositedSpectrumDet4/OutputType                      = "Xml"
+# sv:Sc/EnergyDepositedSpectrumDet4/OnlyIncludeParticlesCharged  = 1 "Positive"
 
 
 # Construction of the Bragg peak inside the water phantom. Z binning causes creation of a 
@@ -556,7 +553,7 @@ s:Sc/XmlFileName		   		            = "EnergyDepositedSpectra_DET1"
 
 # =======================================   VISUALISATION  =======================================
 #
-s:Gr/ViewA/Type                               = "OpenGL"  # Commentare questa riga per bypassare la parte grafica
+# s:Gr/ViewA/Type                               = "OpenGL"  # Commentare questa riga per bypassare la parte grafica
 i:Gr/ViewA/WindowSizeX                        = 900
 i:Gr/ViewA/WindowSizeY                        = 900
 # d:Gr/ViewA/Theta                            = 55 deg
@@ -568,7 +565,7 @@ b:Gr/ViewA/HiddenLineRemovalForTrajectories   = "True"
 sv:Gr/ViewA/VisibleWorlds                     = 1 "All"
 # b:Gr/ViewA/IncludeAxes      		      = "True"
 # d:Gr/ViewA/AxesSize                         = 0.1 mm
-Ts/UseQt = "True"					  # Commentare questa riga per bypassare la parte grafica
+# Ts/UseQt = "True"					  # Commentare questa riga per bypassare la parte grafica
 
 
 sv:Ph/Default/Modules = 6 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping"
@@ -612,7 +609,7 @@ b:Ge/QuitIfOverlapDetected = "True"
 
 # =====================   NUMBER OF EVENTS  =======================================
 #
-i:So/Example/NumberOfHistoriesInRun = 10
+i:So/Example/NumberOfHistoriesInRun = 1000000
 
 i:Ts/NumberOfThreads = 0    # If set to 0, TOPAS will use all the computer's threads
 
