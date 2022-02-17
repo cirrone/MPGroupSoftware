@@ -57,24 +57,24 @@ b:Ge/World/Invisible = "False"
 # outer diameter 60 mm
 ###########################################################################
 #
-# s:Ge/Nozzle/Parent  = "World"
-# s:Ge/Nozzle/Type    = "TsCylinder"
-# s:Ge/Nozzle/Material= "Brass"
-# d:Ge/Nozzle/RMin    = 18.0 mm      # Raggio interno del nozzle    
-# d:Ge/Nozzle/RMax    = 30.0 mm      # Raggio esterno del nozzle
-# d:Ge/Nozzle/HL      = 20.0 cm      # Semi-lunghezza del nozzle
-# d:Ge/Nozzle/SPhi    = 0.0 deg
-# d:Ge/Nozzle/DPhi    = 360.0 deg
-# d:Ge/Nozzle/TransX  = 0.0 mm       # Posizione rispetto al centro del World volume (dir X)
-# d:Ge/Nozzle/TransY  = 0.0 mm       # Posizione rispetto al centro del World volume (dir Y)
-# d:Ge/Nozzle/TransZ  = -29.4 cm     # Posizione rispetto al centro del World volume (dir Z)
-# d:Ge/Nozzle/RotX    = 0.0 deg
-# d:Ge/Nozzle/RotY    = 0.0 deg
-# d:Ge/Nozzle/RotZ    = 0.0 deg
-# b:Ge/Nozzle/Include = "True"
-# s:Ge/Nozzle/Color    = "Yellow"
-# s:Ge/Nozzle/DrawingStyle = "Solid"
-# s:Ge/Nozzle/Message = "Nozzle is constructed!"
+s:Ge/Nozzle/Parent  = "World"
+s:Ge/Nozzle/Type    = "TsCylinder"
+s:Ge/Nozzle/Material= "Brass"
+d:Ge/Nozzle/RMin    = 18.0 mm      # Raggio interno del nozzle    
+d:Ge/Nozzle/RMax    = 30.0 mm      # Raggio esterno del nozzle
+d:Ge/Nozzle/HL      = 20.0 cm      # Semi-lunghezza del nozzle
+d:Ge/Nozzle/SPhi    = 0.0 deg
+d:Ge/Nozzle/DPhi    = 360.0 deg
+d:Ge/Nozzle/TransX  = 0.0 mm       # Posizione rispetto al centro del World volume (dir X)
+d:Ge/Nozzle/TransY  = 0.0 mm       # Posizione rispetto al centro del World volume (dir Y)
+d:Ge/Nozzle/TransZ  = -29.4 cm     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/Nozzle/RotX    = 0.0 deg
+d:Ge/Nozzle/RotY    = 0.0 deg
+d:Ge/Nozzle/RotZ    = 0.0 deg
+b:Ge/Nozzle/Include = "True"
+s:Ge/Nozzle/Color    = "Yellow"
+s:Ge/Nozzle/DrawingStyle = "Solid"
+s:Ge/Nozzle/Message = "Nozzle is constructed!"
 
 
 ###########################################################################
@@ -82,24 +82,24 @@ b:Ge/World/Invisible = "False"
 # A 6 cm diameter brass collimator with opening in the center
 ###########################################################################
 #
-# s:Ge/Collimator/Parent  = "World"
-# s:Ge/Collimator/Type    = "TsCylinder"
-# s:Ge/Collimator/Material= "Brass"
-# d:Ge/Collimator/RMin    = 2.0 mm      # Raggio dell'apertura del collimatore finale
-# d:Ge/Collimator/RMax    = 4.0 cm      # Raggio esterno del collimatore finale
-# d:Ge/Collimator/HL      = 3.5  mm     # Semi-spessore del collimatore finale
-# d:Ge/Collimator/SPhi    = 0.0 deg
-# d:Ge/Collimator/DPhi    = 360.0 deg
-# d:Ge/Collimator/TransX  = 0.0 mm      # Posizione rispetto al centro del World volume (dir X)
-# d:Ge/Collimator/TransY  = 0.0 mm      # Posizione rispetto al centro del World volume (dir Y)
-# d:Ge/Collimator/TransZ  = -9.05 cm    # Posizione rispetto al centro del World volume (dir Z)
-# d:Ge/Collimator/RotX    = 0.0 deg
-# d:Ge/Collimator/RotY    = 0.0 deg
-# d:Ge/Collimator/RotZ    = 0.0 deg
-# b:Ge/Collimator/Include = "True"
-# s:Ge/Collimator/Color    = "Yellow"
-# s:Ge/Collimator/DrawingStyle = "Solid"
-# s:Ge/Collimator/Message = "Collimator is constructed!"
+s:Ge/Collimator/Parent  = "World"
+s:Ge/Collimator/Type    = "TsCylinder"
+s:Ge/Collimator/Material= "Brass"
+d:Ge/Collimator/RMin    = 2.0 mm      # Raggio dell'apertura del collimatore finale
+d:Ge/Collimator/RMax    = 4.0 cm      # Raggio esterno del collimatore finale
+d:Ge/Collimator/HL      = 3.5  mm     # Semi-spessore del collimatore finale
+d:Ge/Collimator/SPhi    = 0.0 deg
+d:Ge/Collimator/DPhi    = 360.0 deg
+d:Ge/Collimator/TransX  = 0.0 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/Collimator/TransY  = 0.0 mm      # Posizione rispetto al centro del World volume (dir Y)
+d:Ge/Collimator/TransZ  = -9.05 cm    # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/Collimator/RotX    = 0.0 deg
+d:Ge/Collimator/RotY    = 0.0 deg
+d:Ge/Collimator/RotZ    = 0.0 deg
+b:Ge/Collimator/Include = "True"
+s:Ge/Collimator/Color    = "Yellow"
+s:Ge/Collimator/DrawingStyle = "Solid"
+s:Ge/Collimator/Message = "Collimator is constructed!"
 
 
 #################################################################################
@@ -479,23 +479,58 @@ s:Ge/ResinLayer3/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullW
 
 # =======================================   SCORING  =======================================
 #
-# Calculation of the spectra of total energy deposit inside the SiC detector. The output
-# is saved in an .xml file that must be read with a dedicated python script, wrote by Pablo.
+# Calculation of the spectra of total energy deposit inside the four SiC detectors. The outputs
+# are saved in .xml files that must be read with a dedicated python script, wrote by Pablo.
+# -----------------------------------------------------------------------------------------------
 #
-s:Sc/EnergyDepositedSpectra/Quantity                        = "EnergyDeposit"
-s:Sc/EnergyDepositedSpectra/Component                       = "Detector1"
-b:Sc/EnergyDepositedSpectra/OutputToConsole                 = "TRUE"
-s:Sc/EnergyDepositedSpectra/IfOutputFileAlreadyExists       = "Overwrite"
-i:Sc/EnergyDepositedSpectra/HistogramBins                   = 10000
-d:Sc/EnergyDepositedSpectra/HistogramMin                    = 0 keV
-d:Sc/EnergyDepositedSpectra/HistogramMax                    = 300 keV
-s:Sc/EnergyDepositedSpectra/OutputType                      = "Xml"
-# sv:Sc/EnergyDepositedSpectra/OnlyIncludeParticlesCharged  = 1 "Positive"
-s:Sc/XmlFileName		   		            = "EnergyDepositedSpectra_5_0"
+s:Sc/EnergyDepositedSpectraDet1/Quantity                        = "EnergyDeposit"
+s:Sc/EnergyDepositedSpectraDet1/Component                       = "Detector1"       # Detector 1
+b:Sc/EnergyDepositedSpectraDet1/OutputToConsole                 = "TRUE"
+s:Sc/EnergyDepositedSpectraDet1/IfOutputFileAlreadyExists       = "Overwrite"
+i:Sc/EnergyDepositedSpectraDet1/HistogramBins                   = 10000
+d:Sc/EnergyDepositedSpectraDet1/HistogramMin                    = 0 keV
+d:Sc/EnergyDepositedSpectraDet1/HistogramMax                    = 300 keV
+s:Sc/EnergyDepositedSpectraDet1/OutputType                      = "Xml"
+# sv:Sc/EnergyDepositedSpectraDet1/OnlyIncludeParticlesCharged  = 1 "Positive"
+s:Sc/XmlFileName		   		            = "EnergyDepositedSpectra_DET1"
+
+# s:Sc/EnergyDepositedSpectraDet2/Quantity                        = "EnergyDeposit"
+# s:Sc/EnergyDepositedSpectraDet2/Component                       = "Detector2"       # Detector 2
+# b:Sc/EnergyDepositedSpectraDet2/OutputToConsole                 = "TRUE"
+# s:Sc/EnergyDepositedSpectraDet2/IfOutputFileAlreadyExists       = "Overwrite"
+# i:Sc/EnergyDepositedSpectraDet2/HistogramBins                   = 10000
+# d:Sc/EnergyDepositedSpectraDet2/HistogramMin                    = 0 keV
+# d:Sc/EnergyDepositedSpectraDet2/HistogramMax                    = 300 keV
+# s:Sc/EnergyDepositedSpectraDet2/OutputType                      = "Xml"
+# # sv:Sc/EnergyDepositedSpectraDet2/OnlyIncludeParticlesCharged  = 1 "Positive"
+# s:Sc/XmlFileName		   		            = "EnergyDepositedSpectra_DET2"
+
+# s:Sc/EnergyDepositedSpectraDet3/Quantity                        = "EnergyDeposit"
+# s:Sc/EnergyDepositedSpectraDet3/Component                       = "Detector3"       # Detector 3
+# b:Sc/EnergyDepositedSpectraDet3/OutputToConsole                 = "TRUE"
+# s:Sc/EnergyDepositedSpectraDet3/IfOutputFileAlreadyExists       = "Overwrite"
+# i:Sc/EnergyDepositedSpectraDet3/HistogramBins                   = 10000
+# d:Sc/EnergyDepositedSpectraDet3/HistogramMin                    = 0 keV
+# d:Sc/EnergyDepositedSpectraDet3/HistogramMax                    = 300 keV
+# s:Sc/EnergyDepositedSpectraDet3/OutputType                      = "Xml"
+# # sv:Sc/EnergyDepositedSpectraDet3/OnlyIncludeParticlesCharged  = 1 "Positive"
+# s:Sc/XmlFileName		   		            = "EnergyDepositedSpectra_DET3"
+
+# s:Sc/EnergyDepositedSpectraDet4/Quantity                        = "EnergyDeposit"
+# s:Sc/EnergyDepositedSpectraDet4/Component                       = "Detector4"       # Detector 4
+# b:Sc/EnergyDepositedSpectraDet4/OutputToConsole                 = "TRUE"
+# s:Sc/EnergyDepositedSpectraDet4/IfOutputFileAlreadyExists       = "Overwrite"
+# i:Sc/EnergyDepositedSpectraDet4/HistogramBins                   = 10000
+# d:Sc/EnergyDepositedSpectraDet4/HistogramMin                    = 0 keV
+# d:Sc/EnergyDepositedSpectraDet4/HistogramMax                    = 300 keV
+# s:Sc/EnergyDepositedSpectraDet4/OutputType                      = "Xml"
+# # sv:Sc/EnergyDepositedSpectraDet4/OnlyIncludeParticlesCharged  = 1 "Positive"
+# s:Sc/XmlFileName		   		            = "EnergyDepositedSpectra_DET4"
 
 
 # Construction of the Bragg peak inside the water phantom. Z binning causes creation of a 
 # parallel world for scoring.
+# -----------------------------------------------------------------------------------------
 #
 # s:Sc/depthDoseDistributionDegrader/Quantity                  = "EnergyDeposit"
 # s:Sc/depthDoseDistributionDegrader/Component                 = "WaterPhantom"
