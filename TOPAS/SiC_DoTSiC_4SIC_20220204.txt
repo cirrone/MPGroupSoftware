@@ -603,7 +603,7 @@ d:So/Example/BeamAngularSpreadY        = 0.0005 rad
 #
 i:Ts/TrackingVerbosity = 0
 d:Ph/Default/CutForAllParticles = 0.01 mm 
-# i:Ts/Seed = 1  
+i:Ts/Seed = 1 
 b:Ge/QuitIfOverlapDetected = "True"
 # b:Ts/PauseBeforeSequence = "True"
 
