@@ -23,16 +23,13 @@
 # Voxelization procedure
 /voxels/setVoxelSizes 1 40 40 mm
 
-
 ##########################
 # Initialisation procedure
 /run/initialize
 
-
 /run/setCutForAGivenParticle e- 0.1 mm
 /run/setCutForAGivenParticle e+ 0.1 mm
 /run/setCutForAGivenParticle proton 0.1 mm
-
 
 #########################
 # Set the primary particle type,
@@ -68,7 +65,7 @@
 ### RBE
 #/rbe/verbose 1
 #/rbe/loadLemTable data/rbe/lem1.csv
-#/rbe/calculate true
+#/rbe/calculate false
 #/rbe/accumulate true
 
 ## U87
@@ -90,29 +87,28 @@
 
 #########################
 # Start of the run
-#
+#########################
 # If secondary particles dose & fluence are needed
+#
 #/analysis/secondary true
 #/analysis/computeLet
 
 # Default material is water liquid
 #/changePhantom/material G4_WATER
 
-#/run/printProgress 10000
+/run/printProgress 10000
 #/run/beamOn 10
 #/tracking/verbose 0
 
+############################
+#     VISUALISATION
+############################
+#vis/open OGLSQt
+#/vis/drawVolume
+#/vis/scene/endOfEventAction accumulate
+#/vis/scene/add/trajectories smooth
 
-/vis/open OGLSQt
-/vis/drawVolume
-
-/vis/scene/endOfEventAction accumulate
-/vis/scene/add/trajectories smooth
-
-#/run/verbose 2
-
-#/run/beamOn 1000000
-/run/beamOn 50
+/run/beamOn 1000000
 
 
  
