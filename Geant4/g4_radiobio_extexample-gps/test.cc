@@ -23,7 +23,12 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 
-// main file
+// D Chiappara, GAP Cirrone, G Petringa
+// ** RADIOBIO  example **
+// make easy the calculation of the main radiobiology quantities used in
+// charged particles radiation therapy: depth dose, Fluence in depth,
+// LET (Linear Energy Transfer) and RBE (Relative Bioology Effectiveness)
+//
 
 #include "G4RunManager.hh"
 #include "G4UImanager.hh"
