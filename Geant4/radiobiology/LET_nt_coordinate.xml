@@ -1,0 +1,4418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aida SYSTEM "http://aida.freehep.org/schemas/3.2.1/aida.dtd">
+<aida version="3.2.1">
+  <implementation package="tools" version="5.6.0"/>
+  <tuple path="/" name="coordinate" title="LET">
+    <columns>
+      <column name="i" type="int"/>
+      <column name="j" type="int"/>
+      <column name="k" type="int"/>
+      <column name="TotalLETD" type="double"/>
+      <column name="TotalLETT" type="double"/>
+      <column name="A" type="int"/>
+      <column name="Z" type="int"/>
+      <column name="IonLetD" type="double"/>
+      <column name="IonLetT" type="double"/>
+    </columns>
+    <rows>
+      <row>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.1085"/>
+        <entry value="1.10854"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.1085"/>
+        <entry value="1.10854"/>
+      </row>
+      <row>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.1085"/>
+        <entry value="1.10854"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.1085"/>
+        <entry value="1.10854"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.1085"/>
+        <entry value="1.10854"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.1085"/>
+        <entry value="1.10854"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.1085"/>
+        <entry value="1.10854"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.1085"/>
+        <entry value="1.10854"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.1085"/>
+        <entry value="1.10854"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.1085"/>
+        <entry value="1.10854"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.1085"/>
+        <entry value="1.10854"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.12568"/>
+        <entry value="1.1255"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.12568"/>
+        <entry value="1.1255"/>
+      </row>
+      <row>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.12568"/>
+        <entry value="1.1255"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.12568"/>
+        <entry value="1.1255"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.12568"/>
+        <entry value="1.1255"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.12568"/>
+        <entry value="1.1255"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.12568"/>
+        <entry value="1.1255"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.12568"/>
+        <entry value="1.1255"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.12568"/>
+        <entry value="1.1255"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.12568"/>
+        <entry value="1.1255"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.12568"/>
+        <entry value="1.1255"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.8587"/>
+        <entry value="1.34312"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.14341"/>
+        <entry value="1.14346"/>
+      </row>
+      <row>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.8587"/>
+        <entry value="1.34312"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="10.7827"/>
+        <entry value="6.93278"/>
+      </row>
+      <row>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.8587"/>
+        <entry value="1.34312"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.8587"/>
+        <entry value="1.34312"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.8587"/>
+        <entry value="1.34312"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.8587"/>
+        <entry value="1.34312"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.8587"/>
+        <entry value="1.34312"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.8587"/>
+        <entry value="1.34312"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.8587"/>
+        <entry value="1.34312"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.8587"/>
+        <entry value="1.34312"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="3"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.88486"/>
+        <entry value="1.26701"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.16261"/>
+        <entry value="1.16266"/>
+      </row>
+      <row>
+        <entry value="3"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.88486"/>
+        <entry value="1.26701"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="7.21459"/>
+        <entry value="3.35641"/>
+      </row>
+      <row>
+        <entry value="3"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.88486"/>
+        <entry value="1.26701"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="3"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.88486"/>
+        <entry value="1.26701"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="3"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.88486"/>
+        <entry value="1.26701"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="3"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.88486"/>
+        <entry value="1.26701"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="3"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.88486"/>
+        <entry value="1.26701"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="3"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.88486"/>
+        <entry value="1.26701"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="3"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.88486"/>
+        <entry value="1.26701"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="3"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.88486"/>
+        <entry value="1.26701"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="4"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="134.381"/>
+        <entry value="1.32277"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.18485"/>
+        <entry value="1.18512"/>
+      </row>
+      <row>
+        <entry value="4"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="134.381"/>
+        <entry value="1.32277"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="24.1339"/>
+        <entry value="7.34785"/>
+      </row>
+      <row>
+        <entry value="4"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="134.381"/>
+        <entry value="1.32277"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="4"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="134.381"/>
+        <entry value="1.32277"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="4"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="134.381"/>
+        <entry value="1.32277"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="4"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="134.381"/>
+        <entry value="1.32277"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="4"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="134.381"/>
+        <entry value="1.32277"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="1069.08"/>
+        <entry value="1069.08"/>
+      </row>
+      <row>
+        <entry value="4"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="134.381"/>
+        <entry value="1.32277"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="4"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="134.381"/>
+        <entry value="1.32277"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="4"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="134.381"/>
+        <entry value="1.32277"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="5"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.20481"/>
+        <entry value="1.20486"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.20481"/>
+        <entry value="1.20486"/>
+      </row>
+      <row>
+        <entry value="5"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.20481"/>
+        <entry value="1.20486"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="5"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.20481"/>
+        <entry value="1.20486"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="5"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.20481"/>
+        <entry value="1.20486"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="5"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.20481"/>
+        <entry value="1.20486"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="5"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.20481"/>
+        <entry value="1.20486"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="5"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.20481"/>
+        <entry value="1.20486"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="5"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.20481"/>
+        <entry value="1.20486"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="5"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.20481"/>
+        <entry value="1.20486"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="5"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.20481"/>
+        <entry value="1.20486"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.22785"/>
+        <entry value="1.22769"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.22785"/>
+        <entry value="1.22769"/>
+      </row>
+      <row>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.22785"/>
+        <entry value="1.22769"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.22785"/>
+        <entry value="1.22769"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.22785"/>
+        <entry value="1.22769"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.22785"/>
+        <entry value="1.22769"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.22785"/>
+        <entry value="1.22769"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.22785"/>
+        <entry value="1.22769"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.22785"/>
+        <entry value="1.22769"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.22785"/>
+        <entry value="1.22769"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.22785"/>
+        <entry value="1.22769"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.26491"/>
+        <entry value="1.25277"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.25217"/>
+        <entry value="1.2519"/>
+      </row>
+      <row>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.26491"/>
+        <entry value="1.25277"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="39.853"/>
+        <entry value="40.4547"/>
+      </row>
+      <row>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.26491"/>
+        <entry value="1.25277"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.26491"/>
+        <entry value="1.25277"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.26491"/>
+        <entry value="1.25277"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.26491"/>
+        <entry value="1.25277"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.26491"/>
+        <entry value="1.25277"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.26491"/>
+        <entry value="1.25277"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.26491"/>
+        <entry value="1.25277"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.26491"/>
+        <entry value="1.25277"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="56.0914"/>
+        <entry value="1.65243"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.29523"/>
+        <entry value="1.29457"/>
+      </row>
+      <row>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="56.0914"/>
+        <entry value="1.65243"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="6.55614"/>
+        <entry value="3.7861"/>
+      </row>
+      <row>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="56.0914"/>
+        <entry value="1.65243"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="56.0914"/>
+        <entry value="1.65243"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="56.0914"/>
+        <entry value="1.65243"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="56.0914"/>
+        <entry value="1.65243"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="56.0914"/>
+        <entry value="1.65243"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="56.0914"/>
+        <entry value="1.65243"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="3.96646"/>
+        <entry value="3.96646"/>
+      </row>
+      <row>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="56.0914"/>
+        <entry value="1.65243"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="1066.37"/>
+        <entry value="1066.37"/>
+      </row>
+      <row>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="56.0914"/>
+        <entry value="1.65243"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="9"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.31457"/>
+        <entry value="1.30608"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.30535"/>
+        <entry value="1.30521"/>
+      </row>
+      <row>
+        <entry value="9"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.31457"/>
+        <entry value="1.30608"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="36.8287"/>
+        <entry value="40.8759"/>
+      </row>
+      <row>
+        <entry value="9"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.31457"/>
+        <entry value="1.30608"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="9"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.31457"/>
+        <entry value="1.30608"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="9"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.31457"/>
+        <entry value="1.30608"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="9"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.31457"/>
+        <entry value="1.30608"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="9"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.31457"/>
+        <entry value="1.30608"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="9"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.31457"/>
+        <entry value="1.30608"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="9"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.31457"/>
+        <entry value="1.30608"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="9"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.31457"/>
+        <entry value="1.30608"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="10"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.33563"/>
+        <entry value="1.33544"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.33563"/>
+        <entry value="1.33544"/>
+      </row>
+      <row>
+        <entry value="10"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.33563"/>
+        <entry value="1.33544"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="10"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.33563"/>
+        <entry value="1.33544"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="10"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.33563"/>
+        <entry value="1.33544"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="10"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.33563"/>
+        <entry value="1.33544"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="10"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.33563"/>
+        <entry value="1.33544"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="10"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.33563"/>
+        <entry value="1.33544"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="10"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.33563"/>
+        <entry value="1.33544"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="10"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.33563"/>
+        <entry value="1.33544"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="10"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.33563"/>
+        <entry value="1.33544"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="11"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.36862"/>
+        <entry value="1.36816"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.36862"/>
+        <entry value="1.36816"/>
+      </row>
+      <row>
+        <entry value="11"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.36862"/>
+        <entry value="1.36816"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="11"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.36862"/>
+        <entry value="1.36816"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="11"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.36862"/>
+        <entry value="1.36816"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="11"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.36862"/>
+        <entry value="1.36816"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="11"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.36862"/>
+        <entry value="1.36816"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="11"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.36862"/>
+        <entry value="1.36816"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="11"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.36862"/>
+        <entry value="1.36816"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="11"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.36862"/>
+        <entry value="1.36816"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="11"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.36862"/>
+        <entry value="1.36816"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="12"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.40413"/>
+        <entry value="1.40335"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.40413"/>
+        <entry value="1.40335"/>
+      </row>
+      <row>
+        <entry value="12"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.40413"/>
+        <entry value="1.40335"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="12"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.40413"/>
+        <entry value="1.40335"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="12"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.40413"/>
+        <entry value="1.40335"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="12"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.40413"/>
+        <entry value="1.40335"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="12"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.40413"/>
+        <entry value="1.40335"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="12"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.40413"/>
+        <entry value="1.40335"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="12"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.40413"/>
+        <entry value="1.40335"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="12"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.40413"/>
+        <entry value="1.40335"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="12"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.40413"/>
+        <entry value="1.40335"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="13"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.59609"/>
+        <entry value="1.44547"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.44236"/>
+        <entry value="1.44183"/>
+      </row>
+      <row>
+        <entry value="13"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.59609"/>
+        <entry value="1.44547"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="81.0015"/>
+        <entry value="76.6585"/>
+      </row>
+      <row>
+        <entry value="13"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.59609"/>
+        <entry value="1.44547"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="13"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.59609"/>
+        <entry value="1.44547"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="13"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.59609"/>
+        <entry value="1.44547"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="13"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.59609"/>
+        <entry value="1.44547"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="13"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.59609"/>
+        <entry value="1.44547"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="13"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.59609"/>
+        <entry value="1.44547"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="13"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.59609"/>
+        <entry value="1.44547"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="13"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.59609"/>
+        <entry value="1.44547"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="14"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.6381"/>
+        <entry value="1.48556"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.48472"/>
+        <entry value="1.48418"/>
+      </row>
+      <row>
+        <entry value="14"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.6381"/>
+        <entry value="1.48556"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="14"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.6381"/>
+        <entry value="1.48556"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="14"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.6381"/>
+        <entry value="1.48556"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="14"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.6381"/>
+        <entry value="1.48556"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="14"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.6381"/>
+        <entry value="1.48556"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="14"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.6381"/>
+        <entry value="1.48556"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="14"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.6381"/>
+        <entry value="1.48556"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="14"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.6381"/>
+        <entry value="1.48556"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="14"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.6381"/>
+        <entry value="1.48556"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="113.785"/>
+        <entry value="113.785"/>
+      </row>
+      <row>
+        <entry value="15"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.53195"/>
+        <entry value="1.53074"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.53195"/>
+        <entry value="1.53074"/>
+      </row>
+      <row>
+        <entry value="15"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.53195"/>
+        <entry value="1.53074"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="15"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.53195"/>
+        <entry value="1.53074"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="15"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.53195"/>
+        <entry value="1.53074"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="15"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.53195"/>
+        <entry value="1.53074"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="15"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.53195"/>
+        <entry value="1.53074"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="15"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.53195"/>
+        <entry value="1.53074"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="15"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.53195"/>
+        <entry value="1.53074"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="15"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.53195"/>
+        <entry value="1.53074"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="15"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.53195"/>
+        <entry value="1.53074"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="16"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.58423"/>
+        <entry value="1.58302"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.58423"/>
+        <entry value="1.58302"/>
+      </row>
+      <row>
+        <entry value="16"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.58423"/>
+        <entry value="1.58302"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="16"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.58423"/>
+        <entry value="1.58302"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="16"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.58423"/>
+        <entry value="1.58302"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="16"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.58423"/>
+        <entry value="1.58302"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="16"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.58423"/>
+        <entry value="1.58302"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="16"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.58423"/>
+        <entry value="1.58302"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="16"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.58423"/>
+        <entry value="1.58302"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="16"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.58423"/>
+        <entry value="1.58302"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="16"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.58423"/>
+        <entry value="1.58302"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="17"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.64361"/>
+        <entry value="1.64207"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.64361"/>
+        <entry value="1.64207"/>
+      </row>
+      <row>
+        <entry value="17"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.64361"/>
+        <entry value="1.64207"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="17"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.64361"/>
+        <entry value="1.64207"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="17"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.64361"/>
+        <entry value="1.64207"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="17"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.64361"/>
+        <entry value="1.64207"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="17"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.64361"/>
+        <entry value="1.64207"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="17"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.64361"/>
+        <entry value="1.64207"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="17"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.64361"/>
+        <entry value="1.64207"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="17"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.64361"/>
+        <entry value="1.64207"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="17"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.64361"/>
+        <entry value="1.64207"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="18"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13.3802"/>
+        <entry value="2.1278"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.71649"/>
+        <entry value="1.7162"/>
+      </row>
+      <row>
+        <entry value="18"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13.3802"/>
+        <entry value="2.1278"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="7.86107"/>
+        <entry value="4.72094"/>
+      </row>
+      <row>
+        <entry value="18"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13.3802"/>
+        <entry value="2.1278"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="18"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13.3802"/>
+        <entry value="2.1278"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="119.285"/>
+        <entry value="109.15"/>
+      </row>
+      <row>
+        <entry value="18"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13.3802"/>
+        <entry value="2.1278"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="335.724"/>
+        <entry value="335.724"/>
+      </row>
+      <row>
+        <entry value="18"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13.3802"/>
+        <entry value="2.1278"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="18"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13.3802"/>
+        <entry value="2.1278"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="18"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13.3802"/>
+        <entry value="2.1278"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="18"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13.3802"/>
+        <entry value="2.1278"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="18"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13.3802"/>
+        <entry value="2.1278"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="141.79"/>
+        <entry value="138.908"/>
+      </row>
+      <row>
+        <entry value="19"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="55.0649"/>
+        <entry value="1.97909"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.78947"/>
+        <entry value="1.78803"/>
+      </row>
+      <row>
+        <entry value="19"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="55.0649"/>
+        <entry value="1.97909"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="31.0354"/>
+        <entry value="26.194"/>
+      </row>
+      <row>
+        <entry value="19"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="55.0649"/>
+        <entry value="1.97909"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="178.668"/>
+        <entry value="178.668"/>
+      </row>
+      <row>
+        <entry value="19"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="55.0649"/>
+        <entry value="1.97909"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="19"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="55.0649"/>
+        <entry value="1.97909"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="19"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="55.0649"/>
+        <entry value="1.97909"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="843.597"/>
+        <entry value="843.597"/>
+      </row>
+      <row>
+        <entry value="19"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="55.0649"/>
+        <entry value="1.97909"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="19"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="55.0649"/>
+        <entry value="1.97909"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="19"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="55.0649"/>
+        <entry value="1.97909"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="19"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="55.0649"/>
+        <entry value="1.97909"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="20"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.21796"/>
+        <entry value="1.88285"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.87843"/>
+        <entry value="1.87574"/>
+      </row>
+      <row>
+        <entry value="20"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.21796"/>
+        <entry value="1.88285"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="20"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.21796"/>
+        <entry value="1.88285"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="20"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.21796"/>
+        <entry value="1.88285"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="20"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.21796"/>
+        <entry value="1.88285"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="20"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.21796"/>
+        <entry value="1.88285"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="20"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.21796"/>
+        <entry value="1.88285"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="20"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.21796"/>
+        <entry value="1.88285"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="20"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.21796"/>
+        <entry value="1.88285"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="20"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.21796"/>
+        <entry value="1.88285"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="264.159"/>
+        <entry value="264.159"/>
+      </row>
+      <row>
+        <entry value="21"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.98395"/>
+        <entry value="1.9813"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="1.98395"/>
+        <entry value="1.9813"/>
+      </row>
+      <row>
+        <entry value="21"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.98395"/>
+        <entry value="1.9813"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="21"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.98395"/>
+        <entry value="1.9813"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="21"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.98395"/>
+        <entry value="1.9813"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="21"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.98395"/>
+        <entry value="1.9813"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="21"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.98395"/>
+        <entry value="1.9813"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="21"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.98395"/>
+        <entry value="1.9813"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="21"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.98395"/>
+        <entry value="1.9813"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="21"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.98395"/>
+        <entry value="1.9813"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="21"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1.98395"/>
+        <entry value="1.9813"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="22"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.11234"/>
+        <entry value="2.10802"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="2.11234"/>
+        <entry value="2.10802"/>
+      </row>
+      <row>
+        <entry value="22"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.11234"/>
+        <entry value="2.10802"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="22"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.11234"/>
+        <entry value="2.10802"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="22"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.11234"/>
+        <entry value="2.10802"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="22"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.11234"/>
+        <entry value="2.10802"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="22"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.11234"/>
+        <entry value="2.10802"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="22"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.11234"/>
+        <entry value="2.10802"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="22"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.11234"/>
+        <entry value="2.10802"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="22"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.11234"/>
+        <entry value="2.10802"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="22"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.11234"/>
+        <entry value="2.10802"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="23"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.27475"/>
+        <entry value="2.26823"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="2.27475"/>
+        <entry value="2.26823"/>
+      </row>
+      <row>
+        <entry value="23"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.27475"/>
+        <entry value="2.26823"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="23"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.27475"/>
+        <entry value="2.26823"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="23"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.27475"/>
+        <entry value="2.26823"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="23"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.27475"/>
+        <entry value="2.26823"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="23"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.27475"/>
+        <entry value="2.26823"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="23"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.27475"/>
+        <entry value="2.26823"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="23"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.27475"/>
+        <entry value="2.26823"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="23"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.27475"/>
+        <entry value="2.26823"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="23"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.27475"/>
+        <entry value="2.26823"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="24"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.49039"/>
+        <entry value="2.47759"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="2.49039"/>
+        <entry value="2.47759"/>
+      </row>
+      <row>
+        <entry value="24"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.49039"/>
+        <entry value="2.47759"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="24"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.49039"/>
+        <entry value="2.47759"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="24"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.49039"/>
+        <entry value="2.47759"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="24"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.49039"/>
+        <entry value="2.47759"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="24"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.49039"/>
+        <entry value="2.47759"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="24"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.49039"/>
+        <entry value="2.47759"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="24"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.49039"/>
+        <entry value="2.47759"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="24"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.49039"/>
+        <entry value="2.47759"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="24"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.49039"/>
+        <entry value="2.47759"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="25"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.79183"/>
+        <entry value="2.76815"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="2.79183"/>
+        <entry value="2.76815"/>
+      </row>
+      <row>
+        <entry value="25"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.79183"/>
+        <entry value="2.76815"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="25"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.79183"/>
+        <entry value="2.76815"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="25"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.79183"/>
+        <entry value="2.76815"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="25"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.79183"/>
+        <entry value="2.76815"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="25"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.79183"/>
+        <entry value="2.76815"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="25"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.79183"/>
+        <entry value="2.76815"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="25"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.79183"/>
+        <entry value="2.76815"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="25"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.79183"/>
+        <entry value="2.76815"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="25"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="2.79183"/>
+        <entry value="2.76815"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="26"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.29028"/>
+        <entry value="3.22597"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="3.29028"/>
+        <entry value="3.22597"/>
+      </row>
+      <row>
+        <entry value="26"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.29028"/>
+        <entry value="3.22597"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="26"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.29028"/>
+        <entry value="3.22597"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="26"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.29028"/>
+        <entry value="3.22597"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="26"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.29028"/>
+        <entry value="3.22597"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="26"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.29028"/>
+        <entry value="3.22597"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="26"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.29028"/>
+        <entry value="3.22597"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="26"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.29028"/>
+        <entry value="3.22597"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="26"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.29028"/>
+        <entry value="3.22597"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="26"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3.29028"/>
+        <entry value="3.22597"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="27"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4.78272"/>
+        <entry value="4.15345"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="4.78272"/>
+        <entry value="4.15345"/>
+      </row>
+      <row>
+        <entry value="27"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4.78272"/>
+        <entry value="4.15345"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="27"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4.78272"/>
+        <entry value="4.15345"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="27"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4.78272"/>
+        <entry value="4.15345"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="27"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4.78272"/>
+        <entry value="4.15345"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="27"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4.78272"/>
+        <entry value="4.15345"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="27"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4.78272"/>
+        <entry value="4.15345"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="27"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4.78272"/>
+        <entry value="4.15345"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="27"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4.78272"/>
+        <entry value="4.15345"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="27"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4.78272"/>
+        <entry value="4.15345"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="28"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="9.41427"/>
+        <entry value="6.43614"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="9.41427"/>
+        <entry value="6.43614"/>
+      </row>
+      <row>
+        <entry value="28"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="9.41427"/>
+        <entry value="6.43614"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="28"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="9.41427"/>
+        <entry value="6.43614"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="28"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="9.41427"/>
+        <entry value="6.43614"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="28"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="9.41427"/>
+        <entry value="6.43614"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="28"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="9.41427"/>
+        <entry value="6.43614"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="28"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="9.41427"/>
+        <entry value="6.43614"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="28"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="9.41427"/>
+        <entry value="6.43614"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="28"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="9.41427"/>
+        <entry value="6.43614"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="28"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="9.41427"/>
+        <entry value="6.43614"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="29"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="17.3805"/>
+        <entry value="9.6856"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="14.8937"/>
+        <entry value="9.64673"/>
+      </row>
+      <row>
+        <entry value="29"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="17.3805"/>
+        <entry value="9.6856"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="29"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="17.3805"/>
+        <entry value="9.6856"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="29"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="17.3805"/>
+        <entry value="9.6856"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="29"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="17.3805"/>
+        <entry value="9.6856"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="29"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="17.3805"/>
+        <entry value="9.6856"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="29"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="17.3805"/>
+        <entry value="9.6856"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="29"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="17.3805"/>
+        <entry value="9.6856"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="29"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="17.3805"/>
+        <entry value="9.6856"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="29"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="17.3805"/>
+        <entry value="9.6856"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="431.571"/>
+        <entry value="431.571"/>
+      </row>
+      <row>
+        <entry value="30"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15.5242"/>
+        <entry value="10.0771"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="15.5242"/>
+        <entry value="10.0771"/>
+      </row>
+      <row>
+        <entry value="30"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15.5242"/>
+        <entry value="10.0771"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="30"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15.5242"/>
+        <entry value="10.0771"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="30"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15.5242"/>
+        <entry value="10.0771"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="30"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15.5242"/>
+        <entry value="10.0771"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="30"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15.5242"/>
+        <entry value="10.0771"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="30"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15.5242"/>
+        <entry value="10.0771"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="30"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15.5242"/>
+        <entry value="10.0771"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="30"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15.5242"/>
+        <entry value="10.0771"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="30"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15.5242"/>
+        <entry value="10.0771"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="31"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="20.1327"/>
+        <entry value="14.9882"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="20.1327"/>
+        <entry value="14.9882"/>
+      </row>
+      <row>
+        <entry value="31"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="20.1327"/>
+        <entry value="14.9882"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="31"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="20.1327"/>
+        <entry value="14.9882"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="31"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="20.1327"/>
+        <entry value="14.9882"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="31"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="20.1327"/>
+        <entry value="14.9882"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="31"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="20.1327"/>
+        <entry value="14.9882"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="31"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="20.1327"/>
+        <entry value="14.9882"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="31"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="20.1327"/>
+        <entry value="14.9882"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="31"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="20.1327"/>
+        <entry value="14.9882"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="31"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="20.1327"/>
+        <entry value="14.9882"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="32"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="32"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="32"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="32"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="32"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="32"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="32"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="32"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="32"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="32"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="33"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="33"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="33"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="33"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="33"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="33"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="33"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="33"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="33"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="33"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="34"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="34"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="34"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="34"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="34"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="34"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="34"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="34"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="34"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="34"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="35"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="35"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="35"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="35"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="35"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="35"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="35"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="35"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="35"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="35"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="36"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="36"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="36"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="36"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="36"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="36"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="36"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="36"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="36"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="36"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="37"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="37"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="37"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="37"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="37"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="37"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="37"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="37"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="37"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="37"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="38"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="38"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="38"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="38"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="38"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="38"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="38"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="38"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="38"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="38"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="39"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="39"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="1"/>
+        <entry value="1"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="39"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="3"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="39"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="4"/>
+        <entry value="2"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="39"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="12"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="39"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="13"/>
+        <entry value="6"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="39"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="14"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="39"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="7"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="39"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="15"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+      <row>
+        <entry value="39"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="0"/>
+        <entry value="16"/>
+        <entry value="8"/>
+        <entry value="0"/>
+        <entry value="0"/>
+      </row>
+</aida>
