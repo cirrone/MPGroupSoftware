@@ -609,7 +609,7 @@ b:Ge/QuitIfOverlapDetected = "True"
 
 # =====================   NUMBER OF EVENTS  =======================================
 #
-i:So/Example/NumberOfHistoriesInRun = 10000
+i:So/Example/NumberOfHistoriesInRun = 100000000
 
 i:Ts/NumberOfThreads = 0    # If set to 0, TOPAS will use all the computer's threads
 
