@@ -537,17 +537,39 @@ s:Sc/EnergyDepositedSpectrumDet4/OutputType                      = "Xml"
 # s:Sc/depthDoseDistributionDegrader/OutputFile                = "DepthDose_WaterPhantom"
 
 
-# The following commands fill an histogram with the Fluence: the total track lenght divided
-# by the volume.
+# Phase Space refers to the technique of saving a set of particles crossing a given surface. It is a
+# built-in scorer that saves data to n-tuple format, rather than storing accumulated overall data.
+# When saving a phase space, we define a surface and save the position, particle type, energy and 
+# momentum of all particles crossing the surface.
+# ----------------------------------------------------------------------------------------------------
 #
-# s:Sc/FluenceSpectra/Quantity                    = "Fluence"
-# s:Sc/FluenceSpectra/Component                   = "Detector1"
-# b:Sc/FluenceSpectra/OutputToConsole             = "FALSE"
-# s:Sc/FluenceSpectra/IfOutputFileAlreadyExists   = "Overwrite"
-# i:Sc/FluenceSpectra/HistogramBins               = 10000 
-# d:Sc/FluenceSpectra/HistogramMin                = 0.03 /mm2
-# d:Sc/FluenceSpectra/HistogramMax                = 0.06 /mm2
-# s:Sc/FluenceSpectra/OutputType                  = "Xml"
+s:Sc/FirstDetectorSurfaceDet1/Quantity                    = "PhaseSpace"     
+b:Sc/FirstDetectorSurfaceDet1/OutputToConsole             = "True"
+s:Sc/FirstDetectorSurfaceDet1/Surface  	                  = "Detector1/ZMinusSurface"     # Superficie anteriore del Detector 1
+s:Sc/FirstDetectorSurfaceDet1/OutputType 	          = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
+s:Sc/FirstDetectorSurfaceDet1/OutputFile 	          = "FirstSurfaceDetector1"
+s:Sc/FirstDetectorSurfaceDet1/IfOutputFileAlreadyExists   = "Overwrite"
+s:Sc/FirstDetectorSurfaceDet1/OnlyIncludeParticlesGoing   = "In" 
+b:Sc/FirstDetectorSurfaceDet1/IncludeRunID                = "True"  
+b:Sc/FirstDetectorSurfaceDet1/IncludeEventID              = "True" 
+b:Sc/FirstDetectorSurfaceDet1/IncludeTrackID              = "True"
+b:Sc/FirstDetectorSurfaceDet1/IncludeParentID             = "True"
+b:Sc/FirstDetectorSurfaceDet1/IncludeCreatorProcess       = "True"
+b:Sc/FirstDetectorSurfaceDet1/IncludeVertexInfo           = "True"
+
+s:Sc/SecondDetectorSurfaceDet1/Quantity                    = "PhaseSpace"     
+b:Sc/SecondDetectorSurfaceDet1/OutputToConsole             = "True"
+s:Sc/SecondDetectorSurfaceDet1/Surface  	           = "Detector1/ZPlusSurface"     # Superficie posteriore del Detector 1
+s:Sc/SecondDetectorSurfaceDet1/OutputType 	           = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
+s:Sc/SecondDetectorSurfaceDet1/OutputFile 	           = "SecondSurfaceDetector1"
+s:Sc/SecondDetectorSurfaceDet1/IfOutputFileAlreadyExists   = "Overwrite"
+s:Sc/SecondDetectorSurfaceDet1/OnlyIncludeParticlesGoing   = "In" 
+b:Sc/SecondDetectorSurfaceDet1/IncludeRunID                = "True"  
+b:Sc/SecondDetectorSurfaceDet1/IncludeEventID              = "True" 
+b:Sc/SecondDetectorSurfaceDet1/IncludeTrackID              = "True"
+b:Sc/SecondDetectorSurfaceDet1/IncludeParentID             = "True"
+b:Sc/SecondDetectorSurfaceDet1/IncludeCreatorProcess       = "True"
+b:Sc/SecondDetectorSurfaceDet1/IncludeVertexInfo           = "True"
 
 
 
@@ -609,7 +631,7 @@ b:Ge/QuitIfOverlapDetected = "True"
 
 # =====================   NUMBER OF EVENTS  =======================================
 #
-i:So/Example/NumberOfHistoriesInRun = 100000000
+i:So/Example/NumberOfHistoriesInRun = 100000
 
 i:Ts/NumberOfThreads = 0    # If set to 0, TOPAS will use all the computer's threads
 
