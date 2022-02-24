@@ -537,39 +537,38 @@ s:Sc/EnergyDepositedSpectrumDet4/OutputType                      = "Xml"
 # s:Sc/depthDoseDistributionDegrader/OutputFile                = "DepthDose_WaterPhantom"
 
 
-# Phase Space refers to the technique of saving a set of particles crossing a given surface. It is a
-# built-in scorer that saves data to n-tuple format, rather than storing accumulated overall data.
-# When saving a phase space, we define a surface and save the position, particle type, energy and 
-# momentum of all particles crossing the surface.
+# Phase Space refers to the technique of saving a set of particles crossing a given surface. When
+# saving a phase space, we define a surface and save the position, particle type, energy and momentum 
+# of all particles crossing the surface.
 # ----------------------------------------------------------------------------------------------------
 #
-s:Sc/FirstDetectorSurfaceDet1/Quantity                    = "PhaseSpace"     
-b:Sc/FirstDetectorSurfaceDet1/OutputToConsole             = "True"
-s:Sc/FirstDetectorSurfaceDet1/Surface  	                  = "Detector1/ZMinusSurface"     # Superficie anteriore del Detector 1
-s:Sc/FirstDetectorSurfaceDet1/OutputType 	          = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
-s:Sc/FirstDetectorSurfaceDet1/OutputFile 	          = "FirstSurfaceDetector1"
-s:Sc/FirstDetectorSurfaceDet1/IfOutputFileAlreadyExists   = "Overwrite"
-s:Sc/FirstDetectorSurfaceDet1/OnlyIncludeParticlesGoing   = "In" 
-b:Sc/FirstDetectorSurfaceDet1/IncludeRunID                = "True"  
-b:Sc/FirstDetectorSurfaceDet1/IncludeEventID              = "True" 
-b:Sc/FirstDetectorSurfaceDet1/IncludeTrackID              = "True"
-b:Sc/FirstDetectorSurfaceDet1/IncludeParentID             = "True"
-b:Sc/FirstDetectorSurfaceDet1/IncludeCreatorProcess       = "True"
-b:Sc/FirstDetectorSurfaceDet1/IncludeVertexInfo           = "True"
+s:Sc/FrontSurfaceDetector1/Quantity                    = "PhaseSpace"     
+b:Sc/FrontSurfaceDetector1/OutputToConsole             = "True"
+s:Sc/FrontSurfaceDetector1/Surface  	               = "Detector1/ZMinusSurface"     # Superficie anteriore del Detector 1
+s:Sc/FrontSurfaceDetector1/OutputType 	               = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
+s:Sc/FrontSurfaceDetector1/OutputFile 	               = "FrontSurfaceDetector1"
+s:Sc/FrontSurfaceDetector1/IfOutputFileAlreadyExists   = "Overwrite"
+s:Sc/FrontSurfaceDetector1/OnlyIncludeParticlesGoing   = "In" 
+b:Sc/FrontSurfaceDetector1/IncludeRunID                = "True"  
+b:Sc/FrontSurfaceDetector1/IncludeEventID              = "True" 
+b:Sc/FrontSurfaceDetector1/IncludeTrackID              = "True"
+b:Sc/FrontSurfaceDetector1/IncludeParentID             = "True"
+b:Sc/FrontSurfaceDetector1/IncludeCreatorProcess       = "True"
+b:Sc/FrontSurfaceDetector1/IncludeVertexInfo           = "True"
 
-s:Sc/SecondDetectorSurfaceDet1/Quantity                    = "PhaseSpace"     
-b:Sc/SecondDetectorSurfaceDet1/OutputToConsole             = "True"
-s:Sc/SecondDetectorSurfaceDet1/Surface  	           = "Detector1/ZPlusSurface"     # Superficie posteriore del Detector 1
-s:Sc/SecondDetectorSurfaceDet1/OutputType 	           = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
-s:Sc/SecondDetectorSurfaceDet1/OutputFile 	           = "SecondSurfaceDetector1"
-s:Sc/SecondDetectorSurfaceDet1/IfOutputFileAlreadyExists   = "Overwrite"
-s:Sc/SecondDetectorSurfaceDet1/OnlyIncludeParticlesGoing   = "In" 
-b:Sc/SecondDetectorSurfaceDet1/IncludeRunID                = "True"  
-b:Sc/SecondDetectorSurfaceDet1/IncludeEventID              = "True" 
-b:Sc/SecondDetectorSurfaceDet1/IncludeTrackID              = "True"
-b:Sc/SecondDetectorSurfaceDet1/IncludeParentID             = "True"
-b:Sc/SecondDetectorSurfaceDet1/IncludeCreatorProcess       = "True"
-b:Sc/SecondDetectorSurfaceDet1/IncludeVertexInfo           = "True"
+s:Sc/RearSurfaceDetector1/Quantity                     = "PhaseSpace"     
+b:Sc/RearSurfaceDetector1/OutputToConsole              = "True"
+s:Sc/RearSurfaceDetector1/Surface  	               = "Detector1/ZPlusSurface"     # Superficie posteriore del Detector 1
+s:Sc/RearSurfaceDetector1/OutputType 	               = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
+s:Sc/RearSurfaceDetector1/OutputFile 	               = "RearSurfaceDetector1"
+s:Sc/RearSurfaceDetector1/IfOutputFileAlreadyExists    = "Overwrite"
+s:Sc/RearSurfaceDetector1/OnlyIncludeParticlesGoing    = "In" 
+b:Sc/RearSurfaceDetector1/IncludeRunID                 = "True"  
+b:Sc/RearSurfaceDetector1/IncludeEventID               = "True" 
+b:Sc/RearSurfaceDetector1/IncludeTrackID               = "True"
+b:Sc/RearSurfaceDetector1/IncludeParentID              = "True"
+b:Sc/RearSurfaceDetector1/IncludeCreatorProcess        = "True"
+b:Sc/RearSurfaceDetector1/IncludeVertexInfo            = "True"
 
 
 
