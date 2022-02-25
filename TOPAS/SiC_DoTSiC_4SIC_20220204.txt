@@ -542,33 +542,33 @@ s:Sc/EnergyDepositedSpectrumDet4/OutputType                      = "Xml"
 # of all particles crossing the surface.
 # ----------------------------------------------------------------------------------------------------
 #
-s:Sc/FrontSurfaceDetector1/Quantity                    = "PhaseSpace"     
-b:Sc/FrontSurfaceDetector1/OutputToConsole             = "True"
-s:Sc/FrontSurfaceDetector1/Surface  	               = "Detector1/ZMinusSurface"     # Superficie anteriore del Detector 1
-s:Sc/FrontSurfaceDetector1/OutputType 	               = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
-s:Sc/FrontSurfaceDetector1/OutputFile 	               = "FrontSurfaceDetector1"
-s:Sc/FrontSurfaceDetector1/IfOutputFileAlreadyExists   = "Overwrite"
-s:Sc/FrontSurfaceDetector1/OnlyIncludeParticlesGoing   = "In" 
-b:Sc/FrontSurfaceDetector1/IncludeRunID                = "True"  
-b:Sc/FrontSurfaceDetector1/IncludeEventID              = "True" 
-b:Sc/FrontSurfaceDetector1/IncludeTrackID              = "True"
-b:Sc/FrontSurfaceDetector1/IncludeParentID             = "True"
-b:Sc/FrontSurfaceDetector1/IncludeCreatorProcess       = "True"
-b:Sc/FrontSurfaceDetector1/IncludeVertexInfo           = "True"
+s:Sc/FrontSurfaceDetector1/Quantity                      = "PhaseSpace"     
+b:Sc/FrontSurfaceDetector1/OutputToConsole               = "True"
+s:Sc/FrontSurfaceDetector1/Surface  	                 = "Detector1/ZMinusSurface"     # Superficie anteriore del Detector 1
+s:Sc/FrontSurfaceDetector1/OutputType 	                 = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
+s:Sc/FrontSurfaceDetector1/OutputFile 	                 = "FrontSurfaceDetector1"
+s:Sc/FrontSurfaceDetector1/IfOutputFileAlreadyExists     = "Overwrite"
+# s:Sc/FrontSurfaceDetector1/OnlyIncludeParticlesGoing   = "In" 
+b:Sc/FrontSurfaceDetector1/IncludeRunID                  = "True"  
+b:Sc/FrontSurfaceDetector1/IncludeEventID                = "True" 
+b:Sc/FrontSurfaceDetector1/IncludeTrackID                = "True"
+b:Sc/FrontSurfaceDetector1/IncludeParentID               = "True"
+b:Sc/FrontSurfaceDetector1/IncludeCreatorProcess         = "True"
+b:Sc/FrontSurfaceDetector1/IncludeVertexInfo             = "True"
 
-s:Sc/RearSurfaceDetector1/Quantity                     = "PhaseSpace"     
-b:Sc/RearSurfaceDetector1/OutputToConsole              = "True"
-s:Sc/RearSurfaceDetector1/Surface  	               = "Detector1/ZPlusSurface"     # Superficie posteriore del Detector 1
-s:Sc/RearSurfaceDetector1/OutputType 	               = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
-s:Sc/RearSurfaceDetector1/OutputFile 	               = "RearSurfaceDetector1"
-s:Sc/RearSurfaceDetector1/IfOutputFileAlreadyExists    = "Overwrite"
-s:Sc/RearSurfaceDetector1/OnlyIncludeParticlesGoing    = "In" 
-b:Sc/RearSurfaceDetector1/IncludeRunID                 = "True"  
-b:Sc/RearSurfaceDetector1/IncludeEventID               = "True" 
-b:Sc/RearSurfaceDetector1/IncludeTrackID               = "True"
-b:Sc/RearSurfaceDetector1/IncludeParentID              = "True"
-b:Sc/RearSurfaceDetector1/IncludeCreatorProcess        = "True"
-b:Sc/RearSurfaceDetector1/IncludeVertexInfo            = "True"
+s:Sc/RearSurfaceDetector1/Quantity                       = "PhaseSpace"     
+b:Sc/RearSurfaceDetector1/OutputToConsole                = "True"
+s:Sc/RearSurfaceDetector1/Surface  	                 = "Detector1/ZPlusSurface"     # Superficie posteriore del Detector 1
+s:Sc/RearSurfaceDetector1/OutputType 	                 = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
+s:Sc/RearSurfaceDetector1/OutputFile 	                 = "RearSurfaceDetector1"
+s:Sc/RearSurfaceDetector1/IfOutputFileAlreadyExists      = "Overwrite"
+# s:Sc/RearSurfaceDetector1/OnlyIncludeParticlesGoing    = "In" 
+b:Sc/RearSurfaceDetector1/IncludeRunID                   = "True"  
+b:Sc/RearSurfaceDetector1/IncludeEventID                 = "True" 
+b:Sc/RearSurfaceDetector1/IncludeTrackID                 = "True"
+b:Sc/RearSurfaceDetector1/IncludeParentID                = "True"
+b:Sc/RearSurfaceDetector1/IncludeCreatorProcess          = "True"
+b:Sc/RearSurfaceDetector1/IncludeVertexInfo              = "True"
 
 
 
@@ -624,7 +624,7 @@ d:So/Example/BeamAngularSpreadY        = 0.0005 rad
 #
 i:Ts/TrackingVerbosity = 0
 d:Ph/Default/CutForAllParticles = 0.01 mm 
-i:Ts/Seed = 1 
+i:Ts/Seed = 3 
 b:Ge/QuitIfOverlapDetected = "True"
 # b:Ts/PauseBeforeSequence = "True"
 
