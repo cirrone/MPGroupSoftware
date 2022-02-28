@@ -279,20 +279,20 @@ s:Ge/SecondLayerPCB/Color   = "brown"
 s:Ge/SecondLayerPCB/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
 
 
-# The third layer of the Printed Circuit Board (PCB, Thick: 1.894 mm)
-# ---------------------------------------------------------------------
+# The third layer of the Printed Circuit Board (PCB, Thick: 1.5 mm)
+# -------------------------------------------------------------------
 #
 s:Ge/ThirdLayerPCB/Type     = "TsCylinder"
 s:Ge/ThirdLayerPCB/Parent   = "World"
 s:Ge/ThirdLayerPCB/Material = "Fiberglass"
 d:Ge/ThirdLayerPCB/RMin     = 0.00 mm      
 d:Ge/ThirdLayerPCB/RMax     = 4.25 mm      # Raggio del terzo strato del PCB
-d:Ge/ThirdLayerPCB/HL       = 0.947 mm     # Semi-spessore del terzo strato PCB 
+d:Ge/ThirdLayerPCB/HL       = 0.750 mm     # Semi-spessore del terzo strato PCB 
 d:Ge/ThirdLayerPCB/SPhi     = 0.00 deg      
 d:Ge/ThirdLayerPCB/DPhi     = 360.0 deg      
 d:Ge/ThirdLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
 d:Ge/ThirdLayerPCB/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-d:Ge/ThirdLayerPCB/TransZ   = 1.105 mm     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/ThirdLayerPCB/TransZ   = 0.908 mm     # Posizione rispetto al centro del World volume (dir Z)
 d:Ge/ThirdLayerPCB/RotX     = 0.0 deg 
 d:Ge/ThirdLayerPCB/RotY     = 0.0 deg
 d:Ge/ThirdLayerPCB/RotZ     = 0.0 deg
@@ -314,7 +314,7 @@ d:Ge/FourthLayerPCB/SPhi     = 0.00 deg
 d:Ge/FourthLayerPCB/DPhi     = 360.0 deg      
 d:Ge/FourthLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
 d:Ge/FourthLayerPCB/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-d:Ge/FourthLayerPCB/TransZ   = 2.074 mm     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/FourthLayerPCB/TransZ   = 1.680 mm     # Posizione rispetto al centro del World volume (dir Z)
 d:Ge/FourthLayerPCB/RotX     = 0.0 deg 
 d:Ge/FourthLayerPCB/RotY     = 0.0 deg
 d:Ge/FourthLayerPCB/RotZ     = 0.0 deg
@@ -336,7 +336,7 @@ d:Ge/FifthLayerPCB/SPhi     = 0.00 deg
 d:Ge/FifthLayerPCB/DPhi     = 360.0 deg      
 d:Ge/FifthLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
 d:Ge/FifthLayerPCB/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-d:Ge/FifthLayerPCB/TransZ   = 2.101 mm     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/FifthLayerPCB/TransZ   = 1.707 mm     # Posizione rispetto al centro del World volume (dir Z)
 d:Ge/FifthLayerPCB/RotX     = 0.0 deg 
 d:Ge/FifthLayerPCB/RotY     = 0.0 deg
 d:Ge/FifthLayerPCB/RotZ     = 0.0 deg
@@ -348,23 +348,23 @@ s:Ge/FifthLayerPCB/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFra
 # The PLA detector holder (Thick: 4.10 mm) realized with the 3D printer (upper part)
 # ------------------------------------------------------------------------------------
 #
-s:Ge/DetectorHolderUpper/Type     = "TsCylinder"
-s:Ge/DetectorHolderUpper/Parent   = "World"
-s:Ge/DetectorHolderUpper/Material = "PolylactidAcid"
-d:Ge/DetectorHolderUpper/RMin     = 4.25 mm       # Raggio interno dell'holder del rivelatore (PLA)
-d:Ge/DetectorHolderUpper/RMax     = 4.75 mm       # Raggio esterno dell'holder del rivelatore (PLA)
-d:Ge/DetectorHolderUpper/HL       = 2.05 mm       # Semi-lunghezza dell'holder del rivelatore (PLA)
-d:Ge/DetectorHolderUpper/SPhi     = 0.00 deg      
-d:Ge/DetectorHolderUpper/DPhi     = 360.0 deg      
-d:Ge/DetectorHolderUpper/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
-d:Ge/DetectorHolderUpper/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-d:Ge/DetectorHolderUpper/TransZ   = 56.0 um      # Posizione rispetto al centro del World volume (dir Z)
-d:Ge/DetectorHolderUpper/RotX     = 0.0 deg 
-d:Ge/DetectorHolderUpper/RotY     = 0.0 deg 
-d:Ge/DetectorHolderUpper/RotZ     = 0.0 deg
-b:Ge/DetectorHolderUpper/Include  = "True"
-s:Ge/DetectorHolderUpper/Color    = "grey"
-s:Ge/DetectorHolderUpper/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullWireFrame"
+# s:Ge/DetectorHolderUpper/Type     = "TsCylinder"
+# s:Ge/DetectorHolderUpper/Parent   = "World"
+# s:Ge/DetectorHolderUpper/Material = "PolylactidAcid"
+# d:Ge/DetectorHolderUpper/RMin     = 4.25 mm       # Raggio interno dell'holder del rivelatore (PLA)
+# d:Ge/DetectorHolderUpper/RMax     = 4.75 mm       # Raggio esterno dell'holder del rivelatore (PLA)
+# d:Ge/DetectorHolderUpper/HL       = 2.05 mm       # Semi-lunghezza dell'holder del rivelatore (PLA)
+# d:Ge/DetectorHolderUpper/SPhi     = 0.00 deg      
+# d:Ge/DetectorHolderUpper/DPhi     = 360.0 deg      
+# d:Ge/DetectorHolderUpper/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+# d:Ge/DetectorHolderUpper/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+# d:Ge/DetectorHolderUpper/TransZ   = 56.0 um      # Posizione rispetto al centro del World volume (dir Z)
+# d:Ge/DetectorHolderUpper/RotX     = 0.0 deg 
+# d:Ge/DetectorHolderUpper/RotY     = 0.0 deg 
+# d:Ge/DetectorHolderUpper/RotZ     = 0.0 deg
+# b:Ge/DetectorHolderUpper/Include  = "True"
+# s:Ge/DetectorHolderUpper/Color    = "grey"
+# s:Ge/DetectorHolderUpper/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullWireFrame"
 
 
 # The PLA flush ring (Thick: 2 mm) realized with the 3D printer
@@ -380,7 +380,7 @@ d:Ge/FlushRing/SPhi     = 0.00 deg
 d:Ge/FlushRing/DPhi     = 360.0 deg      
 d:Ge/FlushRing/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
 d:Ge/FlushRing/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-d:Ge/FlushRing/TransZ   = 3.106 mm     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/FlushRing/TransZ   = 2.712 mm     # Posizione rispetto al centro del World volume (dir Z)
 d:Ge/FlushRing/RotX     = 0.0 deg 
 d:Ge/FlushRing/RotY     = 0.0 deg
 d:Ge/FlushRing/RotZ     = 0.0 deg
@@ -402,7 +402,7 @@ d:Ge/DetectorHolderLower/SPhi     = 0.00 deg
 d:Ge/DetectorHolderLower/DPhi     = 360.0 deg      
 d:Ge/DetectorHolderLower/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
 d:Ge/DetectorHolderLower/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-d:Ge/DetectorHolderLower/TransZ   = 19.106 mm    # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/DetectorHolderLower/TransZ   = 18.712 mm    # Posizione rispetto al centro del World volume (dir Z)
 d:Ge/DetectorHolderLower/RotX     = 0.0 deg 
 d:Ge/DetectorHolderLower/RotY     = 0.0 deg
 d:Ge/DetectorHolderLower/RotZ     = 0.0 deg
@@ -414,23 +414,23 @@ s:Ge/DetectorHolderLower/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" o
 # The water-equivalent resin layer above the SiC detectors (Thick: 2 mm)
 # ------------------------------------------------------------------------
 #
-s:Ge/ResinLayer1/Type     = "TsCylinder"
-s:Ge/ResinLayer1/Parent   = "World"
-s:Ge/ResinLayer1/Material = "Fiberglass"
-d:Ge/ResinLayer1/RMin     = 0.00 mm      
-d:Ge/ResinLayer1/RMax     = 4.25 mm      # Raggio dello strato di resina sovrastante i rivelatori
-d:Ge/ResinLayer1/HL       = 1.00 mm      # Semi-spessore dello strato di resina sovrastante i rivelatori 
-d:Ge/ResinLayer1/SPhi     = 0.00 deg      
-d:Ge/ResinLayer1/DPhi     = 360.0 deg      
-d:Ge/ResinLayer1/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
-d:Ge/ResinLayer1/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-d:Ge/ResinLayer1/TransZ   = -1.005 mm    # Posizione rispetto al centro del World volume (dir Z)
-d:Ge/ResinLayer1/RotX     = 0.0 deg 
-d:Ge/ResinLayer1/RotY     = 0.0 deg
-d:Ge/ResinLayer1/RotZ     = 0.0 deg
-b:Ge/ResinLayer1/Include  = "True"
-s:Ge/ResinLayer1/Color    = "maroon"
-s:Ge/ResinLayer1/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullWireFrame"
+# s:Ge/ResinLayer1/Type     = "TsCylinder"
+# s:Ge/ResinLayer1/Parent   = "World"
+# s:Ge/ResinLayer1/Material = "Fiberglass"
+# d:Ge/ResinLayer1/RMin     = 0.00 mm      
+# d:Ge/ResinLayer1/RMax     = 4.25 mm      # Raggio dello strato di resina sovrastante i rivelatori
+# d:Ge/ResinLayer1/HL       = 1.00 mm      # Semi-spessore dello strato di resina sovrastante i rivelatori 
+# d:Ge/ResinLayer1/SPhi     = 0.00 deg      
+# d:Ge/ResinLayer1/DPhi     = 360.0 deg      
+# d:Ge/ResinLayer1/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+# d:Ge/ResinLayer1/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+# d:Ge/ResinLayer1/TransZ   = -1.005 mm    # Posizione rispetto al centro del World volume (dir Z)
+# d:Ge/ResinLayer1/RotX     = 0.0 deg 
+# d:Ge/ResinLayer1/RotY     = 0.0 deg
+# d:Ge/ResinLayer1/RotZ     = 0.0 deg
+# b:Ge/ResinLayer1/Include  = "True"
+# s:Ge/ResinLayer1/Color    = "maroon"
+# s:Ge/ResinLayer1/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullWireFrame"
 
 
 # The water-equivalent resin layer that fills the flush ring (Thick: 2 mm)
@@ -446,7 +446,7 @@ d:Ge/ResinLayer2/SPhi     = 0.00 deg
 d:Ge/ResinLayer2/DPhi     = 360.0 deg      
 d:Ge/ResinLayer2/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
 d:Ge/ResinLayer2/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-d:Ge/ResinLayer2/TransZ   = 3.106 mm     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/ResinLayer2/TransZ   = 2.712 mm     # Posizione rispetto al centro del World volume (dir Z)
 d:Ge/ResinLayer2/RotX     = 0.0 deg 
 d:Ge/ResinLayer2/RotY     = 0.0 deg
 d:Ge/ResinLayer2/RotZ     = 0.0 deg
@@ -468,7 +468,7 @@ d:Ge/ResinLayer3/SPhi     = 0.00 deg
 d:Ge/ResinLayer3/DPhi     = 360.0 deg      
 d:Ge/ResinLayer3/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
 d:Ge/ResinLayer3/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-d:Ge/ResinLayer3/TransZ   = 19.106 mm    # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/ResinLayer3/TransZ   = 18.712 mm    # Posizione rispetto al centro del World volume (dir Z)
 d:Ge/ResinLayer3/RotX     = 0.0 deg 
 d:Ge/ResinLayer3/RotY     = 0.0 deg
 d:Ge/ResinLayer3/RotZ     = 0.0 deg
@@ -668,7 +668,7 @@ b:Sc/BackSurfaceDetector4/IncludeVertexInfo              = "True"
 
 # =======================================   VISUALISATION  =======================================
 #
-# s:Gr/ViewA/Type                               = "OpenGL"  # Commentare questa riga per bypassare la parte grafica
+s:Gr/ViewA/Type                               = "OpenGL"  # Commentare questa riga per bypassare la parte grafica
 i:Gr/ViewA/WindowSizeX                        = 900
 i:Gr/ViewA/WindowSizeY                        = 900
 # d:Gr/ViewA/Theta                            = 55 deg
@@ -680,7 +680,7 @@ b:Gr/ViewA/HiddenLineRemovalForTrajectories   = "True"
 sv:Gr/ViewA/VisibleWorlds                     = 1 "All"
 # b:Gr/ViewA/IncludeAxes      		      = "True"
 # d:Gr/ViewA/AxesSize                         = 0.1 mm
-# Ts/UseQt = "True"					  # Commentare questa riga per bypassare la parte grafica
+Ts/UseQt = "True"					  # Commentare questa riga per bypassare la parte grafica
 
 
 sv:Ph/Default/Modules = 6 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping"
@@ -724,7 +724,7 @@ b:Ge/QuitIfOverlapDetected = "True"
 
 # =====================   NUMBER OF EVENTS  =======================================
 #
-i:So/Example/NumberOfHistoriesInRun = 1000000
+i:So/Example/NumberOfHistoriesInRun = 10
 
 i:Ts/NumberOfThreads = 0    # If set to 0, TOPAS will use all the computer's threads
 
