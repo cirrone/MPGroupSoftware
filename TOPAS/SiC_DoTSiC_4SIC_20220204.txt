@@ -79,13 +79,13 @@ s:Ge/Nozzle/Message = "Nozzle is constructed!"
 
 ###########################################################################
 # Collimator
-# A 6 cm diameter brass collimator with opening in the center
+# A 8 cm diameter brass collimator with opening in the center
 ###########################################################################
 #
 s:Ge/Collimator/Parent  = "World"
 s:Ge/Collimator/Type    = "TsCylinder"
 s:Ge/Collimator/Material= "Brass"
-d:Ge/Collimator/RMin    = 2.0 mm      # Raggio dell'apertura del collimatore finale
+d:Ge/Collimator/RMin    = 3.0 mm      # Raggio dell'apertura del collimatore finale
 d:Ge/Collimator/RMax    = 4.0 cm      # Raggio esterno del collimatore finale
 d:Ge/Collimator/HL      = 3.5  mm     # Semi-spessore del collimatore finale
 d:Ge/Collimator/SPhi    = 0.0 deg
@@ -126,7 +126,7 @@ s:Ge/Collimator/Message = "Collimator is constructed!"
 
 #################################################################################
 # SiC Detectors
-# Four 2.25mm x 2.25mm Sic detectors (10 um-thick) on a 90 um-thick substrate
+# Four 2.13mm x 2.13mm Sic detectors (10 um-thick) on a 100 um-thick substrate
 # The distance between the brass collimator and the detectors is 8 cm
 #################################################################################
 #
@@ -138,11 +138,11 @@ s:Ge/Detector1/Type     = "TsBox"
 s:Ge/Detector1/Parent   = "World"
 # s:Ge/Detector1/Material = "G4_WATER"
 s:Ge/Detector1/Material = "SiliconCarbide"
-d:Ge/Detector1/HLX      = 1.125 mm     # Semi-larghezza dello strato attivo (SiC)
-d:Ge/Detector1/HLY      = 1.125 mm     # Semi-altezza dello strato attivo (SiC)
+d:Ge/Detector1/HLX      = 1.065 mm     # Semi-larghezza dello strato attivo (SiC)
+d:Ge/Detector1/HLY      = 1.065 mm     # Semi-altezza dello strato attivo (SiC)
 d:Ge/Detector1/HLZ      = 5.0 um       # Semi-spessore dello strato attivo (SiC)
-d:Ge/Detector1/TransX   = 1.175 mm     # Posizione rispetto al centro del World volume (dir X)   
-d:Ge/Detector1/TransY   = 1.175 mm     # Posizione rispetto al centro del World volume (dir Y)
+d:Ge/Detector1/TransX   = 1.0775 mm    # Posizione rispetto al centro del World volume (dir X)   
+d:Ge/Detector1/TransY   = 1.0775 mm    # Posizione rispetto al centro del World volume (dir Y)
 d:Ge/Detector1/TransZ   = 0.0 um       # Posizione rispetto al centro del World volume (dir Z)
 d:Ge/Detector1/RotX     = 0.0 deg
 d:Ge/Detector1/RotY     = 0.0 deg
@@ -158,11 +158,11 @@ s:Ge/Detector2/Type     = "TsBox"
 s:Ge/Detector2/Parent   = "World"
 # s:Ge/Detector2/Material = "G4_WATER"
 s:Ge/Detector2/Material = "SiliconCarbide"
-d:Ge/Detector2/HLX      = 1.125 mm     # Semi-larghezza dello strato attivo (SiC)
-d:Ge/Detector2/HLY      = 1.125 mm     # Semi-altezza dello strato attivo (SiC)
+d:Ge/Detector2/HLX      = 1.065 mm     # Semi-larghezza dello strato attivo (SiC)
+d:Ge/Detector2/HLY      = 1.065 mm     # Semi-altezza dello strato attivo (SiC)
 d:Ge/Detector2/HLZ      = 5.0 um       # Semi-spessore dello strato attivo (SiC)
-d:Ge/Detector2/TransX   = -1.175 mm    # Posizione rispetto al centro del World volume (dir X)   
-d:Ge/Detector2/TransY   = 1.175 mm     # Posizione rispetto al centro del World volume (dir Y)
+d:Ge/Detector2/TransX   = -1.0775 mm   # Posizione rispetto al centro del World volume (dir X)   
+d:Ge/Detector2/TransY   = 1.0775 mm    # Posizione rispetto al centro del World volume (dir Y)
 d:Ge/Detector2/TransZ   = 0.0 um       # Posizione rispetto al centro del World volume (dir Z)
 d:Ge/Detector2/RotX     = 0.0 deg
 d:Ge/Detector2/RotY     = 0.0 deg
@@ -178,11 +178,11 @@ s:Ge/Detector3/Type     = "TsBox"
 s:Ge/Detector3/Parent   = "World"
 # s:Ge/Detector3/Material = "G4_WATER"
 s:Ge/Detector3/Material = "SiliconCarbide"
-d:Ge/Detector3/HLX      = 1.125 mm     # Semi-larghezza dello strato attivo (SiC)
-d:Ge/Detector3/HLY      = 1.125 mm     # Semi-altezza dello strato attivo (SiC)
+d:Ge/Detector3/HLX      = 1.065 mm     # Semi-larghezza dello strato attivo (SiC)
+d:Ge/Detector3/HLY      = 1.065 mm     # Semi-altezza dello strato attivo (SiC)
 d:Ge/Detector3/HLZ      = 5.0 um       # Semi-spessore dello strato attivo (SiC)
-d:Ge/Detector3/TransX   = 1.175 mm     # Posizione rispetto al centro del World volume (dir X)   
-d:Ge/Detector3/TransY   = -1.175 mm    # Posizione rispetto al centro del World volume (dir Y)
+d:Ge/Detector3/TransX   = 1.0775 mm    # Posizione rispetto al centro del World volume (dir X)   
+d:Ge/Detector3/TransY   = -1.0775 mm   # Posizione rispetto al centro del World volume (dir Y)
 d:Ge/Detector3/TransZ   = 0.0 um       # Posizione rispetto al centro del World volume (dir Z)
 d:Ge/Detector3/RotX     = 0.0 deg
 d:Ge/Detector3/RotY     = 0.0 deg
@@ -198,11 +198,11 @@ s:Ge/Detector4/Type     = "TsBox"
 s:Ge/Detector4/Parent   = "World"
 # s:Ge/Detector4/Material = "G4_WATER"
 s:Ge/Detector4/Material = "SiliconCarbide"
-d:Ge/Detector4/HLX      = 1.125 mm     # Semi-larghezza dello strato attivo (SiC)
-d:Ge/Detector4/HLY      = 1.125 mm     # Semi-altezza dello strato attivo (SiC)
+d:Ge/Detector4/HLX      = 1.065 mm     # Semi-larghezza dello strato attivo (SiC)
+d:Ge/Detector4/HLY      = 1.065 mm     # Semi-altezza dello strato attivo (SiC)
 d:Ge/Detector4/HLZ      = 5.0 um       # Semi-spessore dello strato attivo (SiC)
-d:Ge/Detector4/TransX   = -1.175 mm    # Posizione rispetto al centro del World volume (dir X)   
-d:Ge/Detector4/TransY   = -1.175 mm    # Posizione rispetto al centro del World volume (dir Y)
+d:Ge/Detector4/TransX   = -1.0775 mm   # Posizione rispetto al centro del World volume (dir X)   
+d:Ge/Detector4/TransY   = -1.0775 mm   # Posizione rispetto al centro del World volume (dir Y)
 d:Ge/Detector4/TransZ   = 0.0 um       # Posizione rispetto al centro del World volume (dir Z)
 d:Ge/Detector4/RotX     = 0.0 deg
 d:Ge/Detector4/RotY     = 0.0 deg
@@ -211,23 +211,23 @@ s:Ge/Detector4/Color    = "red"
 s:Ge/Detector4/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
 
 
-# The Substrate (SiC, Thick: 90 um)
-# -----------------------------------
+# The Substrate (SiC, Thick: 100 um)
+# ------------------------------------
 #
-# s:Ge/Substrate/Type     = "TsBox"
-# s:Ge/Substrate/Parent   = "World"
-# s:Ge/Substrate/Material = "SiliconCarbide"
-# d:Ge/Substrate/HLX      = 2.50 mm      # Semi-larghezza del substrato (SiC) 
-# d:Ge/Substrate/HLY      = 2.50 mm      # Semi-altezza del substrato (SiC)
-# d:Ge/Substrate/HLZ      = 45.0 um      # Semi-spessore del substrato (SiC)      
-# d:Ge/Substrate/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
-# d:Ge/Substrate/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-# d:Ge/Substrate/TransZ   = 50.0 um      # Posizione rispetto al centro del World volume (dir Z)
-# d:Ge/Substrate/RotX     = 0.0 deg 
-# d:Ge/Substrate/RotY     = 0.0 deg
-# d:Ge/Substrate/RotZ     = 0.0 deg
-# s:Ge/Substrate/Color    = "white"
-# s:Ge/Substrate/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+s:Ge/Substrate/Type     = "TsBox"
+s:Ge/Substrate/Parent   = "World"
+s:Ge/Substrate/Material = "SiliconCarbide"
+d:Ge/Substrate/HLX      = 2.50 mm      # Semi-larghezza del substrato (SiC) 
+d:Ge/Substrate/HLY      = 2.50 mm      # Semi-altezza del substrato (SiC)
+d:Ge/Substrate/HLZ      = 50.0 um      # Semi-spessore del substrato (SiC)      
+d:Ge/Substrate/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/Substrate/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+d:Ge/Substrate/TransZ   = 55.0 um      # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/Substrate/RotX     = 0.0 deg 
+d:Ge/Substrate/RotY     = 0.0 deg
+d:Ge/Substrate/RotZ     = 0.0 deg
+s:Ge/Substrate/Color    = "white"
+s:Ge/Substrate/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
 
 
 ###########################################################################
@@ -238,111 +238,111 @@ s:Ge/Detector4/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
 # The first layer of the Printed Circuit Board (PCB, Thick: 10 um)
 # ------------------------------------------------------------------
 #
-# s:Ge/FirstLayerPCB/Type     = "TsCylinder"
-# s:Ge/FirstLayerPCB/Parent   = "World"
-# s:Ge/FirstLayerPCB/Material = "PbSnalloy"
-# d:Ge/FirstLayerPCB/RMin     = 0.00 mm      
-# d:Ge/FirstLayerPCB/RMax     = 4.25 mm      # Raggio del primo strato del PCB
-# d:Ge/FirstLayerPCB/HL       = 5.00 um      # Semi-spessore del secondo strato del PCB 
-# d:Ge/FirstLayerPCB/SPhi     = 0.00 deg      
-# d:Ge/FirstLayerPCB/DPhi     = 360.0 deg      
-# d:Ge/FirstLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
-# d:Ge/FirstLayerPCB/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-# d:Ge/FirstLayerPCB/TransZ   = 100.0 um     # Posizione rispetto al centro del World volume (dir Z)
-# d:Ge/FirstLayerPCB/RotX     = 0.0 deg 
-# d:Ge/FirstLayerPCB/RotY     = 0.0 deg
-# d:Ge/FirstLayerPCB/RotZ     = 0.0 deg
-# b:Ge/FirstLayerPCB/Include  = "True"
-# s:Ge/FirstLayerPCB/Color   = "gray"
-# s:Ge/FirstLayerPCB/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+s:Ge/FirstLayerPCB/Type     = "TsCylinder"
+s:Ge/FirstLayerPCB/Parent   = "World"
+s:Ge/FirstLayerPCB/Material = "PbSnalloy"
+d:Ge/FirstLayerPCB/RMin     = 0.00 mm      
+d:Ge/FirstLayerPCB/RMax     = 4.25 mm      # Raggio del primo strato del PCB
+d:Ge/FirstLayerPCB/HL       = 5.00 um      # Semi-spessore del secondo strato del PCB 
+d:Ge/FirstLayerPCB/SPhi     = 0.00 deg      
+d:Ge/FirstLayerPCB/DPhi     = 360.0 deg      
+d:Ge/FirstLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/FirstLayerPCB/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+d:Ge/FirstLayerPCB/TransZ   = 110.0 um     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/FirstLayerPCB/RotX     = 0.0 deg 
+d:Ge/FirstLayerPCB/RotY     = 0.0 deg
+d:Ge/FirstLayerPCB/RotZ     = 0.0 deg
+b:Ge/FirstLayerPCB/Include  = "True"
+s:Ge/FirstLayerPCB/Color   = "gray"
+s:Ge/FirstLayerPCB/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
 
 
 # The second layer of the Printed Circuit Board (PCB, Thick: 43 um)
 # -------------------------------------------------------------------
 #
-# s:Ge/SecondLayerPCB/Type     = "TsCylinder"
-# s:Ge/SecondLayerPCB/Parent   = "World"
-# s:Ge/SecondLayerPCB/Material = "Copper"
-# d:Ge/SecondLayerPCB/RMin     = 0.00 mm      
-# d:Ge/SecondLayerPCB/RMax     = 4.25 mm      # Raggio del secondo strato del PCB
-# d:Ge/SecondLayerPCB/HL       = 0.0215 mm    # Semi-spessore del secondo strato del PCB 
-# d:Ge/SecondLayerPCB/SPhi     = 0.00 deg      
-# d:Ge/SecondLayerPCB/DPhi     = 360.0 deg      
-# d:Ge/SecondLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
-# d:Ge/SecondLayerPCB/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-# d:Ge/SecondLayerPCB/TransZ   = 126.5 um     # Posizione rispetto al centro del World volume (dir Z)
-# d:Ge/SecondLayerPCB/RotX     = 0.0 deg 
-# d:Ge/SecondLayerPCB/RotY     = 0.0 deg
-# d:Ge/SecondLayerPCB/RotZ     = 0.0 deg
-# b:Ge/SecondLayerPCB/Include  = "True"
-# s:Ge/SecondLayerPCB/Color   = "brown"
-# s:Ge/SecondLayerPCB/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+s:Ge/SecondLayerPCB/Type     = "TsCylinder"
+s:Ge/SecondLayerPCB/Parent   = "World"
+s:Ge/SecondLayerPCB/Material = "Copper"
+d:Ge/SecondLayerPCB/RMin     = 0.00 mm      
+d:Ge/SecondLayerPCB/RMax     = 4.25 mm      # Raggio del secondo strato del PCB
+d:Ge/SecondLayerPCB/HL       = 0.0215 mm    # Semi-spessore del secondo strato del PCB 
+d:Ge/SecondLayerPCB/SPhi     = 0.00 deg      
+d:Ge/SecondLayerPCB/DPhi     = 360.0 deg      
+d:Ge/SecondLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/SecondLayerPCB/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+d:Ge/SecondLayerPCB/TransZ   = 136.5 um     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/SecondLayerPCB/RotX     = 0.0 deg 
+d:Ge/SecondLayerPCB/RotY     = 0.0 deg
+d:Ge/SecondLayerPCB/RotZ     = 0.0 deg
+b:Ge/SecondLayerPCB/Include  = "True"
+s:Ge/SecondLayerPCB/Color   = "brown"
+s:Ge/SecondLayerPCB/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
 
 
-# The third layer of the Printed Circuit Board (PCB, Thick: 1.894 mm)
-# ---------------------------------------------------------------------
+# The third layer of the Printed Circuit Board (PCB, Thick: 1.5 mm)
+# -------------------------------------------------------------------
 #
-# s:Ge/ThirdLayerPCB/Type     = "TsCylinder"
-# s:Ge/ThirdLayerPCB/Parent   = "World"
-# s:Ge/ThirdLayerPCB/Material = "Fiberglass"
-# d:Ge/ThirdLayerPCB/RMin     = 0.00 mm      
-# d:Ge/ThirdLayerPCB/RMax     = 4.25 mm      # Raggio del terzo strato del PCB
-# d:Ge/ThirdLayerPCB/HL       = 0.947 mm     # Semi-spessore del terzo strato PCB 
-# d:Ge/ThirdLayerPCB/SPhi     = 0.00 deg      
-# d:Ge/ThirdLayerPCB/DPhi     = 360.0 deg      
-# d:Ge/ThirdLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
-# d:Ge/ThirdLayerPCB/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-# d:Ge/ThirdLayerPCB/TransZ   = 1.095 mm     # Posizione rispetto al centro del World volume (dir Z)
-# d:Ge/ThirdLayerPCB/RotX     = 0.0 deg 
-# d:Ge/ThirdLayerPCB/RotY     = 0.0 deg
-# d:Ge/ThirdLayerPCB/RotZ     = 0.0 deg
-# b:Ge/ThirdLayerPCB/Include  = "True"
-# s:Ge/ThirdLayerPCB/Color    = "green"
-# s:Ge/ThirdLayerPCB/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+s:Ge/ThirdLayerPCB/Type     = "TsCylinder"
+s:Ge/ThirdLayerPCB/Parent   = "World"
+s:Ge/ThirdLayerPCB/Material = "Fiberglass"
+d:Ge/ThirdLayerPCB/RMin     = 0.00 mm      
+d:Ge/ThirdLayerPCB/RMax     = 4.25 mm      # Raggio del terzo strato del PCB
+d:Ge/ThirdLayerPCB/HL       = 0.750 mm     # Semi-spessore del terzo strato PCB 
+d:Ge/ThirdLayerPCB/SPhi     = 0.00 deg      
+d:Ge/ThirdLayerPCB/DPhi     = 360.0 deg      
+d:Ge/ThirdLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/ThirdLayerPCB/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+d:Ge/ThirdLayerPCB/TransZ   = 0.908 mm     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/ThirdLayerPCB/RotX     = 0.0 deg 
+d:Ge/ThirdLayerPCB/RotY     = 0.0 deg
+d:Ge/ThirdLayerPCB/RotZ     = 0.0 deg
+b:Ge/ThirdLayerPCB/Include  = "True"
+s:Ge/ThirdLayerPCB/Color    = "green"
+s:Ge/ThirdLayerPCB/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
 
 
 # The fourth layer of the Printed Circuit Board (PCB, Thick: 43 um)
 # -------------------------------------------------------------------
 #
-# s:Ge/FourthLayerPCB/Type     = "TsCylinder"
-# s:Ge/FourthLayerPCB/Parent   = "World"
-# s:Ge/FourthLayerPCB/Material = "Copper"
-# d:Ge/FourthLayerPCB/RMin     = 0.00 mm      
-# d:Ge/FourthLayerPCB/RMax     = 4.25 mm      # Raggio del quarto strato del PCB
-# d:Ge/FourthLayerPCB/HL       = 0.0215 mm    # Semi-spessore del quarto strato del PCB 
-# d:Ge/FourthLayerPCB/SPhi     = 0.00 deg      
-# d:Ge/FourthLayerPCB/DPhi     = 360.0 deg      
-# d:Ge/FourthLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
-# d:Ge/FourthLayerPCB/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-# d:Ge/FourthLayerPCB/TransZ   = 2.064 mm     # Posizione rispetto al centro del World volume (dir Z)
-# d:Ge/FourthLayerPCB/RotX     = 0.0 deg 
-# d:Ge/FourthLayerPCB/RotY     = 0.0 deg
-# d:Ge/FourthLayerPCB/RotZ     = 0.0 deg
-# b:Ge/FourthLayerPCB/Include  = "True"
-# s:Ge/FourthLayerPCB/Color   = "brown"
-# s:Ge/FourthLayerPCB/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+s:Ge/FourthLayerPCB/Type     = "TsCylinder"
+s:Ge/FourthLayerPCB/Parent   = "World"
+s:Ge/FourthLayerPCB/Material = "Copper"
+d:Ge/FourthLayerPCB/RMin     = 0.00 mm      
+d:Ge/FourthLayerPCB/RMax     = 4.25 mm      # Raggio del quarto strato del PCB
+d:Ge/FourthLayerPCB/HL       = 0.0215 mm    # Semi-spessore del quarto strato del PCB 
+d:Ge/FourthLayerPCB/SPhi     = 0.00 deg      
+d:Ge/FourthLayerPCB/DPhi     = 360.0 deg      
+d:Ge/FourthLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/FourthLayerPCB/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+d:Ge/FourthLayerPCB/TransZ   = 1.680 mm     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/FourthLayerPCB/RotX     = 0.0 deg 
+d:Ge/FourthLayerPCB/RotY     = 0.0 deg
+d:Ge/FourthLayerPCB/RotZ     = 0.0 deg
+b:Ge/FourthLayerPCB/Include  = "True"
+s:Ge/FourthLayerPCB/Color   = "brown"
+s:Ge/FourthLayerPCB/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
 
 
 # The fifth layer of the Printed Circuit Board (PCB, Thick: 10 um)
 # ------------------------------------------------------------------
 #
-# s:Ge/FifthLayerPCB/Type     = "TsCylinder"
-# s:Ge/FifthLayerPCB/Parent   = "World"
-# s:Ge/FifthLayerPCB/Material = "PbSnalloy"
-# d:Ge/FifthLayerPCB/RMin     = 0.00 mm      
-# d:Ge/FifthLayerPCB/RMax     = 4.25 mm      # Raggio del quinto strato del PCB
-# d:Ge/FifthLayerPCB/HL       = 5.00 um      # Semi-spessore del quinto strato del PCB 
-# d:Ge/FifthLayerPCB/SPhi     = 0.00 deg      
-# d:Ge/FifthLayerPCB/DPhi     = 360.0 deg      
-# d:Ge/FifthLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
-# d:Ge/FifthLayerPCB/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-# d:Ge/FifthLayerPCB/TransZ   = 2.091 mm     # Posizione rispetto al centro del World volume (dir Z)
-# d:Ge/FifthLayerPCB/RotX     = 0.0 deg 
-# d:Ge/FifthLayerPCB/RotY     = 0.0 deg
-# d:Ge/FifthLayerPCB/RotZ     = 0.0 deg
-# b:Ge/FifthLayerPCB/Include  = "True"
-# s:Ge/FifthLayerPCB/Color   = "gray"
-# s:Ge/FifthLayerPCB/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+s:Ge/FifthLayerPCB/Type     = "TsCylinder"
+s:Ge/FifthLayerPCB/Parent   = "World"
+s:Ge/FifthLayerPCB/Material = "PbSnalloy"
+d:Ge/FifthLayerPCB/RMin     = 0.00 mm      
+d:Ge/FifthLayerPCB/RMax     = 4.25 mm      # Raggio del quinto strato del PCB
+d:Ge/FifthLayerPCB/HL       = 5.00 um      # Semi-spessore del quinto strato del PCB 
+d:Ge/FifthLayerPCB/SPhi     = 0.00 deg      
+d:Ge/FifthLayerPCB/DPhi     = 360.0 deg      
+d:Ge/FifthLayerPCB/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/FifthLayerPCB/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+d:Ge/FifthLayerPCB/TransZ   = 1.707 mm     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/FifthLayerPCB/RotX     = 0.0 deg 
+d:Ge/FifthLayerPCB/RotY     = 0.0 deg
+d:Ge/FifthLayerPCB/RotZ     = 0.0 deg
+b:Ge/FifthLayerPCB/Include  = "True"
+s:Ge/FifthLayerPCB/Color   = "gray"
+s:Ge/FifthLayerPCB/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
 
 
 # The PLA detector holder (Thick: 4.10 mm) realized with the 3D printer (upper part)
@@ -358,9 +358,9 @@ s:Ge/Detector4/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
 # d:Ge/DetectorHolderUpper/DPhi     = 360.0 deg      
 # d:Ge/DetectorHolderUpper/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
 # d:Ge/DetectorHolderUpper/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-# d:Ge/DetectorHolderUpper/TransZ   = 50.0 um      # Posizione rispetto al centro del World volume (dir Z)
+# d:Ge/DetectorHolderUpper/TransZ   = 56.0 um      # Posizione rispetto al centro del World volume (dir Z)
 # d:Ge/DetectorHolderUpper/RotX     = 0.0 deg 
-# d:Ge/DetectorHolderUpper/RotY     = 0.0 deg
+# d:Ge/DetectorHolderUpper/RotY     = 0.0 deg 
 # d:Ge/DetectorHolderUpper/RotZ     = 0.0 deg
 # b:Ge/DetectorHolderUpper/Include  = "True"
 # s:Ge/DetectorHolderUpper/Color    = "grey"
@@ -370,67 +370,67 @@ s:Ge/Detector4/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
 # The PLA flush ring (Thick: 2 mm) realized with the 3D printer
 # ---------------------------------------------------------------
 #
-# s:Ge/FlushRing/Type     = "TsCylinder"
-# s:Ge/FlushRing/Parent   = "World"
-# s:Ge/FlushRing/Material = "PolylactidAcid"
-# d:Ge/FlushRing/RMin     = 3.75 mm       # Raggio interno dell'anello di battuta (PLA)
-# d:Ge/FlushRing/RMax     = 4.75 mm       # Raggio esterno dell'anello di battuta (PLA)
-# d:Ge/FlushRing/HL       = 1.00 mm       # Semi-lunghezza dell'anello di battuta (PLA)
-# d:Ge/FlushRing/SPhi     = 0.00 deg      
-# d:Ge/FlushRing/DPhi     = 360.0 deg      
-# d:Ge/FlushRing/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
-# d:Ge/FlushRing/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-# d:Ge/FlushRing/TransZ   = 3.10 mm      # Posizione rispetto al centro del World volume (dir Z)
-# d:Ge/FlushRing/RotX     = 0.0 deg 
-# d:Ge/FlushRing/RotY     = 0.0 deg
-# d:Ge/FlushRing/RotZ     = 0.0 deg
-# b:Ge/FlushRing/Include  = "True"
-# s:Ge/FlushRing/Color    = "blue"
-# s:Ge/v/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullWireFrame"
+s:Ge/FlushRing/Type     = "TsCylinder"
+s:Ge/FlushRing/Parent   = "World"
+s:Ge/FlushRing/Material = "PolylactidAcid"
+d:Ge/FlushRing/RMin     = 3.75 mm       # Raggio interno dell'anello di battuta (PLA)
+d:Ge/FlushRing/RMax     = 4.75 mm       # Raggio esterno dell'anello di battuta (PLA)
+d:Ge/FlushRing/HL       = 1.00 mm       # Semi-lunghezza dell'anello di battuta (PLA)
+d:Ge/FlushRing/SPhi     = 0.00 deg      
+d:Ge/FlushRing/DPhi     = 360.0 deg      
+d:Ge/FlushRing/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/FlushRing/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+d:Ge/FlushRing/TransZ   = 2.712 mm     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/FlushRing/RotX     = 0.0 deg 
+d:Ge/FlushRing/RotY     = 0.0 deg
+d:Ge/FlushRing/RotZ     = 0.0 deg
+b:Ge/FlushRing/Include  = "True"
+s:Ge/FlushRing/Color    = "blue"
+s:Ge/v/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullWireFrame"
 
 
 # The PLA detector holder (Thick: 3 cm) realized with the 3D printer (lower part)
 # ---------------------------------------------------------------------------------
 #
-# s:Ge/DetectorHolderLower/Type     = "TsCylinder"
-# s:Ge/DetectorHolderLower/Parent   = "World"
-# s:Ge/DetectorHolderLower/Material = "PolylactidAcid"
-# d:Ge/DetectorHolderLower/RMin     = 4.25 mm       # Raggio interno dell'holder del rivelatore (PLA)
-# d:Ge/DetectorHolderLower/RMax     = 4.75 mm       # Raggio esterno dell'holder del rivelatore (PLA)
-# d:Ge/DetectorHolderLower/HL       = 1.50 cm       # Semi-lunghezza dell'holder del rivelatore (PLA)
-# d:Ge/DetectorHolderLower/SPhi     = 0.00 deg      
-# d:Ge/DetectorHolderLower/DPhi     = 360.0 deg      
-# d:Ge/DetectorHolderLower/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
-# d:Ge/DetectorHolderLower/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-# d:Ge/DetectorHolderLower/TransZ   = 19.10 mm     # Posizione rispetto al centro del World volume (dir Z)
-# d:Ge/DetectorHolderLower/RotX     = 0.0 deg 
-# d:Ge/DetectorHolderLower/RotY     = 0.0 deg
-# d:Ge/DetectorHolderLower/RotZ     = 0.0 deg
-# b:Ge/DetectorHolderLower/Include  = "True"
-# s:Ge/DetectorHolderLower/Color    = "grey"
-# s:Ge/DetectorHolderLower/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullWireFrame"
+s:Ge/DetectorHolderLower/Type     = "TsCylinder"
+s:Ge/DetectorHolderLower/Parent   = "World"
+s:Ge/DetectorHolderLower/Material = "PolylactidAcid"
+d:Ge/DetectorHolderLower/RMin     = 4.25 mm       # Raggio interno dell'holder del rivelatore (PLA)
+d:Ge/DetectorHolderLower/RMax     = 4.75 mm       # Raggio esterno dell'holder del rivelatore (PLA)
+d:Ge/DetectorHolderLower/HL       = 1.50 cm       # Semi-lunghezza dell'holder del rivelatore (PLA)
+d:Ge/DetectorHolderLower/SPhi     = 0.00 deg      
+d:Ge/DetectorHolderLower/DPhi     = 360.0 deg      
+d:Ge/DetectorHolderLower/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+d:Ge/DetectorHolderLower/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+d:Ge/DetectorHolderLower/TransZ   = 18.712 mm    # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/DetectorHolderLower/RotX     = 0.0 deg 
+d:Ge/DetectorHolderLower/RotY     = 0.0 deg
+d:Ge/DetectorHolderLower/RotZ     = 0.0 deg
+b:Ge/DetectorHolderLower/Include  = "True"
+s:Ge/DetectorHolderLower/Color    = "grey"
+s:Ge/DetectorHolderLower/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullWireFrame"
 
 
 # The water-equivalent resin layer above the SiC detectors (Thick: 2 mm)
 # ------------------------------------------------------------------------
 #
-s:Ge/ResinLayer1/Type     = "TsCylinder"
-s:Ge/ResinLayer1/Parent   = "World"
-s:Ge/ResinLayer1/Material = "Fiberglass"
-d:Ge/ResinLayer1/RMin     = 0.00 mm      
-d:Ge/ResinLayer1/RMax     = 4.25 mm      # Raggio dello strato di resina sovrastante i rivelatori
-d:Ge/ResinLayer1/HL       = 1.00 mm      # Semi-spessore dello strato di resina sovrastante i rivelatori 
-d:Ge/ResinLayer1/SPhi     = 0.00 deg      
-d:Ge/ResinLayer1/DPhi     = 360.0 deg      
-d:Ge/ResinLayer1/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
-d:Ge/ResinLayer1/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-d:Ge/ResinLayer1/TransZ   = -1.005 mm    # Posizione rispetto al centro del World volume (dir Z)
-d:Ge/ResinLayer1/RotX     = 0.0 deg 
-d:Ge/ResinLayer1/RotY     = 0.0 deg
-d:Ge/ResinLayer1/RotZ     = 0.0 deg
-b:Ge/ResinLayer1/Include  = "True"
-s:Ge/ResinLayer1/Color    = "maroon"
-s:Ge/ResinLayer1/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullWireFrame"
+# s:Ge/ResinLayer1/Type     = "TsCylinder"
+# s:Ge/ResinLayer1/Parent   = "World"
+# s:Ge/ResinLayer1/Material = "Fiberglass"
+# d:Ge/ResinLayer1/RMin     = 0.00 mm      
+# d:Ge/ResinLayer1/RMax     = 4.25 mm      # Raggio dello strato di resina sovrastante i rivelatori
+# d:Ge/ResinLayer1/HL       = 1.00 mm      # Semi-spessore dello strato di resina sovrastante i rivelatori 
+# d:Ge/ResinLayer1/SPhi     = 0.00 deg      
+# d:Ge/ResinLayer1/DPhi     = 360.0 deg      
+# d:Ge/ResinLayer1/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
+# d:Ge/ResinLayer1/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
+# d:Ge/ResinLayer1/TransZ   = -1.005 mm    # Posizione rispetto al centro del World volume (dir Z)
+# d:Ge/ResinLayer1/RotX     = 0.0 deg 
+# d:Ge/ResinLayer1/RotY     = 0.0 deg
+# d:Ge/ResinLayer1/RotZ     = 0.0 deg
+# b:Ge/ResinLayer1/Include  = "True"
+# s:Ge/ResinLayer1/Color    = "maroon"
+# s:Ge/ResinLayer1/DrawingStyle = "FullWireFrame" # "Solid", "Wireframe" or "FullWireFrame"
 
 
 # The water-equivalent resin layer that fills the flush ring (Thick: 2 mm)
@@ -446,7 +446,7 @@ d:Ge/ResinLayer2/SPhi     = 0.00 deg
 d:Ge/ResinLayer2/DPhi     = 360.0 deg      
 d:Ge/ResinLayer2/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
 d:Ge/ResinLayer2/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-d:Ge/ResinLayer2/TransZ   = 3.10 mm      # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/ResinLayer2/TransZ   = 2.712 mm     # Posizione rispetto al centro del World volume (dir Z)
 d:Ge/ResinLayer2/RotX     = 0.0 deg 
 d:Ge/ResinLayer2/RotY     = 0.0 deg
 d:Ge/ResinLayer2/RotZ     = 0.0 deg
@@ -468,7 +468,7 @@ d:Ge/ResinLayer3/SPhi     = 0.00 deg
 d:Ge/ResinLayer3/DPhi     = 360.0 deg      
 d:Ge/ResinLayer3/TransX   = 0.00 mm      # Posizione rispetto al centro del World volume (dir X)
 d:Ge/ResinLayer3/TransY   = 0.00 mm      # Posizione rispetto al centro del World volume (dir Y)   
-d:Ge/ResinLayer3/TransZ   = 19.10 mm     # Posizione rispetto al centro del World volume (dir Z)
+d:Ge/ResinLayer3/TransZ   = 18.712 mm    # Posizione rispetto al centro del World volume (dir Z)
 d:Ge/ResinLayer3/RotX     = 0.0 deg 
 d:Ge/ResinLayer3/RotY     = 0.0 deg
 d:Ge/ResinLayer3/RotZ     = 0.0 deg
@@ -537,23 +537,138 @@ s:Sc/EnergyDepositedSpectrumDet4/OutputType                      = "Xml"
 # s:Sc/depthDoseDistributionDegrader/OutputFile                = "DepthDose_WaterPhantom"
 
 
-# The following commands fill an histogram with the Fluence: the total track lenght divided
-# by the volume.
+# Phase Space refers to the technique of saving a set of particles crossing a given surface. When
+# saving a phase space, we define a surface and save the position, particle type, energy and momentum 
+# of all particles crossing the surface.
+# ----------------------------------------------------------------------------------------------------
 #
-# s:Sc/FluenceSpectra/Quantity                    = "Fluence"
-# s:Sc/FluenceSpectra/Component                   = "Detector1"
-# b:Sc/FluenceSpectra/OutputToConsole             = "FALSE"
-# s:Sc/FluenceSpectra/IfOutputFileAlreadyExists   = "Overwrite"
-# i:Sc/FluenceSpectra/HistogramBins               = 10000 
-# d:Sc/FluenceSpectra/HistogramMin                = 0.03 /mm2
-# d:Sc/FluenceSpectra/HistogramMax                = 0.06 /mm2
-# s:Sc/FluenceSpectra/OutputType                  = "Xml"
+# ***** Detector 1 ***** 
+#
+s:Sc/FrontSurfaceDetector1/Quantity                      = "PhaseSpace"     
+b:Sc/FrontSurfaceDetector1/OutputToConsole               = "True"
+s:Sc/FrontSurfaceDetector1/Surface  	                 = "Detector1/ZMinusSurface"     # Superficie anteriore del Detector 1
+s:Sc/FrontSurfaceDetector1/OutputType 	                 = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
+s:Sc/FrontSurfaceDetector1/OutputFile 	                 = "FrontSurfaceDetector1"
+s:Sc/FrontSurfaceDetector1/IfOutputFileAlreadyExists     = "Overwrite"
+# s:Sc/FrontSurfaceDetector1/OnlyIncludeParticlesGoing   = "In" 
+b:Sc/FrontSurfaceDetector1/IncludeRunID                  = "True"  
+b:Sc/FrontSurfaceDetector1/IncludeEventID                = "True" 
+b:Sc/FrontSurfaceDetector1/IncludeTrackID                = "True"
+b:Sc/FrontSurfaceDetector1/IncludeParentID               = "True"
+b:Sc/FrontSurfaceDetector1/IncludeCreatorProcess         = "True"
+b:Sc/FrontSurfaceDetector1/IncludeVertexInfo             = "True"
 
+s:Sc/BackSurfaceDetector1/Quantity                       = "PhaseSpace"     
+b:Sc/BackSurfaceDetector1/OutputToConsole                = "True"
+s:Sc/BackSurfaceDetector1/Surface  	                 = "Detector1/ZPlusSurface"     # Superficie posteriore del Detector 1
+s:Sc/BackSurfaceDetector1/OutputType 	                 = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
+s:Sc/BackSurfaceDetector1/OutputFile 	                 = "BackSurfaceDetector1"
+s:Sc/BackSurfaceDetector1/IfOutputFileAlreadyExists      = "Overwrite"
+# s:Sc/BackSurfaceDetector1/OnlyIncludeParticlesGoing    = "In" 
+b:Sc/BackSurfaceDetector1/IncludeRunID                   = "True"  
+b:Sc/BackSurfaceDetector1/IncludeEventID                 = "True" 
+b:Sc/BackSurfaceDetector1/IncludeTrackID                 = "True"
+b:Sc/BackSurfaceDetector1/IncludeParentID                = "True"
+b:Sc/BackSurfaceDetector1/IncludeCreatorProcess          = "True"
+b:Sc/BackSurfaceDetector1/IncludeVertexInfo              = "True"
+#
+#
+# ***** Detector 2 *****
+#
+s:Sc/FrontSurfaceDetector2/Quantity                      = "PhaseSpace"     
+b:Sc/FrontSurfaceDetector2/OutputToConsole               = "True"
+s:Sc/FrontSurfaceDetector2/Surface  	                 = "Detector2/ZMinusSurface"     # Superficie anteriore del Detector 2
+s:Sc/FrontSurfaceDetector2/OutputType 	                 = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
+s:Sc/FrontSurfaceDetector2/OutputFile 	                 = "FrontSurfaceDetector2"
+s:Sc/FrontSurfaceDetector2/IfOutputFileAlreadyExists     = "Overwrite"
+# s:Sc/FrontSurfaceDetector2/OnlyIncludeParticlesGoing   = "In" 
+b:Sc/FrontSurfaceDetector2/IncludeRunID                  = "True"  
+b:Sc/FrontSurfaceDetector2/IncludeEventID                = "True" 
+b:Sc/FrontSurfaceDetector2/IncludeTrackID                = "True"
+b:Sc/FrontSurfaceDetector2/IncludeParentID               = "True"
+b:Sc/FrontSurfaceDetector2/IncludeCreatorProcess         = "True"
+b:Sc/FrontSurfaceDetector2/IncludeVertexInfo             = "True"
+
+s:Sc/BackSurfaceDetector2/Quantity                       = "PhaseSpace"     
+b:Sc/BackSurfaceDetector2/OutputToConsole                = "True"
+s:Sc/BackSurfaceDetector2/Surface  	                 = "Detector2/ZPlusSurface"     # Superficie posteriore del Detector 2
+s:Sc/BackSurfaceDetector2/OutputType 	                 = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
+s:Sc/BackSurfaceDetector2/OutputFile 	                 = "BackSurfaceDetector2"
+s:Sc/BackSurfaceDetector2/IfOutputFileAlreadyExists      = "Overwrite"
+# s:Sc/BackSurfaceDetector2/OnlyIncludeParticlesGoing    = "In" 
+b:Sc/BackSurfaceDetector2/IncludeRunID                   = "True"  
+b:Sc/BackSurfaceDetector2/IncludeEventID                 = "True" 
+b:Sc/BackSurfaceDetector2/IncludeTrackID                 = "True"
+b:Sc/BackSurfaceDetector2/IncludeParentID                = "True"
+b:Sc/BackSurfaceDetector2/IncludeCreatorProcess          = "True"
+b:Sc/BackSurfaceDetector2/IncludeVertexInfo              = "True"
+#
+#
+# ***** Detector 3 *****
+#
+s:Sc/FrontSurfaceDetector3/Quantity                      = "PhaseSpace"     
+b:Sc/FrontSurfaceDetector3/OutputToConsole               = "True"
+s:Sc/FrontSurfaceDetector3/Surface  	                 = "Detector3/ZMinusSurface"     # Superficie anteriore del Detector 3
+s:Sc/FrontSurfaceDetector3/OutputType 	                 = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
+s:Sc/FrontSurfaceDetector3/OutputFile 	                 = "FrontSurfaceDetector3"
+s:Sc/FrontSurfaceDetector3/IfOutputFileAlreadyExists     = "Overwrite"
+# s:Sc/FrontSurfaceDetector3/OnlyIncludeParticlesGoing   = "In" 
+b:Sc/FrontSurfaceDetector3/IncludeRunID                  = "True"  
+b:Sc/FrontSurfaceDetector3/IncludeEventID                = "True" 
+b:Sc/FrontSurfaceDetector3/IncludeTrackID                = "True"
+b:Sc/FrontSurfaceDetector3/IncludeParentID               = "True"
+b:Sc/FrontSurfaceDetector3/IncludeCreatorProcess         = "True"
+b:Sc/FrontSurfaceDetector3/IncludeVertexInfo             = "True"
+
+s:Sc/BackSurfaceDetector3/Quantity                       = "PhaseSpace"     
+b:Sc/BackSurfaceDetector3/OutputToConsole                = "True"
+s:Sc/BackSurfaceDetector3/Surface  	                 = "Detector3/ZPlusSurface"     # Superficie posteriore del Detector 3
+s:Sc/BackSurfaceDetector3/OutputType 	                 = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
+s:Sc/BackSurfaceDetector3/OutputFile 	                 = "BackSurfaceDetector3"
+s:Sc/BackSurfaceDetector3/IfOutputFileAlreadyExists      = "Overwrite"
+# s:Sc/BackSurfaceDetector3/OnlyIncludeParticlesGoing    = "In" 
+b:Sc/BackSurfaceDetector3/IncludeRunID                   = "True"  
+b:Sc/BackSurfaceDetector3/IncludeEventID                 = "True" 
+b:Sc/BackSurfaceDetector3/IncludeTrackID                 = "True"
+b:Sc/BackSurfaceDetector3/IncludeParentID                = "True"
+b:Sc/BackSurfaceDetector3/IncludeCreatorProcess          = "True"
+b:Sc/BackSurfaceDetector3/IncludeVertexInfo              = "True"
+#
+#
+# ***** Detector 4 *****
+#
+s:Sc/FrontSurfaceDetector4/Quantity                      = "PhaseSpace"     
+b:Sc/FrontSurfaceDetector4/OutputToConsole               = "True"
+s:Sc/FrontSurfaceDetector4/Surface  	                 = "Detector4/ZMinusSurface"     # Superficie anteriore del Detector 4
+s:Sc/FrontSurfaceDetector4/OutputType 	                 = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
+s:Sc/FrontSurfaceDetector4/OutputFile 	                 = "FrontSurfaceDetector4"
+s:Sc/FrontSurfaceDetector4/IfOutputFileAlreadyExists     = "Overwrite"
+# s:Sc/FrontSurfaceDetector4/OnlyIncludeParticlesGoing   = "In" 
+b:Sc/FrontSurfaceDetector4/IncludeRunID                  = "True"  
+b:Sc/FrontSurfaceDetector4/IncludeEventID                = "True" 
+b:Sc/FrontSurfaceDetector4/IncludeTrackID                = "True"
+b:Sc/FrontSurfaceDetector4/IncludeParentID               = "True"
+b:Sc/FrontSurfaceDetector4/IncludeCreatorProcess         = "True"
+b:Sc/FrontSurfaceDetector4/IncludeVertexInfo             = "True"
+
+s:Sc/BackSurfaceDetector4/Quantity                       = "PhaseSpace"     
+b:Sc/BackSurfaceDetector4/OutputToConsole                = "True"
+s:Sc/BackSurfaceDetector4/Surface  	                 = "Detector4/ZPlusSurface"     # Superficie posteriore del Detector 4
+s:Sc/BackSurfaceDetector4/OutputType 	                 = "ASCII"     # "Binary", "ASCII", "Limited" or "ROOT"
+s:Sc/BackSurfaceDetector4/OutputFile 	                 = "BackSurfaceDetector4"
+s:Sc/BackSurfaceDetector4/IfOutputFileAlreadyExists      = "Overwrite"
+# s:Sc/BackSurfaceDetector4/OnlyIncludeParticlesGoing    = "In" 
+b:Sc/BackSurfaceDetector4/IncludeRunID                   = "True"  
+b:Sc/BackSurfaceDetector4/IncludeEventID                 = "True" 
+b:Sc/BackSurfaceDetector4/IncludeTrackID                 = "True"
+b:Sc/BackSurfaceDetector4/IncludeParentID                = "True"
+b:Sc/BackSurfaceDetector4/IncludeCreatorProcess          = "True"
+b:Sc/BackSurfaceDetector4/IncludeVertexInfo              = "True"
 
 
 # =======================================   VISUALISATION  =======================================
 #
-# s:Gr/ViewA/Type                               = "OpenGL"  # Commentare questa riga per bypassare la parte grafica
+s:Gr/ViewA/Type                               = "OpenGL"  # Commentare questa riga per bypassare la parte grafica
 i:Gr/ViewA/WindowSizeX                        = 900
 i:Gr/ViewA/WindowSizeY                        = 900
 # d:Gr/ViewA/Theta                            = 55 deg
@@ -565,7 +680,7 @@ b:Gr/ViewA/HiddenLineRemovalForTrajectories   = "True"
 sv:Gr/ViewA/VisibleWorlds                     = 1 "All"
 # b:Gr/ViewA/IncludeAxes      		      = "True"
 # d:Gr/ViewA/AxesSize                         = 0.1 mm
-# Ts/UseQt = "True"					  # Commentare questa riga per bypassare la parte grafica
+Ts/UseQt = "True"					  # Commentare questa riga per bypassare la parte grafica
 
 
 sv:Ph/Default/Modules = 6 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping"
@@ -601,15 +716,15 @@ d:So/Example/BeamAngularSpreadY        = 0.0005 rad
 
 # Tracking verbosity
 #
-# i:Ts/TrackingVerbosity = 0
-# d:Ph/Default/CutForAllParticles = 0.01 mm 
-# i:Ts/Seed = 1 
-# b:Ge/QuitIfOverlapDetected = "True"
-# # b:Ts/PauseBeforeSequence = "True"
+i:Ts/TrackingVerbosity = 0
+d:Ph/Default/CutForAllParticles = 0.01 mm 
+i:Ts/Seed = 3 
+b:Ge/QuitIfOverlapDetected = "True"
+# b:Ts/PauseBeforeSequence = "True"
 
 # =====================   NUMBER OF EVENTS  =======================================
 #
-i:So/Example/NumberOfHistoriesInRun = 10000
+i:So/Example/NumberOfHistoriesInRun = 10
 
 i:Ts/NumberOfThreads = 0    # If set to 0, TOPAS will use all the computer's threads
 
