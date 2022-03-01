@@ -23,37 +23,37 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-#include "RBEAccumulable.hh"
-#include "RBE.hh"
-#include "RadioBioHit.hh"
+#include "RadiobiologyRBEAccumulable.hh"
+#include "RadiobiologyRBE.hh"
+#include "RadiobiologyRadioBioHit.hh"
 #include "G4ParticleDefinition.hh"
-#include "VoxelizedSensitiveDetector.hh"
-#include "RadioBioManager.hh"
+#include "RadiobiologyVoxelizedSensitiveDetector.hh"
+#include "RadiobiologyManager.hh"
 
 
 #include <tuple>
 #include <G4SystemOfUnits.hh>
 
 
-RBEAccumulable::RBEAccumulable()
-    : VRadiobiologicalAccumulable("RBE")
+RadiobiologyRBEAccumulable::RadiobiologyRBEAccumulable()
+    : RadiobiologyVRadiobiologicalAccumulable("RBE")
 {
 
 }
 
-void RBEAccumulable::Merge(const G4VAccumulable& rhs)
+void RadiobiologyRBEAccumulable::Merge(const G4VAccumulable& rhs)
 {
     if (GetVerboseLevel() > 1)
     {
         G4cout << "RBEAccumulable::Merge()" << G4endl;
     }
-    const RBEAccumulable& other = dynamic_cast<const RBEAccumulable&>(rhs);
+    const RadiobiologyRBEAccumulable& other = dynamic_cast<const RadiobiologyRBEAccumulable&>(rhs);
     fAlphaNumerator += other.fAlphaNumerator;
     fDenominator += other.fDenominator;
     fBetaNumerator += other.fBetaNumerator;
 }
 
-void RBEAccumulable::Reset()
+void RadiobiologyRBEAccumulable::Reset()
 {
     if (GetVerboseLevel() > 0)
     {
@@ -72,7 +72,7 @@ void RBEAccumulable::Reset()
 }
 
 //to accumulate given the hit
-void RBEAccumulable::Accumulate(RadioBioHit* hit)
+void RadiobiologyRBEAccumulable::Accumulate(RadiobiologyRadioBioHit* hit)
 {
   G4double kineticEnergy = hit->GetEkinMean();
   G4int A = hit->GetPartType()->GetAtomicMass();
@@ -87,7 +87,7 @@ void RBEAccumulable::Accumulate(RadioBioHit* hit)
 
 }
 
-void RBEAccumulable::Accumulate(G4double E, G4double energyDeposit, G4double dX, G4int Z, G4int i, G4int j, G4int k)
+void RadiobiologyRBEAccumulable::Accumulate(G4double E, G4double energyDeposit, G4double dX, G4int Z, G4int i, G4int j, G4int k)
 {
     if (!fInitialized)
     {
@@ -116,13 +116,13 @@ void RBEAccumulable::Accumulate(G4double E, G4double energyDeposit, G4double dX,
 }
 
 
-G4int RBEAccumulable::GetVerboseLevel() const
+G4int RadiobiologyRBEAccumulable::GetVerboseLevel() const
 {
     // Return same verbosity of RBE class
     return RadioBioManager::GetInstance()->GetQuantity("RBE")->GetVerboseLevel();
 }
 
-void RBEAccumulable::Initialize()
+void RadiobiologyRBEAccumulable::Initialize()
 {
     if (GetVerboseLevel() > 0)
     {

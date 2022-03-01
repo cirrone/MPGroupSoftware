@@ -23,8 +23,8 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-#include "LETAccumulable.hh"
-#include "RadioBioHit.hh"
+#include "RadiobiologyLETAccumulable.hh"
+#include "RadiobiologyRadioBioHit.hh"
 #include "G4ParticleDefinition.hh"
 #include "VoxelizedSensitiveDetector.hh"
 #include "G4LogicalVolume.hh"
@@ -37,18 +37,18 @@
 
 using namespace std;
 
-LETAccumulable::LETAccumulable()
-    : VRadiobiologicalAccumulable("LET")
+RadiobiologyLETAccumulable::RadiobiologyLETAccumulable()
+    : RadiobiologyVRadiobiologicalAccumulable("LET")
 {
 }
 
-void LETAccumulable::Merge(const G4VAccumulable& rhs)
+void RadiobiologyLETAccumulable::Merge(const G4VAccumulable& rhs)
 {
     if (GetVerboseLevel() > 0)
     {
         G4cout << "LETAccumulable::Merge()" << G4endl;
     }
-    const LETAccumulable& other = dynamic_cast<const LETAccumulable&>(rhs);
+    const RadiobiologyLETAccumulable& other = dynamic_cast<const RadiobiologyLETAccumulable&>(rhs);
 
     // Merges standard counters
     fTotalLETT += other.GetTotalLETT();
@@ -83,7 +83,7 @@ void LETAccumulable::Merge(const G4VAccumulable& rhs)
     }
 }
 
-void LETAccumulable::Reset()
+void RadiobiologyLETAccumulable::Reset()
 {
     if (GetVerboseLevel() > 0)
     {
@@ -104,7 +104,7 @@ void LETAccumulable::Reset()
 }
 
 // To accumulate given the hit
-void LETAccumulable::Accumulate(RadioBioHit* hit)
+void RadiobiologyLETAccumulable::Accumulate(RadioBioHit* hit)
 {
     if (GetVerboseLevel() > 1)
     {
@@ -194,13 +194,13 @@ void LETAccumulable::Accumulate(RadioBioHit* hit)
 
 
 
-G4int LETAccumulable::GetVerboseLevel() const
+G4int RadiobiologyLETAccumulable::GetVerboseLevel() const
 {
     // return same level of LET class
     return RadioBioManager::GetInstance()->GetQuantity("LET")->GetVerboseLevel();
 }
 
-void LETAccumulable::Initialize()
+void RadiobiologyLETAccumulable::Initialize()
 {
     if (GetVerboseLevel() > 0)
     {

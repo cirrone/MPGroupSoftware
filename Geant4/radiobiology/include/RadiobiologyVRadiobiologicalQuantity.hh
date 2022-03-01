@@ -29,22 +29,22 @@
 // Default quantities (inheriting from this class) are Dose,
 // LET and RBE.
 
-#ifndef VRadiobiologicalQuantity_H
-#define VRadiobiologicalQuantity_H 1
+#ifndef RadiobiologyVRadiobiologicalQuantity_H
+#define RadiobiologyVRadiobiologicalQuantity_H 1
 
-#include "VoxelizedSensitiveDetector.hh"
+#include "RadiobiologyVoxelizedSensitiveDetector.hh"
 #include <valarray>
 
 class G4VAccumulable;
 class G4UImessenger;
 
 
-class VRadiobiologicalQuantity
+class RadiobiologyVRadiobiologicalQuantity
 {
 public:
-    VRadiobiologicalQuantity()
+    RadiobiologyVRadiobiologicalQuantity()
     {
-        if(VoxelizedSensitiveDetector::GetInstance() == 0)
+        if(RadiobiologyVoxelizedSensitiveDetector::GetInstance() == 0)
             G4Exception("VRadiobiologicalQuantity::VRadiobiologicalQuantity", "NotVoxelized", FatalException,
                         "Trying to create a radiobiological quantity before voxelizing the detector!");
         fMessenger = 0;
@@ -56,7 +56,7 @@ public:
         fAccumulate = false;
     }
 
-    virtual ~VRadiobiologicalQuantity()
+    virtual ~RadiobiologyVRadiobiologicalQuantity()
     {;}
 
     // If this is false (set with macro), nothing happens

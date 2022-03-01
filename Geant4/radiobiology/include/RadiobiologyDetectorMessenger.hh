@@ -27,31 +27,31 @@
 // Last modified: 19/11/13
 //
 
-#ifndef DetectorMessenger_h
-#define DetectorMessenger_h 1
+#ifndef RadiobiologyDetectorMessenger_h
+#define RadiobiologyDetectorMessenger_h 1
 
 #include "G4UImessenger.hh"
 #include "globals.hh"
 
-class DetectorConstruction;
+class RadiobiologyDetectorConstruction;
 class G4UIdirectory;
 class G4UIcommand;
 class G4UIcmdWithAString;
 class G4UIcmdWithADoubleAndUnit;
 class G4UIcmdWith3VectorAndUnit;
 
-class DetectorMessenger: public G4UImessenger
+class RadiobiologyDetectorMessenger: public G4UImessenger
 {
   public:
   
-    DetectorMessenger(DetectorConstruction* );
-   ~DetectorMessenger();
+    RadiobiologyDetectorMessenger(RadiobiologyDetectorConstruction* );
+   ~RadiobiologyDetectorMessenger();
     
     virtual void SetNewValue(G4UIcommand*, G4String);
     
   private:
   
-    DetectorConstruction*      fDetector;
+    RadiobiologyDetectorConstruction*      fDetector;
     
     // Geometry directory
     G4UIdirectory*             fGeometryDir;

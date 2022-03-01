@@ -32,13 +32,13 @@
 //
 
 
-#ifndef LETMessenger_h
-#define LETMessenger_h 1
+#ifndef RadiobiologyLETMessenger_h
+#define RadiobiologyLETMessenger_h 1
 
 #include "G4UImessenger.hh"
 #include "globals.hh"
 
-class LET;
+class RadiobiologyLET;
 class G4UIdirectory;
 class G4UIcmdWithoutParameter;
 class G4UIcmdWithAnInteger;
@@ -46,18 +46,18 @@ class G4UIcmdWithABool;
 class G4UIcmdWithAString;
 
 
-class LETMessenger: public G4UImessenger
+class RadiobiologyLETMessenger: public G4UImessenger
 {
   public:
   
-    LETMessenger(LET* );
-   ~LETMessenger();
+    RadiobiologyLETMessenger(LET* );
+   ~RadiobiologyLETMessenger();
     
     virtual void SetNewValue(G4UIcommand*, G4String);
     
   private:
   
-    LET* fLET;
+    RadiobiologyLET* fLET;
     
     G4UIdirectory*              fLETDir;
     G4UIcmdWithABool*           fCalculationCmd;

@@ -27,9 +27,9 @@
 // Last modified: 19/11/13
 //
 
-#include "DetectorMessenger.hh"
+#include "RadiobiologyDetectorMessenger.hh"
 
-#include "DetectorConstruction.hh"
+#include "RadiobiologyDetectorConstruction.hh"
 #include "G4UIdirectory.hh"
 #include "G4UIcommand.hh"
 #include "G4UIparameter.hh"
@@ -37,7 +37,7 @@
 #include "G4UIcmdWithADoubleAndUnit.hh"
 #include "G4UIcmdWith3VectorAndUnit.hh"
 
-DetectorMessenger::DetectorMessenger(DetectorConstruction * Det)
+RadiobiologyDetectorMessenger::RadiobiologyDetectorMessenger(RadiobiologyDetectorConstruction * Det)
 :G4UImessenger(), 
  fDetector(Det),
  fGeometryDir(0),
@@ -99,7 +99,7 @@ DetectorMessenger::DetectorMessenger(DetectorConstruction * Det)
   fSizeZCmd->SetToBeBroadcasted(false);
 }
 
-DetectorMessenger::~DetectorMessenger()
+RadiobiologyDetectorMessenger::~RadiobiologyDetectorMessenger()
 {
   delete fGeometryDir;
   delete fMaterCmd;
@@ -110,7 +110,7 @@ DetectorMessenger::~DetectorMessenger()
   delete fSizeZCmd;
 }
 
-void DetectorMessenger::SetNewValue(G4UIcommand* command,G4String newValue)
+void RadiobiologyDetectorMessenger::SetNewValue(G4UIcommand* command,G4String newValue)
 { 
   if( command == fMaterCmd )
    { fDetector->SetMaterial(newValue);}

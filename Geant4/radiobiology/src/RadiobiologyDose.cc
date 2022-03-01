@@ -26,19 +26,19 @@
 // Hadrontherapy advanced example for Geant4
 // See more at: https://twiki.cern.ch/twiki/bin/view/Geant4/AdvancedExamplesHadrontherapy
 
-#include "Dose.hh"
+#include "RadiobiologyDose.hh"
 #include <fstream>
 
-#include "DetectorConstruction.hh"
+#include "RadiobiologyDetectorConstruction.hh"
 #include "VoxelizedSensitiveDetector.hh"
 #include "G4SystemOfUnits.hh"
-#include "DoseAccumulable.hh"
-#include "DoseMessenger.hh"
+#include "RadiobiologyDoseAccumulable.hh"
+#include "RadiobiologyDoseMessenger.hh"
 
 
 #define width 15L
 
-Dose::Dose()
+RadiobiologyDose::RadiobiologyDose()
 : VRadiobiologicalQuantity(),
   fEnDep(),
   fDose()
@@ -52,12 +52,12 @@ Dose::Dose()
     Initialize();
 }
 
-Dose::~Dose()
+RadiobiologyDose::~RadiobiologyDose()
 {
   delete fMessenger;
 }
 
-void Dose::Initialize()
+void RadiobiologyDose::Initialize()
 {
     if(fVerboseLevel > 0)
         G4cout << "Dose::Initialize() called" << G4endl;
@@ -70,7 +70,7 @@ void Dose::Initialize()
 }
 
 
-void Dose::Compute()
+void RadiobiologyDose::Compute()
 {
     // Skip Dose computation if calculation not enabled.
     if(!fCalculationEnabled)
@@ -108,7 +108,7 @@ void Dose::Compute()
 
 
 
-void Dose::Store()
+void RadiobiologyDose::Store()
 {
     // Skip Dose store if calculation not enabled.
     if(!fCalculationEnabled)
@@ -151,21 +151,21 @@ void Dose::Store()
 }
 
 
-void Dose::AddFromAccumulable(G4VAccumulable* GenAcc)
+void RadiobiologyDose::AddFromAccumulable(G4VAccumulable* GenAcc)
 {
     DoseAccumulable* acc = (DoseAccumulable*) GenAcc;
     AddEnergyDeposit(acc->GetEnDeposit());
     fCalculated = false;
 }
 
-void Dose::SetFromAccumulable(G4VAccumulable* GenAcc)
+void RadiobiologyDose::SetFromAccumulable(G4VAccumulable* GenAcc)
 {
-    DoseAccumulable* acc = (DoseAccumulable*) GenAcc;
+    RadiobiologyDoseAccumulable* acc = (RadiobiologyDoseAccumulable*) GenAcc;
     SetEnergyDeposit(acc->GetEnDeposit());
     fCalculated = false;
 }
 
-void Dose::Reset()
+void RadiobiologyDose::Reset()
 {
     if (fVerboseLevel > 1)
     {
@@ -176,7 +176,7 @@ void Dose::Reset()
     fCalculated = false;
 }
 
-void Dose::PrintParameters()
+void RadiobiologyDose::PrintParameters()
 {
     G4cout << "*******************************************" << G4endl
            << "****** Parameters of the class Dose *******" << G4endl

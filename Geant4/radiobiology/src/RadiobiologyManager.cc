@@ -26,7 +26,7 @@
 // Hadrontherapy advanced example for Geant4
 // See more at: https://twiki.cern.ch/twiki/bin/view/Geant4/AdvancedExamplesHadrontherapy
 
-#include "RadioBioManager.hh"
+#include "RadiobiologyManager.hh"
 
 #include "G4AccumulableManager.hh"
 
@@ -37,11 +37,11 @@
 #define width 15L
 
 // Singleton pointer first instatiated to NULL
-RadioBioManager* RadioBioManager::instance = nullptr;
+RadiobiologyManager* RadiobiologyManager::instance = nullptr;
 
   // To create the instance the DetectorConstruction must
   // be passed (to account for correct voxelization)
-RadioBioManager* RadioBioManager::CreateInstance()
+RadiobiologyManager* RadiobiologyManager::CreateInstance()
 {
     if (instance)
     {
@@ -50,45 +50,45 @@ RadioBioManager* RadioBioManager::CreateInstance()
         delete instance;
     }
 
-    instance = new RadioBioManager();
+    instance = new RadiobiologyManager();
     return instance;
 }
 
-RadioBioManager* RadioBioManager::GetInstance()
+RadiobiologyManager* RadiobiologyManager::GetInstance()
 {
     return instance;
 }
 
-RadioBioManager::RadioBioManager():
+RadiobiologyManager::RadiobiologyManager():
     fQuantities()
 {}
 
 // Destructor deletes all the quantities
-RadioBioManager::~RadioBioManager()
+RadiobiologyManager::~RadiobiologyManager()
 {
     for(auto q : fQuantities)
         delete q.second;
 }
 
-void RadioBioManager::InitializeAll()
+void RadiobiologyManager::InitializeAll()
 {
     for(auto const& q : fQuantities)
         (q.second)->Initialize();
 }
 
-void RadioBioManager::ComputeAll()
+void RadiobiologyManager::ComputeAll()
 {
     for(auto const& q : fQuantities)
         (q.second)->Compute();
 }
 
-void RadioBioManager::ResetAll()
+void RadiobiologyManager::ResetAll()
 {
     for(auto const& q : fQuantities)
         (q.second)->Reset();
 }
 
-void RadioBioManager::StoreAll()
+void RadiobiologyManager::StoreAll()
 {
     for(auto const& q : fQuantities)
         (q.second)->Store();
@@ -99,7 +99,7 @@ VRadiobiologicalQuantity* RadioBioManager::GetQuantity(G4String str)
     return fQuantities.find(str)->second;
 }
 
-void RadioBioManager::PrintParameters()
+void RadiobiologyManager::PrintParameters()
 {
     G4cout << "*******************************************" << G4endl
            << "*** right now registered quantities are ***" << G4endl;
@@ -110,7 +110,7 @@ void RadioBioManager::PrintParameters()
            << "*******************************************" << G4endl;
 }
 
-void RadioBioManager::DigestAccumulables()
+void RadiobiologyManager::DigestAccumulables()
 {
     for(auto q : fQuantities)
     {
@@ -135,7 +135,7 @@ void RadioBioManager::DigestAccumulables()
     }
 }
 
-bool RadioBioManager::Register(VRadiobiologicalQuantity* q, G4String name)
+bool RadiobiologyManager::Register(VRadiobiologicalQuantity* q, G4String name)
 {
     if(q == nullptr)
     {

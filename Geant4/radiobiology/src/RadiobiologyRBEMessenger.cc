@@ -31,9 +31,9 @@
 // Last modified: 19/05/13
 //
 
-#include "RBEMessenger.hh"
+#include "RadiobiologyRBEMessenger.hh"
 
-#include "RBE.hh"
+#include "RadiobiologyRBE.hh"
 #include <G4UIdirectory.hh>
 #include <G4UIcmdWithADouble.hh>
 #include <G4UIcmdWithAString.hh>
@@ -43,7 +43,7 @@
 
 
 
-RBEMessenger::RBEMessenger(
+RadiobiologyRBEMessenger::RadiobiologyRBEMessenger(
         RBE * rbe)
 :G4UImessenger(), 
  fRBE(rbe),
@@ -107,7 +107,7 @@ RBEMessenger::RBEMessenger(
 }
 
 
-RBEMessenger::~RBEMessenger()
+RadiobiologyRBEMessenger::~RadiobiologyRBEMessenger()
 {
     delete fRBEDir;
     delete fCalculationCmd;
@@ -120,7 +120,7 @@ RBEMessenger::~RBEMessenger()
 }
 
 
-void RBEMessenger::SetNewValue(G4UIcommand* command,G4String newValue)
+void RadiobiologyRBEMessenger::SetNewValue(G4UIcommand* command,G4String newValue)
 { 
     if( command == fCalculationCmd )
     { fRBE->SetCalculationEnabled(fCalculationCmd->GetNewBoolValue(newValue));}

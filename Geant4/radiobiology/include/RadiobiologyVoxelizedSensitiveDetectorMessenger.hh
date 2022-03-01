@@ -34,13 +34,13 @@
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-#ifndef VoxelizedSensitiveDetectorMessenger_h
-#define VoxelizedSensitiveDetectorMessenger_h 1
+#ifndef RadiobiologyVoxelizedSensitiveDetectorMessenger_h
+#define RadiobiologyVoxelizedSensitiveDetectorMessenger_h 1
 
 #include "G4UImessenger.hh"
 #include "globals.hh"
 
-class VoxelizedSensitiveDetector;
+class RadiobiologyVoxelizedSensitiveDetector;
 class G4UIdirectory;
 class G4UIcommand;
 class G4UIcmdWithADoubleAndUnit;
@@ -48,18 +48,18 @@ class G4UIcmdWith3VectorAndUnit;
 class G4UIcmdWithoutParameter;
 
 
-class VoxelizedSensitiveDetectorMessenger: public G4UImessenger
+class RadiobiologyVoxelizedSensitiveDetectorMessenger: public G4UImessenger
 {
   public:
   
-    VoxelizedSensitiveDetectorMessenger(VoxelizedSensitiveDetector* );
-   ~VoxelizedSensitiveDetectorMessenger();
+    RadiobiologyVoxelizedSensitiveDetectorMessenger(RadiobiologyVoxelizedSensitiveDetector* );
+   ~RadiobiologyVoxelizedSensitiveDetectorMessenger();
     
     virtual void SetNewValue(G4UIcommand*, G4String);
     
   private:
   
-    VoxelizedSensitiveDetector* fVoxelizedDetector;
+    RadiobiologyVoxelizedSensitiveDetector* fVoxelizedDetector;
     
     G4UIdirectory*              fVoxelsDir;
     G4UIcmdWith3VectorAndUnit*  fVoxelSizeCmd;

@@ -31,13 +31,13 @@
 // Last modified: 19/05/13
 //
 
-#ifndef RBEMessenger_h
-#define RBEMessenger_h 1
+#ifndef RadiobiologyRBEMessenger_h
+#define RadiobiologyRBEMessenger_h 1
 
 #include "G4UImessenger.hh"
 #include "globals.hh"
 
-class RBE;
+class RadiobiologyRBE;
 class G4UIdirectory;
 class G4UIcmdWithADouble;
 class G4UIcmdWithAString;
@@ -47,18 +47,18 @@ class G4UIcmdWithABool;
 
 
 
-class RBEMessenger: public G4UImessenger
+class RadiobiologyRBEMessenger: public G4UImessenger
 {
   public:
   
-    RBEMessenger(RBE* );
-   ~RBEMessenger();
+    RadiobiologyRBEMessenger(RadiobiologyRBE* );
+   ~RadiobiologyRBEMessenger();
     
     virtual void SetNewValue(G4UIcommand*, G4String);
     
   private:
   
-    RBE* fRBE;
+    RadiobiologyRBE* fRBE;
     
     G4UIdirectory*              fRBEDir;
     G4UIcmdWithABool*           fCalculationCmd;

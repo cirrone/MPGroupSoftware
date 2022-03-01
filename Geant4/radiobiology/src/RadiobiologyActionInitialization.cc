@@ -27,38 +27,38 @@
 // Last modified: 19/11/12
 //
 
-#include "ActionInitialization.hh"
-#include "PrimaryGeneratorAction.hh"
-#include "RunAction.hh"
+#include "RadiobiologyActionInitialization.hh"
+#include "RadiobiologyPrimaryGeneratorAction.hh"
+#include "RadiobiologyRunAction.hh"
 
 class DetectorConstruction;
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-ActionInitialization::ActionInitialization(DetectorConstruction* det)
+RadiobiologyActionInitialization::RadiobiologyActionInitialization(RadiobiologyDetectorConstruction* det)
  : G4VUserActionInitialization(), fDetector(det)
 {}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-ActionInitialization::~ActionInitialization()
+RadiobiologyActionInitialization::~RadiobiologyActionInitialization()
 {}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void ActionInitialization::BuildForMaster() const
+void RadiobiologyActionInitialization::BuildForMaster() const
 {
-  RunAction* runAction = new RunAction(fDetector);
+  RadiobiologyRunAction* runAction = new RadiobiologyRunAction(fDetector);
   SetUserAction(runAction);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void ActionInitialization::Build() const
+void RadiobiologyActionInitialization::Build() const
 {
-  SetUserAction(new PrimaryGeneratorAction(fDetector));
+  SetUserAction(new RadiobiologyPrimaryGeneratorAction(fDetector));
 
-  RunAction* runAction = new RunAction(fDetector);
+  RadiobiologyRunAction* runAction = new RadiobiologyRunAction(fDetector);
   SetUserAction(runAction);  
 }  
 

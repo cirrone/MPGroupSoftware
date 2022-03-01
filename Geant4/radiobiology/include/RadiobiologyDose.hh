@@ -27,19 +27,19 @@
 // Last modified: 19/11/14
 //
 
-#ifndef Dose_h
-#define Dose_h 1
+#ifndef RadiobiologyDose_h
+#define RadiobiologyDose_h 1
 
 #include "globals.hh"
 #include <valarray>
 
-#include "VRadiobiologicalQuantity.hh"
+#include "RadiobiologyVRadiobiologicalQuantity.hh"
 
-class DetectorConstruction;
-class DoseAccumulable;
-class DoseMessenger;
+class RadiobiologyDetectorConstruction;
+class RadiobiologyDoseAccumulable;
+class RadiobiologyDoseMessenger;
 
-class Dose : public VRadiobiologicalQuantity
+class RadiobiologyDose : public VRadiobiologicalQuantity
 {
 private:
     
@@ -48,8 +48,8 @@ private:
     friend class RBE;
 
 public:
-    Dose();
-    ~Dose();
+    RadiobiologyDose();
+    ~RadiobiologyDose();
 
     // Virtual methods to override
     void virtual AddFromAccumulable(G4VAccumulable*) override;

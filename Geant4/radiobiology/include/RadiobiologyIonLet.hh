@@ -1,19 +1,19 @@
-#ifndef IonLet_HH
-#define IonLet_HH
+#ifndef RadiobiologyIonLet_HH
+#define RadiobiologyIonLet_HH
 
 #include <valarray>
 #include "globals.hh"
 
 
 // class to save and hold data for LET of different ions
-class IonLet
+class RadiobiologyIonLet
 {
 public:
 
     // Constructor wants ion data, trackID and total voxel number
     // trackID used only to see if particle is primary
-    IonLet(G4int trackID, G4int PDG, G4String fullname, G4String name, G4int Z, G4int A, G4int voxNumber);
-    ~IonLet();
+    RadiobiologyIonLet(G4int trackID, G4int PDG, G4String fullname, G4String name, G4int Z, G4int A, G4int voxNumber);
+    ~RadiobiologyIonLet();
 
     // Alias for matrix type
     using array_type = std::valarray<G4double>;
@@ -45,14 +45,14 @@ public:
     void update(G4int voxel, G4double DE, G4double DEELETrons, G4double Lsn, G4double DX);
 
     // To merge data from another IonLet object inside this one
-    void merge(const IonLet* lhs);
+    void merge(const RadiobiologyIonLet* lhs);
 
     // To calculate LET given the numerator and denominator
     void calculate();
 
 
     // To sort by the mass number, else sort by the atomic one.
-    G4bool operator<(const IonLet& a) const{return (this->fZ == a.fZ) ? this-> fA < a.fA : this->fZ < a.fZ ;}
+    G4bool operator<(const RadiobiologyIonLet& a) const{return (this->fZ == a.fZ) ? this-> fA < a.fA : this->fZ < a.fZ ;}
 
 private:
     G4bool      fIsPrimary;     // True if particle is primary

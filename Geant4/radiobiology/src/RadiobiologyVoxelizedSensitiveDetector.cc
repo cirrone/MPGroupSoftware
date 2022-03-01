@@ -31,7 +31,7 @@
 // Last modified: 19/05/13
 //
 
-#include "VoxelizedSensitiveDetector.hh"
+#include "RadiobiologyVoxelizedSensitiveDetector.hh"
 
 #include "G4Box.hh"
 #include "G4LogicalVolume.hh"
@@ -41,15 +41,15 @@
 #include "G4TransportationManager.hh"
 #include "G4SDManager.hh"
 
-#include "DetectorConstruction.hh"
-#include "VoxelizedSensitiveDetectorMessenger.hh"
-#include "RadioBioSD.hh"
+#include "RadiobiologyDetectorConstruction.hh"
+#include "RadiobiologyVoxelizedSensitiveDetectorMessenger.hh"
+#include "RadiobiologyRadioBioSD.hh"
 #include "G4VPhysicalVolume.hh"
 #include "G4RunManager.hh"
 
-VoxelizedSensitiveDetector* VoxelizedSensitiveDetector::instance = nullptr;
+RadiobiologyVoxelizedSensitiveDetector* RadiobiologyVoxelizedSensitiveDetector::instance = nullptr;
 
-VoxelizedSensitiveDetector* VoxelizedSensitiveDetector::CreateInstance(DetectorConstruction* det, double xWidth,
+RadiobiologyVoxelizedSensitiveDetector* RadiobiologyVoxelizedSensitiveDetector::CreateInstance(RadiobiologyDetectorConstruction* det, double xWidth,
                                                                        double yWidth, double zWidth)
 {
     if (instance)
@@ -58,16 +58,16 @@ VoxelizedSensitiveDetector* VoxelizedSensitiveDetector::CreateInstance(DetectorC
         G4Exception("VoxelizedSensitiveDetector::createInstance", "RecreatingVoxelization",
                     FatalException, "Creating another, new, instance of VoxelizedSensitiveDetector");
     }
-    instance = new VoxelizedSensitiveDetector(det, xWidth, yWidth, zWidth);
+    instance = new RadiobiologyVoxelizedSensitiveDetector(det, xWidth, yWidth, zWidth);
     return instance;
 }
 
-VoxelizedSensitiveDetector* VoxelizedSensitiveDetector::GetInstance()
+RadiobiologyVoxelizedSensitiveDetector* RadiobiologyVoxelizedSensitiveDetector::GetInstance()
 {
     return instance;
 }
 
-VoxelizedSensitiveDetector::VoxelizedSensitiveDetector(DetectorConstruction* det, double xWidth,
+RadiobiologyVoxelizedSensitiveDetector::RadiobiologyVoxelizedSensitiveDetector(RadiobiologyDetectorConstruction* det, double xWidth,
                            double yWidth, double zWidth):
     fDetector(det), fVoxelWidthX(xWidth), fVoxelWidthY(yWidth),
     fVoxelWidthZ(zWidth), fVoxelNumberAlongX(1), fVoxelNumberAlongY(1),
@@ -85,13 +85,13 @@ VoxelizedSensitiveDetector::VoxelizedSensitiveDetector(DetectorConstruction* det
     CalculateVoxelNumber();
 }
 
-VoxelizedSensitiveDetector::~VoxelizedSensitiveDetector()
+RadiobiologyVoxelizedSensitiveDetector::~RadiobiologyVoxelizedSensitiveDetector()
 {
     delete fVoxelizedSensitiveDetectorMessenger;
 }
 
 
-void VoxelizedSensitiveDetector::UpdateVoxelVolume()
+void RadiobiologyVoxelizedSensitiveDetector::UpdateVoxelVolume()
 {
     fVoxelVolume = fVoxelWidthX * fVoxelWidthY * fVoxelWidthZ;
     fVoxelDensity = fDetector->GetMaterial()->GetDensity();
@@ -99,7 +99,7 @@ void VoxelizedSensitiveDetector::UpdateVoxelVolume()
 }
 
 
-void VoxelizedSensitiveDetector::SetVoxelWidth(G4ThreeVector voxWidth)
+void RadiobiologyVoxelizedSensitiveDetector::SetVoxelWidth(G4ThreeVector voxWidth)
 {
     fVoxelWidthX = voxWidth.getX();
     fVoxelWidthY = voxWidth.getY();
@@ -108,21 +108,21 @@ void VoxelizedSensitiveDetector::SetVoxelWidth(G4ThreeVector voxWidth)
 
 }
 
-void VoxelizedSensitiveDetector::SetVoxelWidthX(G4double voxWidthX)
+void RadiobiologyVoxelizedSensitiveDetector::SetVoxelWidthX(G4double voxWidthX)
 {
     if(fVoxelWidthX == voxWidthX) return;
     fVoxelWidthX = voxWidthX;
     CalculateVoxelNumber();
 }
 
-void VoxelizedSensitiveDetector::SetVoxelWidthY(G4double voxWidthY)
+void RadiobiologyVoxelizedSensitiveDetector::SetVoxelWidthY(G4double voxWidthY)
 {
     if(fVoxelWidthY == voxWidthY) return;
     fVoxelWidthY = voxWidthY;
     CalculateVoxelNumber();
 }
 
-void VoxelizedSensitiveDetector::SetVoxelWidthZ(G4double voxWidthZ)
+void RadiobiologyVoxelizedSensitiveDetector::SetVoxelWidthZ(G4double voxWidthZ)
 {
     if(fVoxelWidthZ == voxWidthZ) return;
     fVoxelWidthZ = voxWidthZ;
@@ -131,7 +131,7 @@ void VoxelizedSensitiveDetector::SetVoxelWidthZ(G4double voxWidthZ)
 
 // Calculte number of voxel approximating for an integer number of voxels
 // Then recalculates voxels size according to approximations
-void VoxelizedSensitiveDetector::CalculateVoxelNumber()
+void RadiobiologyVoxelizedSensitiveDetector::CalculateVoxelNumber()
 {
   fVoxelNumberAlongX = G4int(fDetector->GetSizeX() / fVoxelWidthX);
   fVoxelWidthX = fDetector->GetSizeX() / G4double(fVoxelNumberAlongX);
@@ -158,7 +158,7 @@ void VoxelizedSensitiveDetector::CalculateVoxelNumber()
   UpdateVoxelVolume();
 }
 
-void VoxelizedSensitiveDetector::ConstructXDivision()
+void RadiobiologyVoxelizedSensitiveDetector::ConstructXDivision()
 {
     if(worldLogical == nullptr)
         G4Exception("VoxelizedSensitiveDetector::ConstructXDivision", "WorldNotInit",
@@ -186,7 +186,7 @@ void VoxelizedSensitiveDetector::ConstructXDivision()
                                                      fVoxelWidthX);
 }
 
-void VoxelizedSensitiveDetector::ConstructYDivision()
+void RadiobiologyVoxelizedSensitiveDetector::ConstructYDivision()
 {
     VoxelizedDetectorYDivision = new G4Box("VoxelizedDetectorYDivision",
                                            fVoxelWidthX/2,
@@ -206,7 +206,7 @@ void VoxelizedSensitiveDetector::ConstructYDivision()
                                                      fVoxelWidthY);
 }
 
-void VoxelizedSensitiveDetector::ConstructZDivision()
+void RadiobiologyVoxelizedSensitiveDetector::ConstructZDivision()
 {
     VoxelizedDetectorZDivision = new G4Box("VoxelizedDetectorZDivision",
                                            fVoxelWidthX/2,
@@ -229,7 +229,7 @@ void VoxelizedSensitiveDetector::ConstructZDivision()
 }
 
 // First voxelize along X, then Y, then Z
-G4bool VoxelizedSensitiveDetector::ConstructVoxelizedDetector()
+G4bool RadiobiologyVoxelizedSensitiveDetector::ConstructVoxelizedDetector()
 {
 
     // Creating X division
@@ -248,7 +248,7 @@ G4bool VoxelizedSensitiveDetector::ConstructVoxelizedDetector()
     return true;
 }
 
-void VoxelizedSensitiveDetector::UpdateVoxelizedGeometry()
+void RadiobiologyVoxelizedSensitiveDetector::UpdateVoxelizedGeometry()
 {
   // Nothing happens if the voxelized geometry is not built. But parameters are properly set.
   if (!isBuilt)
@@ -298,7 +298,7 @@ void VoxelizedSensitiveDetector::UpdateVoxelizedGeometry()
 }
 
 
-void VoxelizedSensitiveDetector::ConstructSD()
+void RadiobiologyVoxelizedSensitiveDetector::ConstructSD()
 {
  G4String sensitiveDetectorName = "VoxelizedDetector";
  G4String HCname = "LETdata";
@@ -308,13 +308,13 @@ void VoxelizedSensitiveDetector::ConstructSD()
  sensitiveLogicalVolume->SetSensitiveDetector(detectorSD);
 }
 
-void VoxelizedSensitiveDetector::Construct()
+void RadiobiologyVoxelizedSensitiveDetector::Construct()
 {
  ConstructVoxelizedDetector();
 // ConstructSD();
 }
 
-void VoxelizedSensitiveDetector::InitializeWorldPtr(G4VPhysicalVolume* pWorld)
+void RadiobiologyVoxelizedSensitiveDetector::InitializeWorldPtr(G4VPhysicalVolume* pWorld)
 {
     if(pWorld == nullptr)
         G4Exception("VoxelizedSensitiveDetector::InitializeWorldPtr", "WorldinitNull",
@@ -323,7 +323,7 @@ void VoxelizedSensitiveDetector::InitializeWorldPtr(G4VPhysicalVolume* pWorld)
 }
 
 // Returns absolute voxel index given matrix indexes
-G4int VoxelizedSensitiveDetector::GetThisVoxelNumber(G4int x, G4int y, G4int z)
+G4int RadiobiologyVoxelizedSensitiveDetector::GetThisVoxelNumber(G4int x, G4int y, G4int z)
 const
 {
     G4int nz = GetVoxelNumberAlongZ();

@@ -28,9 +28,9 @@
 // Last modified: 19/05/14
 //
 
-#include "PrimaryGeneratorAction.hh"
+#include "RadiobiologyPrimaryGeneratorAction.hh"
 
-#include "DetectorConstruction.hh"
+#include "RadiobiologyDetectorConstruction.hh"
 
 #include "G4Event.hh"
 #include "G4ParticleTable.hh"
@@ -38,7 +38,7 @@
 #include "G4SystemOfUnits.hh"
 
 
-PrimaryGeneratorAction::PrimaryGeneratorAction(DetectorConstruction* det)
+RadiobiologyPrimaryGeneratorAction::RadiobiologyPrimaryGeneratorAction(DetectorConstruction* det)
 :G4VUserPrimaryGeneratorAction(), fDetector(det),
  fParticleGun(0)
 {
@@ -51,12 +51,12 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(DetectorConstruction* det)
   
 }
 
-PrimaryGeneratorAction::~PrimaryGeneratorAction()
+RadiobiologyPrimaryGeneratorAction::~RadiobiologyPrimaryGeneratorAction()
 {
   delete fParticleGun;
 }
 
-void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
+void RadiobiologyPrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
   fParticleGun->SetParticlePosition(G4ThreeVector(-fDetector->GetSizeX()/2., 0., 0.));
   fParticleGun->GeneratePrimaryVertex(anEvent);

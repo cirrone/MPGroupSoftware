@@ -32,32 +32,32 @@
 
 #include "G4UserRunAction.hh"
 
-#include "RadioBioHit.hh"
-class RBEAccumulable;
-class LETAccumulable;
-class DoseAccumulable;
+#include "RadiobiologyRadioBioHit.hh"
+class RadiobiologyRBEAccumulable;
+class RadiobiologyLETAccumulable;
+class RadiobiologyDoseAccumulable;
 
-class DetectorConstruction;
+class RadiobiologyDetectorConstruction;
 class G4Run;
 
 /// Run action class
 
-class RunAction : public G4UserRunAction
+class RadiobiologyRunAction : public G4UserRunAction
 {
   public:
-    RunAction(DetectorConstruction* det);
-    virtual ~RunAction();
+    RadiobiologyRunAction(RadiobiologyDetectorConstruction* det);
+    virtual ~RadiobiologyRunAction();
 
     virtual void BeginOfRunAction(const G4Run* run);
-    virtual void   EndOfRunAction(const G4Run* run);
+    virtual void EndOfRunAction(const G4Run* run);
 
 
   private:
-    DetectorConstruction* fDetector;
+    RadiobiologyDetectorConstruction* fDetector;
 
-    DoseAccumulable* fDoseAccumulable;
-    LETAccumulable*  fLETAccumulable;
-    RBEAccumulable*  fRBEAccumulable;
+    RadiobiologyDoseAccumulable* fDoseAccumulable;
+    RadiobiologyLETAccumulable*  fLETAccumulable;
+    RadiobiologyRBEAccumulable*  fRBEAccumulable;
 
 };
 

@@ -31,9 +31,9 @@
 // Last modified: 19/05/13
 //
 
-#include "VoxelizedSensitiveDetectorMessenger.hh"
+#include "RadiobiologyVoxelizedSensitiveDetectorMessenger.hh"
 
-#include "VoxelizedSensitiveDetector.hh"
+#include "RadiobiologyVoxelizedSensitiveDetector.hh"
 #include "G4UIdirectory.hh"
 #include "G4UIcommand.hh"
 #include "G4UIparameter.hh"
@@ -42,8 +42,8 @@
 #include "G4UIcmdWithoutParameter.hh"
 
 
-VoxelizedSensitiveDetectorMessenger::VoxelizedSensitiveDetectorMessenger(
-        VoxelizedSensitiveDetector * VoxDet)
+RadiobiologyVoxelizedSensitiveDetectorMessenger::RadiobiologyVoxelizedSensitiveDetectorMessenger(
+                                                                                                 RadiobiologyVoxelizedSensitiveDetector * VoxDet)
 :G4UImessenger(), 
  fVoxelizedDetector(VoxDet), fVoxelsDir(0), fVoxelSizeCmd(0), fVoxelSizeXCmd(0),
   fVoxelSizeYCmd(0), fVoxelSizeZCmd(0)
@@ -97,7 +97,7 @@ VoxelizedSensitiveDetectorMessenger::VoxelizedSensitiveDetectorMessenger(
   fUpdateVoxCmd->AvailableForStates(G4State_Idle);
 }
 
-VoxelizedSensitiveDetectorMessenger::~VoxelizedSensitiveDetectorMessenger()
+RadiobiologyVoxelizedSensitiveDetectorMessenger::~RadiobiologyVoxelizedSensitiveDetectorMessenger()
 {
   delete fVoxelsDir;
   delete fVoxelSizeCmd;
@@ -107,7 +107,7 @@ VoxelizedSensitiveDetectorMessenger::~VoxelizedSensitiveDetectorMessenger()
   delete fUpdateVoxCmd;
 }
 
-void VoxelizedSensitiveDetectorMessenger::SetNewValue(G4UIcommand* command,G4String newValue)
+void RadiobiologyVoxelizedSensitiveDetectorMessenger::SetNewValue(G4UIcommand* command,G4String newValue)
 { 
   if( command == fVoxelSizeCmd )
     { fVoxelizedDetector->SetVoxelWidth(fVoxelSizeCmd->GetNew3VectorValue(newValue));}

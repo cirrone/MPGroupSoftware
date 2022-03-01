@@ -31,9 +31,9 @@
 // Last modified: 19/05/13
 //
 
-#include "DoseMessenger.hh"
+#include "RadiobiologyDoseMessenger.hh"
 
-#include "Dose.hh"
+#include "RadiobiologyDose.hh"
 #include <G4UIdirectory.hh>
 #include <G4UIcmdWithoutParameter.hh>
 #include <G4UIcmdWithAnInteger.hh>
@@ -44,7 +44,7 @@
 
 
 
-DoseMessenger::DoseMessenger(
+RadiobiologyDoseMessenger::RadiobiologyDoseMessenger(
         Dose * dose)
 :G4UImessenger(), 
  fDose(dose),
@@ -101,7 +101,7 @@ DoseMessenger::DoseMessenger(
 }
 
 
-DoseMessenger::~DoseMessenger()
+RadiobiologyDoseMessenger::~RadiobiologyDoseMessenger()
 {
     delete fDoseDir;
     delete fCalculationCmd;
@@ -112,7 +112,7 @@ DoseMessenger::~DoseMessenger()
     delete fPrintCmd;
 }
 
-void DoseMessenger::SetNewValue(G4UIcommand* command,G4String newValue)
+void RadiobiologyDoseMessenger::SetNewValue(G4UIcommand* command,G4String newValue)
 { 
     if( command == fCalculationCmd )
     { fDose->SetCalculationEnabled(fCalculationCmd->GetNewBoolValue(newValue));}

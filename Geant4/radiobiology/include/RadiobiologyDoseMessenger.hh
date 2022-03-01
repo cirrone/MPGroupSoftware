@@ -31,13 +31,13 @@
 // Last modified: 19/05/13
 //
 
-#ifndef DoseMessenger_h
-#define DoseMessenger_h 1
+#ifndef RadiobiologyDoseMessenger_h
+#define RadiobiologyDoseMessenger_h 1
 
 #include "G4UImessenger.hh"
 #include "globals.hh"
 
-class Dose;
+class RadiobiologyDose;
 class G4UIdirectory;
 class G4UIcmdWithoutParameter;
 class G4UIcmdWithAnInteger;
@@ -46,18 +46,18 @@ class G4UIcmdWithAString;
 class G4UIcmdWithADouble;
 
 
-class DoseMessenger: public G4UImessenger
+class RadiobiologyDoseMessenger: public G4UImessenger
 {
   public:
   
-    DoseMessenger(Dose* );
-   ~DoseMessenger();
+    RadiobiologyDoseMessenger(Dose* );
+   ~RadiobiologyDoseMessenger();
     
     virtual void SetNewValue(G4UIcommand*, G4String);
     
   private:
   
-    Dose* fDose;
+    RadiobiologyDose* fDose;
     
     G4UIdirectory*              fDoseDir;
     G4UIcmdWithABool*           fCalculationCmd;

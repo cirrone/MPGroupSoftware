@@ -27,26 +27,26 @@
 // Last modified: 19/11/12
 //
 
-#ifndef ActionInitialization_h
-#define ActionInitialization_h 1
+#ifndef RadiobiologyActionInitialization_h
+#define RadiobiologyActionInitialization_h 1
 
 #include "G4VUserActionInitialization.hh"
 
-class DetectorConstruction;
+class RadiobiologyDetectorConstruction;
 
 /// Action initialization class.
 
-class ActionInitialization : public G4VUserActionInitialization
+class RadiobiologyActionInitialization : public G4VUserActionInitialization
 {
   public:
-    ActionInitialization(DetectorConstruction *det);
-    virtual ~ActionInitialization();
+    RadiobiologyActionInitialization(RadiobiologyDetectorConstruction *det);
+    virtual ~RadiobiologyActionInitialization();
 
     virtual void BuildForMaster() const;
     virtual void Build() const;
 
   private:
-    DetectorConstruction* fDetector;
+    RadiobiologyDetectorConstruction* fDetector;
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

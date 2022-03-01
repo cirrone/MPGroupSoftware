@@ -25,18 +25,18 @@
 //
 // DoseAccumulable.hh;
 //
-#ifndef DoseACCUMULABLE_HH
-#define DoseACCUMULABLE_HH
+#ifndef RadiobiologyDoseACCUMULABLE_HH
+#define RadiobiologyDoseACCUMULABLE_HH
 
 #include <G4VAccumulable.hh>
 
 #include <valarray>
 #include <vector>
 
-#include "VRadiobiologicalAccumulable.hh"
+#include "RadiobiologyVRadiobiologicalAccumulable.hh"
 
-class RadioBioHit;
-class VoxelizedSensitiveDetector;
+class RadiobiologyRadioBioHit;
+class RadiobiologyVoxelizedSensitiveDetector;
 
 /**
  * @brief Accumulable of Dose-related data (that must be thread-local).
@@ -52,18 +52,18 @@ class VoxelizedSensitiveDetector;
  * @note std::valarray is used (instead of C arrays or std::vectors)
  *    to accumulate data for its logical simplicity.
  */
-class DoseAccumulable : public VRadiobiologicalAccumulable
+class RadiobiologyDoseAccumulable : public RadiobiologyVRadiobiologicalAccumulable
 {
 public:
-    DoseAccumulable();
-    DoseAccumulable(const DoseAccumulable& other) = default;
+    RadiobiologyDoseAccumulable();
+    RadiobiologyDoseAccumulable(const RadiobiologyDoseAccumulable& other) = default;
 
     // G4VAccumulable virtual methods
     void Merge(const G4VAccumulable &rhs) override;
     void Reset() override;
 
     // Store information from a single step
-    void Accumulate(RadioBioHit* hit);
+    void Accumulate(RadiobiologyRadioBioHit* hit);
 
     // Type alias for numerical arrays
     using array_type = std::valarray<G4double>;

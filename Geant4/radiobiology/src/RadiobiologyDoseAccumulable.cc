@@ -23,38 +23,38 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-#include "DoseAccumulable.hh"
-#include "RadioBioHit.hh"
+#include "RadiobiologyDoseAccumulable.hh"
+#include "RadiobiologyRadioBioHit.hh"
 #include "G4ParticleDefinition.hh"
 #include "VoxelizedSensitiveDetector.hh"
 #include "G4LogicalVolume.hh"
 #include "G4EmCalculator.hh"
-#include "RadioBioManager.hh"
+#include "RadiobiologyManager.hh"
 
 #include <tuple>
 #include <G4SystemOfUnits.hh>
 
 
-DoseAccumulable::DoseAccumulable()
-    : VRadiobiologicalAccumulable("Dose"),
+RadiobiologyDoseAccumulable::RadiobiologyDoseAccumulable()
+    : RadiobiologyVRadiobiologicalAccumulable("Dose"),
       fInitialized(false)
 {
 
 }
 
-void DoseAccumulable::Merge(const G4VAccumulable& rhs)
+void RadiobiologyDoseAccumulable::Merge(const G4VAccumulable& rhs)
 {
     if (GetVerboseLevel() > 1)
     {
         G4cout << "DoseAccumulable::Merge()" << G4endl;
     }
-    const DoseAccumulable& other = dynamic_cast<const DoseAccumulable&>(rhs);
+    const RadiobiologyDoseAccumulable& other = dynamic_cast<const RadiobiologyDoseAccumulable&>(rhs);
 
     // Merges the counter
     fEnDep += other.GetEnDeposit();
 }
 
-void DoseAccumulable::Reset()
+void RadiobiologyDoseAccumulable::Reset()
 {
     if (GetVerboseLevel() > 0)
     {
@@ -71,7 +71,7 @@ void DoseAccumulable::Reset()
 }
 
 // To accumulate given the hit
-void DoseAccumulable::Accumulate(RadioBioHit* hit)
+void RadiobiologyDoseAccumulable::Accumulate(RadiobiologyRadioBioHit* hit)
 {
     // Calculation done only if energy is deposited
     if (hit->GetDeltaE() <= 0. ) return;
@@ -97,13 +97,13 @@ void DoseAccumulable::Accumulate(RadioBioHit* hit)
 
 
 
-G4int DoseAccumulable::GetVerboseLevel() const
+G4int RadiobiologyDoseAccumulable::GetVerboseLevel() const
 {
     // Returns same verbosity of Dose class
-    return RadioBioManager::GetInstance()->GetQuantity("Dose")->GetVerboseLevel();
+    return RadiobiologyManager::GetInstance()->GetQuantity("Dose")->GetVerboseLevel();
 }
 
-void DoseAccumulable::Initialize()
+void RadiobiologyDoseAccumulable::Initialize()
 {
     if (GetVerboseLevel() > 0)
     {

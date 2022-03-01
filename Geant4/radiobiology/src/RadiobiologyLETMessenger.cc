@@ -32,9 +32,9 @@
 //
 
 
-#include "LETMessenger.hh"
+#include "RadiobiologyLETMessenger.hh"
 
-#include "LET.hh"
+#include "RadiobiologyLET.hh"
 #include <G4UIdirectory.hh>
 #include <G4UIcmdWithoutParameter.hh>
 #include <G4UIcmdWithAnInteger.hh>
@@ -43,8 +43,8 @@
 
 
 
-LETMessenger::LETMessenger(
-        LET * LET)
+RadiobiologyLETMessenger::RadiobiologyLETMessenger(
+                                                   RadiobiologyLET * LET)
 :G4UImessenger(), 
  fLET(LET),
  fLETDir(0),
@@ -112,7 +112,7 @@ LETMessenger::~LETMessenger()
     delete fPrintCmd;
 }
 
-void LETMessenger::SetNewValue(G4UIcommand* command,G4String newValue)
+void RadiobiologyLETMessenger::SetNewValue(G4UIcommand* command,G4String newValue)
 { 
     if( command == fCalculationCmd )
     { fLET->SetCalculationEnabled(fCalculationCmd->GetNewBoolValue(newValue));}

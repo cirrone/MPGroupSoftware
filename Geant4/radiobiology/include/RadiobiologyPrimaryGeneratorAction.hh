@@ -28,28 +28,28 @@
 // Last modified: 19/05/14
 //
 
-#ifndef PrimaryGeneratorAction_h
-#define PrimaryGeneratorAction_h 1
+#ifndef RadiobiologyPrimaryGeneratorAction_h
+#define RadiobiologyPrimaryGeneratorAction_h 1
 
 #include "G4VUserPrimaryGeneratorAction.hh"
 #include "G4GeneralParticleSource.hh"
 #include "globals.hh"
 
 class G4Event;
-class DetectorConstruction;
+class RadiobiologyDetectorConstruction;
 
-class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
+class RadiobiologyPrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {
   public:
-    PrimaryGeneratorAction(DetectorConstruction* det);
-   ~PrimaryGeneratorAction();
+    RadiobiologyPrimaryGeneratorAction(RadiobiologyDetectorConstruction* det);
+   ~RadiobiologyPrimaryGeneratorAction();
 
   public:
     virtual void GeneratePrimaries(G4Event*);
      G4GeneralParticleSource* GetGeneralParticleSource() {return fParticleGun; }
 
   private:
-    DetectorConstruction* fDetector;
+    RadiobiologyDetectorConstruction* fDetector;
     G4GeneralParticleSource*        fParticleGun;
 };
 

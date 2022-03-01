@@ -27,24 +27,24 @@
 // Last modified: 19/11/14
 // Singleton for the managing of radiobiological quantities
 
-#ifndef RadioBioManager_h
-#define RadioBioManager_h 1
+#ifndef RadiobiologyManager_h
+#define RadiobiologyManager_h 1
 
 #include <map>
 
-#include "VRadiobiologicalQuantity.hh"
+#include "RadiobiologyVRadiobiologicalQuantity.hh"
 
-class RadioBioManager
+class RadiobiologyManager
 {
 private:
-    RadioBioManager();
+    RadiobiologyManager();
 
 public:
 
     // Singleton structure
-    ~RadioBioManager();
-    static RadioBioManager* CreateInstance();
-    static RadioBioManager* GetInstance();
+    ~RadiobiologyManager();
+    static RadiobiologyManager* CreateInstance();
+    static RadiobiologyManager* GetInstance();
 
     // Initialization
     void InitializeAll();
@@ -76,7 +76,7 @@ private:
     // The string is the key to access the proper class
     std::map<G4String, VRadiobiologicalQuantity*> fQuantities;
 
-    static RadioBioManager* instance;
+    static RadiobiologyManager* instance;
 
 };
 

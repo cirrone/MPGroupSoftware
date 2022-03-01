@@ -27,30 +27,30 @@
 /// \file RunAction.cc
 /// \brief Implementation of the RunAction class
 
-#include "RunAction.hh"
+#include "RadiobiologyRunAction.hh"
 
 #include "G4Run.hh"
 #include "G4RunManager.hh"
 #include "G4AccumulableManager.hh"
 
-#include "DoseAccumulable.hh"
-#include "LETAccumulable.hh"
-#include "RBEAccumulable.hh"
+#include "RadiobiologyDoseAccumulable.hh"
+#include "RadiobiologyLETAccumulable.hh"
+#include "RadiobiologyRBEAccumulable.hh"
 
-#include "RadioBioManager.hh"
+#include "RadiobiologyManager.hh"
 
 
 
-RunAction::RunAction(DetectorConstruction* det)
+RadiobiologyRunAction::RadiobiologyRunAction(RadiobiologyDetectorConstruction* det)
  : G4UserRunAction(), fDetector(det)
 {
   // Set printing event number per each 10000 events
   G4RunManager::GetRunManager()->SetPrintProgress(10000);
 
   // Create rabiobiological accumulables
-  fDoseAccumulable = new DoseAccumulable();
-  fLETAccumulable  = new LETAccumulable();
-  fRBEAccumulable  = new RBEAccumulable();
+  fDoseAccumulable = new RadiobiologyDoseAccumulable();
+  fLETAccumulable  = new RadiobiologyLETAccumulable();
+  fRBEAccumulable  = new RadiobiologyRBEAccumulable();
 
   // Register accumulables to the manager
   G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
@@ -60,7 +60,7 @@ RunAction::RunAction(DetectorConstruction* det)
 
 }
 
-RunAction::~RunAction()
+RadiobiologyRunAction::~RadiobiologyRunAction()
 {
 }
 

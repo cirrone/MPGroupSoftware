@@ -31,30 +31,30 @@
 // Last modified: 19/05/13
 //
 
-#ifndef PhysicsListMessenger_h
-#define PhysicsListMessenger_h 1
+#ifndef RadiobiologyPhysicsListMessenger_h
+#define RadiobiologyPhysicsListMessenger_h 1
 
 #include "globals.hh"
 #include "G4UImessenger.hh"
 
-class PhysicsList;
+class RadiobiologyPhysicsList;
 class G4UIdirectory;
 class G4UIcmdWithADoubleAndUnit;
 class G4UIcmdWithAString;
 
 
-class PhysicsListMessenger: public G4UImessenger
+class RadiobiologyPhysicsListMessenger: public G4UImessenger
 {
 public:
   
-  PhysicsListMessenger(PhysicsList* );
-  ~PhysicsListMessenger();
+    RadiobiologyPhysicsListMessenger(RadiobiologyPhysicsList* );
+  ~RadiobiologyPhysicsListMessenger();
     
   void SetNewValue(G4UIcommand*, G4String);
     
 private:
   
-  PhysicsList* pPhysicsList;
+    RadiobiologyPhysicsList* pPhysicsList;
     
   G4UIdirectory*             physDir;        
   G4UIcmdWithAString*        pListCmd;

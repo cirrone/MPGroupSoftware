@@ -25,8 +25,8 @@
 //
 // LETAccumulable.hh;
 //
-#ifndef LETACCUMULABLE_HH
-#define LETACCUMULABLE_HH
+#ifndef RadiobiologyLETACCUMULABLE_HH
+#define RadiobiologyLETACCUMULABLE_HH
 
 #include <G4VAccumulable.hh>
 
@@ -34,10 +34,10 @@
 #include <vector>
 
 #include "IonLet.hh"
-#include "VRadiobiologicalAccumulable.hh"
+#include "RadiobiologyVRadiobiologicalAccumulable.hh"
 
-class RadioBioHit;
-class VoxelizedSensitiveDetector;
+class RadiobiologyRadioBioHit;
+class RadiobiologyVoxelizedSensitiveDetector;
 
 /**
  * @brief Accumulable of LET-related data (that must be thread-local).
@@ -55,18 +55,18 @@ class VoxelizedSensitiveDetector;
  * @note std::valarray is used (instead of C arrays or std::vectors)
  *    to accumulate data for its logical simplicity.
  */
-class LETAccumulable : public VRadiobiologicalAccumulable
+class RadiobiologyLETAccumulable : public VRadiobiologicalAccumulable
 {
 public:
-    LETAccumulable();
-    LETAccumulable(const LETAccumulable& other) = default;
+    RadiobiologyLETAccumulable();
+    RadiobiologyLETAccumulable(const RadiobiologyLETAccumulable& other) = default;
 
     // G4VAccumulable virtual methods
     void Merge(const G4VAccumulable &rhs) override;
     void Reset() override;
 
     // Store information from a single step
-    void Accumulate(RadioBioHit* hit);
+    void Accumulate(Radiobiology    RadioBioHit* hit);
 
     // Type alias for numerical arrays
     using array_type = std::valarray<G4double>;

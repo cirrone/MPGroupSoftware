@@ -25,15 +25,15 @@
 //
 // RBEAccumulable.hh;
 //
-#ifndef RBEACCUMULABLE_HH
-#define RBEACCUMULABLE_HH
+#ifndef RadiobiologyRBEACCUMULABLE_HH
+#define RadiobiologyRBEACCUMULABLE_HH
 
 #include <G4VAccumulable.hh>
 
 #include <valarray>
-#include "VRadiobiologicalAccumulable.hh"
+#include "RadiobiologyVRadiobiologicalAccumulable.hh"
 
-class RadioBioHit;
+class RadiobiologyRadioBioHit;
 
 /**
  * @brief Accumulable of RBE-related data (that must be thread-local).
@@ -51,11 +51,11 @@ class RadioBioHit;
  * @note std::valarray is used (instead of C arrays or std::vectors)
  *    to accumulate data for its logical simplicity.
  */
-class RBEAccumulable : public VRadiobiologicalAccumulable
+class RadiobiologyRBEAccumulable : public RadiobiologyVRadiobiologicalAccumulable
 {
 public:
-    RBEAccumulable();
-    RBEAccumulable(const RBEAccumulable& other) = default;
+    RadiobiologyRBEAccumulable();
+    RadiobiologyRBEAccumulable(const RBEAccumulable& other) = default;
 
     // G4VAccumulable virtual methods
     void Merge(const G4VAccumulable &rhs) override;

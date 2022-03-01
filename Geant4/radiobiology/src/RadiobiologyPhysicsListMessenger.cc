@@ -31,13 +31,13 @@
 // Last modified: 19/05/13
 //
 
-#include "PhysicsListMessenger.hh"
-#include "PhysicsList.hh"
+#include "RadiobiologyPhysicsListMessenger.hh"
+#include "RadiobiologyPhysicsList.hh"
 #include "G4UIdirectory.hh"
 #include "G4UIcmdWithADoubleAndUnit.hh"
 #include "G4UIcmdWithAString.hh"
 
-PhysicsListMessenger::PhysicsListMessenger(PhysicsList* pPhys)
+RadiobiologyPhysicsListMessenger::RadiobiologyPhysicsListMessenger(RadiobiologyPhysicsList* pPhys)
 :pPhysicsList(pPhys), physDir(0), pListCmd(0)
 {
   // Directory for Physics commands
@@ -57,13 +57,13 @@ PhysicsListMessenger::PhysicsListMessenger(PhysicsList* pPhys)
   pListCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
 }
 
-PhysicsListMessenger::~PhysicsListMessenger()
+RadiobiologyPhysicsListMessenger::~RadiobiologyPhysicsListMessenger()
 {
    delete physDir;
    delete pListCmd;
 }
 
-void PhysicsListMessenger::SetNewValue(G4UIcommand* command,
+void RadiobiologyPhysicsListMessenger::SetNewValue(G4UIcommand* command,
                                           G4String newValue)
 {
        if( command == pListCmd )
