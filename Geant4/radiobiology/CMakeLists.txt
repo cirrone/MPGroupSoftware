@@ -1,7 +1,7 @@
 #----------------------------------------------------------------------------
 # Setup the project
 cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
-project(test) #FIXME
+project(radiobiology) #FIXME
 
 #----------------------------------------------------------------------------
 # Find Geant4 package, activating all available UI and Vis drivers by default
@@ -40,8 +40,8 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh
 #----------------------------------------------------------------------------
 # Add the executable, and link it to the Geant4 libraries
 #
-add_executable(test test.cc ${sources} ${headers}) #FIXME
-target_link_libraries(test ${Geant4_LIBRARIES})
+add_executable(radiobiology radiobiology.cc ${sources} ${headers}) #FIXME
+target_link_libraries(radiobiology ${Geant4_LIBRARIES})
 # ${ROOT_LIBRARIES} )
 file(GLOB_RECURSE dataFiles RELATIVE ${PROJECT_SOURCE_DIR} data/rbe/*.*)
 
@@ -74,5 +74,5 @@ endforeach()
 #----------------------------------------------------------------------------
 # Install the executable to 'bin' directory under CMAKE_INSTALL_PREFIX
 #
-install(TARGETS test DESTINATION bin)
+install(TARGETS radiobiology DESTINATION bin)
 
