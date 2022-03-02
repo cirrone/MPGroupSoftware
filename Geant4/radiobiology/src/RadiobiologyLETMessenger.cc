@@ -101,7 +101,7 @@ RadiobiologyLETMessenger::RadiobiologyLETMessenger(
 }
 
 
-LETMessenger::~LETMessenger()
+RadiobiologyLETMessenger::~RadiobiologyLETMessenger()
 {
     delete fLETDir;
     delete fCalculationCmd;

@@ -32,15 +32,15 @@
 //
 
 
-#ifndef VoxelizedSensitiveDetector_h
-#define VoxelizedSensitiveDetector_h 1
+#ifndef RadiobiologyVoxelizedSensitiveDetector_h
+#define RadiobiologyVoxelizedSensitiveDetector_h 1
 
 #include "G4ThreeVector.hh"
 
-class DetectorConstruction;
+class RadiobiologyDetectorConstruction;
 class G4Box;
 class G4LogicalVolume;
-class VoxelizedSensitiveDetectorMessenger;
+class RadiobiologyVoxelizedSensitiveDetectorMessenger;
 class G4VPhysicalVolume;
 
 /**
@@ -67,21 +67,21 @@ class G4VPhysicalVolume;
  * voxelization of the world.
  */
 
-class VoxelizedSensitiveDetector
+class RadiobiologyVoxelizedSensitiveDetector
 {
   // This class has a 'singleton' structure
 
 private:
     /** @brief Private constructor using a pointer to
      * DetectorConstruction and the three dimensions for one voxel */
-  VoxelizedSensitiveDetector(DetectorConstruction* det, double xWidth,
+    RadiobiologyVoxelizedSensitiveDetector(RadiobiologyDetectorConstruction* det, double xWidth,
                              double yWidth, double zWidth);
-  static VoxelizedSensitiveDetector* instance;
+  static RadiobiologyVoxelizedSensitiveDetector* instance;
 
 public:
   /** @brief Static method to retrieve a pointer
    * to the only object existing in the simulation */
-  static VoxelizedSensitiveDetector* GetInstance();
+  static RadiobiologyVoxelizedSensitiveDetector* GetInstance();
 
   /** @brief Static method to create the pointer
    * to the only object existing in the simulation
@@ -91,11 +91,11 @@ public:
    * @param yWidth Y dimension of a single voxel
    * @param zWidth Z dimension of a single voxel
    * */
-  static VoxelizedSensitiveDetector* CreateInstance(DetectorConstruction* det, double xWidth,
+  static RadiobiologyVoxelizedSensitiveDetector* CreateInstance(RadiobiologyDetectorConstruction* det, double xWidth,
                                                     double yWidth, double zWidth);
 
   /** Virtual destructor */
-  virtual ~VoxelizedSensitiveDetector();
+  virtual ~RadiobiologyVoxelizedSensitiveDetector();
 
    // Setting of parameters
    /** @brief Method to set the voxel shape
@@ -236,7 +236,7 @@ public:
      */
     G4bool ConstructVoxelizedDetector();
 
-    DetectorConstruction*   fDetector;
+    RadiobiologyDetectorConstruction*   fDetector;
 
     G4double                fVoxelWidthX;
     G4double                fVoxelWidthY;
@@ -305,7 +305,7 @@ public:
      */
     void        ConstructZDivision();
 
-    VoxelizedSensitiveDetectorMessenger* fVoxelizedSensitiveDetectorMessenger;
+    RadiobiologyVoxelizedSensitiveDetectorMessenger* fVoxelizedSensitiveDetectorMessenger;
 };
 
 

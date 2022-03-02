@@ -39,7 +39,7 @@ class RadiobiologyDetectorConstruction;
 class RadiobiologyDoseAccumulable;
 class RadiobiologyDoseMessenger;
 
-class RadiobiologyDose : public VRadiobiologicalQuantity
+class RadiobiologyDose : public RadiobiologyVRadiobiologicalQuantity
 {
 private:
     

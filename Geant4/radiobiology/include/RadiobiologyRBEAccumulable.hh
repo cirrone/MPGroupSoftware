@@ -55,7 +55,7 @@ class RadiobiologyRBEAccumulable : public RadiobiologyVRadiobiologicalAccumulabl
 {
 public:
     RadiobiologyRBEAccumulable();
-    RadiobiologyRBEAccumulable(const RBEAccumulable& other) = default;
+    RadiobiologyRBEAccumulable(const RadiobiologyRBEAccumulable& other) = default;
 
     // G4VAccumulable virtual methods
     void Merge(const G4VAccumulable &rhs) override;
@@ -63,7 +63,7 @@ public:
 
     // Store information from a single step
     void Accumulate(G4double E, G4double energyDeposit, G4double dX, G4int Z, G4int i, G4int j, G4int k);
-    void Accumulate(RadioBioHit* hit);
+    void Accumulate(RadiobiologyHit* hit);
 
     // Type alias for numerical arrays
     using array_type = std::valarray<G4double>;

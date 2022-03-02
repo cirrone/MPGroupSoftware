@@ -24,9 +24,9 @@
 // ********************************************************************
 //
 #include "RadiobiologyDoseAccumulable.hh"
-#include "RadiobiologyRadioBioHit.hh"
+#include "RadiobiologyHit.hh"
 #include "G4ParticleDefinition.hh"
-#include "VoxelizedSensitiveDetector.hh"
+#include "RadiobiologyVoxelizedSensitiveDetector.hh"
 #include "G4LogicalVolume.hh"
 #include "G4EmCalculator.hh"
 #include "RadiobiologyManager.hh"
@@ -71,7 +71,7 @@ void RadiobiologyDoseAccumulable::Reset()
 }
 
 // To accumulate given the hit
-void RadiobiologyDoseAccumulable::Accumulate(RadiobiologyRadioBioHit* hit)
+void RadiobiologyDoseAccumulable::Accumulate(RadiobiologyHit* hit)
 {
     // Calculation done only if energy is deposited
     if (hit->GetDeltaE() <= 0. ) return;
@@ -86,7 +86,7 @@ void RadiobiologyDoseAccumulable::Accumulate(RadiobiologyRadioBioHit* hit)
     G4int yIndex = hit->GetYindex();
     G4int zIndex = hit->GetZindex();
 
-    G4int voxel = VoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(xIndex, yIndex, zIndex);
+    G4int voxel = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(xIndex, yIndex, zIndex);
 
     // Get deposited energy
     G4double DE = hit->GetDeltaE();
@@ -110,7 +110,7 @@ void RadiobiologyDoseAccumulable::Initialize()
         G4cout << "DoseAccumulable::Initialize(): " << G4endl;
     }
 
-    fEnDep =  array_type(0.0, VoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber());
+    fEnDep =  array_type(0.0, RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber());
 
     fInitialized = true;
 }

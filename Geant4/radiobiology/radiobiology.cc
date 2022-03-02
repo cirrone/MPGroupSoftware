@@ -35,24 +35,24 @@
 #include "G4UImanager.hh"
 #include "G4PhysListFactory.hh"
 #include "G4VModularPhysicsList.hh"
-#include "PhysicsList.hh"
-#include "PrimaryGeneratorAction.hh"
+#include "RadiobiologyPhysicsList.hh"
+#include "RadiobiologyPrimaryGeneratorAction.hh"
 #include "Randomize.hh"
 
 #include "G4UImessenger.hh"
 #include "globals.hh"
-#include "Analysis.hh"
-#include "RadioBioManager.hh"
+#include "RadiobiologyAnalysis.hh"
+#include "RadiobiologyManager.hh"
 
-#include "DetectorConstruction.hh"
+#include "RadiobiologyDetectorConstruction.hh"
 
 #include "G4ScoringManager.hh"
 #include <time.h>
 #include "G4Timer.hh"
 
-#include "Dose.hh"
-#include "LET.hh"
-#include "RBE.hh"
+#include "RadiobiologyDose.hh"
+#include "RadiobiologyLET.hh"
+#include "RadiobiologyRBE.hh"
 
 //************************MT*********************
 #ifdef G4MULTITHREADED
@@ -61,7 +61,7 @@
 #include "G4RunManager.hh"
 #endif
 
-#include "ActionInitialization.hh"
+#include "RadiobiologyActionInitialization.hh"
 
 //#ifdef G4VIS_USE
 #include "G4VisExecutive.hh"
@@ -108,27 +108,27 @@ int main(int argc ,char ** argv)
     G4VModularPhysicsList* phys = new PhysicsList();
 
     // Set mandatory initialization classes
-    DetectorConstruction* det = new DetectorConstruction();
+    RadiobiologyDetectorConstruction* det = new RadiobiologyDetectorConstruction();
     runManager->SetUserInitialization(det);
 
     // Creation of RadioBioManager
-    RadioBioManager* RBman = RadioBioManager::CreateInstance();
+    RadiobiologyManager* RBman = RadiobiologyManager::CreateInstance();
 
     // Create and Register Radiobiological quantities
-    Dose* dose = new Dose();
+    RadiobiologyDose* dose = new RadiobiologyDose();
     RBman->Register(dose, "Dose");
 
-    LET* let = new LET();
+    RadiobiologyLET* let = new RadiobiologyLET();
     RBman->Register(let, "LET");
 
-    RBE* rbe = new RBE();
+    RadiobiologyRBE* rbe = new RadiobiologyRBE();
     RBman->Register(rbe, "RBE");
 
     // Initialisation of physics
     runManager->SetUserInitialization(phys);
     
     // Initialisation of the Actions
-    runManager->SetUserInitialization(new ActionInitialization(det));
+    runManager->SetUserInitialization(new RadiobiologyActionInitialization(det));
     
     // Initialize command based scoring
     G4ScoringManager::GetScoringManager();
@@ -159,7 +159,7 @@ int main(int argc ,char ** argv)
     }
 
     // Save data in RadioBioManager
-    RadioBioManager::GetInstance()->StoreAll();
+    RadiobiologyManager::GetInstance()->StoreAll();
  
     //Stop the benchmark here
     theTimer -> Stop();

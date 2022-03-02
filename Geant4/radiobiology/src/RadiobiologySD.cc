@@ -27,7 +27,7 @@
 /// \file RadioBioSD.cc
 /// \brief Implementation of the RadioBioSD class
 
-#include "RadioBioSD.hh"
+#include "RadiobiologySD.hh"
 #include "G4HCofThisEvent.hh"
 #include "G4Step.hh"
 #include "G4ThreeVector.hh"
@@ -37,7 +37,7 @@
 
 #include "RadioBioManager.hh"
 
-RadioBioSD::RadioBioSD(const G4String& name,
+RadiobiologySD::RadiobiologySD(const G4String& name,
                          const G4String& hitsCollectionName) 
  : G4VSensitiveDetector(name),
    fHitsCollection(NULL)
@@ -45,7 +45,7 @@ RadioBioSD::RadioBioSD(const G4String& name,
   collectionName.insert(hitsCollectionName);
 }
 
-RadioBioSD::~RadioBioSD()
+RadiobiologySD::~RadiobiologySD()
 {}
 
 void RadioBioSD::Initialize(G4HCofThisEvent* hce)
@@ -60,10 +60,10 @@ void RadioBioSD::Initialize(G4HCofThisEvent* hce)
   hce->AddHitsCollection( hcID, fHitsCollection ); 
 }
 
-G4bool RadioBioSD::ProcessHits(G4Step* aStep,
+G4bool RadiobiologyRadioBioSD::ProcessHits(G4Step* aStep,
                                      G4TouchableHistory*)
 {
-  RadioBioHit* newHit = new RadioBioHit();
+    RadiobiologyRadioBioHit* newHit = new RadiobiologyRadioBioHit();
 
   // Get the pre-step kinetic energy
   G4double eKinPre = aStep -> GetPreStepPoint() -> GetKineticEnergy();
@@ -133,7 +133,7 @@ G4bool RadioBioSD::ProcessHits(G4Step* aStep,
   return true;
 }
 
-void RadioBioSD::EndOfEvent(G4HCofThisEvent*)
+void RadiobiologySD::EndOfEvent(G4HCofThisEvent*)
 {
   if ( verboseLevel>1 ) { 
      G4int nofHits = fHitsCollection->entries();

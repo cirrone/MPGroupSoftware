@@ -27,8 +27,8 @@
 // Last modified:
 //
 
-#include "DetectorConstruction.hh"
-#include "DetectorMessenger.hh"
+#include "RadiobiologyDetectorConstruction.hh"
+#include "RadiobiologyDetectorMessenger.hh"
 
 #include "G4Material.hh"
 #include "G4NistManager.hh"
@@ -46,11 +46,11 @@
 
 #include "G4RunManager.hh"
 
-#include "VoxelizedSensitiveDetector.hh"
+#include "RadiobiologyVoxelizedSensitiveDetector.hh"
 #include <sstream>
 
 
-DetectorConstruction::DetectorConstruction()
+RadiobiologyDetectorConstruction::RadiobiologyDetectorConstruction()
 :G4VUserDetectorConstruction(),
   fPBox(0),
   fLBox(0),
@@ -66,28 +66,28 @@ DetectorConstruction::DetectorConstruction()
   SetMaterial("G4_WATER");
 
   // Create messenger
-  fDetectorMessenger = new DetectorMessenger(this);
+  fDetectorMessenger = new RadiobiologyDetectorMessenger(this);
 
   // Voxelize the detecctor with default size
   VoxelizedSensitiveDetector::CreateInstance(this, 0.1*m, 1*m, 1*m);
 }
 
-DetectorConstruction::~DetectorConstruction()
+RadiobiologyDetectorConstruction::~RadiobiologyDetectorConstruction()
 {
     delete fDetectorMessenger;
 }
 
-G4VPhysicalVolume* DetectorConstruction::Construct()
+G4VPhysicalVolume* RadiobiologyDetectorConstruction::Construct()
 {
   return ConstructVolumes();
 }
 
-void DetectorConstruction::ConstructSDandField()
+void RadiobiologyDetectorConstruction::ConstructSDandField()
 {
-  VoxelizedSensitiveDetector::GetInstance()->ConstructSD();
+    RadiobiologyVoxelizedSensitiveDetector::GetInstance()->ConstructSD();
 }
 
-G4VPhysicalVolume* DetectorConstruction::ConstructVolumes()
+G4VPhysicalVolume* RadiobiologyDetectorConstruction::ConstructVolumes()
 {
   // Cleanup old geometry
   G4GeometryManager::GetInstance()->OpenGeometry();
@@ -116,16 +116,16 @@ G4VPhysicalVolume* DetectorConstruction::ConstructVolumes()
   // PrintParameters();
 
   // Initialize pointer to world for voxelization
-  VoxelizedSensitiveDetector::GetInstance()->InitializeWorldPtr(fPBox);
+    RadiobiologyVoxelizedSensitiveDetector::GetInstance()->InitializeWorldPtr(fPBox);
 
   // Create Voxelized Geometry
-  VoxelizedSensitiveDetector::GetInstance()->Construct();
+    RadiobiologyVoxelizedSensitiveDetector::GetInstance()->Construct();
 
   // Always return the root volume
   return fPBox;
 }
 
-void DetectorConstruction::PrintParameters()
+void RadiobiologyDetectorConstruction::PrintParameters()
 {
   G4cout << "\n The Box dimensions are: " << G4endl
          << "x: " << G4BestUnit(fBoxSizeX,"Length") << G4endl
@@ -137,7 +137,7 @@ void DetectorConstruction::PrintParameters()
          << " m3" << G4endl;
 }
 
-void DetectorConstruction::SetMaterial(G4String materialChoice)
+void RadiobiologyDetectorConstruction::SetMaterial(G4String materialChoice)
 {
   // Search the material by its name
   G4Material* pttoMaterial =
@@ -161,31 +161,31 @@ void DetectorConstruction::SetMaterial(G4String materialChoice)
   }
 }
 
-void DetectorConstruction::SetSize(G4double value)
+void RadiobiologyDetectorConstruction::SetSize(G4double value)
 {
   SetSizeX(value);
   SetSizeY(value);
   SetSizeZ(value);
 }
 
-void DetectorConstruction::SetSize(G4ThreeVector size)
+void RadiobiologyDetectorConstruction::SetSize(G4ThreeVector size)
 {
   SetSizeX(size.getX());
   SetSizeY(size.getY());
   SetSizeZ(size.getZ());
 }
 
-void DetectorConstruction::SetSizeX(G4double sizeX)
+void RadiobiologyDetectorConstruction::SetSizeX(G4double sizeX)
 {
   fBoxSizeX = sizeX;
 }
 
-void DetectorConstruction::SetSizeY(G4double sizeY)
+void RadiobiologyDetectorConstruction::SetSizeY(G4double sizeY)
 {
   fBoxSizeY = sizeY;
 }
 
-void DetectorConstruction::SetSizeZ(G4double sizeZ)
+void RadiobiologyDetectorConstruction::SetSizeZ(G4double sizeZ)
 {
   fBoxSizeZ = sizeZ;
 }

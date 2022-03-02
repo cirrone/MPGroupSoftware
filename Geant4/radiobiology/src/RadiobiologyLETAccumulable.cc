@@ -24,12 +24,12 @@
 // ********************************************************************
 //
 #include "RadiobiologyLETAccumulable.hh"
-#include "RadiobiologyRadioBioHit.hh"
+#include "RadiobiologyHit.hh"
 #include "G4ParticleDefinition.hh"
-#include "VoxelizedSensitiveDetector.hh"
+#include "RadiobiologyVoxelizedSensitiveDetector.hh"
 #include "G4LogicalVolume.hh"
 #include "G4EmCalculator.hh"
-#include "RadioBioManager.hh"
+#include "RadiobiologyManager.hh"
 
 
 #include <tuple>
@@ -104,7 +104,7 @@ void RadiobiologyLETAccumulable::Reset()
 }
 
 // To accumulate given the hit
-void RadiobiologyLETAccumulable::Accumulate(RadioBioHit* hit)
+void RadiobiologyLETAccumulable::Accumulate(RadiobiologyHit* hit)
 {
     if (GetVerboseLevel() > 1)
     {
@@ -184,7 +184,7 @@ void RadiobiologyLETAccumulable::Accumulate(RadioBioHit* hit)
         G4String fullName = particleDef -> GetParticleName();
         G4String name = fullName.substr (0, fullName.find("[") ); // Cut excitation energy [x.y]
 
-        IonLet ion(trackID, PDGencoding, fullName, name, Z, A, VoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber());
+        RadiobiologyIonLet ion(trackID, PDGencoding, fullName, name, Z, A, VoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber());
         fIonLetStore.push_back(ion);
     }
 
@@ -197,7 +197,7 @@ void RadiobiologyLETAccumulable::Accumulate(RadioBioHit* hit)
 G4int RadiobiologyLETAccumulable::GetVerboseLevel() const
 {
     // return same level of LET class
-    return RadioBioManager::GetInstance()->GetQuantity("LET")->GetVerboseLevel();
+    return RadiobiologyManager::GetInstance()->GetQuantity("LET")->GetVerboseLevel();
 }
 
 void RadiobiologyLETAccumulable::Initialize()

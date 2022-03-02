@@ -44,7 +44,7 @@
 
 
 RadiobiologyRBEMessenger::RadiobiologyRBEMessenger(
-        RBE * rbe)
+                                                   RadiobiologyRBE * rbe)
 :G4UImessenger(), 
  fRBE(rbe),
  fRBEDir(0),

@@ -27,12 +27,12 @@
 /// \file RunAction.hh
 /// \brief Definition of the RunAction class
 
-#ifndef RunAction_h
-#define RunAction_h 1
+#ifndef RadiobiologyRunAction_h
+#define RadiobiologyRunAction_h 1
 
 #include "G4UserRunAction.hh"
 
-#include "RadiobiologyRadioBioHit.hh"
+#include "RadiobiologyHit.hh"
 class RadiobiologyRBEAccumulable;
 class RadiobiologyLETAccumulable;
 class RadiobiologyDoseAccumulable;

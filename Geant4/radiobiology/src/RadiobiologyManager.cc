@@ -94,7 +94,7 @@ void RadiobiologyManager::StoreAll()
         (q.second)->Store();
 }
 
-VRadiobiologicalQuantity* RadioBioManager::GetQuantity(G4String str)
+RadiobiologyVRadiobiologicalQuantity* RadiobiologyManager::GetQuantity(G4String str)
 {
     return fQuantities.find(str)->second;
 }
@@ -135,7 +135,7 @@ void RadiobiologyManager::DigestAccumulables()
     }
 }
 
-bool RadiobiologyManager::Register(VRadiobiologicalQuantity* q, G4String name)
+bool RadiobiologyManager::Register(RadiobiologyVRadiobiologicalQuantity* q, G4String name)
 {
     if(q == nullptr)
     {

@@ -30,7 +30,7 @@
 #include <fstream>
 
 #include "RadiobiologyDetectorConstruction.hh"
-#include "VoxelizedSensitiveDetector.hh"
+#include "RadiobiologyVoxelizedSensitiveDetector.hh"
 #include "G4SystemOfUnits.hh"
 #include "RadiobiologyDoseAccumulable.hh"
 #include "RadiobiologyDoseMessenger.hh"
@@ -39,7 +39,7 @@
 #define width 15L
 
 RadiobiologyDose::RadiobiologyDose()
-: VRadiobiologicalQuantity(),
+: RadiobiologyVRadiobiologicalQuantity(),
   fEnDep(),
   fDose()
 {
@@ -47,7 +47,7 @@ RadiobiologyDose::RadiobiologyDose()
     fPath = "Dose.out";
 
     //CreateMessenger
-    fMessenger = new DoseMessenger(this);
+    fMessenger = new RadiobiologyDoseMessenger(this);
 
     Initialize();
 }
@@ -62,7 +62,7 @@ void RadiobiologyDose::Initialize()
     if(fVerboseLevel > 0)
         G4cout << "Dose::Initialize() called" << G4endl;
 
-    G4int VoxelNumber = VoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber();
+    G4int VoxelNumber = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber();
 
     fEnDep.resize(VoxelNumber);
     fDose.resize(VoxelNumber);
@@ -89,12 +89,12 @@ void RadiobiologyDose::Compute()
     if(fVerboseLevel > 0)
         G4cout << "Dose::Compute() called" << G4endl;
 
-    if(VoxelizedSensitiveDetector::GetInstance() == nullptr)
+    if(RadiobiologyVoxelizedSensitiveDetector::GetInstance() == nullptr)
         G4Exception("Dose::Compute", "VoxNotInit", FatalException, "Calculating dose without voxelized geometry pointer!");
 
-    G4double voxelMass = VoxelizedSensitiveDetector::GetInstance()->GetVoxelMass();
+    G4double voxelMass = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelMass();
 
-    for(G4int v=0; v < VoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber(); v++)
+    for(G4int v=0; v < RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber(); v++)
     {
         if(fVerboseLevel > 1)
           G4cout << "Calculating Dose for voxel number " << v << G4endl;
@@ -133,11 +133,11 @@ void RadiobiologyDose::Store()
     {
         ofs << "x_index" << std::setw(width) << "y_index" << std::setw(width) << "z_index" << std::setw(width) << "Dose (Gy)" << G4endl;
 
-        for(G4int i = 0; i < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongX(); i++)
-            for(G4int j = 0; j < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongY(); j++)
-                for(G4int k = 0; k < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongZ(); k++)
+        for(G4int i = 0; i < RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongX(); i++)
+            for(G4int j = 0; j < RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongY(); j++)
+                for(G4int k = 0; k < RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongZ(); k++)
                 {
-                    G4int v = VoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(i, j, k);
+                    G4int v = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(i, j, k);
                     ofs << i << std::setw(width) << j << std::setw(width) << k
                         << std::setw(width) << fDose[v]/gray << G4endl;
                 }
@@ -153,7 +153,7 @@ void RadiobiologyDose::Store()
 
 void RadiobiologyDose::AddFromAccumulable(G4VAccumulable* GenAcc)
 {
-    DoseAccumulable* acc = (DoseAccumulable*) GenAcc;
+    RadiobiologyDoseAccumulable* acc = (RadiobiologyDoseAccumulable*) GenAcc;
     AddEnergyDeposit(acc->GetEnDeposit());
     fCalculated = false;
 }

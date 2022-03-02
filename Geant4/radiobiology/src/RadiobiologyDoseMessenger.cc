@@ -45,7 +45,7 @@
 
 
 RadiobiologyDoseMessenger::RadiobiologyDoseMessenger(
-        Dose * dose)
+                                                     RadiobiologyDose * dose)
 :G4UImessenger(), 
  fDose(dose),
  fDoseDir(0),

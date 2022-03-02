@@ -65,16 +65,16 @@ public:
     void DigestAccumulables();
 
     // Register a Quantity
-    bool Register(VRadiobiologicalQuantity*, G4String);
+    bool Register(RadiobiologyVRadiobiologicalQuantity*, G4String);
 
     // Hook for a quantity given the name
-    VRadiobiologicalQuantity* GetQuantity(G4String);
+    RadiobiologyVRadiobiologicalQuantity* GetQuantity(G4String);
 
 
 private:
     // Map with all the radiobiological quantities.
     // The string is the key to access the proper class
-    std::map<G4String, VRadiobiologicalQuantity*> fQuantities;
+    std::map<G4String, RadiobiologyVRadiobiologicalQuantity*> fQuantities;
 
     static RadiobiologyManager* instance;
 

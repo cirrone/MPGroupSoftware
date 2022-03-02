@@ -24,20 +24,20 @@
 // ********************************************************************
 //
 
-#include "RBE.hh"
-#include "VoxelizedSensitiveDetector.hh"
+#include "RadiobiologyRBE.hh"
+#include "RadiobiologyVoxelizedSensitiveDetector.hh"
 
 #include "G4UnitsTable.hh"
 #include "G4SystemOfUnits.hh"
 #include "G4Pow.hh"
-#include "RBEAccumulable.hh"
-#include "RBEMessenger.hh"
+#include "RadiobiologyRBEAccumulable.hh"
+#include "RadiobiologyRBEMessenger.hh"
 
 // Note that dose is needed in order to fully calculate RBE using
 // this class. Therefore, here, the correct dependencies must be
 // added.
-#include "RadioBioManager.hh"
-#include "Dose.hh"
+#include "RadiobiologyManager.hh"
+#include "RadiobiologyDose.hh"
 
 #include <G4NistManager.hh>
 
@@ -52,8 +52,8 @@
 #define width 15L
 
 
-RBE::RBE():
-    VRadiobiologicalQuantity(),
+RadiobiologyRBE::RadiobiologyRBE():
+RadiobiologyVRadiobiologicalQuantity(),
     fAlphaX(0.),
     fBetaX(0.),
     fDoseCut(0.),
@@ -66,31 +66,31 @@ RBE::RBE():
     fPath = "RadioBio";
 
     // CreateMessenger
-    fMessenger = new RBEMessenger(this);
+    fMessenger = new RadiobiologyRBEMessenger(this);
 
     Initialize();
 }
 
-RBE::~RBE()
+RadiobiologyRBE::~RadiobiologyRBE()
 {
   delete fMessenger;
 }
 
-void RBE::Initialize()
+void RadiobiologyRBE::Initialize()
 {
-    fLnS.resize(VoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber());
-    fDoseX.resize(VoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber());
+    fLnS.resize(RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber());
+    fDoseX.resize(RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber());
 
     fInitialized = true;
 }
 
-void RBE::Store()
+void RadiobiologyRBE::Store()
 {
     StoreAlphaAndBeta();
     StoreRBE();
 }
 
-void RBE::PrintParameters()
+void RadiobiologyRBE::PrintParameters()
 {
     G4cout << "*******************************************" << G4endl
            << "******* Parameters of the class RBE *******" << G4endl
@@ -136,7 +136,7 @@ std::vector<G4String> split(const G4String& line, const G4String& delimiter)
     return result;
 }
 
-void RBE::LoadLEMTable(G4String path)
+void RadiobiologyRBE::LoadLEMTable(G4String path)
 {
     // TODO: Check for presence? Perhaps we want to be able to load more
 
@@ -250,7 +250,7 @@ void RBE::LoadLEMTable(G4String path)
     }
 }
 
-void RBE::SetCellLine(G4String name)
+void RadiobiologyRBE::SetCellLine(G4String name)
 {
     G4cout << "*************************" << G4endl
            << "*******SetCellLine*******" << G4endl
@@ -298,7 +298,7 @@ void RBE::SetCellLine(G4String name)
     }
 }
 
-std::tuple<G4double, G4double> RBE::GetHitAlphaAndBeta(G4double E, G4int Z)
+std::tuple<G4double, G4double> RadiobiologyRBE::GetHitAlphaAndBeta(G4double E, G4int Z)
 {
     if (!fActiveTableEnergy)
     {
@@ -357,7 +357,7 @@ std::tuple<G4double, G4double> RBE::GetHitAlphaAndBeta(G4double E, G4int Z)
 }
 
 // Zaider & Rossi alpha & Beta mean
-void RBE::ComputeAlphaAndBeta()
+void RadiobiologyRBE::ComputeAlphaAndBeta()
 {
     // Skip RBE computation if calculation not enabled.
     if(!fCalculationEnabled)
@@ -385,7 +385,7 @@ void RBE::ComputeAlphaAndBeta()
     //g4pow -> powN(fBetaNumerator / fDenominator * gray, 2)
 }
 
-void RBE::ComputeRBE()
+void RadiobiologyRBE::ComputeRBE()
 {
     // Skip RBE computation if calculation not enabled.
     if(!fCalculationEnabled)
@@ -405,7 +405,7 @@ void RBE::ComputeRBE()
     G4double smax = fAlphaX + 2 * fBetaX * fDoseCut;
 
 
-    for (G4int i = 0; i < VoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber(); i++)
+    for (G4int i = 0; i < RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber(); i++)
     {
         if (std::isnan(fAlpha[i]) || std::isnan(fBeta[i]))
         {
@@ -430,7 +430,7 @@ void RBE::ComputeRBE()
     fSurvival = exp(fLnS);
 }
 
-void RBE::Compute()
+void RadiobiologyRBE::Compute()
 {
     // Skip RBE computation if calculation not enabled.
     if(!fCalculationEnabled)
@@ -455,11 +455,11 @@ void RBE::Compute()
     fCalculated = true;
 }
 
-void RBE::GetDose()
+void RadiobiologyRBE::GetDose()
 {
     // Get the pointer to dose. If it does not exist, launch an exception
-    const Dose* dose = dynamic_cast<const Dose*>(
-                RadioBioManager::GetInstance()->GetQuantity("Dose"));
+    const RadiobiologyDose* dose = dynamic_cast<const RadiobiologyDose*>(
+                                RadiobiologyManager::GetInstance()->GetQuantity("Dose"));
     if(dose == nullptr)
         G4Exception("RBE::Compute", "RBEMissingDose", FatalException,
                     "Trying to compute RBE without knowing the dose. Please add a valid dose or "
@@ -475,7 +475,7 @@ void RBE::GetDose()
     fDose = dose->fDose;
 }
 
-void RBE::SetDenominator(const RBE::array_type denom)
+void RadiobiologyRBE::SetDenominator(const RadiobiologyRBE::array_type denom)
 {
     if (fVerboseLevel > 1)
     {
@@ -484,7 +484,7 @@ void RBE::SetDenominator(const RBE::array_type denom)
     fDenominator = denom;
 }
 
-void RBE::AddDenominator(const RBE::array_type denom)
+void RadiobiologyRBE::AddDenominator(const RadiobiologyRBE::array_type denom)
 {
     if (fVerboseLevel > 1)
     {
@@ -505,7 +505,7 @@ void RBE::AddDenominator(const RBE::array_type denom)
     G4cout << G4endl;
 }
 
-void RBE::SetAlphaNumerator(const RBE::array_type alpha)
+void RadiobiologyRBE::SetAlphaNumerator(const RadiobiologyRBE::array_type alpha)
 {
     if (fVerboseLevel > 1)
     {
@@ -514,7 +514,7 @@ void RBE::SetAlphaNumerator(const RBE::array_type alpha)
     fAlphaNumerator = alpha;
 }
 
-void RBE::SetBetaNumerator(const RBE::array_type beta)
+void RadiobiologyRBE::SetBetaNumerator(const RadiobiologyRBE::array_type beta)
 {
     if (fVerboseLevel > 1)
     {
@@ -523,7 +523,7 @@ void RBE::SetBetaNumerator(const RBE::array_type beta)
     fBetaNumerator = beta;
 }
 
-void RBE::AddAlphaNumerator(const RBE::array_type alpha)
+void RadiobiologyRBE::AddAlphaNumerator(const RadiobiologyRBE::array_type alpha)
 {
     if (fVerboseLevel > 1)
     {
@@ -544,7 +544,7 @@ void RBE::AddAlphaNumerator(const RBE::array_type alpha)
     G4cout << G4endl;
 }
 
-void RBE::AddBetaNumerator(const RBE::array_type beta)
+void RadiobiologyRBE::AddBetaNumerator(const RadiobiologyRBE::array_type beta)
 {
     if (fVerboseLevel > 1)
     {
@@ -565,7 +565,7 @@ void RBE::AddBetaNumerator(const RBE::array_type beta)
     G4cout << G4endl;
 }
 
-void RBE::StoreAlphaAndBeta()
+void RadiobiologyRBE::StoreAlphaAndBeta()
 {
     // Skip RBE storing if calculation not enabled.
     if(!fCalculationEnabled)
@@ -595,11 +595,11 @@ void RBE::StoreAlphaAndBeta()
 
         // Alpha and beta are written only if valid. If value is -nan, 0 is written
         // on the text file
-        for(G4int i = 0; i < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongX(); i++)
-            for(G4int j = 0; j < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongY(); j++)
-                for(G4int k = 0; k < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongZ(); k++)
+        for(G4int i = 0; i < RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongX(); i++)
+            for(G4int j = 0; j < RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongY(); j++)
+                for(G4int k = 0; k < RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongZ(); k++)
                 {
-                    G4int v = VoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(i, j, k);
+                    G4int v = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(i, j, k);
 
                     ofs << std::left
                         << std::setw(width) << i << std::setw(width) << j << std::setw(width) << k
@@ -614,7 +614,7 @@ void RBE::StoreAlphaAndBeta()
     }
 }
 
-void RBE::StoreRBE()
+void RadiobiologyRBE::StoreRBE()
 {
     // Skip RBE storing if calculation not enabled.
     if(!fCalculationEnabled)
@@ -643,11 +643,11 @@ void RBE::StoreRBE()
             << std::setw(width) << "Survival" << std::setw(width) << "DoseB(Gy)"
             << std::setw(width) << "RBE" << G4endl;
 
-        for(G4int i = 0; i < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongX(); i++)
-            for(G4int j = 0; j < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongY(); j++)
-                for(G4int k = 0; k < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongZ(); k++)
+        for(G4int i = 0; i < RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongX(); i++)
+            for(G4int j = 0; j < RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongY(); j++)
+                for(G4int k = 0; k < RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongZ(); k++)
                 {
-                    G4int v = VoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(i, j, k);
+                    G4int v = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(i, j, k);
 
                     ofs << std::left
                         << std::setw(width) << i << std::setw(width) << j << std::setw(width) << k
@@ -667,7 +667,7 @@ void RBE::StoreRBE()
     fSaved = true;
 }
 
-void RBE::Reset()
+void RadiobiologyRBE::Reset()
 {
     if (fVerboseLevel > 1)
     {
@@ -684,9 +684,9 @@ void RBE::Reset()
     }
 }
 
-void RBE::AddFromAccumulable(G4VAccumulable* GenAcc)
+void RadiobiologyRBE::AddFromAccumulable(G4VAccumulable* GenAcc)
 {
-    RBEAccumulable* acc = (RBEAccumulable*) GenAcc;
+    RadiobiologyRBEAccumulable* acc = (RadiobiologyRBEAccumulable*) GenAcc;
     AddAlphaNumerator(acc->GetAlphaNumerator());
     AddBetaNumerator(acc->GetBetaNumerator());
     AddDenominator(acc->GetDenominator());
@@ -694,9 +694,9 @@ void RBE::AddFromAccumulable(G4VAccumulable* GenAcc)
     fCalculated = false;
 }
 
-void RBE::SetFromAccumulable(G4VAccumulable* GenAcc)
+void RadiobiologyRBE::SetFromAccumulable(G4VAccumulable* GenAcc)
 {
-    RBEAccumulable* acc = (RBEAccumulable*) GenAcc;
+    RadiobiologyRBEAccumulable* acc = (RadiobiologyRBEAccumulable*) GenAcc;
     SetAlphaNumerator(acc->GetAlphaNumerator());
     SetBetaNumerator(acc->GetBetaNumerator());
     SetDenominator(acc->GetDenominator());

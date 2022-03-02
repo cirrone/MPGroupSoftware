@@ -31,22 +31,22 @@
 // class.
 
 
-#ifndef VRadiobiologicalAccumulable_H
-#define VRadiobiologicalAccumulable_H 1
+#ifndef RadiobiologyVRadiobiologicalAccumulable_H
+#define RadiobiologyVRadiobiologicalAccumulable_H 1
 
-#include "RadioBioHit.hh"
+#include "RadiobiologyHit.hh"
 
 
-class VRadiobiologicalAccumulable : public G4VAccumulable
+class RadiobiologyVRadiobiologicalAccumulable : public G4VAccumulable
 {
 public:
-    virtual void Accumulate(RadioBioHit*) = 0;
+    virtual void Accumulate(RadiobiologyHit*) = 0;
 
-    VRadiobiologicalAccumulable(G4String name):
+    RadiobiologyVRadiobiologicalAccumulable(G4String name):
         G4VAccumulable(name)
     {;}
 
-    virtual ~VRadiobiologicalAccumulable()
+    virtual ~RadiobiologyVRadiobiologicalAccumulable()
     {;}
 
 };

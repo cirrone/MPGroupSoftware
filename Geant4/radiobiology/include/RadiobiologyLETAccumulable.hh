@@ -33,10 +33,10 @@
 #include <valarray>
 #include <vector>
 
-#include "IonLet.hh"
+#include "RadiobiologyIonLet.hh"
 #include "RadiobiologyVRadiobiologicalAccumulable.hh"
 
-class RadiobiologyRadioBioHit;
+class RadiobiologyHit;
 class RadiobiologyVoxelizedSensitiveDetector;
 
 /**
@@ -55,7 +55,7 @@ class RadiobiologyVoxelizedSensitiveDetector;
  * @note std::valarray is used (instead of C arrays or std::vectors)
  *    to accumulate data for its logical simplicity.
  */
-class RadiobiologyLETAccumulable : public VRadiobiologicalAccumulable
+class RadiobiologyLETAccumulable : public RadiobiologyVRadiobiologicalAccumulable
 {
 public:
     RadiobiologyLETAccumulable();
@@ -66,7 +66,7 @@ public:
     void Reset() override;
 
     // Store information from a single step
-    void Accumulate(Radiobiology    RadioBioHit* hit);
+    void Accumulate(RadiobiologyHit* hit);
 
     // Type alias for numerical arrays
     using array_type = std::valarray<G4double>;
@@ -78,7 +78,7 @@ public:
     const array_type GetDTotalLETD() const { return fDTotalLETD; }
 
 
-    const std::vector<IonLet> GetIonLetStore() const { return fIonLetStore; }
+    const std::vector<RadiobiologyIonLet> GetIonLetStore() const { return fIonLetStore; }
 
     // Verbosity, shared with LET
     G4int GetVerboseLevel() const;
@@ -94,7 +94,7 @@ private:
     array_type fDTotalLETT;
     array_type fDTotalLETD;
 
-    std::vector<IonLet> fIonLetStore;
+    std::vector<RadiobiologyIonLet> fIonLetStore;
 
 };
 

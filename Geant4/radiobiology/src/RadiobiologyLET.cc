@@ -26,35 +26,35 @@
 // Hadrontherapy advanced example for Geant4
 // See more at: https://twiki.cern.ch/twiki/bin/view/Geant4/AdvancedExamplesHadrontherapy
 
-#include "DetectorConstruction.hh"
-#include "LET.hh"
-#include "RadioBioHit.hh"
+#include "RadiobiologyDetectorConstruction.hh"
+#include "RadiobiologyLET.hh"
+#include "RadiobiologyHit.hh"
 
-#include "VoxelizedSensitiveDetector.hh"
+#include "RadiobiologyVoxelizedSensitiveDetector.hh"
 #include "G4RunManager.hh"
 #include "G4SystemOfUnits.hh"
 #include <cmath>
 #include "G4EmCalculator.hh"
-#include "LETAccumulable.hh"
-#include "LETMessenger.hh"
+#include "RadiobiologyLETAccumulable.hh"
+#include "RadiobiologyLETMessenger.hh"
 
 
-LET::LET()
-: VRadiobiologicalQuantity()
+RadiobiologyLET::RadiobiologyLET()
+: RadiobiologyVRadiobiologicalQuantity()
 {
     fPath = "LET.out"; // Default output filename
 
-    fMessenger = new LETMessenger(this);
+    fMessenger = new RadiobiologyLETMessenger(this);
 
     Initialize();
 }
 
-LET::~LET()
+RadiobiologyLET::~RadiobiologyLET()
 {
   delete fMessenger;
 }
 
-void LET::Initialize()
+void RadiobiologyLET::Initialize()
 {
     G4int VoxelNumber = VoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber();
 
@@ -71,7 +71,7 @@ void LET::Initialize()
 }
 
 
-void LET::Compute()
+void RadiobiologyLET::Compute()
 {
     // Skip LET computation if calculation not enabled.
     if(!fCalculationEnabled)
@@ -117,7 +117,7 @@ void LET::Compute()
 
 
 // save LET
-void LET::Store()
+void RadiobiologyLET::Store()
 {
     // Skip LET storing if calculation not enabled.
     if(!fCalculationEnabled)
@@ -240,7 +240,7 @@ void LET::Store()
 
 }
 
-void LET::Reset()
+void RadiobiologyLET::Reset()
 {
     if (fVerboseLevel > 1)
     {
@@ -259,7 +259,7 @@ void LET::Reset()
 }
 
 // Add data taken from accumulables
-void LET::AddFromAccumulable(G4VAccumulable* GenAcc)
+void RadiobiologyLET::AddFromAccumulable(G4VAccumulable* GenAcc)
 {
     LETAccumulable* acc = (LETAccumulable*) GenAcc;
 
@@ -296,7 +296,7 @@ void LET::AddFromAccumulable(G4VAccumulable* GenAcc)
 
 
 
-void LET::SetFromAccumulable(G4VAccumulable* GenAcc)
+void RadiobiologyLET::SetFromAccumulable(G4VAccumulable* GenAcc)
 {
     LETAccumulable* acc = (LETAccumulable*) GenAcc;
 
@@ -315,7 +315,7 @@ void LET::SetFromAccumulable(G4VAccumulable* GenAcc)
 
 }
 
-void LET::PrintParameters()
+void RadiobiologyLET::PrintParameters()
 {
     G4cout << "*******************************************" << G4endl
            << "******* Parameters of the class LET *******" << G4endl

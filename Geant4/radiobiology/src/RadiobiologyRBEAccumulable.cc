@@ -25,7 +25,7 @@
 //
 #include "RadiobiologyRBEAccumulable.hh"
 #include "RadiobiologyRBE.hh"
-#include "RadiobiologyRadioBioHit.hh"
+#include "RadiobiologyHit.hh"
 #include "G4ParticleDefinition.hh"
 #include "RadiobiologyVoxelizedSensitiveDetector.hh"
 #include "RadiobiologyManager.hh"
@@ -72,7 +72,7 @@ void RadiobiologyRBEAccumulable::Reset()
 }
 
 //to accumulate given the hit
-void RadiobiologyRBEAccumulable::Accumulate(RadiobiologyRadioBioHit* hit)
+void RadiobiologyRBEAccumulable::Accumulate(RadiobiologyHit* hit)
 {
   G4double kineticEnergy = hit->GetEkinMean();
   G4int A = hit->GetPartType()->GetAtomicMass();
@@ -102,11 +102,11 @@ void RadiobiologyRBEAccumulable::Accumulate(G4double E, G4double energyDeposit, 
         return;
     }
     //TODO no la getindex, ma quella del voxelized FIXME
-    size_t n = VoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(i, j, k);
+    size_t n = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(i, j, k);
 
     if ((Z >= 1) && (dX > 0) && (E > 0)) // TODO: Verify this condition
     {
-        RBE* rbe = dynamic_cast<RBE*> (RadioBioManager::GetInstance()->GetQuantity("RBE"));
+        RadiobiologyRBE* rbe = dynamic_cast<RadiobiologyRBE*> (RadiobiologyManager::GetInstance()->GetQuantity("RBE"));
         std::tuple<G4double, G4double> alpha_beta =
                 rbe->GetHitAlphaAndBeta(E, Z);
         fDenominator[n] += energyDeposit;
@@ -119,7 +119,7 @@ void RadiobiologyRBEAccumulable::Accumulate(G4double E, G4double energyDeposit, 
 G4int RadiobiologyRBEAccumulable::GetVerboseLevel() const
 {
     // Return same verbosity of RBE class
-    return RadioBioManager::GetInstance()->GetQuantity("RBE")->GetVerboseLevel();
+    return RadiobiologyManager::GetInstance()->GetQuantity("RBE")->GetVerboseLevel();
 }
 
 void RadiobiologyRBEAccumulable::Initialize()
@@ -129,9 +129,9 @@ void RadiobiologyRBEAccumulable::Initialize()
         G4cout << "RBEAccumulable::Initialize(): "  << G4endl;
     }
 
-    fVoxelsAlongX = VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongX();
-    fVoxelsAlongY = VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongY();
-    fVoxelsAlongZ = VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongZ();
+    fVoxelsAlongX = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongX();
+    fVoxelsAlongY = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongY();
+    fVoxelsAlongZ = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongZ();
     fVoxels = fVoxelsAlongX * fVoxelsAlongY * fVoxelsAlongZ;
 
     if (GetVerboseLevel() > 1)

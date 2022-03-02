@@ -36,11 +36,11 @@
 // It can be activated inside any macro file using the command:
 // /Physics/addPhysics HADRONTHERAPY_1 (HADRONTHERAPY_2)
 
-#include "PhysicsList.hh"
+#include "RadiobiologyPhysicsList.hh"
 
 #include "G4SystemOfUnits.hh"
 #include "G4RunManager.hh"
-#include "PhysicsListMessenger.hh"
+#include "RadiobiologyPhysicsListMessenger.hh"
 #include "G4VPhysicsConstructor.hh"
 #include "G4HadronPhysicsQGSP_BIC_HP.hh"
 #include "G4HadronPhysicsQGSP_BIC.hh"

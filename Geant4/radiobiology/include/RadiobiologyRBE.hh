@@ -26,8 +26,8 @@
 // RBE.hh;
 //
 
-#ifndef RBE_H
-#define RBE_H 1
+#ifndef RadiobiologyRBE_H
+#define RadiobiologyRBE_H 1
 
 #include "globals.hh"
 #include <vector>
@@ -35,18 +35,18 @@
 #include <map>
 #include "G4Pow.hh"
 
-#include "VRadiobiologicalQuantity.hh"
-class DetectorConstruction;
-class RBEAccumulable;
-class RBEMessenger;
-class VoxelizedSensitiveDetector;
+#include "RadiobiologyVRadiobiologicalQuantity.hh"
+class RadiobiologyDetectorConstruction;
+class RadiobiologyRBEAccumulable;
+class RadiobiologyRBEMessenger;
+class RadiobiologyVoxelizedSensitiveDetector;
 
 
-class RBE : public VRadiobiologicalQuantity
+class RadiobiologyRBE : public RadiobiologyVRadiobiologicalQuantity
 {
 public:
-    RBE();
-    ~RBE();
+    RadiobiologyRBE();
+    ~RadiobiologyRBE();
 
     // Initialization of data from a CSV file
     void LoadLEMTable(G4String path);

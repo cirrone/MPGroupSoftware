@@ -26,8 +26,8 @@
 // Hadrontherapy advanced example for Geant4
 // See more at: https://twiki.cern.ch/twiki/bin/view/Geant4/AdvancedExamplesHadrontherapy
 
-#ifndef LET_h
-#define LET_h 1
+#ifndef RadiobiologyLET_h
+#define RadiobiologyLET_h 1
 #include "G4AnalysisManager.hh"
 #include "G4ParticleDefinition.hh"
 #include "globals.hh"
@@ -37,21 +37,21 @@
 #include <valarray>
 
 
-#include "VRadiobiologicalQuantity.hh"
+#include "RadiobiologyVRadiobiologicalQuantity.hh"
 
 class G4Material;
 
-class RadioBioHit;
-class LETAccumulable;
-class LETMessenger;
-class IonLet;
+class RadiobiologyHit;
+class RadiobiologyLETAccumulable;
+class RadiobiologyLETMessenger;
+class RadiobiologyIonLet;
 
-class LET : public VRadiobiologicalQuantity
+class RadiobiologyLET : public RadiobiologyVRadiobiologicalQuantity
 {
 public:
 
-    LET();
-    ~LET();
+    RadiobiologyLET();
+    ~RadiobiologyLET();
 
     // Virtual methods to override
     void virtual AddFromAccumulable(G4VAccumulable*) override;
@@ -75,7 +75,7 @@ private:
     array_type fTotalLETT;
     array_type fTotalLETD;
 
-    std::vector<IonLet> IonLetStore;
+    std::vector<RadiobiologyIonLet> IonLetStore;
 
     //std::ofstream ofs;
 
@@ -91,7 +91,7 @@ private:
     void AddDTotalLETD(const array_type DTotalLETD) {fDTotalLETD += DTotalLETD; }
 
     // To use to add an ion to the store (or merge data)
-    void AddIon(const IonLet ion);
+    void AddIon(const RadiobiologyIonLet ion);
 
 };
 

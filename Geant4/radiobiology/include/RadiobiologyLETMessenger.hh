@@ -50,7 +50,7 @@ class RadiobiologyLETMessenger: public G4UImessenger
 {
   public:
   
-    RadiobiologyLETMessenger(LET* );
+    RadiobiologyLETMessenger(RadiobiologyLET* );
    ~RadiobiologyLETMessenger();
     
     virtual void SetNewValue(G4UIcommand*, G4String);

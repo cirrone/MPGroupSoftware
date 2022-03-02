@@ -28,8 +28,8 @@
 //
 
 
-#ifndef DetectorConstruction_h
-#define DetectorConstruction_h 1
+#ifndef RadiobiologyDetectorConstruction_h
+#define RadiobiologyDetectorConstruction_h 1
 
 #include "G4VUserDetectorConstruction.hh"
 #include "globals.hh"
@@ -37,7 +37,7 @@
 
 class G4LogicalVolume;
 class G4Material;
-class DetectorMessenger;
+class RadiobiologyDetectorMessenger;
 
 /**
  * @brief Mandatory class for the construction of geometry.
@@ -53,12 +53,12 @@ class DetectorMessenger;
  */
 
 
-class DetectorConstruction : public G4VUserDetectorConstruction
+class RadiobiologyDetectorConstruction : public G4VUserDetectorConstruction
 {
   public:
   
-    DetectorConstruction();
-   ~DetectorConstruction();
+    RadiobiologyDetectorConstruction();
+   ~RadiobiologyDetectorConstruction();
 
   public:
   
@@ -128,7 +128,7 @@ class DetectorConstruction : public G4VUserDetectorConstruction
      G4Material*           fMaterial;     
      
      // Pointer to the messenger
-     DetectorMessenger* fDetectorMessenger;
+    RadiobiologyDetectorMessenger* fDetectorMessenger;
 
 
   private:

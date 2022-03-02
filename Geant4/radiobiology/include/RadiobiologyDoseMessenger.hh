@@ -50,7 +50,7 @@ class RadiobiologyDoseMessenger: public G4UImessenger
 {
   public:
   
-    RadiobiologyDoseMessenger(Dose* );
+    RadiobiologyDoseMessenger(RadiobiologyDose* );
    ~RadiobiologyDoseMessenger();
     
     virtual void SetNewValue(G4UIcommand*, G4String);
