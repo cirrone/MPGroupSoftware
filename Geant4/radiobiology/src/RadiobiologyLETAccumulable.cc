@@ -130,7 +130,7 @@ void RadiobiologyLETAccumulable::Accumulate(RadiobiologyHit* hit)
     G4int yIndex = hit->GetYindex();;
     G4int zIndex = hit->GetZindex();;
 
-    G4int voxel = VoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(xIndex, yIndex, zIndex);
+    G4int voxel = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(xIndex, yIndex, zIndex);
 
     // Get mean kinetic energy
     G4double ekinMean = hit->GetEkinMean();
@@ -184,7 +184,7 @@ void RadiobiologyLETAccumulable::Accumulate(RadiobiologyHit* hit)
         G4String fullName = particleDef -> GetParticleName();
         G4String name = fullName.substr (0, fullName.find("[") ); // Cut excitation energy [x.y]
 
-        RadiobiologyIonLet ion(trackID, PDGencoding, fullName, name, Z, A, VoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber());
+        RadiobiologyIonLet ion(trackID, PDGencoding, fullName, name, Z, A, RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber());
         fIonLetStore.push_back(ion);
     }
 
@@ -207,7 +207,7 @@ void RadiobiologyLETAccumulable::Initialize()
         G4cout << "LETAccumulable::Initialize(): " << G4endl;
     }
 
-    G4int voxNumber = VoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber();
+    G4int voxNumber = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber();
 
     fTotalLETT =  array_type(0.0, voxNumber);
     fTotalLETD =  array_type(0.0, voxNumber);

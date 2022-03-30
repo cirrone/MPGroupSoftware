@@ -56,7 +56,7 @@ RadiobiologyLET::~RadiobiologyLET()
 
 void RadiobiologyLET::Initialize()
 {
-    G4int VoxelNumber = VoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber();
+    G4int VoxelNumber = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber();
 
     // Instances for Total LET
     fNTotalLETT.resize(VoxelNumber);
@@ -69,7 +69,6 @@ void RadiobiologyLET::Initialize()
 
     fInitialized = true;
 }
-
 
 void RadiobiologyLET::Compute()
 {
@@ -86,10 +85,10 @@ void RadiobiologyLET::Compute()
     if (fVerboseLevel > 0)
     G4cout << "LET::Compute()" << G4endl;
 
-    if(VoxelizedSensitiveDetector::GetInstance() == nullptr)
+    if(RadiobiologyVoxelizedSensitiveDetector::GetInstance() == nullptr)
         G4Exception("LET::ComputeLET", "PointerNotAvailable", FatalException, "Computing LET without voxelized geometry pointer!");
 
-    G4int VoxelNumber = VoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber();
+    G4int VoxelNumber = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetTotalVoxelNumber();
     for(G4int v=0; v < VoxelNumber; v++)
     {
         if(fVerboseLevel > 1)
@@ -186,15 +185,15 @@ void RadiobiologyLET::Store()
             LETFragmentTuple ->FinishNtuple();
 
 
-            for(G4int i = 0; i < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongX(); i++)
-                for(G4int j = 0; j < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongY(); j++)
-                    for(G4int k = 0; k < VoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongZ(); k++)
+            for(G4int i = 0; i < RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongX(); i++)
+                for(G4int j = 0; j < RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongY(); j++)
+                    for(G4int k = 0; k < RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetVoxelNumberAlongZ(); k++)
                     {
                         LETFragmentTuple->FillNtupleIColumn(1,0, i);
                         LETFragmentTuple->FillNtupleIColumn(1,1, j);
                         LETFragmentTuple->FillNtupleIColumn(1,2, k);
 
-                        G4int v = VoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(i, j, k);
+                        G4int v = RadiobiologyVoxelizedSensitiveDetector::GetInstance()->GetThisVoxelNumber(i, j, k);
 
                         // Write total LETs and voxels index
                         ofs << G4endl;
@@ -261,7 +260,7 @@ void RadiobiologyLET::Reset()
 // Add data taken from accumulables
 void RadiobiologyLET::AddFromAccumulable(G4VAccumulable* GenAcc)
 {
-    LETAccumulable* acc = (LETAccumulable*) GenAcc;
+    RadiobiologyLETAccumulable* acc = (RadiobiologyLETAccumulable*) GenAcc;
 
     AddNTotalLETT(acc->GetTotalLETT());
     AddDTotalLETT(acc->GetDTotalLETT());
@@ -298,7 +297,7 @@ void RadiobiologyLET::AddFromAccumulable(G4VAccumulable* GenAcc)
 
 void RadiobiologyLET::SetFromAccumulable(G4VAccumulable* GenAcc)
 {
-    LETAccumulable* acc = (LETAccumulable*) GenAcc;
+    RadiobiologyLETAccumulable* acc = (RadiobiologyLETAccumulable*) GenAcc;
 
     SetNTotalLETT(acc->GetTotalLETT());
     SetDTotalLETT(acc->GetDTotalLETT());

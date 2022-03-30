@@ -59,13 +59,13 @@ public:
     void virtual Reset() override;
     void virtual Store() override;
     void virtual PrintParameters() override;
-
+    array_type fDose;
     
 private:
 
     // Deposited energy and dose array
     array_type fEnDep;
-    array_type fDose;
+//    array_type fDose;
 
     // To be used for accumulation
     void SetEnergyDeposit(const array_type Dep) {fEnDep = Dep; }

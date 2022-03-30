@@ -31,22 +31,22 @@
 //
 
 
-#ifndef PhysicsList_h
-#define PhysicsList_h 1
+#ifndef RadiobiologyPhysicsList_h
+#define RadiobiologyPhysicsList_h 1
 
 #include "G4VModularPhysicsList.hh"
 #include "G4EmConfigurator.hh"
 #include "globals.hh"
 
 class G4VPhysicsConstructor;
-class PhysicsListMessenger;
+class RadiobiologyPhysicsListMessenger;
 
-class PhysicsList: public G4VModularPhysicsList
+class RadiobiologyPhysicsList: public G4VModularPhysicsList
 {
 public:
     
-    PhysicsList();
-    virtual ~PhysicsList();
+    RadiobiologyPhysicsList();
+    virtual ~RadiobiologyPhysicsList();
     
     void ConstructParticle();
     void SetCutForGamma(G4double);
@@ -68,7 +68,7 @@ private:
 
     std::vector<G4VPhysicsConstructor*>  hadronPhys;
         
-    PhysicsListMessenger* pMessenger;
+    RadiobiologyPhysicsListMessenger* pMessenger;
 };
 
 #endif //PhysicsList_h

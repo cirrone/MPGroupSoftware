@@ -58,7 +58,7 @@
 #include "G4LossTableManager.hh"
 #include "G4HadronPhysicsQGSP_BIC_AllHP.hh"
 
-PhysicsList::PhysicsList() : G4VModularPhysicsList(),
+RadiobiologyPhysicsList::RadiobiologyPhysicsList() : G4VModularPhysicsList(),
     fEmName("")
 {
     // Set default cut values
@@ -68,7 +68,7 @@ PhysicsList::PhysicsList() : G4VModularPhysicsList(),
     fCutForElectron  = defaultCutValue;
     fCutForPositron  = defaultCutValue;
     
-    pMessenger = new PhysicsListMessenger(this);
+    pMessenger = new RadiobiologyPhysicsListMessenger(this);
     SetVerboseLevel(1);
 
     // Create default decay physics
@@ -79,7 +79,7 @@ PhysicsList::PhysicsList() : G4VModularPhysicsList(),
     
 }
 
-PhysicsList::~PhysicsList()
+RadiobiologyPhysicsList::~RadiobiologyPhysicsList()
 {
     delete pMessenger;
     delete fEmPhysicsList;
@@ -95,12 +95,12 @@ PhysicsList::~PhysicsList()
     hadronPhys.clear();
 }
 
-void PhysicsList::ConstructParticle()
+void RadiobiologyPhysicsList::ConstructParticle()
 {
     fDecayPhysicsList -> ConstructParticle();
 }
 
-void PhysicsList::ConstructProcess()
+void RadiobiologyPhysicsList::ConstructProcess()
 {
     // Transportation
     AddTransportation();
@@ -117,7 +117,7 @@ void PhysicsList::ConstructProcess()
     }
 }
 
-void PhysicsList::AddPhysicsList(const G4String& name)
+void RadiobiologyPhysicsList::AddPhysicsList(const G4String& name)
 {
     if (verboseLevel>1) {
         G4cout << "PhysicsList::AddPhysicsList: <" << name << ">" << G4endl;

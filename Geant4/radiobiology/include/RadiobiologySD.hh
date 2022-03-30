@@ -24,15 +24,15 @@
 // ********************************************************************
 //
 //
-/// \file RadioBioSD.hh
-/// \brief Definition of the RadioBioSD class
+/// \file RadiobiologySD.hh
+/// \brief Definition of the RadiobiologySD class
 
-#ifndef RadioBioSD_h
-#define RadioBioSD_h 1
+#ifndef RadiobiologySD_h
+#define RadiobiologySD_h 1
 
 #include "G4VSensitiveDetector.hh"
 
-#include "RadioBioHit.hh"
+#include "RadiobiologyHit.hh"
 
 #include <vector>
 
@@ -45,12 +45,12 @@ class G4HCofThisEvent;
 /// by Geant4 kernel at each step. A hit is created with each step with non zero 
 /// energy deposit.
 
-class RadioBioSD : public G4VSensitiveDetector
+class RadiobiologySD : public G4VSensitiveDetector
 {
   public:
-    RadioBioSD(const G4String& name,
+    RadiobiologySD(const G4String& name,
                 const G4String& hitsCollectionName);
-    virtual ~RadioBioSD();
+    virtual ~RadiobiologySD();
   
     // Methods from base class
     virtual void   Initialize(G4HCofThisEvent* hitCollection);
@@ -62,4 +62,4 @@ class RadioBioSD : public G4VSensitiveDetector
 
 };
 
-#endif //RadioBioSD_h
+#endif //RadiobiologySD
