@@ -69,7 +69,7 @@ RadiobiologyDetectorConstruction::RadiobiologyDetectorConstruction()
   fDetectorMessenger = new RadiobiologyDetectorMessenger(this);
 
   // Voxelize the detecctor with default size
-  VoxelizedSensitiveDetector::CreateInstance(this, 0.1*m, 1*m, 1*m);
+    RadiobiologyVoxelizedSensitiveDetector::CreateInstance(this, 0.1*m, 1*m, 1*m);
 }
 
 RadiobiologyDetectorConstruction::~RadiobiologyDetectorConstruction()

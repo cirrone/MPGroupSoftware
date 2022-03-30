@@ -38,7 +38,7 @@
 #include "G4SystemOfUnits.hh"
 
 
-RadiobiologyPrimaryGeneratorAction::RadiobiologyPrimaryGeneratorAction(DetectorConstruction* det)
+RadiobiologyPrimaryGeneratorAction::RadiobiologyPrimaryGeneratorAction(RadiobiologyDetectorConstruction* det)
 :G4VUserPrimaryGeneratorAction(), fDetector(det),
  fParticleGun(0)
 {

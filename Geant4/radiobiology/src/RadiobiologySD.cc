@@ -33,9 +33,9 @@
 #include "G4ThreeVector.hh"
 #include "G4SDManager.hh"
 #include "G4AccumulableManager.hh"
-#include "VRadiobiologicalAccumulable.hh"
+#include "RadiobiologyVRadiobiologicalAccumulable.hh"
 
-#include "RadioBioManager.hh"
+#include "RadiobiologyManager.hh"
 
 RadiobiologySD::RadiobiologySD(const G4String& name,
                          const G4String& hitsCollectionName) 
@@ -48,7 +48,7 @@ RadiobiologySD::RadiobiologySD(const G4String& name,
 RadiobiologySD::~RadiobiologySD()
 {}
 
-void RadioBioSD::Initialize(G4HCofThisEvent* hce)
+void RadiobiologySD::Initialize(G4HCofThisEvent* hce)
 {
   // Create hits collection
   fHitsCollection 
@@ -60,10 +60,10 @@ void RadioBioSD::Initialize(G4HCofThisEvent* hce)
   hce->AddHitsCollection( hcID, fHitsCollection ); 
 }
 
-G4bool RadiobiologyRadioBioSD::ProcessHits(G4Step* aStep,
+G4bool RadiobiologySD::ProcessHits(G4Step* aStep,
                                      G4TouchableHistory*)
 {
-    RadiobiologyRadioBioHit* newHit = new RadiobiologyRadioBioHit();
+    RadiobiologyHit* newHit = new RadiobiologyHit();
 
   // Get the pre-step kinetic energy
   G4double eKinPre = aStep -> GetPreStepPoint() -> GetKineticEnergy();
@@ -115,10 +115,10 @@ G4bool RadiobiologyRadioBioSD::ProcessHits(G4Step* aStep,
       G4VAccumulable* GenAcc = G4AccumulableManager::Instance()->GetAccumulable(i);
 
       // Get the quantity from the proper manager using the name
-      auto q = RadioBioManager::GetInstance()->GetQuantity(GenAcc->GetName());
+      auto q = RadiobiologyManager::GetInstance()->GetQuantity(GenAcc->GetName());
 
-      VRadiobiologicalAccumulable* radioAcc =
-              dynamic_cast<VRadiobiologicalAccumulable*>(GenAcc);
+      RadiobiologyVRadiobiologicalAccumulable* radioAcc =
+              dynamic_cast<RadiobiologyVRadiobiologicalAccumulable*>(GenAcc);
 
       // If the dynamic_cast did not work, this means that accumulable
       // was not a VRadiobiologicalAccumulable

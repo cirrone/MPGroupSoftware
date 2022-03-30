@@ -63,7 +63,7 @@ public:
     void Reset() override;
 
     // Store information from a single step
-    void Accumulate(RadiobiologyRadioBioHit* hit);
+    void Accumulate(RadiobiologyHit* hit);
 
     // Type alias for numerical arrays
     using array_type = std::valarray<G4double>;

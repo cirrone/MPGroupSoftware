@@ -64,16 +64,16 @@ RadiobiologyRunAction::~RadiobiologyRunAction()
 {
 }
 
-void RunAction::BeginOfRunAction(const G4Run*)
+void RadiobiologyRunAction::BeginOfRunAction(const G4Run*)
 {
     G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
     accumulableManager->Reset();
-    RadioBioManager* RBman = RadioBioManager::GetInstance();
+    RadiobiologyManager* RBman = RadiobiologyManager::GetInstance();
     RBman->InitializeAll();
 
 }
 
-void RunAction::EndOfRunAction(const G4Run* )
+void RadiobiologyRunAction::EndOfRunAction(const G4Run* )
 {
     G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
     accumulableManager->Merge();
@@ -81,5 +81,5 @@ void RunAction::EndOfRunAction(const G4Run* )
 
     // Tell the manager what we have accumulated if this is master thread
     if(IsMaster())
-        RadioBioManager::GetInstance()->DigestAccumulables();
+        RadiobiologyManager::GetInstance()->DigestAccumulables();
 }

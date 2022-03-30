@@ -43,14 +43,13 @@
 
 #include "RadiobiologyDetectorConstruction.hh"
 #include "RadiobiologyVoxelizedSensitiveDetectorMessenger.hh"
-#include "RadiobiologyRadioBioSD.hh"
+#include "RadiobiologySD.hh"
 #include "G4VPhysicalVolume.hh"
 #include "G4RunManager.hh"
 
 RadiobiologyVoxelizedSensitiveDetector* RadiobiologyVoxelizedSensitiveDetector::instance = nullptr;
 
-RadiobiologyVoxelizedSensitiveDetector* RadiobiologyVoxelizedSensitiveDetector::CreateInstance(RadiobiologyDetectorConstruction* det, double xWidth,
-                                                                       double yWidth, double zWidth)
+RadiobiologyVoxelizedSensitiveDetector* RadiobiologyVoxelizedSensitiveDetector::CreateInstance(RadiobiologyDetectorConstruction* det, double xWidth, double yWidth, double zWidth)
 {
     if (instance)
     {
@@ -80,7 +79,7 @@ RadiobiologyVoxelizedSensitiveDetector::RadiobiologyVoxelizedSensitiveDetector(R
     VoxelizedDetectorZDivisionPhys(0), worldLogical(0), isBuilt(false),
     fVoxelizedSensitiveDetectorMessenger()
 {
-    fVoxelizedSensitiveDetectorMessenger = new VoxelizedSensitiveDetectorMessenger(this);
+    fVoxelizedSensitiveDetectorMessenger = new RadiobiologyVoxelizedSensitiveDetectorMessenger(this);
     UpdateVoxelVolume();
     CalculateVoxelNumber();
 }
@@ -303,7 +302,7 @@ void RadiobiologyVoxelizedSensitiveDetector::ConstructSD()
  G4String sensitiveDetectorName = "VoxelizedDetector";
  G4String HCname = "LETdata";
 
- RadioBioSD* detectorSD = new RadioBioSD(sensitiveDetectorName, HCname);
+RadiobiologySD* detectorSD = new RadiobiologySD(sensitiveDetectorName, HCname);
  G4SDManager::GetSDMpointer()->AddNewDetector(detectorSD);
  sensitiveLogicalVolume->SetSensitiveDetector(detectorSD);
 }
