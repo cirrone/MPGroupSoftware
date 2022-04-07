@@ -1,0 +1,146 @@
+#constants block defines some variables we will use in the code. EPOCH is in SI units (m, T, K etc)
+
+begin:constant
+  lambda0=800.0 *nano  #laser wavelength
+  omega= 2.0*pi*c/lambda0 #laser frequency
+  den_crit = critical(omega) #critical density for this laser frequency 
+  n_x = 4000.0 # how many grid cells in x dimension
+  xMax = 10.0 *micron #the limits of the grid
+  xMin = -10*micron
+
+#the resolution of the grid. Good to scan around with the resolution, want to have high resolution to resolve skin depth, Debye length etc. something around 5-20nm is a good start. Increase the resolution of the simulation until the results converge. 
+  d_x = (xMax-xMin)/n_x 
+
+  massProton = 1836.0
+
+  target_thickness = 3*micron
+  target_density = 53*den_crit
+  
+# number of particles per cell. More particles is better, but good to scan around with different numbers
+  npart_electron = 1000
+  npart_ion = 1000
+
+  laser_waist = 24*sqrt(2)*femto
+  peak_time = 100*femto
+
+end:constant
+
+# some basic initialisation
+begin:control
+  nx = n_x
+  t_end = 250*femto
+  # size of domain
+  x_max = xMax
+  x_min = xMin
+  stdout_frequency = 1000
+  print_eta_string = T
+  use_optimal_layout = T
+  dlb_threshold = 0.3
+  dlb_maximum_interval=8000
+  dlb_force_interval=8000
+  stdout_frequency = 1000
+end:control
+
+# the laser launches from the x_min (eft) boundary
+begin:boundaries
+  bc_x_min = simple_laser
+  bc_x_max = open
+end:boundaries
+
+# gauss=exp(-((time-peak_time)/laser_waist)^2). One thing to be careful of, EPOCH will calculate everything in terms of the electric field, so the electric field profile is related to the intensity profile by sqrt(2)... so this laser waist is for a 40fs FWHM intensity profile pulse with peak intensity 5E20 W/cm^2
+
+begin:laser
+  boundary = x_min
+  intensity_w_cm2 = 5e+20
+  lambda = lambda0
+  t_profile = gauss(time, peak_time, laser_waist)
+end:laser
+
+begin:species
+  name = electron   
+  charge = -1.0
+  mass = 1.0
+  npart_per_cell = npart_electron
+# this is a basic step profile
+  density = if((x gt 0) and (x lt target_thickness), target_density, 0)
+  temp_ev = 1e+3
+end:species
+
+begin:species
+  name = proton  
+  charge = 1.0	
+  mass = massProton
+  npart_per_cell = npart_ion
+# make the density the same as the electrons so it is neutral
+  density = density(electron)
+  temp_ev = 100
+end:species
+
+begin:dist_fn 
+  name = energy_spectra
+  ndims = 1
+  dumpmask = always
+
+  direction1 = dir_en
+
+  # Range is ignored for spatial coordinates
+  range1 = (1, 1)
+
+  # Resolution is ignored for spatial coordinates
+  resolution1 = 200 
+  include_species:electron
+end:dist_fn
+
+begin:dist_fn 
+  name = energy_spectra
+  ndims = 1
+  dumpmask = always
+
+  direction1 = dir_en
+
+  # Range is ignored for spatial coordinates
+  range1 = (1*mev, 1*mev)
+
+  # Resolution is ignored for spatial coordinates
+  resolution1 = 200
+  include_species:proton
+end:dist_fn
+
+begin:dist_fn 
+  name = x_energy
+  ndims = 2
+  dumpmask = always
+  direction1 = dir_x
+  direction2 = dir_en
+  # Range is ignored for spatial coordinates
+  range1 = (1, 1) 
+  range2 = (1, 1)
+  # Resolution is ignored for spatial coordinates
+  resolution1 = 1 
+  resolution2 = 200
+  include_species:proton
+end:dist_fn
+
+begin:dist_fn 
+  name = x_px
+  ndims = 2
+  dumpmask = always
+  direction1 = dir_x
+  direction2 = dir_px
+  # Range is ignored for spatial coordinates
+  range1 = (1, 1) 
+  range2 = (1, 1)
+  # Resolution is ignored for spatial coordinates
+  resolution1 = 1 
+  resolution2 = 200 
+  include_species:electron
+end:dist_fn
+
+begin:output
+  name = acceleration
+  dt_snapshot = 10.0 * femto
+  grid = always
+  ey = always
+  distribution_functions = always
+  number_density = always + species + no_sum
+end:output
