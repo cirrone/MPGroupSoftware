@@ -1,0 +1,37 @@
+EPOCH
+
+The initial plan would be to get you familiar with running some ‘simple’ simulations so you can understand how things work, how to optimise running the code, how to retrieve the information and understand it and learn some physics from the code.
+
+I’ve attached 2 simulations which should run on your laptop (or a small server) in a few minutes.
+
+Step 1
+
+    • If you have EPOCH installed on your laptop then we can get started right away. I also recommend python for data analysis. 
+    • Once you have python installed (I recommend miniconda), I believe you can add the relevant packages to your PATH with the following commands
+        ◦ cd epoch/epoch1d
+        ◦ make sdfutils
+    • let me know if there are any issues here
+ 
+Step 2
+
+    • We start off with the basics, a step-like density profile of a neutral hydrogen plasma. This is called ‘no_pre_plasma’. It is overdense so the laser will reflect from the front surface. The goal here is to 2 populations of ions being accelerated (front and rear surface protons). We can discuss the relevant physics.
+    • You will have to change the folder path (line 16 of catania_1d.py) so it can find your data 
+    • You can then run the python script called ‘catania_1d.py’ 
+    • Hopefully it should run through your data and make movies of the simulation. Let me know if there are any issues
+
+Step 3
+
+    • Now run the pre_plasma case and see how that affects things
+
+Step 4
+
+    • We can start some basic analysis. If we want to optimise the acceleration of protons, we first need to optimise the energy coupling to electrons. So we want to increase the temperature of electrons
+        ◦ 
+        ◦ Where T is the temperature. 
+    • Since the electron spectrum is quasi-exponential, we can estimate this value for T above. This would be a good exercise to estimate the electron temperature and a particular time step and we can try to optimise this in future simulations
+
+
+Step 5
+
+    • In addition to the physics, it is important to understand how the grid resolution and particle numbers make a difference to your final answer
+    • I would recommend running a few different resolutions e.g 20nm, 10nm, 5nm. And particles per cell, 1, 10, 50, 100 or something to get an idea. The better the resolution and the higher the particle number, generally the more ‘correct’ the answer should be. 
