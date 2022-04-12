@@ -26,7 +26,7 @@ Step 3
 Step 4
 
     • We can start some basic analysis. If we want to optimise the acceleration of protons, we first need to optimise the energy coupling to electrons. So we want to increase the temperature of electrons
-        ◦ 
+        ◦ N=N_0 * exp[-Energy/(KT)]
         ◦ Where T is the temperature. 
     • Since the electron spectrum is quasi-exponential, we can estimate this value for T above. This would be a good exercise to estimate the electron temperature and a particular time step and we can try to optimise this in future simulations
 
