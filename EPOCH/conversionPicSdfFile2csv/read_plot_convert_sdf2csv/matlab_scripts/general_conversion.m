@@ -2,7 +2,7 @@
 % Then it plot the phase space, both non-normalized and normalized, density profile and so on.
 
 % READING THE .sdf FILE USING THE GetDataSDF FUNCTION
-structure = GetDataSDF('/home/beatrice/epoch/epoch2d/laser_focus/Data/0008.sdf')
+structure = GetDataSDF('/home/beatrice/epoch/epoch1d/Data/no_pre_plasma/0008.sdf')
 
 %%
 % Extraction of the variables of interest

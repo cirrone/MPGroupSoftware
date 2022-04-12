@@ -1,4 +1,3 @@
-#from SDFfileFormat import *
 import pathlib
 import cv2
 from cv2 import VideoWriter, VideoWriter_fourcc
@@ -13,7 +12,7 @@ def SDF_movie(outputfolder, SimulationName, initialfile, finalfile, quantity):
     fourcc = VideoWriter_fourcc(*'mp4v')
     video = VideoWriter(outputfolder + SimulationName + quantity + '.mp4', fourcc, float(FPS), (width, height))
     for filenumber in range(initialfile, finalfile):
-        sdffilenumber = formatfilenumber(filenumber, formatzeros=3)
+        sdffilenumber = f'{filenumber:04d}'
         filename = outputfolder + sdffilenumber + quantity + '.png'
         filepath = pathlib.Path(filename)
         if filepath.exists():

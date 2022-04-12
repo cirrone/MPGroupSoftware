@@ -12,8 +12,8 @@ plt.rcParams['font.size'] = 16
 initialfile = 1
 finalfile = 25
 
-SimulationName = 'catania_pre_plasma' #name of the folder
-outputfolder = ('/mnt/scratch2/users/3055620/' + SimulationName + '/') # folder path
+SimulationName = 'pre_plasma' #name of the folder
+outputfolder = ('/home/beatrice/epoch/epoch1d/Data/' + SimulationName + '/') # folder path
 
 n_crit = 1.75E27
 make_movie = 'Y'
@@ -119,8 +119,8 @@ for filenumber in range(initialfile, finalfile+1):
     dist_fn_energy = data.dist_fn_x_energy_proton.grid.data[1]
     plot_dist_fn(proton_dist_fn, dist_fn_energy, x, savefile=dist_fn_file, time=time)
 
-    electron_dist_fn = data.dist_fn_x_energy_electron.data
-    dist_fn_px = data.dist_fn_x_energy_electron.grid.data[1]
+    electron_dist_fn = data.dist_fn_x_px_electron.data
+    dist_fn_px = data.dist_fn_x_px_electron.grid.data[1]
     plot_electron_phase(electron_dist_fn, dist_fn_px, x, savefile=electronphase, time=time)
         
     #plot spectra only
