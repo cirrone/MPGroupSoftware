@@ -6,6 +6,7 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <cmath> 
 
 using namespace std;
 int test(int, double, double, double*);
@@ -33,15 +34,15 @@ void rebin() {
 	
 
 	// APERTUTRA FILE IN INPUT
-	sprintf(path_in, "Data_IN/SOBP_ydy_byPabloScript/txt"); 
-	sprintf(file_in, "y_ydy_SOBP_27_690mm.txt");
+	sprintf(path_in, "/home/cirrone/Dropbox/script_e_software/MPGroupSoftware/Microdosimetry"); 
+	sprintf(file_in, "y_ydy_FE_27_69mm.txt");
 	sprintf(file_in_path, "%s/%s",path_in,file_in);
 	ifstream file(file_in_path);	
 	
 
 	
 	// APERTURA FILE IN OUTPUT
-	sprintf(path_out, "Data_OUT/SOBP/txt"); 
+	sprintf(path_out, "/home/cirrone/Dropbox/script_e_software/MPGroupSoftware/Microdosimetry"); 
 	sprintf(file_out,"%s/Log_bin_%d_%s", path_out, Bdec, file_in); 
 	ofstream out;	
 	out.open(file_out);
@@ -67,7 +68,8 @@ void rebin() {
 	for (int a = 0; a < NUMEL; ++a) {
 		ticks_lin[a + 1] = x[a] + lin_step*0.5;
 	}
-
+	
+	/*
 	// SPETTRO (con TH1D) BINNATO LIINEARE **********************************************
 	TCanvas* c1 = new TCanvas("c1","Microdosimetric Spectra",200,10,1000,700);  // Serena
 	c1->Divide(2,2);
@@ -84,16 +86,16 @@ void rebin() {
   	hlin->GetXaxis()->SetTitle("y [keV/um]");
 	hlin->GetYaxis()->SetTitle("y d(y) / (0.013341067286 keV/um)");
 	 hlin->GetXaxis()->SetTitleOffset(1.2);
-     hlin->GetXaxis()->SetLabelSize(0.03);
+	 hlin->GetXaxis()->SetLabelSize(0.03);
 	 hlin->GetYaxis()->SetTitleOffset(1.2);
-     hlin->GetYaxis()->SetLabelSize(0.03);
+	 hlin->GetYaxis()->SetLabelSize(0.03);
 	 hlin->GetYaxis()->SetNdivisions(120);
 	hlin->GetXaxis()->SetRangeUser(0,200);
 	hlin->SetMaximum(1.0);
 	//  *********************************************************************************
+	*/	
 		
-		
-		
+	/*	
 	//  SPETTRO (con TGraph) BINNATO LIINEARE IN SCALA X LOGARITMICA  *******************
 	c1->cd(2)->SetLogx();
 	TGraph * gr_lin = new TGraph(NUMEL,x,c_lin);
@@ -115,7 +117,7 @@ void rebin() {
 //	  gr_lin->GetYaxis()->SetRangeUser(1e0,1e8);
 //	  gr_lin->GetYaxis()->SetRangeUser(0.,7.);
 	//  *********************************************************************************
-	
+	*/
 	
 	
 	
@@ -207,7 +209,7 @@ void rebin() {
 	
 	
 	
-	
+	/*
 	//  SPETTRO BINNATO LOGARITMICO  ****************************************************
 	c1->cd(3)->SetLogx();
 	TGraph * gr_log = new TGraph(N_BINS_LOG,x_rebin,c_log);
@@ -229,12 +231,12 @@ void rebin() {
 //	  gr_log->GetYaxis()->SetRangeUser(1e0,1e8);
 //	  gr_log->GetYaxis()->SetRangeUser(0.,7.);
 	//  *********************************************************************************
-
+	*/
 	
 	
 	
 
-
+	 /*
 	//  SPETTRO BINNATO LOGARITMICO RINORMALIZZATO  *************************************
 	c1->cd(4)->SetLogx();
 	TGraph *gr_lognorm = new TGraph(N_BINS_LOG,x_rebin,c_log_normwidth);
@@ -256,7 +258,7 @@ void rebin() {
 //	 gr_lognorm->GetYaxis()->SetRangeUser(1e0,1e8);
 //	 gr_lognorm->GetYaxis()->SetRangeUser(0.,7.);
 	//  *********************************************************************************
-
+	*/
 
 
 }
@@ -287,3 +289,4 @@ int test_s(int iter, double s, double* tlog) {
 	return result-1;
 }
 // ---------------------------------------------------------------------------------------
+int main() { rebin(); return 0;}
