@@ -1,0 +1,373 @@
+#
+# Silicon Carbide in double stages configuration. Energy is collected in each of the two stages
+#
+
+
+# =======================================   MATERIALS   =======================================
+#
+#
+# Silicon Carbide
+#
+sv:Ma/SiliconCarbide/Components 	= 2 "Silicon" "Carbon"
+uv:Ma/SiliconCarbide/Fractions  	= 2 0.5 0.5
+d:Ma/SiliconCarbide/Density 		= 3.21 g/cm3
+s:Ma/SiliconCarbide/DefaultColor 	= "red"
+
+# Nickel Silicide
+#
+sv:Ma/NickelSilicide/Components 	= 2 "Nickel" "Silicon"
+uv:Ma/NickelSilicide/Fractions  	= 2 0.80693 0.19306
+d:Ma/NickelSilicide/Density 		= 7.40 g/cm3
+s:Ma/NickelSilicide/DefaultColor 	= "Maroon"
+
+# =======================================   VOLUMES   =======================================
+#
+#
+# Definition of the World volume
+# ------------------------------
+#
+d:Ge/World/HLX       = 80 cm
+d:Ge/World/HLY       = 80 cm
+d:Ge/World/HLZ       = 80 cm
+s:Ge/World/Material  = "Air"
+
+
+b:Ge/World/Invisible = "False"
+
+###########################################################################
+# Nozzle
+# A 60 cm long brass tube collimator: inner hole diameter: 36 mm;
+# outer diameter 50 mm
+#
+###########################################################################
+# Nozzle
+# A 30 cm diameter brass collimator with opening in the center
+#
+s:Ge/Nozzle/Parent  	 = "World"
+s:Ge/Nozzle/Type    	 = "TsCylinder"
+s:Ge/Nozzle/Material	 = "Brass"
+d:Ge/Nozzle/RMin    	 = 18.0 mm
+d:Ge/Nozzle/RMax    	 = 30.0 mm
+d:Ge/Nozzle/HL      	 = 30.0 cm
+d:Ge/Nozzle/SPhi    	 = 0.0 deg
+d:Ge/Nozzle/DPhi    	 = 360.0 deg
+d:Ge/Nozzle/TransX  	 = 0.0 mm
+d:Ge/Nozzle/TransY  	 = 0.0 mm
+d:Ge/Nozzle/TransZ  	 = -39.35 cm
+d:Ge/Nozzle/RotX    	 = 0.0 deg
+d:Ge/Nozzle/RotY    	 = 0.0 deg
+d:Ge/Nozzle/RotZ    	 = 0.0 deg
+b:Ge/Nozzle/Include 	 = "True"
+s:Ge/Nozzle/Color        = "Yellow"
+s:Ge/Nozzle/DrawingStyle = "Solid"
+s:Ge/Nozzle/Message 	 = "UCSFETF::Collimator1 is constructed!"
+
+
+
+###########################################################################
+# Collimator
+# A 30 cm diameter brass collimator with opening in the center
+#
+s:Ge/Collimator1/Parent       = "World"
+s:Ge/Collimator1/Type         = "TsCylinder"
+s:Ge/Collimator1/Material     = "Brass"
+d:Ge/Collimator1/RMin         = 3.00 mm
+d:Ge/Collimator1/RMax         = 6.00 cm
+d:Ge/Collimator1/HL           = 3.50 mm
+d:Ge/Collimator1/SPhi         = 0.0 deg
+d:Ge/Collimator1/DPhi         = 360.0 deg
+d:Ge/Collimator1/TransX       = 0.0 mm
+d:Ge/Collimator1/TransY       = 0.0 mm
+d:Ge/Collimator1/TransZ       = -9.0 cm
+d:Ge/Collimator1/RotX         = 0.0 deg
+d:Ge/Collimator1/RotY         = 0.0 deg
+d:Ge/Collimator1/RotZ         = 0.0 deg
+b:Ge/Collimator1/Include      = "True"
+s:Ge/Collimator1/Color        = "Yellow"
+s:Ge/Collimator1/DrawingStyle = "Solid"
+s:Ge/Collimator1/Message      = "UCSFETF::Collimator1 is constructed!"
+
+
+
+
+# Water degraders that put the detector in to the correct irradiation position 
+# -----------------------------------------------------------------------------
+#
+
+d:A_Double1         = 23.1	 mm    # detector to degrader distance (10 cm) + HLZ
+d:traslationOfWaterDegrader = -0.00 mm - A_Double1
+
+
+s:Ge/WaterDegrader/Type         = "TsBox"
+s:Ge/WaterDegrader/Parent       = "World"
+s:Ge/WaterDegrader/Material     = "G4_WATER"
+d:Ge/WaterDegrader/HLX          = 10.00 mm
+d:Ge/WaterDegrader/HLY          = 10.00 mm
+d:Ge/WaterDegrader/HLZ          = 13.1 mm
+d:Ge/WaterDegrader/TransX       = 0.0 cm
+d:Ge/WaterDegrader/TransY       = 0.0 cm
+d:Ge/WaterDegrader/TransZ       = traslationOfWaterDegrader mm
+d:Ge/WaterDegrader/RotX         = 0.0 deg
+d:Ge/WaterDegrader/RotY         = 0.0 deg
+d:Ge/WaterDegrader/RotZ         = 0.0 deg
+s:Ge/WaterDegrader/Color        = "Blue"
+s:Ge/WaterDegrader/DrawingStyle = "Wireframe" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+# First dead layer (Ni2Si, Thick: 0.1 um)
+# ---------------------------------------
+#
+s:Ge/DeadLayer_1/Type         = "TsBox"
+s:Ge/DeadLayer_1/Parent       = "World"
+s:Ge/DeadLayer_1/Material     = "NickelSilicide"
+d:Ge/DeadLayer_1/HLX          = 2.25 mm
+d:Ge/DeadLayer_1/HLY          = 2.25 mm
+d:Ge/DeadLayer_1/HLZ          = 0.05 um
+d:Ge/DeadLayer_1/TransX       = 0.0 cm
+d:Ge/DeadLayer_1/TransY       = 0.0 cm
+d:Ge/DeadLayer_1/TransZ       = 0.05 um
+d:Ge/DeadLayer_1/RotX         = 0.0 deg
+d:Ge/DeadLayer_1/RotY         = 0.0 deg
+d:Ge/DeadLayer_1/RotZ         = 0.0 deg
+s:Ge/DeadLayer_1/Color        = "White"
+s:Ge/DeadLayer_1/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+# Second dead layer (SiC, p+, Thick: 0.2 um)
+# ------------------------------------------
+#
+s:Ge/DeadLayer_2/Type         = "TsBox"
+s:Ge/DeadLayer_2/Parent       = "World"
+s:Ge/DeadLayer_2/Material     = "SiliconCarbide"
+d:Ge/DeadLayer_2/HLX          = 2.25 mm
+d:Ge/DeadLayer_2/HLY          = 2.25 mm
+d:Ge/DeadLayer_2/HLZ          = 0.1 um
+d:Ge/DeadLayer_2/TransX       = 0.0 cm
+d:Ge/DeadLayer_2/TransY       = 0.0 cm
+d:Ge/DeadLayer_2/TransZ       = 0.2 um
+d:Ge/DeadLayer_2/RotX         = 0.0 deg
+d:Ge/DeadLayer_2/RotY         = 0.0 deg
+d:Ge/DeadLayer_2/RotZ         = 0.0 deg
+s:Ge/DeadLayer_2/Color        = "yellow"
+s:Ge/DeadLayer_2/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+
+# The detector (SiC, Thick: 10 um)
+# ---------------------------------
+#
+s:Ge/SiCDetector/Type         = "TsBox"
+s:Ge/SiCDetector/Parent       = "World"
+# s:Ge/SiCDetector/Material     = "G4_WATER"
+s:Ge/SiCDetector/Material     = "SiliconCarbide"
+d:Ge/SiCDetector/HLX          = 2.45 mm
+d:Ge/SiCDetector/HLY          = 2.45 mm
+d:Ge/SiCDetector/HLZ          = 5.00 um
+d:Ge/SiCDetector/TransX       = 0.0 cm
+d:Ge/SiCDetector/TransY       = 0.0 cm
+d:Ge/SiCDetector/TransZ       = 5.3 um     # Fare sempre HLZ + 0.3
+d:Ge/SiCDetector/RotX         = 0.0 deg
+d:Ge/SiCDetector/RotY         = 0.0 deg
+d:Ge/SiCDetector/RotZ         = 0.0 deg
+s:Ge/SiCDetector/Color        = "red"
+s:Ge/SiCDetector/DrawingStyle = "Wireframe" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+# The Substrate (SiC, Thick: 350 um)
+# ----------------------------------
+#
+s:Ge/Substrate/Type         = "TsBox"
+s:Ge/Substrate/Parent       = "World"
+s:Ge/Substrate/Material     = "SiliconCarbide"
+d:Ge/Substrate/HLX          = 2.5 mm
+d:Ge/Substrate/HLY          = 2.5 mm
+d:Ge/Substrate/HLZ          = 175.0 um
+d:Ge/Substrate/TransX       = 0.0 cm
+d:Ge/Substrate/TransY       = 0.0 cm
+d:Ge/Substrate/TransZ       = 185.3 um     # Fare sempre HLZ + Spessore del rivelatore + 0.3
+d:Ge/Substrate/RotX         = 0.0 deg
+d:Ge/Substrate/RotY         = 0.0 deg
+d:Ge/Substrate/RotZ         = 0.0 deg
+s:Ge/Substrate/Color        = "white"
+s:Ge/Substrate/DrawingStyle = "Wireframe" # "Solid", "Wireframe" or "FullWireFrame"
+
+
+# Third dead layer (Al, Thick: 0.1 um)
+# ------------------------------------
+#
+s:Ge/DeadLayer_3/Type     = "TsBox"
+s:Ge/DeadLayer_3/Parent   = "World"
+s:Ge/DeadLayer_3/Material = "Aluminum"
+d:Ge/DeadLayer_3/HLX      = 2.5 mm
+d:Ge/DeadLayer_3/HLY      = 2.5 mm
+d:Ge/DeadLayer_3/HLZ      = 0.05 um
+d:Ge/DeadLayer_3/TransX   = 0.0 cm
+d:Ge/DeadLayer_3/TransY   = 0.0 cm
+d:Ge/DeadLayer_3/TransZ   = 360.35 um     # Fare sempre HLZ + Spessore del rivelatore + 350.3
+d:Ge/DeadLayer_3/RotX     = 0.0 deg
+d:Ge/DeadLayer_3/RotY     = 0.0 deg
+d:Ge/DeadLayer_3/RotZ     = 0.0 deg
+s:Ge/DeadLayer_3/Color    = "Fuchsia"
+
+
+# =======================================   SCORING  =======================================
+#
+# Calculation of the spectra of total energy deposit and other quantities 
+# inside the SiC detector
+# Generated file in an .xml file that must be read with a dedicated python
+# script Pablo wrote
+#
+s:Sc/EnergyDepositedSpectra/Quantity                      = "EnergyDeposit"
+s:Sc/EnergyDepositedSpectra/Component                     = "SiCDetector"
+b:Sc/EnergyDepositedSpectra/OutputToConsole               = "TRUE"
+s:Sc/EnergyDepositedSpectra/IfOutputFileAlreadyExists     = "Overwrite"
+i:Sc/EnergyDepositedSpectra/HistogramBins                 = 10000
+d:Sc/EnergyDepositedSpectra/HistogramMin                  = 0 keV
+d:Sc/EnergyDepositedSpectra/HistogramMax                  = 300 keV
+s:Sc/EnergyDepositedSpectra/OutputType                    = "Xml"
+#sv:Sc/EnergyDepositedSpectra/OnlyIncludeParticlesCharged = 1 "Positive"
+s:Sc/XmlFileName		   		      	  = "EnergyDepositedSpectra_5_0"
+
+
+# Z binning causes creation of a parallel world for scoring
+# e questo permette di fare il picco di Bragg
+#
+# s:Sc/depthDoseDistributionDegrader/Quantity                  = "EnergyDeposit"
+# s:Sc/depthDoseDistributionDegrader/Component                 = "WaterDegrader"
+# b:Sc/depthDoseDistributionDegrader/OutputToConsole           = "TRUE"
+# s:Sc/depthDoseDistributionDegrader/IfOutputFileAlreadyExists = "Overwrite"
+# i:Sc/depthDoseDistributionDegrader/ZBins                     = 320
+# s:Sc/depthDoseDistributionDegrader/OutputFile                = "DepthDose_degrader_SiC_5_0"
+
+
+
+# The following fill an histogram with the Fluence: the total track length
+# divided by the Volume
+
+# s:Sc/FluenceSpectra/Quantity                    = "Fluence"
+# s:Sc/FluenceSpectra/Component                   = "SiCDetector"
+# b:Sc/FluenceSpectra/OutputToConsole             = "FALSE"
+# s:Sc/FluenceSpectra/IfOutputFileAlreadyExists   = "Overwrite"
+# i:Sc/FluenceSpectra/HistogramBins               = 10000 
+# d:Sc/FluenceSpectra/HistogramMin                = 0.03 /mm2
+# d:Sc/FluenceSpectra/HistogramMax                = 0.06 /mm2
+# s:Sc/FluenceSpectra/OutputType                  = "Xml"
+
+
+# Use of an external extension to generate ntuple with the relevant information
+# In this case we will register the total energy deposited in a volume (the detector)
+# In the meantime other information will be registered:
+# 1: The energy deposited; 2: the weight; 3: the particle type (PDF format); 
+# 4: if is the first scored particle from this history
+#	
+# s:Sc/Scorer_Pablo/Quantity			= "PabloNtupleScorerOnVolume"
+# s:Sc/Scorer_Pablo/Component   		= "SiCDetector"
+# s:Sc/Scorer_Pablo/OutputType          	= "ASCII"
+# b:Sc/Scorer_Pablo/OutputToConsole            	= "FALSE"       
+# s:Sc/Scorer_Pablo/IfOutputFileAlreadyExists 	= "Overwrite" 
+
+
+# s:Sc/InfoFirstStage/Quantity                    = "PhaseSpace"
+# b:Sc/InfoFirstStage/OutputToConsole             = "True"
+# s:Sc/InfoFirstStage/Surface                     = "SiCDetector/ZMinusSurface"
+# s:Sc/InfoFirstStage/OutputType         	  = "ASCII" 
+# s:Sc/InfoFirstStage/OutputFile                  = "ASCIIOutput"
+# s:Sc/InfoFirstStage/OnlyIncludeParticlesGoing   = "In"
+# b:Sc/InfoFirstStage/IncludeRunID                = "True"
+# b:Sc/InfoFirstStage/IncludeEventID              = "True"
+# b:Sc/InfoFirstStage/IncludeTrackID              = "True"
+# b:Sc/InfoFirstStage/IncludeParentID             = "True"
+# b:Sc/InfoFirstStage/IncludeCreatorProcess       = "True"
+# b:Sc/InfoFirstStage/IncludeVertexInfo           = "True"
+
+
+
+# Scores in the Delta_E detector: calcola l'energia totale depositata in tutto il run
+#
+# s:Sc/DoseAtDeltaE_Detector/Quantity          	       = "EnergyDeposit"
+# s:Sc/DoseAtDeltaE_Detector/Component                 = "DeltaE_Detector"
+# b:Sc/DoseAtDeltaE_Detector/OutputToConsole           = "TRUE"
+# s:Sc/DoseAtDeltaE_Detector/IfOutputFileAlreadyExists = "Overwrite"
+
+
+# Con le seguenti linee calcolo il LET in ogni fetta del rivelatore che 
+# ho chiamato DeltaE_Detector
+#
+# s:Sc/LETAtPhantom0/Quantity                  = "ProtonLET"
+# s:Sc/LETAtPhantom0/Component                 = "DeltaE_Detector"
+# s:Sc/LETAtPhantom0/WeightBy                  = "Dose"
+# d:Sc/LETAtPhantom0/MaxScoredLET              = 40 MeV/mm/(g/cm3)
+# vs:Sc/LETAtPhantom0/OutputFile               = "LET"
+# b:Sc/LETAtPhantom0/OutputToConsole           = "TRUE"
+# s:Sc/LETAtPhantom0/IfOutputFileAlreadyExists = "Overwrite"
+# sv:Sc/LETAtPhantom0/Report                   = 1 "Sum"
+
+
+# =======================================   VISUALISATION  =======================================
+#
+# s:Gr/ViewA/Type                             = "OpenGL"     # Commentare per bypassare la parte grafica
+i:Gr/ViewA/WindowSizeX                      = 900
+i:Gr/ViewA/WindowSizeY                      = 900
+# d:Gr/ViewA/Theta                          = 55 deg
+# d:Gr/ViewA/Phi                            = 20 deg
+# s:Gr/ViewA/Projection                     = "Perspective"
+# d:Gr/ViewA/PerspectiveAngle               = 30 deg
+u:Gr/ViewA/Zoom                             = 1.3
+b:Gr/ViewA/HiddenLineRemovalForTrajectories = "True"
+sv:Gr/ViewA/VisibleWorlds                   = 1 "All"
+# b:Gr/ViewA/IncludeAxes      		    = "True"
+d:Gr/ViewA/AxesSize                         = 0.1 mm         # Commentare per bypassare la parte grafica
+# Ts/UseQt = "True"                                            
+
+
+sv:Ph/Default/Modules = 6 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping"
+
+
+
+# =======================================   BEAM  =======================================
+
+s:So/Example/Type                      = "Beam"
+s:So/Example/Component                 = "BeamPosition"
+d:Ge/BeamPosition/TransZ	       = -70 cm
+d:Ge/BeamPosition/RotX		       = 0.0 deg
+s:So/Example/BeamParticle              = "proton"
+# s:So/Example/BeamParticle	       = "GenericIon(2,4,2)" # alpha
+d:So/Example/BeamEnergy                = 58.81 MeV
+u:So/Example/BeamEnergySpread          = 0.4 
+s:So/Example/BeamPositionDistribution  = "Flat" 
+s:So/Example/BeamPositionCutoffShape   = "Ellipse" # Point, Ellipse, Rectangle or Isotropic
+d:So/Example/BeamPositionCutoffX       = 8.0 mm
+d:So/Example/BeamPositionCutoffY       = 8.0 mm
+# d:So/Example/BeamPositionSpreadX     = 0.65 um
+# d:So/Example/BeamPositionSpreadY     = 0.65 um
+s:So/Example/BeamAngularDistribution   = "Gaussian"
+# s:So/Example/BeamAngularDistribution = "None"
+d:So/Example/BeamAngularCutoffX        = 90.0 deg
+d:So/Example/BeamAngularCutoffY        = 90.0 deg
+d:So/Example/BeamAngularSpreadX        = 0.0005 rad
+d:So/Example/BeamAngularSpreadY        = 0.0005 rad
+
+
+# =======================================   OTHER SETTING  =======================================
+
+# Tracking verbosity
+#
+i:Ts/TrackingVerbosity = 0
+d:Ph/Default/CutForAllParticles = 0.01 mm 
+
+i:Ts/Seed = 65469
+
+b:Ge/QuitIfOverlapDetected = "True"
+
+
+
+# b:Ts/PauseBeforeSequence = "True"
+
+# =====================   NUMBER OF EVENTS  =======================================
+#
+i:So/Example/NumberOfHistoriesInRun   = 4000000
+
+i:Ts/NumberOfThreads = 12
+# i:Ts/ShowHistoryCountAtInterval = 100
+
+
+b:Ts/PauseBeforeQuit = "True"
+
