@@ -1,3 +1,5 @@
 Description of the TOPAS simulations contained in this folder
 
 1: SiC_DoTSIC_4SiC: simulation of resinated detector composed by four active SiCs
+
+2. ThomsonParabola: Monte Carlo simulation of a thomson parabola spectrometer for laser-driven ion beams
