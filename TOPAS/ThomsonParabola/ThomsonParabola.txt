@@ -21,10 +21,10 @@ d:Ma/Diamond/AtomicMass =12.01 g/mole
 # Definition of the World volume
 # ------------------------------
 #
-d:Ge/World/HLX       = 80 cm
-d:Ge/World/HLY       = 80 cm
-d:Ge/World/HLZ       = 80 cm
-s:Ge/World/Material= "Air"
+d:Ge/World/HLX       = 200 cm
+d:Ge/World/HLY       = 200 cm
+d:Ge/World/HLZ       = 200 cm
+s:Ge/World/Material= "Vacuum"
 
 
 b:Ge/World/Invisible = "False"
@@ -33,49 +33,49 @@ b:Ge/World/Invisible = "False"
 # Collimator
 # A 30 cm diameter brass collimator with opening in the center
 #
-s:Ge/Collimator1/Parent  = "World"
-s:Ge/Collimator1/Type    = "TsCylinder"
-s:Ge/Collimator1/Material= "Brass"
-d:Ge/Collimator1/RMin    = 2  mm
-d:Ge/Collimator1/RMax    = 15.0 cm
-d:Ge/Collimator1/HL      = 3.5  mm
-d:Ge/Collimator1/SPhi    = 0.0 deg
-d:Ge/Collimator1/DPhi    = 360.0 deg
-d:Ge/Collimator1/TransX  = 0.0 mm
-d:Ge/Collimator1/TransY  = 0.0 mm
-d:Ge/Collimator1/TransZ  = -9.0 cm
-d:Ge/Collimator1/RotX    = 0.0 deg
-d:Ge/Collimator1/RotY    = 0.0 deg
-d:Ge/Collimator1/RotZ    = 0.0 deg
-b:Ge/Collimator1/Include = "True"
-s:Ge/Collimator1/DrawingStyle = "Solid"
-s:Ge/Collimator1/Messange= "UCSFETF::Collimator1 is constructed!"
+#s:Ge/Collimator1/Parent  = "World"
+#s:Ge/Collimator1/Type    = "TsCylinder"
+#s:Ge/Collimator1/Material= "Brass"
+#d:Ge/Collimator1/RMin    = 2  mm
+#d:Ge/Collimator1/RMax    = 15.0 cm
+#d:Ge/Collimator1/HL      = 3.5  mm
+#d:Ge/Collimator1/SPhi    = 0.0 deg
+#d:Ge/Collimator1/DPhi    = 360.0 deg
+#d:Ge/Collimator1/TransX  = 0.0 mm
+#d:Ge/Collimator1/TransY  = 0.0 mm
+#d:Ge/Collimator1/TransZ  = -9.0 cm
+#d:Ge/Collimator1/RotX    = 0.0 deg
+#d:Ge/Collimator1/RotY    = 0.0 deg
+#d:Ge/Collimator1/RotZ    = 0.0 deg
+#b:Ge/Collimator1/Include = "True"
+#s:Ge/Collimator1/DrawingStyle = "Solid"
+#s:Ge/Collimator1/Messange= "UCSFETF::Collimator1 is constructed!"
 
 
 
-# Water degraders that put the detector 
-# in to the correct irradiation position 
-# ---------------------------------
+# Detector plane
+# A water plane where register the information of incident particles
 #
+# ---------------------------------
 
 #d:A_Double1         = 8	 mm # detector to degrader distance
 #d:traslationOfWaterDegrader = -4.55 mm - A_Double1
 
 
-#s:Ge/WaterDegrader/Type     = "TsBox"
-#s:Ge/WaterDegrader/Parent   = "World"
-#s:Ge/WaterDegrader/Material = "G4_WATER"
-#d:Ge/WaterDegrader/HLX      = 10.00 mm
-#d:Ge/WaterDegrader/HLY      = 10.00 mm
-#d:Ge/WaterDegrader/HLZ      = 4.55 mm
-#d:Ge/WaterDegrader/TransX   = 0. cm
-#d:Ge/WaterDegrader/TransY   = 0. cm
-#d:Ge/WaterDegrader/TransZ   = traslationOfWaterDegrader mm
-#d:Ge/WaterDegrader/RotX     = 0. deg
-#d:Ge/WaterDegrader/RotY     = 0. deg
-#d:Ge/WaterDegrader/RotZ     = 0. deg
-#s:Ge/WaterDegrader/Color    = "Blue"
-#s:Ge/WaterDegrader/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
+s:Ge/DetectorPlane/Type     = "TsBox"
+s:Ge/DetectorPlane/Parent   = "World"
+s:Ge/DetectorPlane/Material = "G4_WATER"
+d:Ge/DetectorPlane/HLX      = 100.00 cm
+d:Ge/DetectorPlane/HLY      = 100.00 cm
+d:Ge/DetectorPlane/HLZ      = 1 mm
+d:Ge/DetectorPlane/TransX   = 0. cm
+d:Ge/DetectorPlane/TransY   = 0. cm
+d:Ge/DetectorPlane/TransZ   = -99. mm
+d:Ge/DetectorPlane/RotX     = 0. deg
+d:Ge/DetectorPlane/RotY     = 0. deg
+d:Ge/DetectorPlane/RotZ     = 0. deg
+s:Ge/DetectorPlane/Color    = "Blue"
+s:Ge/DetectorPlane/DrawingStyle = "Solid" # "Solid", "Wireframe" or "FullWireFrame"
 
 
 
@@ -85,25 +85,25 @@ s:Ge/Collimator1/Messange= "UCSFETF::Collimator1 is constructed!"
 # 1: The energy deposited; 2: the weight; 3: the particle type (PDF format); 
 # 4: if is the first scored particle from this history
 #	
-#s:Sc/Scorer_Pablo/Quantity			= "PabloNtupleScorerOnVolume"
-#s:Sc/Scorer_Pablo/Component   			= "SiCDetector"
-#s:Sc/Scorer_Pablo/OutputType          		= "ASCII"
+#s:Sc/Scorer_Pablo/Quantity			            = "PabloNtupleScorerOnVolume"
+#s:Sc/Scorer_Pablo/Component   			        = "SiCDetector"
+#s:Sc/Scorer_Pablo/OutputType          	        = "ASCII"
 #b:Sc/Scorer_Pablo/OutputToConsole            	= "FALSE"       
 #s:Sc/Scorer_Pablo/IfOutputFileAlreadyExists 	= "Overwrite" 
 
 
-#s:Sc/InfoFirstStage/Quantity                    = "PhaseSpace"
-#b:Sc/InfoFirstStage/OutputToConsole             = "True"
-#s:Sc/InfoFirstStage/Surface                     = "SiCDetector/ZMinusSurface"
-#s:Sc/InfoFirstStage/OutputType         	 = "ASCII" 
-#s:Sc/InfoFirstStage/OutputFile                  = "ASCIIOutput"
-#s:Sc/InfoFirstStage/OnlyIncludeParticlesGoing  = "In"
-#b:Sc/InfoFirstStage/IncludeRunID                = "True"
-#b:Sc/InfoFirstStage/IncludeEventID              = "True"
-#b:Sc/InfoFirstStage/IncludeTrackID              = "True"
-#b:Sc/InfoFirstStage/IncludeParentID             = "True"
-#b:Sc/InfoFirstStage/IncludeCreatorProcess       = "True"
-#b:Sc/InfoFirstStage/IncludeVertexInfo           = "True"
+s:Sc/ScoringFromPlaneDetector/Quantity                     = "PhaseSpace"
+b:Sc/ScoringFromPlaneDetector/OutputToConsole              = "True"
+s:Sc/ScoringFromPlaneDetector/Surface                      = "DetectorPlane/ZMinusSurface"
+s:Sc/ScoringFromPlaneDetector/OutputType         	        = "ASCII" 
+s:Sc/ScoringFromPlaneDetector/OutputFile                   = "ASCIIOutput"
+#s:Sc/ScoringFromPlaneDetector/OnlyIncludeParticlesGoing    = "In"
+b:Sc/ScoringFromPlaneDetector/IncludeRunID                 = "True"
+b:Sc/ScoringFromPlaneDetector/IncludeEventID               = "True"
+b:Sc/ScoringFromPlaneDetector/IncludeTrackID               = "True"
+b:Sc/ScoringFromPlaneDetector/IncludeParentID              = "True"
+b:Sc/ScoringFromPlaneDetector/IncludeCreatorProcess        =  "True"
+b:Sc/ScoringFromPlaneDetector/IncludeVertexInfo            = "True"
 
 
 
@@ -115,44 +115,47 @@ s:Ge/Collimator1/Messange= "UCSFETF::Collimator1 is constructed!"
 #s:Sc/DoseAtDeltaE_Detector/IfOutputFileAlreadyExists = "Overwrite"
 
 
-# =====================   VISUALISATION  =======================================
+# =====================   VISUALISATION  =====================
 #
 s:Gr/ViewA/Type                             = "OpenGL"
 i:Gr/ViewA/WindowSizeX                      = 900
 i:Gr/ViewA/WindowSizeY                      = 900
-#d:Gr/ViewA/Theta                            = 55 deg
-#d:Gr/ViewA/Phi                              = 20 deg
-#s:Gr/ViewA/Projection                       = "Perspective"
-#d:Gr/ViewA/PerspectiveAngle                 = 30 deg
+#d:Gr/ViewA/Theta                           = 55 deg
+#d:Gr/ViewA/Phi                             = 20 deg
+#s:Gr/ViewA/Projection                      = "Perspective"
+#d:Gr/ViewA/PerspectiveAngle                = 30 deg
 u:Gr/ViewA/Zoom                             = 1.3
 b:Gr/ViewA/HiddenLineRemovalForTrajectories = "True"
 sv:Gr/ViewA/VisibleWorlds                   = 1 "All"
-#b:Gr/ViewA/IncludeAxes      		    = "True"
-#d:Gr/ViewA/AxesSize                         = 0.1 mm
+b:Gr/ViewA/IncludeAxes      		        = "True"
+#d:Gr/ViewA/AxesSize                        = 0.1 mm
 
 
+# =====================   PHYSICS  =====================
+#
 sv:Ph/Default/Modules = 6 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping"
 
+d:Ph/Default/CutForAllParticles = 10 mm 
 
 
-# =====================   BEAM  =======================================
-
-s:So/TNSA/Type                     = "Beam"
-
-s:So/TNSA/Component                = "BeamPosition"
-d:Ge/BeamPosition/TransZ	       = -70 cm
-d:Ge/BeamPosition/RotX		       = 0. deg
-
-s:So/TNSA/BeamParticle             = "proton"
-#s:So/Example/BeamParticle	       = "GenericIon(2,4,2)" # alpha
+# =====================   BEAM  ======================
 
 s:So/TNSA/BeamEnergySpectrumType   = "Continuous"
-dv:So/TNSA/BeamEnergySpectrumValues = 3 50. 100. 150. MeV
+dv:So/TNSA/BeamEnergySpectrumValues = 3 1. 5. 10. MeV
 uv:So/TNSA/BeamEnergySpectrumWeights = 3 .20 .60 .20
 
+s:So/TNSA/Type                     = "Beam"
+s:So/TNSA/Component                = "BeamPosition"
+d:Ge/BeamPosition/TransZ	       = -100 cm
+d:Ge/BeamPosition/RotY		       = -180. deg
+
+
+s:So/TNSA/BeamParticle             = "proton"
+
+#s:So/Example/BeamParticle	       = "GenericIon(2,4,2)" # alpha
 
 s:So/TNSA/BeamPositionDistribution = "Flat" 
-s:So/TNSA/BeamPositionCutoffShape  = "Point" # Point, Ellipse, Rectangle or Isotropic
+s:So/TNSA/BeamPositionCutoffShape  = "Ellipse" #Point, Ellipse, Rectangle or Isotropic
 d:So/TNSA/BeamPositionCutoffX      = 1. mm
 d:So/TNSA/BeamPositionCutoffY      = 1. mm
 d:So/TNSA/BeamPositionSpreadX      = 0.1 um
@@ -161,33 +164,28 @@ d:So/TNSA/BeamPositionSpreadY      = 0.1 um
 s:So/TNSA/BeamAngularDistribution  = "Gaussian"
 d:So/TNSA/BeamAngularCutoffX       = 90. deg
 d:So/TNSA/BeamAngularCutoffY       = 90. deg
-d:So/TNSA/BeamAngularSpreadX       = 0.1 rad
-d:So/TNSA/BeamAngularSpreadY       = 0.1 rad
-
+d:So/TNSA/BeamAngularSpreadX       = 0.2 rad
+d:So/TNSA/BeamAngularSpreadY       = 0.2 rad
 
 # =====================   OTHER SETTING  =======================================
 
 # Tracking verbosity
 #
-i:Ts/TrackingVerbosity = 0
+#i:Ts/TrackingVerbosity = 1
 
-d:Ph/Default/CutForAllParticles = 0.01 mm 
 
 i:Ts/Seed = 285
 
 b:Ge/QuitIfOverlapDetected = "True"
 
-
-
 #b:Ts/PauseBeforeSequence = "True"
 
 # =====================   NUMBER OF EVENTS  =======================================
 #
-i:So/Example/NumberOfHistoriesInRun   = 500
+i:So/TNSA/NumberOfHistoriesInRun   = 20
 
 i:Ts/NumberOfThreads = 12
 #i:Ts/ShowHistoryCountAtInterval = 100
-
 
 b:Ts/PauseBeforeQuit = "True"
 Ts/UseQt = "True"
