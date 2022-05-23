@@ -1,0 +1,19 @@
+s:Ge/pinhole/Type="TsBox"
+s:Ge/pinhole/Material="G4W"
+sv:Ma/G4W/Components = 1 "Tungsten"
+uv:Ma/G4W/Fractions = 1 1.0
+d:Ma/G4W/Density = 19.3 g/cm3
+s:Ge/pinhole/Parent="World"
+d:Ge/pinhole/HLX=2.5 cm
+d:Ge/pinhole/HLY=5. cm
+d:Ge/pinhole/HLZ=0.8 cm
+d:Ge/pinhole/TransX=0. cm
+d:Ge/pinhole/TransY=0. cm
+d:Ge/pinhole/TransZ=0. cm
+
+s:Ge/exit/Parent= "pinhole"
+s:Ge/exit/Type= "TsCylinder"
+s:Ge/exit/Material= "G4_AIR" 
+d:Ge/exit/Rmax= 0.125 mm
+d:Ge/exit/Rmin= 0 mm
+d:Ge/exit/HL= Ge/pinhole/HLZ cm
