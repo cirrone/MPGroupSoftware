@@ -1,0 +1,120 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri May 2 11:14:38 2022
+
+@author: almakurmanova
+"""
+
+import numpy as np
+from topas2numpy import read_ntuple
+import matplotlib.pyplot as plt
+import pandas as pd
+
+#%% read data from simulation
+path =('/Applications/topas/examples/TPS/test21_plus.header') 
+data=read_ntuple(path)
+data.dtype.names=('Position X (cm)',
+ 'Position Y (cm)',
+ 'Position Z (cm)',
+ 'Direction Cosine X',
+ 'Direction Cosine Y',
+ 'Energy (MeV)',
+'Weight',
+'Particle Type (in PDG Format)',
+'Flag to tell if Third Direction Cosine is Negative (1 means true)',
+'Flag to tell if this is the First Scored Particle from this History (1 means true)')
+x=data['Position X (cm)']
+y=data['Position Y (cm)']
+z=data['Position Z (cm)']
+cosX=data['Direction Cosine X']
+cosY=data['Direction Cosine Y']
+E=data['Energy (MeV)']
+w=data['Weight']
+ID=data['Particle Type (in PDG Format)']
+
+#%%proton
+E_p=E[ID==2212]
+x_p=x[ID==2212]
+y_p=y[ID==2212]
+cosx_p=cosX[ID==2212]
+cosy_p=cosY[ID==2212]
+#%%
+x_p_9=np.zeros(len(x_p))
+x_p_10=np.zeros(len(x_p))
+x_p_12=np.zeros(len(x_p))
+x_p_14=np.zeros(len(x_p))
+x_p_16=np.zeros(len(x_p))
+x_p_18=np.zeros(len(x_p))
+x_p_20=np.zeros(len(x_p))
+x_p_9=x_p[E_p<9]
+x_p_10=x_p[(E_p>=9) & (E_p<10)]
+x_p_12=x_p[(E_p>=10) & (E_p<12)]
+x_p_14=x_p[(E_p>=12) & (E_p<14)]
+x_p_16=x_p[(E_p>=14) & (E_p<16)]
+x_p_18=x_p[(E_p>=16) & (E_p<18)]
+x_p_20=x_p[E_p>18]
+#%%
+cosx_p_9=np.zeros(len(x_p))
+cosx_p_10=np.zeros(len(x_p))
+cosx_p_12=np.zeros(len(x_p))
+cosx_p_14=np.zeros(len(x_p))
+cosx_p_16=np.zeros(len(x_p))
+cosx_p_18=np.zeros(len(x_p))
+cosx_p_20=np.zeros(len(x_p))
+
+cosx_p_9=cosx_p[E_p<9]
+cosx_p_10=cosx_p[(E_p>=9) & (E_p<10)]
+cosx_p_12=cosx_p[(E_p>=10) & (E_p<12)]
+cosx_p_14=cosx_p[(E_p>=12) & (E_p<14)]
+cosx_p_16=cosx_p[(E_p>=14) & (E_p<16)]
+cosx_p_18=cosx_p[(E_p>=16) & (E_p<18)]
+cosx_p_20=cosx_p[E_p>18]
+
+#%%
+y_p_9=np.zeros(len(y_p))
+y_p_10=np.zeros(len(y_p))
+y_p_12=np.zeros(len(y_p))
+y_p_14=np.zeros(len(y_p))
+y_p_16=np.zeros(len(y_p))
+y_p_18=np.zeros(len(y_p))
+y_p_20=np.zeros(len(y_p))
+y_p_9=y_p[E_p<9]
+y_p_10=y_p[(E_p>=9) & (E_p<10)]
+y_p_12=y_p[(E_p>=10) & (E_p<12)]
+y_p_14=y_p[(E_p>=12) & (E_p<14)]
+y_p_16=y_p[(E_p>=14) & (E_p<16)]
+y_p_18=y_p[(E_p>=16) & (E_p<18)]
+y_p_20=y_p[E_p>18]
+
+#%%
+cosy_p_9=np.zeros(len(y_p))
+cosy_p_10=np.zeros(len(y_p))
+cosy_p_12=np.zeros(len(y_p))
+cosy_p_14=np.zeros(len(y_p))
+cosy_p_16=np.zeros(len(y_p))
+cosy_p_18=np.zeros(len(y_p))
+cosy_p_20=np.zeros(len(y_p))
+
+cosy_p_9=cosy_p[E_p<9]
+cosy_p_10=cosy_p[(E_p>=9) & (E_p<10)]
+cosy_p_12=cosy_p[(E_p>=10) & (E_p<12)]
+cosy_p_14=cosy_p[(E_p>=12) & (E_p<14)]
+cosy_p_16=cosy_p[(E_p>=14) & (E_p<16)]
+cosy_p_18=cosy_p[(E_p>=16) & (E_p<18)]
+cosy_p_20=cosy_p[E_p>18]
+
+
+#%% Plot 
+plt.figure()
+plt.plot(x_p_9,y_p_9,"o", label='9.4 MeV')
+plt.plot(x_p_10,y_p_10,'o', label='10 MeV')
+plt.plot(x_p_12,y_p_12,'o',label='12 MeV')
+plt.plot(x_p_14,y_p_14,'o',label='14 MeV')
+plt.plot(x_p_16,y_p_16,'o',label='16 MeV')
+plt.plot(x_p_18,y_p_18,'o',label='18 MeV')
+plt.plot(x_p_20,y_p_20,'o',label='20 MeV')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend()
+plt.grid()
