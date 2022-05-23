@@ -1,0 +1,51 @@
+###########BEAM######################
+includeFile=./beam_test21_ion.txt
+d:Ge/C3/TransZ=Ge/pinhole/TransZ + 130 cm
+i:So/C3/NumberOfHistoriesInRun=10000
+
+d:Ge/C4/TransZ=Ge/pinhole/TransZ + 130 cm
+i:So/C4/NumberOfHistoriesInRun=10000
+
+d:Ge/C5/TransZ=Ge/pinhole/TransZ + 130 cm
+i:So/C5/NumberOfHistoriesInRun=10000
+
+d:Ge/C6/TransZ=Ge/pinhole/TransZ + 130 cm
+i:So/C6/NumberOfHistoriesInRun=10000
+
+##########PINHOLE#####################
+includeFile=./pinhole_test21_ion.txt
+
+############MAGNETIC FIELD############
+includeFile=./MF_test21_ion.txt
+d:Ge/MF/TransZTmp=Ge/pinhole/TransZ - Ge/pinhole/HLZ mm
+d:Ge/MF/TransZ=Ge/MF/TransZTmp - Ge/MF/HLZ cm
+
+###########ELECTRIC FIELD#############
+includeFile=./EF_test21_ion.txt
+d:Ge/ElectricBox/TransZTmp=Ge/MF/TransZ - Ge/MF/HLZ cm
+d:Ge/ElectricBox/TransZTmp2=Ge/ElectricBox/TransZTmp - Ge/ElectricBox/HLZ cm
+d:Ge/ElectricBox/TransZ=Ge/ElectricBox/TransZTmp2 - 1 cm
+
+############DETECTOR##################
+includeFile=./detector_test21.txt
+d:Ge/Detector/TransZTmp=Ge/ElectricBox/TransZ - Ge/ElectricBox/HLZ cm
+d:Ge/Detector/TransZTmp2=Ge/Detector/TransZTmp - Ge/Detector/HLZ cm
+d:Ge/Detector/TransZ=Ge/Detector/TransZTmp2 - 50 cm
+
+###########SCORING & PHYSIC###########
+includeFile=./Scoring_Physics_test21.txt
+
+########WORLD & OGL###################
+d:Ge/World/HLX       = 2 m
+d:Ge/World/HLY       = 2 m
+d:Ge/World/HLZ       = 2 m
+b:Ge/World/Invisible = "True"
+s:Ge/World/Material = "Vacuum"
+
+#s:Gr/MyOGL/Type="OpenGL"
+i:Gr/MyOGL/MagneticFieldArrowDensity=5
+s:Gr/MyOGL/ColorBy     = "ParticleType"
+s:Gr/MyOGL/AxesComponent = "World"
+d:Gr/MyOGL/AxesSize      = 50.0 cm
+
+b:Ts/PauseBeforeQuit = "True"
