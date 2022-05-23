@@ -1,0 +1,13 @@
+s:Ge/MF/Type="TsBox"
+s:Ge/MF/Parent="World"
+s:Ge/MF/Material="G4_AIR"
+d:Ge/MF/HLX=0.25 cm
+d:Ge/MF/HLY=5.0 cm
+d:Ge/MF/HLZ=5.0 cm
+s:Ge/MF/Field="DipoleMagnet"
+u:Ge/MF/MagneticFieldDirectionX=-1.0
+u:GE/MF/MagneticFieldDirectionY=0.0
+u:Ge/MF/MagneticFieldDirectionZ=0.0
+d:Ge/MF/MagneticFieldStrength=8 kG
+
+
