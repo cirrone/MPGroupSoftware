@@ -1,0 +1,10 @@
+s:Ge/Detector/Type="TsBox"
+s:Ge/Detector/Material="G4_AIR"
+s:Ge/Detector/Parent="World"
+d:Ge/Detector/HLX=2.5 cm
+d:Ge/Detector/HLY=5 cm
+d:Ge/Detector/HLZ=0.5 cm
+d:Ge/Detector/TransX=0. cm
+d:Ge/Detector/TransY=0. cm
+d:Ge/Detector/TransZ=0. cm
+
