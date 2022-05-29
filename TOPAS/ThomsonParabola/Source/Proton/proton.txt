@@ -1,0 +1,27 @@
+###########BEAM######################
+includeFile=./beam_proton.txt
+dc:Ge/proton/TransZ=Ge/Detector/TransZ + 10 cm
+ic:So/proton/NumberOfHistoriesInRun=1000000
+
+############DETECTOR##################
+includeFile=./detector_proton.txt
+s:Ge/Detector/Color="transparentred"
+iv:Gr/Color/transparentred = 4 0 75 155 200
+
+###########SCORING & PHYSIC###########
+includeFile=./Scoring_Physics_proton.txt
+
+########WORLD & OGL###################
+d:Ge/World/HLX       = 2 m
+d:Ge/World/HLY       = 2 m
+d:Ge/World/HLZ       = 2 m
+b:Ge/World/Invisible = "True"
+s:Ge/World/Material = "Vacuum"
+
+#s:Gr/MyOGL/Type="OpenGL"
+#i:Gr/MyOGL/MagneticFieldArrowDensity=5
+s:Gr/MyOGL/ColorBy     = "ParticleType"
+s:Gr/MyOGL/AxesComponent = "World"
+d:Gr/MyOGL/AxesSize      = 50.0 cm
+
+b:Ts/UseQt = "False"
