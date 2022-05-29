@@ -1,0 +1,16 @@
+s:Sc/PhaseSpacePlus/Quantity                   = "PhaseSpace"
+b:Sc/PhaseSpacePlus/OutputToConsole            = "True"
+s:Sc/PhaseSpacePlus/Surface                    = "Detector/ZPlusSurface"
+s:Sc/PhaseSpacePlus/OutputType                 = "ASCII"
+s:Sc/PhaseSpacePlus/OutputFile                 = "test21_plus"
+s:Sc/PhaseSpacePlus/IfOutputFileAlreadyExists = "Overwrite"
+
+s:Sc/PhaseSpaceMinus/Quantity                   = "PhaseSpace"
+b:Sc/PhaseSpaceMinus/OutputToConsole            = "True"
+s:Sc/PhaseSpaceMinus/Surface                    = "Detector/ZMinusSurface"
+s:Sc/PhaseSpaceMinus/OutputType                 = "ASCII"
+s:Sc/PhaseSpaceMinus/OutputFile                 = "test21_minus"
+s:Sc/PhaseSpaceMinus/IfOutputFileAlreadyExists = "Overwrite"
+
+sv:Ph/MyList/Modules = 9 "g4h-chargeexchange" "g4h-inelastic_QBBC" "g4ion" "g4stopping" "g4h-elastic_H" "g4h-elastic_XS" "g4h-elastic_HP" "g4h-elastic" "g4em-standard_opt3"
+

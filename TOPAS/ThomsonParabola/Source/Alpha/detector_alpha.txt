@@ -1,0 +1,11 @@
+s:Ge/Detector/Type="TsBox"
+sc:Ge/Detector/Material="G4_WATER"
+s:Ge/Detector/Parent="World"
+dc:Ge/Detector/HLX=10. cm
+dc:Ge/Detector/HLY=10. cm
+dc:Ge/Detector/HLZ=3. cm
+dc:Ge/Detector/TransX=0. cm
+dc:Ge/Detector/TransY=0. cm
+dc:Ge/Detector/TransZ=0. cm
+s:Ge/Detector/DrawingStyle="WireFrame"
+
