@@ -1,0 +1,17 @@
+MacroPablo.mac -> No warnings or errors. 
+
+all_default.mac -> No warnings or errors.
+
+geomtest.mac -> Exited with error "COMMAND NOT FOUND </geometry/setSize 5 m>"
+
+prova_gun_MT.mac -> Exited with error "Illegal parameter (1) </vis/open OGLIQt>" 
+
+rbe_test.mac -> Exited with error " Sanity check: wrong solid extent.
+        Replicated geometry, logical volume: G4_WATER "
+
+runtest.mac -> Exited with error " Sanity check: wrong solid extent.
+        Replicated geometry, logical volume: G4_WATER "
+
+vistest.mac -> Exited with error "Illegal parameter (1) </vis/open OGLSQt>"  
+
+vistest2.mac -> Exited with error "Illegal parameter (1) </vis/open OGLSQt>"
