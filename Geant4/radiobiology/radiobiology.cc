@@ -55,7 +55,7 @@
 #include "RadiobiologyRBE.hh"
 
 //************************MT*********************
-#ifdef G4MULTITHREADED
+#if G4MULTITHREADED
 #include "G4MTRunManager.hh"
 #else
 #include "G4RunManager.hh"
@@ -105,7 +105,7 @@ int main(int argc ,char ** argv)
     scoringManager->SetVerboseLevel(1);
     
     // Creating PhysicsList
-    G4VModularPhysicsList* phys = new PhysicsList();
+    G4VModularPhysicsList* phys = new RadiobiologyPhysicsList();
 
     // Set mandatory initialization classes
     RadiobiologyDetectorConstruction* det = new RadiobiologyDetectorConstruction();
