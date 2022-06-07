@@ -1,0 +1,18 @@
+#C2 source 
+s:So/C2/Type="Beam"
+s:So/C2/Parent="World"
+s:So/C2/BeamParticle="GenericIon(6,12,2)"
+s:So/C2/Component="BeamPosition"
+s:So/C2/BeamEnergySpectrumType = "Continuous"
+dv:So/C2/BeamEnergySpectrumValues = 9 0.6076923076923082 0.6692307692307695 0.7384615384615385 0.8153846153846159 0.907692307692308 1.023076923076923 1.1538461538461542 1.319230769230769 1.515384615384615 MeV
+uv:So/C2/BeamEnergySpectrumWeights = 9 0.16734946028135314 0.19120787671289777 0.18787825717573564 0.15875833958693725 0.12210658073027757 0.09943079486867464 0.0555257495094837 0.014447226026840945 0.0032957151077995252
+s:So/C2/BeamPositionDistribution="Gaussian"
+s:So/C2/BeamPositionCutoffShape ="Ellipse"
+d:So/C2/BeamPositionCutoffX =0.1 mm
+d:So/C2/BeamPositionCutoffY =0.1 mm
+d:So/C2/BeamPositionSpreadX=0.03 mm
+d:So/C2/BeamPositionSpreadY=0.03 mm
+s:So/C2/BeamAngularDistribution="None"
+dc:Ge/C2/TransX = 0. cm
+dc:Ge/C2/TransY = 0. cm
+dc:Ge/C2/TransZ = 0. cm
