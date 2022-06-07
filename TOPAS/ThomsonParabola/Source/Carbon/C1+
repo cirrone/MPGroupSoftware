@@ -1,1 +1,18 @@
 ## carbon source C1+, C2+, C3+ from the article https://doi.org/10.1088/1748-0221/17/01/C01055
+s:So/C1/Type="Beam"
+s:So/C1/Parent="World"
+s:So/C1/BeamParticle="GenericIon(6,12,1)"
+s:So/C1/Component="BeamPosition"
+s:So/C1/BeamEnergySpectrumType = "Continuous"
+dv:So/C1/BeamEnergySpectrumValues = 8 0.3100775193798446 0.35658914728682056 0.4108527131782944 0.4806201550387597 0.5736434108527124 0.6976744186046506 0.8604651162790695 1.0930232558139528 MeV
+uv:So/C1/BeamEnergySpectrumWeights = 8 0.196538849 0.1642780564 0.1910527646 0.1494844264 0.1237738034 0.1105219168 0.05602301031 0.008327173027
+s:So/C1/BeamPositionDistribution="Gaussian"
+s:So/C1/BeamPositionCutoffShape ="Ellipse"
+d:So/C1/BeamPositionCutoffX =0.1 mm
+d:So/C1/BeamPositionCutoffY =0.1 mm
+d:So/C1/BeamPositionSpreadX=0.03 mm
+d:So/C1/BeamPositionSpreadY=0.03 mm
+s:So/C1/BeamAngularDistribution="None"
+dc:Ge/C1/TransX = 0. cm
+dc:Ge/C1/TransY = 0. cm
+dc:Ge/C1/TransZ = 0. cm
